@@ -1,0 +1,372 @@
+{
+  "version": "0.1.0",
+  "note": "Диапазоны восстановлены из строк libapp.so оригинального com.tennis.ai v2.0.19 (см. reference/ANALYSIS_FINDINGS.md). proRange:null = диапазон отдаётся из Firestore metric_definitions и из APK восстановлен не был. Поправки — английские шаблоны с плейсхолдером {value}, в тоне оригинальных текстов.",
+  "metrics": [
+    {
+      "code": "SERVE_M1_STANCE_WIDTH",
+      "label": "Stance width (feet / shoulders)",
+      "unit": "ratio",
+      "strokeTypes": ["serve"],
+      "phase": "M1",
+      "proRange": { "min": 0.8, "max": 1.5 },
+      "description": "Lateral stance width as a ratio of shoulder width. Best players set their feet 0.8–1.5x shoulder width at the stance.",
+      "corrections": {
+        "tooLow": "Your stance is too narrow at {value}x shoulder width. Open the feet to 0.8–1.5x shoulder width for a stable base.",
+        "tooHigh": "Your stance is too wide at {value}x shoulder width. Narrow it to 0.8–1.5x shoulder width so you can load and drive up."
+      },
+      "calculator": "feetShoulderRatio",
+      "confidence": "recovered"
+    },
+    {
+      "code": "M1_FOOT_ANGLE",
+      "label": "Front foot angle to baseline",
+      "unit": "deg",
+      "strokeTypes": ["serve", "forehand", "backhand"],
+      "phase": "M1",
+      "proRange": { "min": 30, "max": 45 },
+      "description": "Orientation of the front foot relative to the baseline at the stance.",
+      "corrections": {
+        "tooLow": "Your front foot is too parallel to the baseline at {value}°. Angle it 30–45° to the baseline.",
+        "tooHigh": "Your front foot is too open at {value}°. Bring it back to 30–45° to the baseline."
+      },
+      "calculator": "frontFootAngleDeg",
+      "confidence": "recovered"
+    },
+    {
+      "code": "M1_ARMS_POSITION",
+      "label": "Arms position at the split step",
+      "unit": "deg",
+      "strokeTypes": ["forehand", "backhand"],
+      "phase": "M1",
+      "proRange": null,
+      "description": "Position of the arms during the directional split step.",
+      "corrections": { "tooLow": null, "tooHigh": null },
+      "calculator": "armsPositionDeg",
+      "confidence": "unknown-range"
+    },
+    {
+      "code": "M2_KNEES_POSITION",
+      "label": "Knee bend at the unit turn",
+      "unit": "deg",
+      "strokeTypes": ["forehand", "backhand"],
+      "phase": "M2",
+      "proRange": null,
+      "description": "Knee bend during loading. Deep bend stores elastic energy.",
+      "corrections": { "tooLow": null, "tooHigh": null },
+      "calculator": "kneeFlexionDeg",
+      "confidence": "unknown-range"
+    },
+    {
+      "code": "M2_UNIT_TURN",
+      "label": "Unit turn (shoulder–hip separation)",
+      "unit": "deg",
+      "strokeTypes": ["forehand", "backhand"],
+      "phase": "M2",
+      "proRange": { "min": 10, "max": 30 },
+      "description": "Separation angle between the shoulder line and the hip line during the unit turn.",
+      "corrections": {
+        "tooLow": "Your unit turn is too small at {value}° of shoulder–hip separation. Coil the shoulders 10–30° past the hips.",
+        "tooHigh": "Your unit turn is too big at {value}° of shoulder–hip separation. Stay inside 10–30° to keep the swing repeatable."
+      },
+      "calculator": "shoulderHipSeparationDeg",
+      "confidence": "recovered"
+    },
+    {
+      "code": "M2_WEIGHT_TRANSFER",
+      "label": "Weight transfer",
+      "unit": "cm",
+      "strokeTypes": ["forehand", "backhand"],
+      "phase": "M2",
+      "proRange": null,
+      "description": "Lateral shift of the body weight into the shot.",
+      "corrections": { "tooLow": null, "tooHigh": null },
+      "calculator": null,
+      "confidence": "unknown-range"
+    },
+    {
+      "code": "SERVE_M2_TOSS_ARM_ANGLE",
+      "label": "Tossing arm extension (elbow)",
+      "unit": "deg",
+      "strokeTypes": ["serve"],
+      "phase": "M2",
+      "proRange": { "min": 152, "max": 180 },
+      "description": "Elbow extension of the tossing arm during the toss. Best players extend the arm nearly straight.",
+      "corrections": {
+        "tooLow": "Your tossing arm is too bent at {value}°. Extend the elbow to 152–180° for a consistent toss.",
+        "tooHigh": null
+      },
+      "calculator": "tossArmElbowDeg",
+      "confidence": "recovered"
+    },
+    {
+      "code": "SERVE_M2_TOSS_ARM_SPEED",
+      "label": "Toss arm speed",
+      "unit": "m_s",
+      "strokeTypes": ["serve"],
+      "phase": "M2",
+      "proRange": { "min": 1.5, "max": 6.0 },
+      "description": "Peak speed of the tossing-arm wrist during the toss.",
+      "corrections": {
+        "tooLow": "Your toss is too slow at {value} m/s. Drive the ball up at 1.5–6.0 m/s.",
+        "tooHigh": "Your toss is too fast at {value} m/s. Smooth it to 1.5–6.0 m/s for a repeatable placement."
+      },
+      "calculator": "tossArmWristSpeed",
+      "confidence": "recovered"
+    },
+    {
+      "code": "SERVE_M2_TOES_TO_BASELINE",
+      "label": "Toes distance to baseline",
+      "unit": "cm",
+      "strokeTypes": ["serve"],
+      "phase": "M2",
+      "proRange": { "min": 3, "max": 15 },
+      "description": "Distance from the toes to the baseline at the stance. Requires court-line calibration.",
+      "corrections": {
+        "tooLow": "Your toes are only {value} cm behind the baseline. Keep 3–15 cm to avoid a foot fault.",
+        "tooHigh": "Your toes are {value} cm behind the baseline. Move up to 3–15 cm for a better angle."
+      },
+      "calculator": null,
+      "confidence": "partial"
+    },
+    {
+      "code": "M3_TRIPLE_EXTENSION_HIP",
+      "label": "Hip extension (ankle–hip–shoulder)",
+      "unit": "deg",
+      "strokeTypes": ["serve"],
+      "phase": "M3",
+      "proRange": { "min": 110, "max": 170 },
+      "description": "Drive-phase extension through ankle, knee and hip. The ankle–hip–shoulder angle opens to 110–170° in pro serves (Alcaraz 165, Sinner 164, Djokovic 168, Federer 151).",
+      "corrections": {
+        "tooLow": "Your hip angle stays closed at {value}°. Extend through the drive to 110–170°.",
+        "tooHigh": "Your hip angle opens past {value}°. Keep it inside 110–170° to stay balanced."
+      },
+      "calculator": "hipExtensionDeg",
+      "confidence": "recovered"
+    },
+    {
+      "code": "M3_TRIPLE_EXTENSION_LEG",
+      "label": "Leg extension (heel–hip–shoulder)",
+      "unit": "deg",
+      "strokeTypes": ["serve"],
+      "phase": "M3",
+      "proRange": { "min": 155, "max": 179 },
+      "description": "Full leg drive measured by the heel–hip–shoulder angle at the loading phase.",
+      "corrections": {
+        "tooLow": "Your drive leg is still bent at {value}°. Extend it fully (155–179°) to transfer the ground force.",
+        "tooHigh": null
+      },
+      "calculator": "heelLegAngleDeg",
+      "confidence": "recovered"
+    },
+    {
+      "code": "KNEE_FLEXION",
+      "label": "Knee flexion (hip–knee–ankle)",
+      "unit": "deg",
+      "strokeTypes": ["serve", "forehand", "backhand"],
+      "phase": "M3",
+      "proRange": null,
+      "description": "Knee bend during loading or contact. Deep bend stores elastic energy. Exact pro range is served from Firestore metric_definitions.",
+      "corrections": { "tooLow": null, "tooHigh": null },
+      "calculator": "kneeFlexionDeg",
+      "confidence": "unknown-range"
+    },
+    {
+      "code": "DOM_KNEE",
+      "label": "Dominant knee flexion",
+      "unit": "deg",
+      "strokeTypes": ["serve", "forehand", "backhand"],
+      "phase": "M3",
+      "proRange": null,
+      "description": "Knee flexion of the dominant leg.",
+      "corrections": { "tooLow": null, "tooHigh": null },
+      "calculator": "domKneeFlexionDeg",
+      "confidence": "unknown-range"
+    },
+    {
+      "code": "NDOM_KNEE",
+      "label": "Non-dominant knee flexion",
+      "unit": "deg",
+      "strokeTypes": ["serve", "forehand", "backhand"],
+      "phase": "M3",
+      "proRange": null,
+      "description": "Knee flexion of the non-dominant leg.",
+      "corrections": { "tooLow": null, "tooHigh": null },
+      "calculator": "ndomKneeFlexionDeg",
+      "confidence": "unknown-range"
+    },
+    {
+      "code": "SERVE_M4_TRUNK_TILT",
+      "label": "Trunk tilt at extension",
+      "unit": "deg",
+      "strokeTypes": ["serve"],
+      "phase": "M4",
+      "proRange": { "min": 5, "max": 39 },
+      "description": "Trunk tilt from vertical during the serve extension. A second variant (10–45°) appears for groundstrokes.",
+      "corrections": {
+        "tooLow": "Your trunk is too vertical at {value}°. Lean into the court 5–39° at extension.",
+        "tooHigh": "Your trunk leans too far at {value}°. Bring it back to 5–39° to stay balanced."
+      },
+      "calculator": "trunkTiltDeg",
+      "confidence": "recovered"
+    },
+    {
+      "code": "GS_M4_TRUNK_TILT",
+      "label": "Trunk tilt at contact",
+      "unit": "deg",
+      "strokeTypes": ["forehand", "backhand"],
+      "phase": "M4",
+      "proRange": { "min": 10, "max": 45 },
+      "description": "Trunk tilt from vertical at the groundstroke contact point.",
+      "corrections": {
+        "tooLow": "Your trunk is too upright at {value}°. Lean 10–45° into the shot at contact.",
+        "tooHigh": "Your trunk leans too far at {value}°. Bring it back to 10–45°."
+      },
+      "calculator": "trunkTiltDeg",
+      "confidence": "recovered"
+    },
+    {
+      "code": "SERVE_M4_SHOULDERS_HORIZONTAL",
+      "label": "Shoulder line vs horizontal",
+      "unit": "deg",
+      "strokeTypes": ["serve"],
+      "phase": "M4",
+      "proRange": { "max": 12 },
+      "description": "Tilt of the shoulder line away from horizontal at the extension phase. Pros keep it under 12°.",
+      "corrections": {
+        "tooLow": null,
+        "tooHigh": "Your shoulders tilt {value}° from horizontal. Keep the shoulder line level (under 12°) at extension."
+      },
+      "calculator": "shouldersHorizontalTiltDeg",
+      "confidence": "recovered"
+    },
+    {
+      "code": "SERVE_M4_RACKET_FACE",
+      "label": "Racket face vs shoulders",
+      "unit": "deg",
+      "strokeTypes": ["serve"],
+      "phase": "M4",
+      "proRange": { "max": 25 },
+      "description": "Racket face angle relative to the shoulder line (parallel, vertical) at the trophy position. Requires racket orientation from YOLO detections.",
+      "corrections": {
+        "tooLow": null,
+        "tooHigh": "Your racket face is {value}° off the shoulder line. Keep it parallel (under 25°) and vertical at the trophy."
+      },
+      "calculator": null,
+      "confidence": "partial"
+    },
+    {
+      "code": "M4_TRUNK_ROTATION",
+      "label": "Trunk rotation displacement",
+      "unit": "cm",
+      "strokeTypes": ["forehand", "backhand"],
+      "phase": "M4",
+      "proRange": { "min": 3, "max": 20 },
+      "description": "Rotational displacement of the trunk between the unit turn and contact.",
+      "corrections": {
+        "tooLow": "Your trunk rotation is too small at {value} cm. Rotate through 3–20 cm to power the shot.",
+        "tooHigh": "Your trunk rotation is excessive at {value} cm. Stay inside 3–20 cm for control."
+      },
+      "calculator": "trunkRotationCm",
+      "confidence": "recovered"
+    },
+    {
+      "code": "M4_BODY_ALIGNMENT",
+      "label": "Body alignment at contact",
+      "unit": "deg",
+      "strokeTypes": ["forehand", "backhand"],
+      "phase": "M4",
+      "proRange": { "min": 171, "max": 189 },
+      "description": "Alignment of the kinetic chain at contact (shoulder–hip–target line). Pairs with M4_CONTACT_ANGLE (60–130°).",
+      "corrections": {
+        "tooLow": "Your alignment line breaks at {value}°. Straighten it to 171–189° at contact.",
+        "tooHigh": null
+      },
+      "calculator": "contactArmAlignmentDeg",
+      "confidence": "recovered"
+    },
+    {
+      "code": "M4_CONTACT_ANGLE",
+      "label": "Contact arm angle",
+      "unit": "deg",
+      "strokeTypes": ["forehand", "backhand"],
+      "phase": "M4",
+      "proRange": { "min": 60, "max": 130 },
+      "description": "Angle of the dominant arm at contact. Pairs with M4_BODY_ALIGNMENT (171–189°): both must hold.",
+      "corrections": {
+        "tooLow": "Your contact arm collapses at {value}°. Hold 60–130° at impact.",
+        "tooHigh": "Your contact arm is over-extended at {value}°. Keep it at 60–130°."
+      },
+      "calculator": "armToVerticalDeg",
+      "confidence": "recovered"
+    },
+    {
+      "code": "M5_WRIST_SPEED",
+      "label": "Wrist speed at contact",
+      "unit": "m_s",
+      "strokeTypes": ["serve", "forehand", "backhand"],
+      "phase": "M5",
+      "proRange": { "min": 10, "max": 25 },
+      "description": "Peak speed of the dominant wrist around contact.",
+      "corrections": {
+        "tooLow": "Your wrist speed is only {value} m/s. Accelerate through contact to 10–25 m/s.",
+        "tooHigh": "Your wrist speed spikes at {value} m/s. Pros sit at 10–25 m/s — smooth the swing."
+      },
+      "calculator": "dominantWristSpeed",
+      "confidence": "recovered"
+    },
+    {
+      "code": "M5_TOSS_HEIGHT_RATIO",
+      "label": "Toss height / player height",
+      "unit": "ratio",
+      "strokeTypes": ["serve"],
+      "phase": "M5",
+      "proRange": { "min": 1.8, "max": 2.3 },
+      "description": "Toss apex height relative to the player height. Pros toss 1.8–2.3x their height.",
+      "corrections": {
+        "tooLow": "Your toss peaks at only {value}x your height. Toss to 1.8–2.3x height so you hit at full extension.",
+        "tooHigh": "Your toss peaks at {value}x your height. Keep it at 1.8–2.3x — higher tosses drift."
+      },
+      "calculator": "tossHeightRatio",
+      "confidence": "recovered"
+    },
+    {
+      "code": "M5_CONTACT_POINT_SHOULDER_DISTANCE",
+      "label": "Contact distance from shoulder",
+      "unit": "cm",
+      "strokeTypes": ["forehand", "backhand"],
+      "phase": "M5",
+      "proRange": { "min": 14, "max": 72 },
+      "description": "Horizontal distance between the contact point and the shoulder line.",
+      "corrections": {
+        "tooLow": "You crowd the ball: contact is only {value} cm from the shoulder. Hit 14–72 cm away.",
+        "tooHigh": "You reach too far: contact is {value} cm from the shoulder. Bring it to 14–72 cm."
+      },
+      "calculator": "ballShoulderDistanceCm",
+      "confidence": "recovered"
+    },
+    {
+      "code": "M5_CONTACT_POINT_HEIGHT",
+      "label": "Contact point height",
+      "unit": "cm",
+      "strokeTypes": ["serve", "forehand", "backhand"],
+      "phase": "M5",
+      "proRange": null,
+      "description": "Height of the contact point above the ground.",
+      "corrections": { "tooLow": null, "tooHigh": null },
+      "calculator": null,
+      "confidence": "unknown-range"
+    },
+    {
+      "code": "M5_RACKET_HEAD_POSITION",
+      "label": "Racket head position at contact",
+      "unit": "deg",
+      "strokeTypes": ["serve", "forehand", "backhand"],
+      "phase": "M5",
+      "proRange": null,
+      "description": "Position/orientation of the racket head relative to the body at contact.",
+      "corrections": { "tooLow": null, "tooHigh": null },
+      "calculator": null,
+      "confidence": "unknown-range"
+    }
+  ]
+}

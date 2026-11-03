@@ -1,0 +1,727 @@
+--- ctx @514 ---
+TakeIterable.
+_stackTrace@0150898
+_StreamSinkImpl@16069316.
+addCandidate
+get:_semanticActionUnit@114231897
+(Front chain 2-33
+_moveChild@187319124
+String_concatRange
+&fromSemiAuto=true
+longPress
+InheritedTheme
+
+--- ctx @538 ---
+_handleHoverChanged@106317193
+_RestorationScopeState@74384654
+Phase Summary
+Continental
+package:collection/src/canonicalized_map.dart
+(Align 171-189
+ET Angle 60-130
+_updateClip@40160605
+ImageCapture.
+ecelp7470
+was disposed during loading state, yet no value could be emitted.
+
+--- ctx @792 ---
+package:flutter_local_notifications_platform_interface/src/types.dart
+isIncoming
+get:backButtonTooltip
+VerticalDragGestureRecognizer
+channel_id
+(K110-180/H100-180)
+_computeDryBaseline@32392247
+TextSelectionHandleType.
+_getHandleRect@77111801
+_GlowingOverscrollIndicatorState@189442496
+_translatedCache@1533466217
+
+--- ctx @1655 ---
+looksLikeLeakedToolCallSyntax
+originalFileName
+onResume
+_rappelerLeNonDit@1449507058
+package:flutter/src/painting/box_border.dart
+cm (Trunk rotation (3-20cm))
+Practice
+get:zoomScaleStateStream
+_secondaryForwardTranslationTween@102490068
+Invalid compression type:
+combineLatest2
+
+--- ctx @1664 ---
+Invalid compression type:
+combineLatest2
+visitOverlayPortalChildrenOnOverlayEntry
+dart:ffi/allocation.dart
+_DraggableSheetExtent@328035049
+(80-180
+WrapContext
+isRootRelativeL
+dev.flutter.pigeon.cloud_firestore_platform_interface.FirebaseFirestoreHostApi.documentReferenceDelete
+Camera permission denied.
+_MutableTextRange@438124616
+
+--- ctx @2001 ---
+ColorFloat16.
+dart:convert
+_newFutureWithSameType@5048458
+_resumeSubscription@5048458
+Content size exceeds specified contentLength.
+(Arm cocked 40-120
+/ Non-dom 79-170
+SchedulerBinding
+_OverlayPortal@187319124
+_MockRedMetrics@129175810
+And your weight in kg?
+
+--- ctx @2655 ---
+TonalPalette._fromHueAndChroma@929207939
+_CopyPointerRemovedEvent@34050165
+Importance.
+M3 - EXTENSION
+dimecres
+(D10-175/ND40-180)
+I suggest starting with {name}. Tap to confirm or choose another.
+_InheritedNotifierElement@338313948.
+SemanticsFlags
+Intermediate Player
+(Smooth trajectory (var<45deg, dist>=20cm))
+
+--- ctx @2897 ---
+controllerAlreadyInitialized
+cameraId
+elements
+WidgetsLocalizationEsHn
+_handleSelectionChanged@652286899
+(D0-75/ND0-60)
+_cacheKey@1457289541
+compareTo
+IfdValueAscii.data
+onRenegotiationNeeded
+package:firebase_auth/firebase_auth.dart
+
+--- ctx @3296 ---
+IfdValueSRational
+isStreamingImages
+package:flutter/src/widgets/binding.dart
+application/vnd.solent.sdkm+xml
+_handleSelectionHandleChanged@77111801
+(Shoulders horizontal (<12
+application/vnd.ipunplugged.rcprofile
+_EndFloatFabLocation@81063916
+_insertIntoChildList@33266271
+scheduleMode
+inputAction
+
+--- ctx @3397 ---
+flutter/processtext
+_AxisSize|get#flipped@238302920
+init:_untaggedReasoning@752239350
+consumeQuota
+toolConfig
+(85-175
+_yearsFromSecondsSinceEpoch@0150898
+[GOOGLE] googleUser:
+get:bidiText
+SemanticsData.
+SelectAllTextIntent
+
+--- ctx @3811 ---
+_loadCardFacts@1449507058
+Adjust your arm position.
+PlatformViewsService
+application/pkcs7-signature
+_drawRect@23065589
+(Ankle-Knee-Hip rising)
+package:flutter/src/painting/text_style.dart
+GlyphInfo
+tall titleLarge 2014
+RouteConfiguration
+DrillRouting(
+
+--- ctx @3861 ---
+VideoRecordEventListener.
+application/x-msbinder
+dev.flutter.pigeon.video_player_android.VideoPlayerInstanceApi.pause
+_buildHeader@1535257248
+init:_container@20293344
+(85-170
+_DoubleLinkedQueueIterator@4220832
+BoxShape.
+NoSuchMethodError: Cannot assign to final variable '
+Get ready for a match
+poslijepodne
+
+--- ctx @4242 ---
+_getStartMainIsolateFunction@1026248
+Adjust your body position. Stay balanced.
+InternetAddress_ParseScopedLinkLocalAddress0
+You are talking to a COACH, not the player. They need data they can act on and relay to their student: metrics, trends, comparisons, what to work on in the next lesson. Do not address them as if they hit the strokes.
+EntitlementVerificationMode.
+(D65-130/ND65-145)
+FlutterError.
+_onListen@5048458
+_maxWidth@89019562
+_errorsToFixUI@130237160
+[OnDevice]
+
+--- ctx @4260 ---
+_loadStats@1497072177
+IfdValueSByte
+ImageDescription
+_HashSet@4220832.
+_ragCalledThisTurn@1449507058
+(D0-50/ND0-50)
+_SemanticsBase@70167661
+_formatTime@1530429536
+_instance@79206165
+The constraints given to the overlay (
+moment4_contact
+
+--- ctx @5297 ---
+propertiesFor
+_sw@16069316
+saveTabOffsets
+RenderFollowerLayer
+ListenMode.
+(20-170
+CharacterBoundary
+_uvacHuffman@1169305986
+getCupertinoTranslation
+init:_tokenRE@518501537
+_buildVideoPlaceholder@1533466217
+
+--- ctx @5709 ---
+SpeechToTextPlatform
+introPhase
+package:purchases_flutter/models/store_transaction.dart
+_tryToResolveArena@147060655
+text/vnd.curl
+(D60-175/ND20-170)
+RecordEventChannelPlatformInterface
+(at character
+TextDecoration
+get:devicePixelRatio
+_handleSemanticsEnabledChanged@142275577
+
+--- ctx @6034 ---
+set:gestureSettings
+get:_effectiveTransform@40160605
+ULwesihlanuF
+_MixinApplication353&RenderBox&ContainerRenderObjectMixin&RenderBoxContainerDefaultsMixin@18353248.
+CancelableOperation.fromFuture
+(D65-160/ND50-145)
+application/vnd.sun.xml.math
+totalRed
+_loadNewBytes@1222054096
+init:_receivePort@16069316
+CompositedTransformFollower
+
+--- ctx @6714 ---
+share_instagram
+get:_delayed_type_arguments@0150898
+_emptyList@17463476
+InternalGifImageDesc.
+package:go_router/src/delegate.dart
+(Depth 15-90cm)
+get:toolString
+__computeLineMetrics$Method$FfiNative@23065589
+MMMM G y
+application/x-eva
+_firstZoneIsUsed@960066103
+
+--- ctx @6831 ---
+_SemanticsSortGroup@166082469
+_byteToHex@1580230318
+FFmpegKitInitializer
+controllerInitializing
+package:shared_preferences_android/src/messages_async.g.dart
+(D5-75/ND5-75)
+handleStartBackGesture
+Bend your knees more! Stay low and athletic.
+_MixinApplication104&SliderTrackShape&BaseSliderTrackShape@18353248
+removeOnPlatformViewCreatedListener
+text/troff
+
+--- ctx @7282 ---
+get:refreshToken
+Subtitle
+RTCRtpTransceiverNative.fromMap
+package:image/src/formats/exr/exr_zip_compressor.dart
+This is an informational response - the request was received, continuing processing
+(130-162
+get:year
+_resolve@388402377
+_cancel@5048458
+_handleDragEnd@77111801
+_httpConnectionHook@17463476
+
+--- ctx @7352 ---
+Djokovic: 105 | Alcaraz: 102 | Federer: 98
+faultDesc
+init:padding
+_Message@1522148745
+EEE y-MM-dd
+Continental (85-140 deg)
+_RawSecureSocket@16069316.
+critical
+dyn:get:isNegative
+www-authenticate
+WidgetsLocalizationFil
+
+--- ctx @7415 ---
+Velg alle
+_btn@130237160
+WidgetsApp.router
+invokeDefaultAction
+get:textAlign
+(R 155-178
+/ L 162-179
+get:reference
+KeepAliveParentDataMixin
+_PlatformViewPlaceHolder@347185805
+127.0.0.1
+
+--- ctx @7710 ---
+_updateSourceStream@182215529
+_scaledPadding@496343580
+package:flutter/src/material/flexible_space_bar.dart
+package:flutter/src/material/text_button.dart
+EEE, d-MMM
+(D40-105/ND30-100)
+005e3a1fd5a7e75e861bcf823bb439b04cd1b2b33fd937dac94c8f92f91661aa
+_removeChild@187319124
+get:canSpan
+_Uri@0150898
+LayerHandle
+
+--- ctx @8718 ---
+PauseResponse
+MaterialLocalizationAr
+Multi-coach coordination
+_encodable@757132388
+DarwinAudioEffect
+(Non-dom elbow (102-180
+libtensorflowlite_jni.so
+_distanceFromPointToRect@326163077
+PlatformInterface
+init:deviceOrientationManager
+Canvas::saveLayerWithoutBounds
+
+--- ctx @8914 ---
+^[a-zA-Z][-+.a-zA-Z\d]*://
+preparation
+inputType
+get:physicalKey
+_initCategoryNumber@1169305986
+(D30-110/ND30-95)
+Cannot open stdio file for:
+Eres diestro o zurdo?
+singleDigitMinuteFormat
+Focus Scope
+_update@415213599
+
+--- ctx @9008 ---
+moveWordLeftAndModifySelection:
+UIKeyInputF9
+_yOffsetFor@90247952
+SourceLocationMixin
+_decrementPauseCount@5048458
+(D30-125/ND2-125)
+no_sessions_yet
+durationSeconds
+init:_voice@1449507058
+_speak@1449507058
+_getCharacterByLetterForm@761396231
+
+--- ctx @9238 ---
+FieldValue
+get:userGestureInProgress
+get:maxTabIndex
+App Version 2.0.1
+deleteDrawerAnimation
+(D65-175/ND65-170)
+_chromaticAdaptation@1291253021
+splitQueryString
+get:entries
+e paradites
+package:flutter/src/services/restoration.dart
+
+--- ctx @9363 ---
+instantiateImageCodec
+dev.flutter/channel-buffers
+get:decoder
+prijepodne
+Hit the ball in front of your body.
+(D3-85/ND1-80)
+application/xproc+xml
+CustomClipper
+getNextFrame
+_updateState@199437083
+package:flutter/src/material/time.dart
+
+--- ctx @9465 ---
+QualitySelector.from
+What the code measured
+dart:ui/setup_hooks.dart
+parentUsesSize
+application/x-xz
+(R:133-180
+/ L:149-180
+ansi_x3.4-1968
+_sendChannelUpdate@23065589
+formatException
+_setChannel@1261145861
+
+--- ctx @9582 ---
+status_message
+HTTP/1.1
+SpeechRecognitionWords words:
+getEffectiveTextDirection
+TooltipTriggerMode
+(Wrist speed 10-25 m/s)
+_ForceState.
+_loadLibrary@0150898
+SurfaceAndroidViewController
+detectBackhand
+ShrinkWrappingViewport
+
+--- ctx @9793 ---
+CREATE YOUR PLAN
+_checkState@5048458
+application/vnd.mobius.daf
+Portrait Mode, 1080p 30fps
+multiWindow
+(Trunk tilt (5-39
+SynchronousStreamController
+hFilter8i
+Izgriezt
+RestorableProperty
+defaultTraversalRequestFocusCallback
+
+--- ctx @10827 ---
+_CupertinoButtonState@221145554
+LaunchControlPanel
+[VideoPreview] Compress error:
+CLUB PRO
+Booking integration
+(D95-180/ND85-170)
+Average Scores by Stroke
+Quaternion.identity
+_nativeWrite@16069316
+_Float64ArrayView@8027147
+parseTrue
+
+--- ctx @11391 ---
+Fila $tabIndex din $tabCount
+addSlice
+Analyzer.pigeon_new
+manage_students_perf
+NavigatePrevious
+(D75-175/ND50-160)
+getTemporaryDirectory
+y. 'g'. QQQ
+CupertinoLocalizationVi
+_setEditableSizeAndTransform@79206165
+_visitActionsAncestors@65441002
+
+--- ctx @12535 ---
+BallDetectionService
+RemoteConfigPigeonSettings
+_lastLineLength@1432101164
+Stand tall and balanced.
+Stream.error
+(Shoulder-Hip 10-30
+buttonBarTheme
+_resize@403185525
+CupertinoLocalizationAf
+CupertinoDynamicColor
+/realtime-setup
+
+--- ctx @13283 ---
+LateError.fieldNI
+RenderObjectWithLayoutCallbackMixin
+readState
+un error al crear tu perfil.
+Intentar de nuevo?
+(D85-180/ND95-180)
+Symbol("
+ScrollAction.
+y MMM d, EEE
+_MixinApplication111&State&RestorationMixin@18353248
+handleDrawFrame
+
+--- ctx @13923 ---
+shaders/stretch_effect.frag
+__initWithImage$Method$FfiNative@23065589
+FirebaseRemoteConfig
+_HitTestableAtOrigin@82420462
+MinSampleValue
+(109-180
+dev.flutter.pigeon.camera_android_camerax.PlaneProxy.pigeon_newInstance
+_toggleTimer@1533466217
+get:_delegate@883057947
+errorCode
+_checkValidLatin1@12003594
+
+--- ctx @16495 ---
+APP_STORE
+_StreamSinkImpl@17463476.
+Error event raised in event handler : error condition has been reset
+_buildDescription@1533466217
+get:barcodes
+(140-175
+Concurrent modification during iteration.
+III. negyed
+_brokenDownDateToValue@0150898
+AUTOMATIC
+videoRecordingEventStreamController
+
+--- ctx @16952 ---
+PigeonAuthCredential
+isBoundsSafe
+GoogleSignIn.
+MomentDetector
+pred Kristom
+(85-160
+_outputLegacy@1347089516
+HH:mm (z)
+dart:ffi/struct.dart
+StorageCipherAlgorithm
+ImageDescriptor::height
+
+--- ctx @17376 ---
+strutStyle
+encodings
+The start method did not return a valid configuration.
+_InkState@313412529
+FieldPath(
+(100-180
+SemanticsUpdateBuilder::Create
+application/xspf+xml
+BrowserOptions
+__drawDRRect$Method$FfiNative@23065589
+get:elementType
+
+--- ctx @17543 ---
+BracketRight
+VMLibraryHooks
+sports ball
+init:onTertiaryFixed
+decodeMapEnum
+(D40-120/ND20-135)
+Ffi_GetFfiNativeResolver
+get:navigableDestinations
+Headers.fromMap
+3-5 years
+EdgeInsets
+
+--- ctx @17922 ---
+RTCRTCPParameters
+_callOnCancel@5048458
+endRecording
+_scanCodeUnits@0150898
+insertAndLayoutChild
+(Toss arm speed 1.5-6.0 m/s)
+package:ffmpeg_kit_flutter_new/statistics.dart
+Septemba
+MethodChannelFirebase.
+M4 CONTACT
+_init@16069316
+
+--- ctx @18343 ---
+init:_colors@645109675
+_JsonQuerySnapshot@781385638.
+codePixel
+isAntiAlias
+Playing competitively
+N/D (Trunk rotation (3-20cm))
+init:lastNameProvider
+Precondition Failed
+requiredEncodingForCharset
+init:_TfLiteTensorDim@1561204773
+__build$Method$FfiNative@23065589
+
+--- ctx @20504 ---
+set:traversalParent
+_children@25049130
+FavoriteStore3
+DisplayFeatureType
+StreamSubscriptionsIterableExtensions|resumeAll
+(R:100-179
+/ L:115-179
+DioExceptionType
+GameButton7
+Nachschlagen
+get:scriptCategory
+
+--- ctx @21286 ---
+init:isDark
+get:errorStyle
+set:_nextListener@5048458
+_MixedEdgeInsets@37303931
+isFirstEncounter=
+(85-166
+multiline
+package:flutter/src/material/dialog.dart
+_prng@13383281D
+I will count down 15 seconds. Get in position and play one stroke. I will detect it automatically.
+_indexChangeProgress@659014024
+
+--- ctx @21965 ---
+selectWord
+IOSSystemContextMenuItem
+[^()<>@,;:"\\/[\]?={} \t\x00-\x1F\x7F]+
+modified
+TextInputAction.send
+(90-165
+axel_card_recurring_
+ExifImageWidth
+_setEngineId@23065589
+init:queryParameters
+callerUid
+
+--- ctx @23054 ---
+application/vnd.wap.wmlscriptc
+_token@688436587
+[OnDevice] HQ frame count mismatch (
+init:_nullFuture@5048458
+_writeHeader@17463476
+(75-120
+didChangeLocales
+joulukuu
+get:maintainState
+PdfGraphicStream
+tremujori IV
+
+--- ctx @23693 ---
+ExtendSelectionVerticallyToAdjacentLineIntent
+numberSaidByPlayer
+PngFilterType
+_ConditionVariableImpl@15398151
+PlatformVideoFormat
+(Toes 3-15cm / Shoulder 14-72cm)
+set:previousSibling
+diciembre
+ModalRoute
+_LayoutBuilderElement@184188862
+init:_jsonArguments@6383715
+
+--- ctx @25230 ---
+NumberFormatParseResult
+PresentedOfferingTargetingContext.fromJson
+PopupMenuThemeData
+deeptile
+_RenderCompositionCallback@177183791.
+(D70-165/ND30-180)
+takeIdle
+GPSTrack
+_registerDoneHandler@5048458
+_getBackgroundPaint@470196095
+application/vnd.fdsn.mseed
+
+--- ctx @25668 ---
+paintImage
+FocusHighlightStrategy
+init:_v8TraceLine@1423486701
+limitToLast
+init:_TfLiteInterpreterInvokePtr@1561204773
+(D80-165/ND90-175)
+_handlePushRouteInformation@22399801
+IcoInfoImage
+_GeneratorIterable@0150898
+completedDays
+[Analysis] r
+
+--- ctx @26316 ---
+copyRotation
+ByteData.view
+__updateNode$Method$FfiNative@23065589
+on_tertiary
+UndoDirection
+(D90-180/ND40-180)
+DateTime._nowUtc@0150898
+MissingPlatformDirectoryException(
+InputTooLongException.
+whitespace
+cannot get field "
+
+--- ctx @27042 ---
+beginChunkNumber
+readableStringBuilder
+HTTP request failed. Client is already closed.
+_generateUuid@1565489634
+ar-xa-x-arc-local
+(Toss arm 152-180
+deflateRect
+_buildCupertinoIndicator@105243954
+package:axel_brain/src/axel_conversation_state.dart
+colorized
+_MixinApplication15&State&TickerProviderStateMixin@18353248
+
+--- ctx @27767 ---
+looksLikeLeakedReasoning
+logicalToVisual
+Head leads through contact
+init:_secureRandom@1579493852
+inflateRRect
+(K120-180/H100-150)
+ConsumerStatefulWidget
+ContextMenuController
+foothipshoulder
+Keep your arms more compact at contact.
+escapeLinkLocalAddress
+
+--- ctx @27924 ---
+TextInputConnection
+AndroidAudioContentType
+MainAxisAlignment
+dc16NoTop
+PathException:
+(Trunk tilt 10-45
+M2 - TOSS AND BACKSWING PHASE
+_RenderLayoutSurrogateProxyBox@187319124
+MobileScannerErrorCode.
+buildViewWithOptions
+dart.collection
+
+--- ctx @28565 ---
+TrainingPlanService
+package:tennis_ai_2/axel/axel_drill_walkthrough.dart
+dart:convert/converter.dart
+TextPainter.paint called when text geometry was not yet calculated.
+Please call layout() before paint() to position the text before painting it.
+(Heel-hip-shoulder (155-179
+_RawSecureSocket@16069316
+moved_on_from_metric
+ShuffleModeMessage.
+[CoachVoice] voix
+FavoriteStore1
+
+--- ctx @29086 ---
+package:flutter_localizations/src/l10n/generated_widgets_localizations.dart
+_PlayerSessionsScreenState@1519418246
+_MaterialState@91372823.
+ImageDataUint2
+get_1_year_free
+(Ankle-Hip-Shoulder 110-170
+TextInputConfiguration
+CoachStudentsScreen
+FieldValueFactoryPlatform
+ReflectionIssue
+Photo updated!
+
+--- ctx @29397 ---
+80$d$d0s$s(
+9('0'$'0'$'(
+*,'P'H'('
+HT8WxW8D\D4mLD4mL
+<*,G(G(v$G$vH
+D$D4DLD$D(D4
+- 30*D*@G
+$v<30*$*
+X6(6 6$646`
+'<'@9(*$
+,*,*<* G

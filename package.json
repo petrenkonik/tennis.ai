@@ -1,0 +1,19 @@
+{
+  "name": "tennis-ai-monorepo",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@10.18.1",
+  "engines": {
+    "node": ">=22"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild"]
+  },
+  "scripts": {
+    "build": "pnpm -r run build",
+    "typecheck": "pnpm -r run typecheck",
+    "dev:api": "pnpm --filter @tennis-ai/api start:dev",
+    "dev:miniapp": "pnpm --filter @tennis-ai/miniapp dev",
+    "seed:drills": "pnpm --filter @tennis-ai/api seed:drills"
+  }
+}

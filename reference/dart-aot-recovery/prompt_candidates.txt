@@ -1,0 +1,598 @@
+--- offset 314130 (len 70)
+dev.flutter.pigeon.camera_android_camerax.Recording.pigeon_newInstance
+--- offset 315181 (len 141)
+Coach's main hub: tiles for MY STUDENTS, ANALYSES, REPORTS, DASHBOARD, SHARE QR CODE (to link a student) and START LIVE SESSION (coach mode).
+--- offset 316636 (len 433)
+Tell them what they can do here, and name the three actions the screen actually offers: analyse the clip, trim it down to the stroke itself, or take another video. Abraham, 04/08: he asked explicitly for all three to be said on arrival -- this is the only moment the clip can still be trimmed or replaced, and nothing on screen tells them the trim handles are draggable. Say them naturally, in your own words, not as a bulleted menu.
+--- offset 319415 (len 68)
+package:camera_android_camerax/src/image_reader_rotated_preview.dart
+--- offset 321251 (len 96)
+dev.flutter.pigeon.camera_android_camerax.DisplayOrientedMeteringPointFactory.pigeon_newInstance
+--- offset 328259 (len 142)
+Welcome to Axel AI! I'm Axel, your AI coach. I'll ask you a few quick questions to personalize your experience. First, what's your first name?
+--- offset 332606 (len 66)
+dev.flutter.pigeon.camera_android_camerax.LiveData.removeObservers
+--- offset 332764 (len 82)
+dev.flutter.pigeon.camera_android_camerax.CameraSelector.pigeon_defaultConstructor
+--- offset 334381 (len 207)
+The account page: Edit Profile, subscription status (Free Plan / active plan), Language choice, Email Notifications and AI Coaching Tips toggles, Ambassador Program, Contact Support, Delete Account, Log Out.
+--- offset 334786 (len 75)
+dev.flutter.pigeon.camera_android_camerax.PendingRecording.withAudioEnabled
+--- offset 336018 (len 66)
+package:camera_platform_interface/src/types/camera_image_data.dart
+--- offset 341883 (len 83)
+dev.flutter.pigeon.camera_android_camerax.CameraPermissionsError.pigeon_newInstance
+--- offset 343367 (len 154)
+Fetch recommended drills or the active training plan. Optionally pass an analysisId to get drills targeted at the weaknesses found in a specific analysis.
+--- offset 352676 (len 71)
+dev.flutter.pigeon.camera_android_camerax.ImageProxyUtils.getNv21Buffer
+--- offset 352817 (len 127)
+The review screen is open with the clip loaded. The player can see it and has to decide what to do before anything is analysed.
+--- offset 356834 (len 62)
+their first name (create the account with complete_onboarding)
+--- offset 358478 (len 76)
+package:video_player_platform_interface/video_player_platform_interface.dart
+--- offset 359519 (len 176)
+You're not turning your shoulders early enough. Start the unit turn the moment you recognize the ball is coming to your backhand. Both hands stay on the racket during the turn.
+--- offset 362426 (len 64)
+dev.flutter.pigeon.camera_android_camerax.Camera2CameraInfo.from
+--- offset 362742 (len 211)
+Turn your own voice on or off, when the player asks -- 'stop talking', 'be quiet', 'I'll read instead', or later 'you can speak again'. Turning it off does not end the conversation: you keep replying in writing.
+--- offset 365455 (len 62)
+dev.flutter.pigeon.camera_android_camerax.QualitySelector.from
+--- offset 365718 (len 77)
+dev.flutter.pigeon.camera_android_camerax.VideoRecordEvent.pigeon_newInstance
+--- offset 368991 (len 77)
+dev.flutter.pigeon.camera_android_camerax.FallbackStrategy.pigeon_newInstance
+--- offset 369332 (len 74)
+dev.flutter.pigeon.camera_android_camerax.MeteringPoint.pigeon_newInstance
+--- offset 370236 (len 71)
+WHAT THIS METRIC ACTUALLY MEASURES (from the app's own knowledge base):
+--- offset 370518 (len 82)
+dev.flutter.pigeon.video_player_android.AndroidVideoPlayerApi.createForTextureView
+--- offset 372661 (len 86)
+navigate cannot open the results: they need a session. Use show_last_analysis instead.
+--- offset 374044 (len 98)
+Position the camera at the sideline and baseline intersection. Make sure I can see your full body.
+--- offset 374340 (len 66)
+(PLAYER FACTS|SITUATION RIGHT NOW|THINKING PROTOCOL|HOW YOU COACH)
+--- offset 375953 (len 80)
+dev.flutter.pigeon.camera_android_camerax.PendingRecording.asPersistentRecording
+--- offset 386630 (len 79)
+ and that you'll come back to it. (2) Never announce you are staying on Moment 
+--- offset 388324 (len 63)
+No walkthrough in progress. Call start_drill_walkthrough first.
+--- offset 401051 (len 75)
+dev.flutter.pigeon.camera_android_camerax.ProcessCameraProvider.getInstance
+--- offset 401719 (len 67)
+package:camera_platform_interface/src/types/image_format_group.dart
+--- offset 404058 (len 80)
+dev.flutter.pigeon.camera_android_camerax.FocusMeteringResult.pigeon_newInstance
+--- offset 411782 (len 285)
+\b(I found (this|these|it) in|according to (the )?(ITF|research|the corpus|the (sport )?science|coaching)|based on (the )?(ITF|research|the corpus|(sport )?science|coaching manuals?)|from the ITF|sport science review|coaching review|CSSR|the corpus says|our (tennis )?knowledge base)\b
+--- offset 415027 (len 133)
+The analysis result JUST landed. Axel is about to read it closely; the full explanation will follow in a few seconds as its own turn.
+--- offset 416088 (len 189)
+[SYSTEM: you just WROTE a tool call as text instead of emitting it. Nothing ran, and nothing opened. Emit the real function call now. Do not describe it, do not tell the player it is done.]
+--- offset 416763 (len 62)
+stopImageStream was called when no camera is streaming images.
+--- offset 419949 (len 149)
+The camera device could not be opened due to a device policy. Thia may be caused by a client from a background process attempting to open the camera.
+--- offset 420938 (len 77)
+dev.flutter.pigeon.camera_android_camerax.PigeonInternalInstanceManager.clear
+--- offset 421912 (len 153)
+The clip is in landscape: the PHONE was held horizontally while filming. The analysis cannot run on it, and rotating the file afterwards does not fix it.
+--- offset 422138 (len 71)
+dev.flutter.pigeon.camera_android_camerax.Camera2CameraInfo.getCameraId
+--- offset 425614 (len 100)
+The player chose an existing video from their library instead of filming now. You cannot see it yet.
+--- offset 427855 (len 68)
+dev.flutter.pigeon.video_player_android.VideoPlayerInstanceApi.pause
+--- offset 433822 (len 92)
+dev.flutter.pigeon.camera_android_camerax.DeviceOrientationManager.getDefaultDisplayRotation
+--- offset 436705 (len 79)
+- Keep responses concise (3-5 sentences) unless the player asks for more detail
+--- offset 438641 (len 68)
+The player's QR code, so a coach can scan and add them as a student.
+--- offset 438844 (len 82)
+dev.flutter.pigeon.video_player_android.AndroidVideoPlayerApi.getLookupKeyForAsset
+--- offset 439053 (len 81)
+dev.flutter.pigeon.camera_android_camerax.ImageAnalysis.pigeon_defaultConstructor
+--- offset 440618 (len 216)
+You are talking to a COACH, not the player. They need data they can act on and relay to their student: metrics, trends, comparisons, what to work on in the next lesson. Do not address them as if they hit the strokes.
+--- offset 441905 (len 130)
+A brand-new player just opened the app. The hologram video has just greeted them out loud, and the suggestion cards are on screen.
+--- offset 442675 (len 102)
+The camera device has encountered a recoverable error. CameraX will attempt to recover from the error.
+--- offset 445159 (len 97)
+A specific student's detail page (coach only). Needs the student's name -- no dedicated tool yet.
+--- offset 445885 (len 62)
+Messages between the player and their coach, if they have one.
+--- offset 454276 (len 139)
+Complete AI ecosystem for tennis academies. From talent identification to tournament preparation, track every player's development journey.
+--- offset 463546 (len 72)
+dev.flutter.pigeon.video_player_android.VideoPlayerInstanceApi.setVolume
+--- offset 466881 (len 175)
+The stroke the player named, if they named one -- 'analyse my serve', 'my forehand'. Fill it whenever they say it, even in passing: it is what stops the app asking them again.
+--- offset 467527 (len 75)
+dev.flutter.pigeon.camera_android_camerax.ResolutionInfo.pigeon_newInstance
+--- offset 470769 (len 68)
+dev.flutter.pigeon.camera_android_camerax.Preview.setSurfaceProvider
+--- offset 472537 (len 122)
+The ultimate AI platform for elite academies. Pro-level video analysis, biomechanics, scouting tools, and full API access.
+--- offset 473840 (len 85)
+dev.flutter.pigeon.camera_android_camerax.ResolutionFilter.createWithOnePreferredSize
+--- offset 474707 (len 77)
+dev.flutter.pigeon.camera_android_camerax.ResolutionFilter.pigeon_newInstance
+--- offset 478371 (len 62)
+[Axel] _speak suppressed -- screen owns the voice channel here
+--- offset 489193 (len 81)
+dev.flutter.pigeon.camera_android_camerax.Camera2CameraControl.pigeon_newInstance
+--- offset 489317 (len 93)
+, never quote it across. And your own reasoning may run in any language; the reply is always 
+--- offset 491116 (len 67)
+package:camera_platform_interface/src/types/camera_description.dart
+--- offset 496254 (len 93)
+dev.flutter.pigeon.camera_android_camerax.DeviceOrientationManager.onDeviceOrientationChanged
+--- offset 496503 (len 77)
+dev.flutter.pigeon.camera_android_camerax.SystemServicesManager.onCameraError
+--- offset 502773 (len 104)
+Welcome to the review screen. You can analyse your swing, trim it with the two handles, or record again.
+--- offset 773852 (len 62)
+package:flutter_webrtc/src/native/rtc_video_renderer_impl.dart
+--- offset 776931 (len 91)
+Whether the player plays matches/tournaments (competitive) or plays for fun (recreational).
+--- offset 778619 (len 79)
+ resolved metrics. Judge progress against THIS pace, not a generic expectation.
+--- offset 781767 (len 63)
+package:camera_platform_interface/src/types/media_settings.dart
+--- offset 789667 (len 85)
+dev.flutter.pigeon.camera_android_camerax.CameraCharacteristicsKey.pigeon_newInstance
+--- offset 790945 (len 177)
+A trophy screen shown right after the player completes a training session or hits a milestone. There is nothing to diagnose here -- this is a moment to acknowledge, not analyse.
+--- offset 798184 (len 74)
+dev.flutter.pigeon.camera_android_camerax.VideoRecordEventListener.onEvent
+--- offset 799179 (len 405)
+Start a step-by-step voice walkthrough of a drill: Objective, Setup, How to do it, Key points, Progression, What to look for. Use this when the player says they have a headset on and want you to talk them through a drill. Say ONLY the first step's content in your reply -- do not read the whole drill at once. The player will say 'next' or similar to advance; call advance_drill_walkthrough at that point.
+--- offset 800428 (len 128)
+The results screen is open. The player can see a score and a list of flagged points, but nothing has been explained to them yet.
+--- offset 804283 (len 78)
+dev.flutter.pigeon.camera_android_camerax.CaptureRequestKey.pigeon_newInstance
+--- offset 804446 (len 65)
+PLAYER FACTS (established by the code, never guess around these):
+--- offset 805935 (len 86)
+dev.flutter.pigeon.camera_android_camerax.ResolutionSelector.pigeon_defaultConstructor
+--- offset 814761 (len 68)
+dev.flutter.pigeon.camera_android_camerax.UseCase.pigeon_newInstance
+--- offset 815453 (len 77)
+dev.flutter.pigeon.camera_android_camerax.PendingRecording.pigeon_newInstance
+--- offset 830801 (len 94)
+dev.flutter.pigeon.camera_android_camerax.PigeonInternalInstanceManager.removeStrongReference*
+--- offset 831882 (len 61)
+package:tennis_ai_2/screens/player_skill_analysis_screen.dart
+--- offset 832341 (len 80)
+dev.flutter.pigeon.camera_android_camerax.AspectRatioStrategy.pigeon_newInstance
+--- offset 836248 (len 106)
+dev.flutter.pigeon.camera_android_camerax.DeviceOrientationManager.stopListeningForDeviceOrientationChange
+--- offset 838096 (len 61)
+these have been coached across 3 analyses without resolving: 
+--- offset 839739 (len 74)
+dev.flutter.pigeon.camera_android_camerax.ExposureState.pigeon_newInstance
+--- offset 840817 (len 112)
+One specific drill's screen (video, sets, reps). Reachable via the open_drill_detail tool, not generic navigate.
+--- offset 841482 (len 61)
+package:tennis_ai_2/screens/player_training_plans_screen.dart
+--- offset 842029 (len 76)
+dev.flutter.pigeon.camera_android_camerax.ImageProxyUtils.pigeon_newInstance
+--- offset 852349 (len 113)
+Natural language question or topic, e.g. 'wrist position at serve impact' or 'trophy position shoulder alignment'
+--- offset 858702 (len 83)
+dev.flutter.pigeon.video_player_android.AndroidVideoPlayerApi.createForPlatformView
+--- offset 872258 (len 62)
+This reply came out in English, but the player's language is '
+--- offset 878237 (len 79)
+dev.flutter.pigeon.camera_android_camerax.ResolutionSelector.pigeon_newInstance
+--- offset 890319 (len 87)
+dev.flutter.pigeon.camera_android_camerax.AspectRatioStrategy.pigeon_defaultConstructor
+--- offset 900617 (len 165)
+The fault, exactly as it appears in the analysis (e.g. 'ARMS POSITION', 'WRIST AND RACKET POSITION'). Omit to get the drill for the fault currently being worked on.L
+--- offset 907369 (len 114)
+You cannot send anyone to the analysis screen: it needs a video already submitted. Use analyze_video to start one.
+--- offset 911288 (len 88)
+dev.flutter.pigeon.camera_android_camerax.SystemServicesManager.requestCameraPermissions
+--- offset 914615 (len 199)
+Proposal saved for expert review. You may share the idea with the player now, saying plainly it is an extra idea from you and not yet part of the validated library. Do not promise it will be adopted.
+--- offset 921082 (len 67)
+dev.flutter.pigeon.camera_android_camerax.CameraInfo.getCameraState
+--- offset 921305 (len 82)
+dev.flutter.pigeon.camera_android_camerax.ProcessCameraProvider.pigeon_newInstance
+--- offset 925405 (len 67)
+Edit profile fields (name, age, height, weight, handedness, level).
+--- offset 926945 (len 139)
+What the player says gives them trouble IN A MATCH (nerves, second serve, long rallies, closing out sets...). Their words, not a diagnosis.
+--- offset 930204 (len 238)
+Player's overview. Four stat cards: total sessions, average analysis score (%), training plans count, unread messages. Below: recent activity feed (each practice session by stroke, Today/Yesterday, status Completed / Analyzing / Pending).
+--- offset 931193 (len 96)
+Ask ONE short either/or question: record now, or upload a video they already have? Nothing else.
+--- offset 935343 (len 66)
+that the player did something wrong; it is where the camera stands
+--- offset 935794 (len 79)
+dev.flutter.pigeon.camera_android_camerax.SystemServicesManager.getTempFilePath
+--- offset 942115 (len 94)
+Choose which dashboard view to open (relevant for accounts with both player and coach roles).L
+--- offset 948513 (len 77)
+package:camera_platform_interface/src/platform_interface/camera_platform.dart
+--- offset 948891 (len 87)
+dev.flutter.pigeon.camera_android_camerax.Preview.surfaceProducerHandlesCropAndRotation
+--- offset 950966 (len 67)
+You see the ball over your front shoulder at the moment of contact.
+--- offset 953182 (len 118)
+Equip your club with AI coaching tools for all members. Centralized dashboard, progress tracking, and group analytics.
+--- offset 956213 (len 83)
+dev.flutter.pigeon.camera_android_camerax.DeviceOrientationManager.getUiOrientation
+--- offset 964316 (len 132)
+The camera could not be opened because "Do Not Disturb" mode is enabled. Please disable this mode, and try opening the camera again.
+--- offset 972957 (len 82)
+dev.flutter.pigeon.camera_android_camerax.VideoRecordEventStart.pigeon_newInstance
+--- offset 979042 (len 73)
+https://tennis-ai-analysis-v2-w4eburiouq-uc.a.run.app/v1/analysis/analyze
+--- offset 981481 (len 66)
+package:camera_platform_interface/src/types/resolution_preset.dart
+--- offset 983547 (len 71)
+package:camera_android_camerax/src/surface_texture_rotated_preview.dart
+--- offset 990210 (len 62)
+package:tennis_ai_2/services/drill_recommendation_service.dart
+--- offset 995833 (len 268)
+Filter by domain: use 'biomechanics' for technique/gesture questions, 'tactics' for strategy/match questions, 'fitness' for physical conditioning, 'mental' for psychology, 'drills' for exercises, 'coaching' for pedagogy/training methods. Omit to search all categories.
+--- offset 998755 (len 92)
+dev.flutter.pigeon.camera_android_camerax.DeviceOrientationManager.pigeon_defaultConstructor
+--- offset 999369 (len 262)
+You are asking the player ONE question: record now, or upload a video they already have. The two choices are on screen. Do NOT open any screen yourself, do NOT give filming or placement instructions, do NOT tell them to press a button. Say nothing else about it.
+--- offset 1003308 (len 78)
+dev.flutter.pigeon.camera_android_camerax.CameraSize.pigeon_defaultConstructor
+--- offset 1004962 (len 120)
+The video is being analysed. This takes one to two minutes. There is no result yet and nothing for the player to decide.
+--- offset 1007112 (len 181)
+Fetch the current player profile (name, age, height, weight, handedness, level, goal, whether they have a coach). Use this to personalize advice or check what info you already have.
+--- offset 1009644 (len 70)
+The fault it targets, as named in the analysis (e.g. 'ARMS POSITION').
+--- offset 1013512 (len 92)
+a game plan for a given opponent and surface, built on their profile and measured tendencies
+--- offset 1015209 (len 218)
+The photo library is opening now. Do NOT tell the player to press any button -- you already opened it. If the stroke was unknown, they are being asked for it right now; say nothing about it. One short sentence at most.
+--- offset 1017502 (len 115)
+Full-featured AI platform for established clubs. Unlimited members, multi-coach management, and advanced reporting.
+--- offset 1024836 (len 72)
+dev.flutter.pigeon.camera_android_camerax.VideoOutput.pigeon_newInstance
+--- offset 1025266 (len 75)
+dev.flutter.pigeon.camera_android_camerax.CaptureRequest.pigeon_newInstance
+--- offset 1027315 (len 61)
+There was an unspecified issue with the current camera state.
+--- offset 1027736 (len 71)
+dev.flutter.pigeon.camera_android_camerax.ProcessCameraProvider.isBound
+--- offset 1035072 (len 65)
+dev.flutter.pigeon.image_picker_android.ImagePickerApi.pickVideos
+--- offset 1037536 (len 108)
+This will permanently delete your account, all your data and analysis history. This action cannot be undone.
+--- offset 1038446 (len 63)
+[IncomingCallListener] Showing incoming call screen for callId=
+--- offset 1041388 (len 175)
+", then save their answer with save_player_profile. Never ask more than one profiling question at a time, never force it, and if they just want to get on with tennis, drop it.
+--- offset 1042685 (len 286)
+Open the visual detail screen for ONE specific drill (video, sets, reps, tips). Use this whenever the player asks to SEE a drill screen, not just hear it narrated. Different from start_drill_walkthrough, which reads it aloud step by step -- use both together when the player wants both.
+--- offset 1044919 (len 73)
+pair with their coach by QR code: messaging, video calls, shared analyses
+--- offset 1066623 (len 178)
+The player just opened the app. The big Axel hologram and the words 'Meet Axel AI' are on screen, and two buttons sit at the bottom: one to record a swing, one to upload a video.
+--- offset 1069905 (len 75)
+dev.flutter.pigeon.camera_android_camerax.CameraSelector.pigeon_newInstance
+--- offset 1070300 (len 86)
+Fetch the player's active training plan. If no active plan exists, generate a new one.
+--- offset 1073807 (len 71)
+dev.flutter.pigeon.camera_android_camerax.PlaneProxy.pigeon_newInstance
+--- offset 1075974 (len 122)
+Bienvenue sur Axel AI ! Je suis Axel, ton coach IA. Je vais te poser quelques questions rapides pour personnaliser ton exp
+--- offset 1080004 (len 79)
+dev.flutter.pigeon.camera_android_camerax.CameraIntegerRange.pigeon_newInstance
+--- offset 1087489 (len 90)
+dev.flutter.pigeon.camera_android_camerax.CameraCharacteristics.infoSupportedHardwareLevel
+--- offset 1088046 (len 96)
+What the player THEMSELVES feels is their weak point (self-reported, not the measured analysis).
+--- offset 1093277 (len 84)
+Language '$code' is not available. Available: ${_supportedLanguageCodes.join(', ')}.
+--- offset 1105713 (len 197)
+Move to the next step of the drill walkthrough started with start_drill_walkthrough. Returns the next step's content, or tells you the walkthrough is finished. Say ONLY that one step, nothing else.
+--- offset 1114052 (len 66)
+The full drill library (54 drills across forehand/backhand/serve).
+--- offset 1114122 (len 61)
+package:camera_android_camerax/src/rotated_preview_utils.dart
+--- offset 1122088 (len 107)
+dev.flutter.pigeon.camera_android_camerax.DeviceOrientationManager.startListeningForDeviceOrientationChange
+--- offset 1127497 (len 80)
+https://us-central1-tennis-ai-app-cde51.cloudfunctions.net/translateDrillContent
+--- offset 1127601 (len 64)
+startImageStream was called while a camera was streaming images.
+--- offset 1134574 (len 65)
+package:camera_platform_interface/src/types/camera_exception.dart
+--- offset 1138153 (len 67)
+dev.flutter.pigeon.camera_android_camerax.Recorder.prepareRecording
+--- offset 1138394 (len 254)
+Schedule a daily local notification reminding the player to do a drill. Use this whenever the player agrees to a daily reminder for a drill you just recommended -- do not ask again if they already said yes. Defaults to 6pm local time if no time is given.
+--- offset 1138750 (len 73)
+dev.flutter.pigeon.camera_android_camerax.VideoCapture.pigeon_newInstance
+--- offset 1146152 (len 62)
+package:camera_android_camerax/src/android_camera_camerax.dart
+--- offset 1146979 (len 131)
+End with: propose the drill below for this fault. Add that with a second analysis in, the picture is getting clearer, and one more 
+--- offset 1157425 (len 100)
+filmed from the side, or 60s silent observation with no setup: six moments, one correction at a time
+--- offset 1158287 (len 111)
+[VIDEO] Compressed: ${(origSize/1024/1024).toStringAsFixed(1)}MB -> ${(newSize/1024/1024).toStringAsFixed(1)}MB
+--- offset 1161082 (len 82)
+dev.flutter.pigeon.camera_android_camerax.CameraCharacteristics.pigeon_newInstance
+--- offset 1162793 (len 68)
+Join a specific video call. Needs a callId -- no dedicated tool yet.
+--- offset 1163122 (len 118)
+The limit number of open cameras has been reached, and more cameras cannot be opened until other instances are closed.
+--- offset 1167212 (len 81)
+dev.flutter.pigeon.video_player_android.VideoPlayerInstanceApi.getCurrentPosition
+--- offset 1177637 (len 79)
+dev.flutter.pigeon.video_player_android.VideoPlayerInstanceApi.setPlaybackSpeed
+--- offset 1178999 (len 74)
+dev.flutter.pigeon.camera_android_camerax.CameraControl.pigeon_newInstance
+--- offset 1184623 (len 82)
+ -- an invitation to sharpen the picture, never a condition for getting the drill.
+--- offset 1189895 (len 73)
+package:camera_platform_interface/src/method_channel/type_conversion.dart
+--- offset 1190258 (len 69)
+https://us-central1-tennis-ai-app-cde51.cloudfunctions.net/coachAgent
+--- offset 1196115 (len 86)
+dev.flutter.pigeon.camera_android_camerax.ResolutionStrategy.pigeon_defaultConstructor
+--- offset 1198752 (len 70)
+dev.flutter.pigeon.camera_android_camerax.ProcessCameraProvider.unbind
+--- offset 1198824 (len 71)
+dev.flutter.pigeon.camera_android_camerax.ImageProxy.pigeon_newInstance
+--- offset 1199014 (len 60)
+Your profile is ready, {name}! What do you want to do today?
+--- offset 1201309 (len 104)
+How the player plays: e.g. baseliner, all-court, serve-and-volley, counterpuncher, aggressive baseliner.
+--- offset 1202639 (len 198)
+. Tell the player honestly why you need it, ask ONE question per message, store answers with save_player_profile (complete_onboarding first if the account does not exist), then call this tool again.
+--- offset 1207307 (len 66)
+- No metric names, no numbers, unless the player explicitly asked.
+--- offset 1207374 (len 62)
+- Never reuse a sentence you have already said to this player.
+--- offset 1207437 (len 74)
+- NEVER address the player by name. Not the first name, not the last name,
+--- offset 1217303 (len 71)
+Analysis tools from the coach's perspective (viewing a student's data).
+--- offset 1248404 (len 70)
+package:camera_platform_interface/src/types/video_capture_options.dart
+--- offset 1252091 (len 71)
+Attempting to stop a video recording while no recording is in progress.
+--- offset 1263381 (len 76)
+dev.flutter.pigeon.camera_android_camerax.Analyzer.pigeon_defaultConstructor
+--- offset 1263545 (len 87)
+dev.flutter.pigeon.camera_android_camerax.ProcessCameraProvider.getAvailableCameraInfos
+--- offset 1266112 (len 68)
+package:image_picker_platform_interface/src/types/camera_device.dart
+--- offset 1271699 (len 122)
+I'm seeing your back, not your side. Move the camera to the sideline so I can see you across the frame, and film it again.
+--- offset 1274557 (len 65)
+package:tennis_ai_2/screens/realtime_stroke_selection_screen.dart
+--- offset 1275336 (len 71)
+dev.flutter.pigeon.camera_android_camerax.CameraInfo.pigeon_newInstance
+--- offset 1282466 (len 81)
+The player's strongest shot / weapon, e.g. forehand, first serve, backhand slice.
+--- offset 1288964 (len 67)
+dev.flutter.pigeon.video_player_android.VideoPlayerInstanceApi.play
+--- offset 1291723 (len 62)
+package:camera_platform_interface/src/events/device_event.dart
+--- offset 1295177 (len 62)
+These drills target weaknesses detected in your last analysis.
+--- offset 1300768 (len 79)
+dev.flutter.pigeon.camera_android_camerax.ProcessCameraProvider.bindToLifecycle
+--- offset 1305480 (len 67)
+Video looks great! Full motion clearly visible. Ready for analysis.
+--- offset 1305934 (len 68)
+dev.flutter.pigeon.camera_android_camerax.Preview.pigeon_newInstance
+--- offset 1306764 (len 77)
+Video acceptable but lighting could be better. Analysis may be less accurate.
+--- offset 1330913 (len 217)
+End with: propose the drill below as a starting point for this fault, presented as a first suggestion drawn from this single analysis. Then say briefly that this is based on ONE analysis, and that doing a couple more 
+--- offset 1338698 (len 262)
+. The detailed metrics did not come through, so you cannot diagnose anything this time. In 2 sentences: give them the score, say the moment-by-moment detail is on the screen for them to tap through, and offer to look again. Do NOT invent a fault or a correction.
+--- offset 1342156 (len 218)
+Fetch the player's analysis session history (total sessions, average score, breakdown by stroke, and details of the most recent analysis including score, red metrics, and date) to answer questions about their progress.
+--- offset 1345049 (len 79)
+dev.flutter.pigeon.camera_android_camerax.ResolutionStrategy.pigeon_newInstance
+--- offset 1346869 (len 78)
+dev.flutter.pigeon.camera_android_camerax.Camera2CameraInfo.pigeon_newInstance
+--- offset 1351578 (len 82)
+dev.flutter.pigeon.camera_android_camerax.CameraStateStateError.pigeon_newInstance
+--- offset 1355476 (len 65)
+dev.flutter.pigeon.camera_android_camerax.VideoCapture.withOutput
+--- offset 1358331 (len 62)
+dev.flutter.pigeon.camera_android_camerax.ImageProxy.getPlanes
+--- offset 1358440 (len 69)
+dev.flutter.pigeon.camera_android_camerax.Recorder.pigeon_newInstance
+--- offset 1365076 (len 104)
+The player wants an analysis but has not said which stroke, and the conversation gives no reliable clue.
+--- offset 1371035 (len 336)
+\b((your|the)\s+(score|overall\s+score)\b|\d+\s*(/|out of)\s*100|\d+\s+(analys|session|video|serve|forehand|backhand)\w*\b|(you|you've|you have)\s+(done|completed|recorded|filmed)\b|(went|gone|moved)\s+from\s+(red|green)\b|(improved|progressed|got\s+better|got\s+worse)\s+(since|from|by)\b|last\s+(time|session|analysis)\s+(you|your)\b)
+--- offset 1372377 (len 67)
+dev.flutter.pigeon.camera_android_camerax.Camera.pigeon_newInstance
+--- offset 1373366 (len 72)
+dev.flutter.pigeon.video_player_android.AndroidVideoPlayerApi.initialize
+--- offset 1375462 (len 70)
+dev.flutter.pigeon.camera_android_camerax.ZoomState.pigeon_newInstance
+--- offset 1381516 (len 322)
+Record what the player wants to do THIS session, as soon as they say it in their own words -- e.g. 'I just want to do a drill today', 'I'm alone with my tripod', 'give me a full analysis'. Call this once, as soon as the intent is clear, so the app doesn't push the wrong flow. Do not ask the player to restate it once set.
+--- offset 1384256 (len 80)
+dev.flutter.pigeon.camera_android_camerax.FocusMeteringAction.pigeon_newInstance
+--- offset 1389267 (len 75)
+The camera was already in use, possibly by a higher-priority camera client.
+--- offset 1390116 (len 301)
+. In their language, explain in ONE honest sentence why the analysis needs it, then ask ONE question. As they answer, store each fact (save_player_profile, or complete_onboarding first if the account does not exist). When you have everything, call analyze_video yourself to resume what they asked for.
+--- offset 1390840 (len 73)
+dev.flutter.pigeon.video_player_android.VideoPlayerInstanceApi.setLooping
+--- offset 1393290 (len 122)
+Filming now. The player needs the clip to show one stroke, filmed from the side, whole body in frame, around five seconds.
+--- offset 1394630 (len 73)
+dev.flutter.pigeon.camera_android_camerax.ProcessCameraProvider.unbindAll
+--- offset 1394870 (len 72)
+dev.flutter.pigeon.camera_android_camerax.Preview.releaseSurfaceProvider
+--- offset 1395629 (len 69)
+Experienced player (setup instructions already skipped by the system)
+--- offset 1399922 (len 612)
+Change the language of the whole app -- menus, screens, your own voice and the microphone -- when the player asks for it: 'parle-moi en francais', 'switch to Spanish', 'can you speak my language', or when they answer your onboarding language check. Call it as soon as they ask; do not send them to the profile screen to do it by hand, and do not ask them to confirm. Only these are available: en, fr, es, it, de, zh, hi, pt, tr, ar. If they ask for anything else, say plainly that you do not have it yet and keep going in the language you are already using -- never call this with a code that is not on the list.
+--- offset 1402187 (len 62)
+Do you want to record now, or upload a video you already have?
+--- offset 1403938 (len 141)
+You already gave the positioning/filming instructions earlier in this session. Remove them and just tell the player to tap the camera button.
+--- offset 1406419 (len 70)
+Camera auto-detects which stroke is being hit, analyzes automatically.
+--- offset 1416302 (len 175)
+A clip is loaded and waiting. From here the player can trim it to the stroke, start the analysis, film again, or pick a different video. Nothing is analysed until they choose.
+--- offset 1420207 (len 72)
+dev.flutter.pigeon.camera_android_camerax.CameraState.pigeon_newInstance
+--- offset 1420644 (len 75)
+dev.flutter.pigeon.camera_android_camerax.Preview.pigeon_defaultConstructor
+--- offset 1428604 (len 131)
+Smart coaching tools for your tennis club. Member management, group performance tracking, and AI-assisted training for every court.
+--- offset 1434270 (len 60)
+startImageStream was called while a video is being recorded.
+--- offset 1440011 (len 89)
+dev.flutter.pigeon.camera_android_camerax.SystemServicesManager.pigeon_defaultConstructor
+--- offset 1442596 (len 69)
+dev.flutter.pigeon.video_player_android.AndroidVideoPlayerApi.dispose
+--- offset 1444741 (len 60)
+dev.flutter.pigeon.camera_android_camerax.Observer.onChanged
+--- offset 1445693 (len 73)
+Name of a specific metric to look up (e.g. TROPHY POSITION, STANCE WIDTH)
+--- offset 1446572 (len 314)
+Restart voice input when the player says it is not working -- 'the mic isn't picking me up', 'you're not hearing me', 'the microphone is stuck'. Call it once, then tell them to try again. If they say it still fails after this, do NOT call it again -- tell them plainly it may be a permission issue in iOS settings.
+--- offset 1457637 (len 72)
+[$provider] Saved auth profile: firstName=$firstName email=${user.email}
+--- offset 1458771 (len 76)
+dev.flutter.pigeon.camera_android_camerax.Observer.pigeon_defaultConstructor
+--- offset 1461662 (len 103)
+Make sure the video is max 5 seconds, side view, full body visible. You can trim it on the next screen.
+--- offset 1475264 (len 70)
+SYSTEM NOTE (the player did not write this): this COACH just chose to 
+--- offset 1480083 (len 111)
+Height at which the ball leaves the toss hand. Should be above eye level (player height - 10cm, -5cm to +25cm).
+--- offset 1480538 (len 62)
+package:camera_platform_interface/src/events/camera_event.dart
+--- offset 1481230 (len 73)
+dev.flutter.pigeon.camera_android_camerax.ImageCapture.pigeon_newInstance
+--- offset 1486419 (len 67)
+dev.flutter.pigeon.camera_android_camerax.ImageAnalysis.setAnalyzer
+--- offset 1497206 (len 70)
+dev.flutter.pigeon.video_player_android.VideoPlayerInstanceApi.seekTo$
+--- offset 1500050 (len 69)
+https://us-central1-tennis-ai-app-cde51.cloudfunctions.net/drillAgent
+--- offset 1500151 (len 60)
+package:tennis_ai_2/services/on_device_analysis_service.dart
+--- offset 1501875 (len 179)
+The body is tracked, but the player has their back to the camera through most of the clip. Left and right are swapped that way, so every angle would be measured on the wrong side.
+--- offset 1508323 (len 63)
+the full setup speech to a player who has already been given it
+--- offset 1516105 (len 84)
+' is a coach-only screen and this account is a player. Do not offer or attempt this.
+--- offset 1516376 (len 79)
+Camera not found. Please call the 'create' method before calling 'buildPreview'
+--- offset 1518910 (len 80)
+dev.flutter.pigeon.camera_android_camerax.ImageCapture.pigeon_defaultConstructor
+--- offset 1526368 (len 187)
+The camera was closed due to a fatal error. This may require the Android device be shut down and restarted to restore camera function or may indicate a persistent camera hardware problem.
+--- offset 1527718 (len 250)
+full_analysis: wants the complete record+analyze flow. drill_only: just wants a drill, no video analysis. solo_tripod: alone, using a tripod, needs recording guidance suited to that. quick_question: just asking something, not here to train right now.
+--- offset 1529364 (len 80)
+Learning profile (measured from this player's own history): they typically need 
+--- offset 1530427 (len 64)
+SYSTEM NOTE (the player did not write this): they just chose to 
+--- offset 1530493 (len 76)
+dev.flutter.pigeon.camera_android_camerax.Recorder.pigeon_defaultConstructor
+--- offset 1531988 (len 157)
+how to read what is on screen, once and briefly: red is outside the range the best players sit in, green is inside it. This is the only time you will say it.
+--- offset 1539335 (len 62)
+_PlayerMessagesScreenStateExt|_showNewCommunitySheet@132102456
+--- offset 1543642 (len 84)
+Hello! Let me load your errors from your last analysis. We will fix them one by one.
+--- offset 1548702 (len 92)
+dev.flutter.pigeon.camera_android_camerax.VideoRecordEventListener.pigeon_defaultConstructor
+--- offset 1552630 (len 81)
+dev.flutter.pigeon.camera_android_camerax.MeteringPointFactory.pigeon_newInstance
+--- offset 1558236 (len 70)
+WHAT YOU HAVE LEARNED ABOUT REACHING THIS PLAYER (from real outcomes):
+--- offset 1562237 (len 62)
+package:camera_platform_interface/src/types/exposure_mode.dart
+--- offset 1563584 (len 77)
+dev.flutter.pigeon.camera_android_camerax.QualitySelector.pigeon_newInstanceY
+--- offset 1567483 (len 784)
+Open an app screen. ONLY these exact destination values exist -- generated from the app's real route list (axel_capabilities.dart), so this is always in sync with what the app can actually show. Player-only and coach-only destinations are both listed here, but the app will refuse a coach-only one for a player account and vice versa. To show ONE specific drill's screen (with video, sets, reps), use open_drill_detail instead -- it needs an id, generic navigate can't carry one. Do NOT use this for 'serve_setup', 'serve_analysis', 'forehand_analysis', or 'backhand_analysis' when the player wants to record or analyze a stroke -- those look like the right destination but land on a calibration screen, not the camera. Use analyze_video instead; it opens the actual recording screen.
+--- offset 1575431 (len 81)
+ You don't yet know this player's learning pace, so don't conclude anything from 
+--- offset 1578240 (len 74)
+dev.flutter.pigeon.camera_android_camerax.ImageAnalysis.pigeon_newInstance
+--- offset 1578564 (len 202)
+Coach overview. Four stat cards: my students count, average analysis score (%), training plans, unread messages. Below: each student's recent sessions (Today/Yesterday, Completed / Analyzing / Pending).
+--- offset 1580146 (len 62)
+dev.flutter.pigeon.camera_android_camerax.Camera.getCameraInfo
+--- offset 1580765 (len 69)
+dev.flutter.pigeon.camera_android_camerax.ImageAnalysis.clearAnalyzer
+--- offset 1588324 (len 216)
+Change how fast you speak, when the player asks -- 'talk faster', 'you're going too fast', 'slow down a bit'. Apply it immediately and confirm in one short sentence. Do NOT offer this on your own; only when they ask.
+--- offset 1590283 (len 79)
+package:camera_platform_interface/src/method_channel/method_channel_camera.dart
+--- offset 1593656 (len 354)
+. Nothing flagged in this analysis. Open the conversation in 2-3 spoken sentences: their result is in and what it is (a score out of 100, never a percentage); on screen, red means outside the range the best players sit in and green means inside it, so nothing is red here; one more analysis would confirm the level holds. End on a real question and stop.
+--- offset 1597272 (len 77)
+Camera not found. Please call the 'create' method before calling 'initialize'
+--- offset 1598524 (len 67)
+dev.flutter.pigeon.camera_android_camerax.Preview.getResolutionInfo
+--- offset 1600161 (len 69)
+dev.flutter.pigeon.video_player_android.VideoEventChannel.videoEvents
+--- offset 1600451 (len 71)
+dev.flutter.pigeon.camera_android_camerax.CameraSize.pigeon_newInstance
+--- offset 1609469 (len 85)
+dev.flutter.pigeon.camera_android_camerax.VideoRecordEventFinalize.pigeon_newInstance
+--- offset 1609577 (len 83)
+dev.flutter.pigeon.camera_android_camerax.Camera2CameraInfo.getCameraCharacteristic
+--- offset 1611165 (len 83)
+Live coaching: skeleton overlay, real-time error correction while the student hits.
+--- offset 1614661 (len 87)
+dev.flutter.pigeon.camera_android_camerax.FocusMeteringActionBuilder.pigeon_newInstance
+--- offset 1615439 (len 102)
+Welcome to Real-Time Analysis! I will analyze your technique live. Let me guide you through the setup.
+--- offset 1615557 (len 116)
+Send a text message to the player's coach (if they have one). Use this when the player wants to contact their coach.
+--- offset 1616090 (len 83)
+dev.flutter.pigeon.camera_android_camerax.FallbackStrategy.lowerQualityOrHigherThan
+--- offset 1625302 (len 71)
+Video quality too low. Subject out of frame or too dark. Please retake.
+--- offset 1640273 (len 187)
+The player asked to analyze a stroke in conversation, but has not said HOW to give the video: record now (the camera screen) or upload a clip they already have. Two choices sit on screen.
+--- offset 1644226 (len 82)
+dev.flutter.pigeon.camera_android_camerax.CaptureRequestOptions.pigeon_newInstance
+--- offset 1651092 (len 89)
+Elite-level coaching with AI-powered analysis, periodization, and tournament preparation.
+--- offset 1654305 (len 275)
+camera: film the stroke now (default). gallery: the player already HAS a clip on their phone and wants to import it -- 'j'ai une video', 'je veux uploader', 'importer'. Choosing gallery opens the photo library directly; do not tell them to press a button, you are opening it.
+--- offset 1659392 (len 64)
+package:camera_android_camerax/src/rotated_preview_delegate.dart
+--- offset 1661260 (len 82)
+dev.flutter.pigeon.video_player_android.VideoPlayerInstanceApi.getBufferedPosition
+--- offset 1663383 (len 63)
+Perfect. I assigned you a new drill. Check your training plans.
+--- offset 1664093 (len 69)
+dev.flutter.pigeon.camera_android_camerax.LiveData.pigeon_newInstance
+--- offset 1664626 (len 111)
+). The analysis needs a portrait frame; a square crop distorts the scale used to convert pixels to centimetres.
+--- offset 1678519 (len 64)
+dev.flutter.pigeon.camera_android_camerax.PendingRecording.start
+--- offset 1684348 (len 74)
+Maximum height reached by the ball toss. Should be 1.8-2.3x player height.
+--- offset 1694327 (len 67)
+startVideoRecording was called when a recording is already started.

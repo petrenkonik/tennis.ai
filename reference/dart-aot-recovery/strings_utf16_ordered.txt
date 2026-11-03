@@ -1,0 +1,2951 @@
+106074	ÀàÐÈÄÂ
+292301	WHAT IT COSTS THEM ON THE BALL (established fact, from the methodology 
+292445	 do not invent another): 
+294207	stycze
+296523	Partilhar
+297008	naming your source 
+297048	 this is where you find out you do not know
+297184	n: $modalRouteContentName
+298348	 EXTENSION PHASE
+299544	[Analysis] Cloud analysis done 
+299608	 score=
+299856	$modalRouteContentName içeri
+299914	ini kapat
+301236	 Axel cherchera lui-même
+302205	 OBJECTIVE
+302227	Automate the backhand unit turn where only the torso pivots 
+302349	 feet follow naturally. The #1 mistake (Feel Tennis): turning the whole body from toe to head instead of just the torso.
+302597	 DEVICE
+302613	No equipment. Binary test: weight stays forward after pivot = 
+302739	 / weight shifts backward = 
+302805	 HOW TO DO IT
+302833	Ready position facing net. On signal "BACKHAND!", pivot only your torso (waist up) about 90°. Feet stay in place or pivot slightly 
+303097	 they do NOT step backward. Both hands stay on the racket and naturally pull the torso. Check: is your weight still forward? Then add a forward step + swing.
+303417	 KEY POINTS
+303443	 Torso turns FIRST 
+303483	 feet follow, they don't lead (Feel Tennis)
+303573	 Back foot must NOT step backward 
+303643	 weight goes backward if it does
+303711	 Both hands on racket pull the torso naturally
+303807	 Head stays facing the net 
+303863	 only trunk turns
+303901	 Front foot advances AFTER the torso pivot
+303993	 PROGRESSION
+304019	1. Static pivot on signal, verify weight stays forward
+304129	2. Pivot + forward step + short swing on soft ball
+304231	3. Rally with torso leading every backhand pivot
+304333	 WHAT TO LOOK FOR
+304371	 Torso at 90° + weight forward = correct pivot
+304467	 Back foot steps backward = whole body turning (Feel Tennis error #1)
+304609	 Weight shifted backward = backward motion instead of forward
+304739	 Tomaz Mencinger Feel Tennis ("The Unit Turn In Tennis")
+305022	Sdílet
+305391	[Axel] réponse d'une conversation refermée 
+305479	 abandonnée
+306105	 seconds. On a clip this long the moment detector finds several candidate strokes and rarely keeps the right one, so the numbers end up describing a different swing than the player expects. One stroke, from the first step to the follow-through 
+306595	 around five seconds 
+306639	 is enough. They can trim it on the next screen without filming again.
+309560	Atsvaidzin
+310013	Not in an analysis flow yet. The player is navigating the app normally.
+310157	Two capture buttons sit at the bottom of your own chat screen, always visible to the player: a CAMERA button (film the stroke now, in-app) and an UPLOAD button (pick a clip already on the phone). When a player says they want an analysis, ask which of the two they want BEFORE giving any filming instruction 
+310773	 you cannot know whether they are on court about to play or at home with a clip already shot. Both buttons work; neither is the default.
+311047	Two equally valid ways to hold the camera: a tripod/prop (bag, bench, fence) OR another person filming 
+311255	 a coach, a partner, a hitting partner. Ask which one they have rather than assuming a tripod. 'No other people on court' means nobody else IN FRAME; the person filming stands off-court at the sideline/baseline corner and does not break that rule.
+312254	The correction could NOT be saved. Say so honestly in one short sentence 
+312402	 do not thank them as if it had been recorded.
+312808	 $tabIndex 
+312834	 $tabCount
+312864	EEEE, d 
+317730	 if they are asking you to continue, pick up from there instead of starting over. Otherwise ignore this entirely.]
+320738	 buffer ignoré
+322278	i cùng
+323232	'., d-MMMM
+323284	 PROGRESSION
+324823	ACTIVE 
+324935	$modalRouteContentName 
+325446	anything about their technique 
+325510	 you have not seen this swing yet
+326115	This is the authored drill for this fault. Give it in your own words, in plain body sensations, but do not change what it asks the player to DO. If they already had it, say so and reframe it 
+326499	 never hand back the same wording twice. If alternatives with other equipment are listed, offer the choice based on what the player actually has on court.
+327713	Counting down 15 seconds. The player is walking into position. The screen speaks the numbers 
+327901	 say nothing over them.
+328528	 OBJECTIVE
+328550	Automate immediate recovery to center after every backhand. "Ready, Rally and Recover" (USTA).
+328746	 DEVICE
+328762	Two cones: hitting point + center court. Binary test: center cone touched before partner hits = 
+328956	 / not reached = 
+329000	 HOW TO DO IT
+329028	Hit backhand, immediately shuffle to center cone. Touch it and split step when partner hits next ball. Rhythm: hit 
+329260	 rebalance 
+329284	 shuffle 
+329304	 split step 
+329330	 ready.
+329350	 KEY POINTS
+329376	 First recovery step starts IMMEDIATELY after hit
+329478	 Lateral shuffles 
+329516	 no crossing feet
+329554	 Split step when opponent hits
+329618	 Body stays low during recovery
+329688	 PROGRESSION
+329714	1. Hit + recovery to cone, no second ball
+329798	2. Hit + recovery + split step + second ball
+329888	3. Continuous rallies with center recovery
+329978	 WHAT TO LOOK FOR
+330016	 Cone touched before partner hits = efficient recovery
+330128	 Cone not reached = too slow
+330188	 Standing still after hit = no recovery awareness
+330294	 USTA "Ready Rally Recover"
+330442	ccc, dd.MM.y '
+330847	 because it is the earliest thing in the chain. Name that starting moment plainly by its number 
+331041	 do not list or name any of the other moments here, just the count and the one you are starting with. Then, in ONE plain sentence, say WHAT the fault at that moment actually is 
+331397	 the exact one the drill below targets, described in what their body does 
+331547	 so they know precisely what you are about to work. Do NOT stop at just "Moment 
+331818	$modalRouteContentName 
+332904	etrtletje
+333766	h:mm:ss
+335858	 MMM d
+335872	 (EEE)
+336393	[AXEL SPEAKS 
+336421	 situation: 
+337896	 OBJECTIVE
+337918	Achieve a deep racket drop behind your back 
+338008	 the "back scratch" position 
+338068	 that maximizes the acceleration arc toward contact. The deeper the drop, the longer the acceleration path.
+338290	 DEVICE
+338306	A small towel or t-shirt tucked into the back of your collar, hanging freely between your shoulder blades at about 30-35cm below the collar. The racket must touch or brush the towel during the drop phase. Binary test: racket touches towel = 
+338790	 / misses towel = 
+338836	 HOW TO DO IT
+338864	Tuck the towel in your collar. Perform your service motion. During the racket drop phase (between trophy position and acceleration), the racket head should swing down behind your back and touch the towel. If the racket doesn't reach the towel, the drop is too shallow.
+339406	 KEY POINTS
+339432	 The drop happens by RELAXING the arm 
+339510	 not by forcing it down
+339560	 The wrist must be loose 
+339612	 a tense wrist prevents deep drop
+339682	 The towel provides tactile feedback 
+339758	 you feel the brush
+339800	 A shallow drop = short acceleration arc = less serve speed
+339926	 PROGRESSION
+339952	1. Slow motion, feel the racket touch the towel
+340048	2. Normal speed, towel must move from the contact
+340148	3. Full serve, deep drop is automatic
+340228	 WHAT TO LOOK FOR
+340266	 Towel moves = racket reached deep enough
+340352	 Towel untouched = drop too shallow, relax the arm more
+340466	 Arm feels tense = wrist locked, focus on relaxation
+340578	 USTA Player Development, Feel Tennis, UTR Sports
+341237	 [AnalyzeService] 
+341274	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+341374	$modalRouteContentName 
+344648	 $tabIndex 
+344674	 $tabCount
+345338	i kvartal
+346183	duminic
+346693	 OBJECTIVE
+346715	Memorize the exact height and full arm extension at the serve contact point. Contact at the optimal height can increase serve speed by 15-20% with no extra effort.
+347049	 DEVICE
+347065	Stand facing the court fence at about 60-70cm distance. Toss the ball and hit it directly against the fence at maximum extension. Binary test: arm perfectly straight + strings pressed against fence = 
+347467	 / elbow bent = 
+347509	 HOW TO DO IT
+347537	Stand facing the fence at the right distance. Toss the ball to target height 
+347693	 arm fully extended upward. Hit the ball against the fence at maximum extension 
+347855	 arm must be perfectly straight, strings and ball pressed against the fence. Hold the position 1 second to memorize the full extension feeling.
+348147	 KEY POINTS
+348173	 Arm must be PERFECTLY straight at contact
+348261	 Strings and ball pressed against the fence
+348351	 Hold position to memorize the sensation
+348435	 Adjust toss height if needed to find optimal contact
+348549	 PROGRESSION
+348575	1. Low toss, comfortable contact height
+348655	2. Correct target height, full extension
+348737	3. Maximum height, absolute extension + slight leg push
+348853	 WHAT TO LOOK FOR
+348891	 Racket pressed high, arm straight = perfect contact point
+349011	 Elbow bent at contact = contact too low, extend more
+349121	 Ball goes sideways = toss drifted, adjust position
+349231	 USTA Player Development, Sportplan
+349993	$tabCount
+350013	 $tabIndex 
+350140	[Startup] 
+350164	 RevenueCat indisponible 
+350216	 l'app démarre quand même, l'écran d'abonnement affichera l'erreur : 
+351374	 moments, unsorted. It does not tell them what matters 
+351486	 that is your job.
+351793	 $modalRouteContentName
+353179	a correction, a drill or a metric 
+353249	 you have not seen them hit
+354228	Obnovi
+354260	 MMMM d
+354616	 OBJECTIVE
+354638	Learn to choose the right stance (open, semi-open, closed) based on ball position and time available. The choice is tactical, not personal preference.
+354946	 DEVICE
+354962	Coach announces "CLOSED", "SEMI-OPEN" or "OPEN" before each ball. Binary test: correct stance + stable shot = 
+355184	 / wrong stance = 
+355230	 HOW TO DO IT
+355258	Coach announces stance before each feed. Player executes. After 15 announced balls, coach stops 
+355452	 player chooses based on ball position. Central ball with time = closed. Wide ball = open. Most situations = semi-open.
+355696	 KEY POINTS
+355722	 Closed: front foot toward net, weight transfer 
+355820	 when time allows
+355858	 Open: feet parallel, rotation for power 
+355942	 for wide balls
+355976	 Semi-open: compromise 
+356024	 most used by pros
+356064	 Choice happens DURING movement 
+356130	 not after stopping
+356176	 PROGRESSION
+356202	1. Coach announces stance on soft balls
+356282	2. No announcement 
+356322	 player decides
+356354	3. Rally with natural stance selection
+356436	 WHAT TO LOOK FOR
+356474	 Right stance for situation + stable shot = good reading
+356590	 Open on central ball = missed opportunity
+356678	 Same stance every time = no adaptation
+356764	 USTA, Bahamonde & Knudson 2003
+358665	 Krist
+359287	Ask me anything you want 
+359339	 I'm the tennis LLM. I can answer all your questions.
+360263	Build a personalized match game plan. Call this when the player wants to prepare for a match, understand how to play a specific opponent, or asks for tactics for an upcoming game ('I play a pusher tomorrow', 'how do I beat a big server', 'prépare mon match'). Pass whatever the player told you about the match 
+360885	 leave unknown fields out, and ask ONE short question first if you know nothing about the opponent. It gathers the player's own profile (style, weapon, self-reported weakness), their recurring measured strengths/weaknesses from past analyses, and relevant tactical passages from the knowledge base, then returns a structured brief. Turn that brief into a clear, concrete game plan in your own words (2-4 key points), grounded in what comes back 
+361777	 never invent tactics.
+364664	 [AnalyzeService] player_height_cm    : 
+365892	Open the results screen for the player's most recent completed analysis AND get the EXACT fault breakdown. Call this whenever the player asks about their last analysis or their errors 
+366262	 how many faults, WHERE they are, which moment has what. The result includes `score`, `strokeMoments` (the stroke's moments), `totalFaults`, `faultsByMoment` (e.g. {"M1":3,"M2":1,"M3":3,"M5":2}) and `faultNamesByMoment` (the exact faults per moment). This is GROUND TRUTH computed by the code 
+366850	 base every statement about the analysis on it, and NEVER say all faults are on one moment unless faultsByMoment shows exactly that. Axel stays visible as overlay.
+368290	ervence
+369614	Present it in your own words, sized to the player's level 
+369732	 do not paste the text above.
+369824	HH:mm '
+370342	 sessions on record 
+370384	 too few to place this player honestly. Do not state a percentile.
+373560	MMMM d 
+373626	LLL y '
+374943	Here's your analysis 
+374987	 want me to walk you through it?
+378158	 analysis 
+378180	 Score: 
+378711	 $modalRouteContentName
+379639	 STEP 2 
+379657	 Fetching module_stats for 
+380028	[Axel] analyse bloquée 
+380076	 note déjà en cours, pas de relance
+383066	Put your phone on a tripod and play your stroke 
+383164	 I catch it and start the analysis on my own.
+383701	Actualiza
+384717	that the app is broken 
+384765	 the clip is the problem
+387503	etrtek
+388974	d MMM y '
+389073	 OBJECTIVE
+389095	Feel the real impact of legs on serve power by contrasting seated serving (no legs) with full triple extension (with legs). The difference makes the leg contribution immediately obvious.
+389475	 DEVICE
+389491	A chair or bench placed directly behind the baseline. Player sits for phase 1, stands for phase 2. Binary test: standing contact height > seated contact height = 
+389825	 HOW TO DO IT
+389853	Phase 1: Sit on the chair and serve 5 balls using only arms and trunk. Memorize the power and effort. Phase 2: Stand up and serve 5 balls with deep knee bend and explosive push through your toes. Feel the difference. Phase 3: Alternate seated and standing to amplify the contrast. Phase 4: Standing only, reproduce full extension every serve.
+390543	 KEY POINTS
+390569	 Push comes from the toes 
+390623	 not just rising on tiptoes
+390681	 Hips rise toward the sky 
+390735	 movement is vertical not forward
+390805	 Leg push starts BEFORE the arm accelerates
+390895	 Alternate seated/standing to amplify the contrast
+391003	 PROGRESSION
+391029	1. Seated only 
+391061	 arms and trunk, memorize baseline power
+391143	2. Standing with deep knee bend and explosive push
+391245	3. Alternate seated/standing 
+391305	 feel difference each time
+391359	4. Standing only 
+391395	 full extension every serve
+391455	 WHAT TO LOOK FOR
+391493	 Clear power difference between seated and standing = legs engaged
+391629	 No difference = legs not contributing, exaggerate the knee bend
+391761	 Push goes forward instead of up = horizontal motion, push vertically
+391907	 ITF, The Tennis Menu (drill #4), Tennis Evolution
+392185	 OBJECTIVE
+392207	Feel the contribution of legs to backhand power through seated/standing contrast. Same principle as serve S-06 and forehand F-12.
+392473	 DEVICE
+392489	No equipment. Binary test: noticeable power difference between knees and standing = 
+392659	 / no difference = 
+392707	 HOW TO DO IT
+392735	Kneel on both knees, hit 5 backhands with arms and trunk only. Stand up, hit 5 backhands with deep knee bend and explosive push. Alternate one from knees, one standing. The two-handed backhand benefits greatly 
+393157	 both hands stabilize while legs drive.
+393241	 KEY POINTS
+393267	 Knee flexion BEFORE push is mandatory
+393347	 Push from back foot 
+393391	 feel glutes contract
+393437	 If no difference = legs not working
+393513	 Two-handed backhand benefits even more from leg drive
+393629	 PROGRESSION
+393655	1. Slow alternation with pause to feel the difference
+393763	2. Rapid alternation to amplify contrast
+393845	3. Standing only 
+393881	 maximum push on every shot
+393941	 WHAT TO LOOK FOR
+393979	 Clear power difference = legs engaged
+394059	 No difference = legs inactive
+394123	 No flexion before push = no loading
+394203	 ITF "hitting from knees", Mouratoglou ("Use your legs")
+396328	 Front camera is great for positioning yourself.
+396428	For accurate stroke analysis, switch back to the rear camera.
+397016	. MMM d, EEE
+397061	 OBJECTIVE
+397083	Rediscover the natural throwing arc of the hitting arm. By replacing the racket with a ball throw, you bypass tension and find the fluid motion that produces power.
+397419	 DEVICE
+397435	Hold a ball in your hitting hand instead of the racket. Your other hand tosses normally. At the moment of impact, throw the ball into the service box. Binary test: ball in box = 
+397793	 / net or out = 
+397835	 HOW TO DO IT
+397863	Stand in serve position with a ball in your hitting hand. Full motion 
+398005	 toss with your left arm, natural backswing with your right. Throw the ball into the service box at the moment where racket impact would occur. Do 5 reps to the deuce box, then 5 to the advantage box.
+398411	 KEY POINTS
+398437	 Hitting arm rises to ear level before throwing
+398535	 Dominant shoulder higher than non-dominant at release
+398647	 Trunk makes a half-turn 
+398699	 back slightly facing the net
+398761	 Ball travels upward, not horizontally
+398845	 PROGRESSION
+398871	1. Slow motion throw, focus on the natural arc
+398965	2. Normal speed, aim for the service box
+399047	3. Alternate deuce and advantage targets
+399133	 WHAT TO LOOK FOR
+399171	 Ball in service box with correct arc = natural throwing motion
+399301	 Ball hits net = release point too low
+399381	 Ball goes long = release too late
+399457	 USTA Player Development, Feel Tennis
+400152	Your weight is staying on your back foot. Step into the ball with your front foot 
+400318	 the transfer of weight forward adds power and depth to your shot.
+402502	Selecta
+403126	You have 24 hours of full access 
+403194	 enjoy! Try every feature, then subscribe to keep improving your game.
+403646	 dropped 
+403666	 already said or queued
+411546	 d/M/y
+412464	Închide
+412480	i $modalRouteContentName
+413318	'. d-MMM, EEE
+413731	 écran d'accueil
+415850	 Hristos
+416515	eho letopo
+416927	d MMMM, y 
+418143	EEE, d MMM y '
+420254	[RC] getOfferings 
+420292	 current: 
+420461	Quay l
+421190	 resolved metric(s) on record). You do not know how fast this player internalizes a correction 
+421382	 do not assume they are stuck too early.
+424022	The player is reviewing/trimming a video before analysis. No metrics exist yet. Do not diagnose anything.
+424234	This screen offers exactly THREE actions, and nothing else:
+424354	  1. ANALYZE 
+424382	 send the clip for biomechanical analysis.
+424468	  2. TRIM YOUR STROKE 
+424514	 drag the two handles to keep only the stroke itself (PREVIEW SELECTION replays the selection).
+424706	  3. RETAKE VIDEO 
+424744	 discard this clip and get another one.
+424824	Name all three when the player lands here: it is the only moment they can still trim or replace the clip, and nothing on screen tells them the handles are draggable. Do not invent a fourth option.
+425218	The ANALYZE button can be disabled when the clip is judged too low quality 
+425370	 if the player says it will not start, that is why, and the answer is RETAKE VIDEO, not waiting.
+426290	lapkri
+426339	 $tabIndex 
+426373	 $tabCount
+426530	DO NOT explain red and green. They already know 
+426628	 you told them on a previous analysis, and repeating it is talking down to them.
+427187	' MMM'
+427203	' d. EEE
+432330	[StorageService] STEP 6 
+432380	 Session updated: videoUrl set, status: analyzing 
+432694	That reasoning is sound. Now write ONLY the message the player reads 
+432834	 the conclusion you reached, in your own coaching voice. No thinking block, no numbered analysis, no preamble, no meta commentary. Your entire response IS what the player hears.
+434426	 itself carries several faults, say there are several and that you are taking the one that matters 
+434626	 do not enumerate the others.
+434686	- The one correction goes in plain language, no metric codes.
+434810	- Adapt depth to level: 
+435449	[ANALYSIS DATA 
+435481	 reason from this, don't follow a script]
+435567	Score: 
+435841	[Auth] Subscription updated 
+435899	 isPro: 
+436813	' was a problem you coached before and it is now corrected. Acknowledge the progress in one short clause before moving to the next priority 
+437095	 earned progress should be named.
+438490	 menu di chuy
+440911	MMMM y '
+441753	 [CoachDashboard] Loading students for coach uid: 
+447383	 [ResultsScreen] strokeType: 
+449693	 You unlocked 1 free year!
+450350	[DATA ALREADY RETRIEVED FOR THIS QUESTION 
+450436	 it is here, below. Do NOT call a tool to fetch it again; answer from it directly.]
+452588	EEEE, d MMMM y '
+455416	[LocalNotif] Notification tapped 
+455484	 payload: 
+455714	ím letopo
+457887	[RC] Initializing without user 
+457951	 anonymous session
+458594	Pilot mode: AUTOMATIC 
+458640	 you drive everything, including going straight to recording when asked
+461255	Upozorn
+464100	$modalRouteContentName 
+466085	Main hub 
+466105	 Axel itself is the home experience; the classic view behind it lists the training modules (Coach Mode, Auto Detect, Serve/Forehand/Backhand analysis, AI Drills) with per-stroke progress. Bottom navigation everywhere: Home, Video, Analysis, Dashboard, Profile.
+468316	 RC appUserID: 
+468578	 [CoachDashboard] Found 
+474308	[RC] Customer info updated 
+474364	 isPro: 
+477268	 MMMM d
+477571	[OnDevice-RT] Calibration failed 
+477639	 using height estimate
+478653	 OBJECTIVE
+478675	Keep the non-dominant arm extended upward during the acceleration phase. This arm acts as a balance counterweight and helps maintain the shoulder tilt that produces power.
+479025	 DEVICE
+479041	After tossing the ball, the tossing arm stays extended upward with palm open toward the sky. A second ball can be placed in balance on the open palm. Binary test: ball stays balanced on palm = 
+479429	 / ball falls = 
+479471	 HOW TO DO IT
+479499	Place a second ball on your open palm before starting. Toss the serve ball normally. Your tossing arm stays up with the palm open. During the hitting phase, the second ball should stay balanced on your palm. If it falls, your non-dominant arm collapsed too early.
+480031	 KEY POINTS
+480057	 Tossing arm stays UP during the entire acceleration
+480165	 Palm faces the sky 
+480207	 not turned inward
+480247	 The arm acts as a counterweight for balance
+480339	 Collapsing the arm early = loss of shoulder tilt = loss of power
+480477	 PROGRESSION
+480503	1. Without second ball 
+480551	 just keep arm up, partner checks
+480619	2. With second ball in balance 
+480683	 feel the stability needed
+480737	3. Full serve 
+480767	 maintain arm position from muscle memory
+480855	 WHAT TO LOOK FOR
+480893	 Second ball stays balanced = arm stayed up correctly
+481003	 Ball falls early = arm collapsed before contact
+481103	 Ball falls during acceleration = arm pulled down too fast
+481227	 Feel Tennis, USTA Player Development
+482151	Save or update known information about the player. Basics: first name, last name, age, height, weight, handedness, level, goal. Tennis-companion fields 
+482457	 save these whenever the player reveals them so Axel knows them as a player, not just a swing: playStyle, dominantSurface, competes, mainWeapon, perceivedWeakness, matchProblem, playFrequency. Plus axelNotes for any other useful free-form context (injuries, schedule, anything worth remembering across sessions). Call this proactively whenever the player says something important. Only fill in the fields you actually know 
+483305	 never guess.
+485411	Ulashish
+487112	HH:mm 
+488695	EEEE, d MMMM y '
+490022	INSTRUCTIONS:
+490050	0. Reason in a <thinking> block first, as always 
+490150	 work out the causal story and what you've already told this player, THEN write.
+490312	1. Call search_biomechanics_knowledge with query: "
+490543	LLLL y '
+492250	Otvori
+492264	 naviga
+492280	nú ponuku
+493255	Naskenova
+493472	Insera
+493606	 say the number once, plainly, then that you are going to go through them one at a time with them, starting at Moment 
+496006	Subscribe to keep training with Axel 
+496082	 full swing analysis, real-time coaching and unlimited chat.
+496581	Dialoglodzi
+498150	 $modalRouteContentName
+498491	Compartir
+500413	 OBJECTIVE
+500435	Transfer weight from back foot to front foot during the backhand swing. The body "enters the ball" 
+500635	 not waits for it.
+500679	 DEVICE
+500695	Closed stance only. Binary test: weight on front foot at contact = 
+500831	 / weight on back foot = 
+500891	 HOW TO DO IT
+500919	Closed stance, weight on back foot, knee flexed. Partner feeds soft ball. Transfer weight forward during swing 
+501143	 hit at the moment weight arrives on front foot. The sensation: your body "enters the ball." Check after contact: is weight on front foot?
+501425	 KEY POINTS
+501451	 Weight transfers DURING the swing 
+501523	 not before, not after
+501571	 Front foot advances TOWARD the ball
+501647	 Front knee flexes slightly as weight arrives
+501741	 In open stance, transfer is replaced by rotation 
+501843	 this drill is closed stance
+501907	 PROGRESSION
+501933	1. Closed stance, soft ball, focus only on transfer
+502037	2. Normal ball, verify weight finishes on front foot
+502143	3. Alternate closed (transfer) and open (rotation) based on ball
+502277	 WHAT TO LOOK FOR
+502315	 Weight on front foot at contact = correct transfer
+502421	 Weight still on back foot = no transfer, shot lacks depth
+502541	 Body falls forward after = excessive transfer, control balance
+502675	 Mouratoglou Academy, ITF Elliott 2006
+503147	 OBJECTIVE
+503169	Master toss placement for different serve types using the clock face concept. 12 o'clock = flat serve, 11 o'clock = slice, 1 o'clock = kick (for right-handers).
+503497	 DEVICE
+503513	A circle drawn on the court with chalk or tape (about 30cm diameter) centered where the ball should land if not hit. Positions 11h, 12h and 1h are marked clearly. Binary test: ball lands at the correct clock position = 
+503953	 / wrong position = 
+504003	 HOW TO DO IT
+504031	Draw the clock circle at the ideal toss landing spot. For a flat serve, toss to 12 o'clock. For a slice serve, toss slightly to 11 o'clock. For a kick serve, toss to 1 o'clock. Practice each type 10 times, then mix randomly.
+504485	 KEY POINTS
+504511	 12 o'clock = flat serve (straight behind the ball)
+504617	 11 o'clock = slice serve (contact on the right side of ball)
+504743	 1 o'clock = kick serve (contact on the left side, brush up)
+504867	 For left-handers: directions are reversed
+504959	 PROGRESSION
+504985	1. Practice each clock position separately (10 tosses each)
+505105	2. Alternate between positions on each toss
+505193	3. Full serves 
+505225	 toss to correct position for intended spin
+505317	 WHAT TO LOOK FOR
+505355	 Correct clock position + matching spin = toss mastered
+505469	 All tosses to same spot = no variation between serve types
+505591	 Toss too far from clock = inconsistent tossing motion
+505707	 USTA coaching methodology, multiple coaching sources
+762127	Tìm ki
+762141	m trên web
+764570	 OBJECTIVE
+764592	Keep the dominant wrist and racket head above the hip during backhand preparation. High preparation allows a natural descending-ascending swing loop.
+764898	 DEVICE
+764914	Partner checks from front after each pivot. Binary test: wrist above hip AND racket head above wrist = 
+765122	 / either below = 
+765168	 HOW TO DO IT
+765196	Execute 10 unit turns toward backhand, freeze in preparation position. Partner announces "HIGH" (correct) or "LOW" (incorrect). Correct until wrist is systematically above hip and racket head above wrist. Then add ball feeds.
+765652	 KEY POINTS
+765678	 Dominant wrist above or level with hip 
+765760	 never below
+765788	 Racket head above wrist (angle 4-75°)
+765868	 Both hands stay on racket during check
+765950	 High preparation enables the natural swing loop
+766054	 PROGRESSION
+766080	1. Pivot + freeze + partner visual check
+766162	2. Pivot + hit on soft ball, partner calls "HIGH" or "LOW"
+766280	3. Rally maintaining high preparation on every backhand
+766396	 WHAT TO LOOK FOR
+766434	 Wrist above hip + racket head above wrist = correct preparation
+766566	 Wrist below hip = preparation too low
+766646	 Racket head pointing down = no acceleration potential
+766762	 Mouratoglou Academy ("racket head above wrist")
+768714	 $tabIndex 
+768754	 $tabCount
+769651	=QeyeyÉ)))ñð
+769691	=QeyeyÉ)))ñð
+769731	=QeyeyÉ(((ñð
+769771	<PdxdxÈ(((ñð
+769811	=PdydxÉ(((ñð
+769851	=QdxeyÉ(((ñð
+769891	=QexeyÉ(((ñð
+769931	=QeyeyÉ 
+769971	=QeyeyÉ(((ñð
+770011	=QeyeyÉ(((ñð
+770051	=QeyeyÉÈÈÜñð
+770091	=QeyeyÈÜÜÜñð
+770131	<PdxdxÈ(((ðð
+770171	=QeyeyÉ)))ðð
+770211	<PdxdxÈ
+770251	=Qeyey
+770291	=Qeyey
+770331	=Qeyey
+770371	=QeyeyÉ
+770411	=Qeyey
+770451	=Qeyey
+770491	=Qeyey
+770531	=QeyeyÉ
+770571	=QeyeyÉ(((ñð
+770611	=QeyeyÉ(((ñð
+777831	daryti
+778226	 [AnalyzeService] is_left_handed      : 
+778703	 [ResultsScreen] allMetrics count: 
+780368	'. d MMMM, EEEE
+781844	 well past their own pace.
+782947	7-day free trial 
+782983	 then Pro
+784216	QQQQ 'n
+785186	 OBJECTIVE
+785208	Develop the windshield wiper follow-through that creates heavy topspin on the modern forehand. The racket rolls over the ball like a windshield wiper.
+785516	 DEVICE
+785532	Stand next to a fence. After contact, racket must brush the fence in a windshield wiper motion. Binary test: racket brushes fence = 
+785798	 / racket stops short = 
+785856	 HOW TO DO IT
+785884	Stand sideways next to the fence. Swing your forehand and let the racket brush against the fence in a wiper motion 
+786116	 rolling over and finishing on the same side as your hitting arm. Feel the rolling sensation over the ball.
+786336	 KEY POINTS
+786362	 Racket rolls OVER the ball like a windshield wiper
+786468	 Follow-through finishes on the SAME SIDE as the hitting arm
+786592	 This is the modern forehand finish 
+786666	 different from classic over-shoulder
+786744	 The wiper creates heavy topspin with less arm effort
+786858	 PROGRESSION
+786884	1. Slow wiper motion against fence, feel the roll
+786984	2. Normal speed, racket must brush fence
+787066	3. On court without fence, reproduce the same motion
+787176	 WHAT TO LOOK FOR
+787214	 Racket brushes fence in wiper motion = correct modern finish
+787340	 Racket stops before fence = incomplete follow-through
+787452	 Racket goes over shoulder = classic finish, not wiper
+787568	 Tomaz Mencinger Feel Tennis windshield wiper drill
+789798	[OnDevice] 
+789824	 Calibration failed 
+789866	 using height estimate
+793640	 [CoachHome] Query returned 
+793916	tvrtok
+794269	Bildiri
+794554	 $modalRouteContentName
+795602	d.MM.y '
+795663	 [AnalyzeService] URL: https://tennis-ai-analysis-v2-w4eburiouq-uc.a.run.app/v1/analysis/analyze
+796074	 [AnalyzeService] model_complexity    : 1
+796828	QQQ y '
+796900	 [AnalyzeService] Status: 
+797732	 ALREADY PRESCRIBED BEFORE without resolving it, so re-frame it differently or explain what to change in how they do it.
+798861	a bare 'I'm ready when you are' 
+798927	 you brought them here, so say what to do here
+800242	im kutusu
+803007	 do not talk around it with vague phrasing like "the earliest thing in the chain" instead of naming it. Abraham, 31/07 (later still): naming the moment number is not the same thing as a metric code 
+803405	 metric names/codes (e.g. TRUNK_ROTATION) stay hidden as before, but "Moment 1", "Moment 2" etc. are how the player is meant to track which one you are on, on screen and in conversation alike. It is the earliest link in the chain that is broken, which is why it comes first 
+803955	 say so in one clause, because "we start here" without a reason sounds arbitrary. State the TOTAL number of points flagged (
+806039	 [ResultsScreen] _analysis after setState: 
+806707	 [AnalyzeService] video_storage_path : 
+806936	that the analysis is impossible 
+807002	 it is not, only less reliable
+807209	' MMMM'
+808026	Krisztus el
+808730	 Reset session status failed: 
+809555	 OBJECTIVE
+809577	Activate the non-dominant hand as an active guide during the unit turn. The non-dominant hand holds the racket throat and "pushes away" at separation.
+809885	 DEVICE
+809901	Tennis ball or 0.5L water bottle held in non-dominant hand against racket throat. "Push away" the object at separation. Binary test: object held during pivot + push away visible = 
+810263	 / object drops = 
+810309	 HOW TO DO IT
+810337	Hold a tennis ball against the racket throat with your non-dominant hand. Execute your unit turn 
+810533	 the hand actively guides the racket back by pushing the throat. When the forward swing begins, "push away" the ball toward the incoming ball. If the ball drops during the pivot, your hand wasn't active enough.
+810959	 KEY POINTS
+810985	 Non-dominant hand PUSHES the throat during pivot 
+811087	 doesn't just follow
+811131	 Separation happens when forward swing begins 
+811225	 not during pivot
+811263	 After separation, "push away" toward the incoming ball
+811377	 If ball drops = hand not active enough
+811463	 PROGRESSION
+811489	1. Slow pivot with ball, verify it doesn't drop
+811585	2. Pivot + swing on soft ball, "push away" at separation
+811699	3. Rally without object, reproduce the activation from memory
+811827	 WHAT TO LOOK FOR
+811865	 Ball held during pivot + push away at separation = correct guide
+811999	 Ball drops during pivot = hand inactive, grip more firmly
+812119	 Arm drops passively after separation = "dead left arm"
+812237	 Tomaz Mencinger Feel Tennis ("dead left arm", push away drill)
+812937	 $tabIndex
+812959	 $tabCount-
+814683	óng $modalRouteContentName
+815963	 and FULLY EXPLAIN the new priority fault 
+816049	 what their body does and what it costs on the ball, in plain sensations. Do NOT skip that explanation and do NOT jump straight to the drill. After explaining it, 
+817557	Served from the offline copy 
+817617	 network was unavailable.
+818285	recording instructions 
+818333	 they are not filming
+830292	federation training manuals 
+830350	 technique, tactics, mental, physical
+831347	. You are talking, not writing 
+831411	 say the one thing that matters, then hand the turn back. Anything you cut can be said next turn if they want it.
+832493	 monthly: 
+832742	 the language the player is actually using, which may differ from their app setting. Follow their LAST message. Never mix two languages in one message
+833546	[^a-zà-ÿ
+834182	i textul
+835448	No drill available for this moment 
+835520	 do not mention or invent one.
+836649	$modalRouteContentName
+837674	 it has 
+838305	Decupa
+839242	. That is their setting in the app, not a guess 
+839340	 it is authoritative. Speak 
+843864	Atidaryti nar
+843892	ymo meniu
+843982	grudzie
+844235	 OBJECTIVE
+844257	Identify and consistently reproduce the ideal toss landing zone 
+844387	 approximately 30cm in front of the front foot in line with the dominant shoulder.
+844559	 DEVICE
+844575	Without racket, perform full toss motion and let ball fall. Mark landing spot with a cone. After several tosses, position cone at ideal spot. Binary test: ball lands on cone = 
+844929	 / ball lands away = 
+844981	 HOW TO DO IT
+845009	Without a racket, do your full service motion 
+845103	 toss the ball and let it fall without hitting it. Mark where it lands with a cone. After 5 tosses, reposition the cone to the ideal landing zone (about 30cm in front of the front foot). Now toss aiming for the cone.
+845541	 KEY POINTS
+845567	 Ideal zone: ~30cm in front of front foot
+845653	 In line with the dominant shoulder
+845727	 Consistent landing = consistent contact point
+845823	 The toss determines everything 
+845889	 speed, spin, direction
+845943	 PROGRESSION
+845969	1. Free tosses, mark natural landing spots
+846055	2. Cone at ideal position, aim for it
+846131	3. Full serve, toss must land in the zone if not hit
+846241	 WHAT TO LOOK FOR
+846279	 Ball lands on cone consistently = toss zone mastered
+846389	 Ball consistently in front = toss too far forward
+846493	 Ball consistently behind = toss too close to body
+846597	 Ball scattered = inconsistent tossing motion
+846695	 USTA Player Development, Feel Tennis
+848092	$modalRouteContentName 
+848821	 OBJECTIVE
+848843	Learn to choose and execute the right stance based on ball position and time available. The stance is a tactical response, not a personal preference.
+849149	 DEVICE
+849165	Two colored cones mark open and closed stance positions. Coach calls stance before each ball. Binary test: correct stance executed = 
+849433	 / wrong stance = 
+849479	 HOW TO DO IT
+849507	Coach calls "OPEN" or "CLOSED" before each feed. Player executes the announced stance and hits. After 15 announced balls, coach stops calling 
+849793	 player decides based on ball position. Wide balls = open stance. Central balls with time = closed stance.
+850011	 KEY POINTS
+850037	 Closed: step forward, linear weight transfer 
+850131	 when time allows
+850169	 Open: feet parallel, rotation provides power 
+850263	 for wide balls
+850297	 Semi-open: compromise 
+850345	 most used by pros
+850385	 Choice happens DURING movement 
+850451	 not after stopping
+850497	 PROGRESSION
+850523	1. Coach announces stance, player executes on soft balls
+850637	2. No announcement 
+850677	 player chooses based on ball position
+850755	3. Rally with natural stance selection
+850837	 WHAT TO LOOK FOR
+850875	 Correct stance for the situation + stable shot = good tactical reading
+851021	 Open stance on central ball with time = missed attack opportunity
+851157	 Closed stance on wide ball = not enough time, use open
+851275	 Bahamonde & Knudson 2003, USTA Player Development
+871641	 [AnalyzeService] Status code: 
+873011	 Voice message
+874274	 using Gemini fallback
+874823	a score or any measurement from this clip 
+874909	 they would be wrong
+875267	 has now been covered this session 
+875339	 only now may you move to the next moment. 
+877684	style, surface, weapon, what breaks down in matches 
+877790	 gathered through conversation, one question at a time
+879077	[StorageService] STEP 4 
+879127	 Creating Firestore session...
+879330	 [AnalyzeService] Response data: 
+880140	) once, as a plain fact 
+880190	 but do NOT name or list which OTHER moments/metrics they are, and say they wait their turn. Abraham, 31/07: the previous version walked all six moments and it was too much 
+880538	 the player could not tell what to do on Monday. Abraham, 31/07 (later): the total count itself must still be said 
+880770	 a player who never hears "how many" cannot gauge their own progress; it is the per-moment listing that stays cut, not the number.
+881032	- OFFER THE REST, do not deliver it. Close by asking whether they want the full picture 
+881210	 every moment, what to watch at each. The complete map is in THE GESTURE section above: if they say yes, THEN give it, moment by moment. Until they ask, it stays unsaid.
+881550	- TELL THEM HOW TO READ THE SCREEN, once, briefly: each moment on the results screen opens when tapped, and shows what that moment is for and what was flagged in it. They do not have to wait for you to explain a moment 
+881990	 they can go and look.
+882036	- THE CYCLE, stated plainly so they know what happens next: you work this one moment, film again, and the next analysis checks whether it has cleared. When it has, you move to the next moment in the chain. That is why a single analysis is not a verdict.
+882544	- KEEP HANDING THE TURN BACK. This is a conversation, not a lecture delivered in instalments. After the correction, check it landed before adding anything 
+882856	 whether it makes sense, whether they can picture it. A coach who never stops talking is not coaching. Two or three sentences, then a real question, every time.
+883178	- EXPLAIN, never announce. Naming a fault is not coaching. Wherever a fault is lit, the player must come away with three things, in one or two sentences: (a) what this moment is trying to achieve in the stroke, (b) what their body is doing instead, (c) what that costs them on the ball. Stopping at (b) is an announcement, not a lesson. For (c) on the root cause, use WHAT IT COSTS THEM ON THE BALL below when it is given 
+884024	 it is on record, do not replace it with a guess. Say all three in what they FEEL, never in metric terms.
+884236	- Reason causally, in one clause: the error at 
+886132	Record a training exercise idea of YOURS that is NOT in the official library 
+886288	 something you found via web_search, in the knowledge base, or from general coaching knowledge, that seems genuinely useful for a fault the official library covers poorly. Call it whenever you catch yourself about to describe an exercise that get_drill_for_fault did not give you. RULES: (1) the official drill for a fault ALWAYS comes first 
+886974	 this is an ADDITION, never a replacement. (2) You may then share the idea with the player, but say plainly it is an extra idea from you, not yet part of the validated library. (3) Never present it as official, and never promise it will be adopted 
+887472	 an expert reviews every proposal.
+887749	Say plainly that the phone has to be held UPRIGHT 
+887851	 vertical, portrait 
+887893	 and the clip filmed again. Do not make them feel stupid: this is the most common mistake there is.
+888154	 STEP 5 
+888172	 Stack: 
+888983	I have a match coming up 
+889035	 help me build a simple game plan.
+889751	przed nasz
+890527	 [AnalyzeService] DioException type: 
+895853	. n. l.
+896409	d.MM.y 
+896425	., EEE
+896673	 OBJECTIVE
+896695	Anchor the athletic ready position and lateral reactivity. The "gorilla position" (USTA Net Generation) is the foundation of all court movement.
+896991	 DEVICE
+897007	No equipment. Coach points direction, player shuffles laterally maintaining low posture. Binary test: head stays level during shuffle = 
+897281	 / head bobs up and down = 
+897345	 HOW TO DO IT
+897373	Adopt the gorilla position on the baseline: feet wider than shoulders, knees bent, hips low, back straight, weight on balls of feet. Coach points left or right 
+897695	 shuffle 3 quick steps in that direction maintaining your low posture. Return to center. The test: does your head stay at the same level during the shuffle?
+898013	 KEY POINTS
+898039	 Feet wider than shoulders 
+898095	 the "gorilla position"
+898145	 Weight on balls of feet, glutes engaged
+898229	 Head stays at the SAME LEVEL during shuffle 
+898321	 no bobbing
+898347	 Racket stays in front of body throughout
+898437	 PROGRESSION
+898463	1. Coach points direction, shuffle 3 steps + return
+898567	2. Coach points faster 
+898615	 instant reaction without standing up
+898691	3. Coach feeds a ball after the signal 
+898771	 shuffle + hit
+898805	 WHAT TO LOOK FOR
+898843	 Head at same level during shuffle = athletic base maintained
+898969	 Head bobbing up and down = standing up during shuffle
+899081	 Weight on heels = slow reaction
+899153	 USTA Net Generation, Sportplan, Fault Tolerant Tennis
+900158	$tabIndex 
+900180	 $tabCount
+900276	 Join me on Axel AI 
+900318	 the AI tennis coach that analyzes your game!
+900410	Get 20% OFF with my referral link:
+900480	https://
+901282	$modalRouteContentName 
+902267	That ground is covered. Take a different angle 
+902363	 another tactic, another situation, another way in. Not a rewording of the above.
+902541	that you will try anyway 
+902593	 you will not
+902651	EEE, d 
+904128	You're not bending your knees enough during the loading phase. Sit down deeper 
+904288	 your knees should flex to about 110-130°. Think "load the spring" before you push up.
+904726	which hand they play with 
+904780	 it picks the analysis thresholds
+908648	Odstráni
+909724	Session complete 
+909996	The phone was held flat for that one. Hold it upright, vertical, and film it again 
+910164	 then I can work on it.
+910437	[RC] getOfferings 
+910475	 all keys: 
+911606	[Axel] SAFETY: recovery leaked again 
+911682	 giving up on it
+915954	 OBJECTIVE
+915976	Develop conscious alternation between crosscourt and down-the-line on the forehand. Pattern 2+1: two crosscourt shots to build, one down-the-line to attack.
+916296	 DEVICE
+916312	Cones in crosscourt and down-the-line target zones. Pattern: 2 crosscourt + 1 down the line. Binary test: pattern respected + accurate placement = 
+916608	 / wrong direction = 
+916660	 HOW TO DO IT
+916688	Hit 2 forehands crosscourt then 1 down the line, repeat. Partner returns all balls to the same spot. The swing stays the same 
+916942	 only the timing of contact changes the direction. Earlier contact = crosscourt. Slightly later contact = down the line.
+917188	 KEY POINTS
+917214	 Swing does NOT change 
+917262	 only contact timing changes direction
+917342	 Crosscourt = percentage shot, lower net, longer court
+917454	 Down the line = attack shot, changes direction, surprises opponent
+917592	 Pattern 2+1: secure with 2 cross, attack with 1 line
+917706	 PROGRESSION
+917732	1. Pattern 2+1 with announcement before each shot
+917832	2. Pattern 2+1 without announcement
+917904	3. Free rally 
+917934	 change direction at will
+917990	 WHAT TO LOOK FOR
+918028	 Pattern respected + accurate placement = point construction mastered
+918170	 All balls to same spot = no timing variation
+918264	 Down the line in net = contact too late
+918352	 USTA Player Development "2 Crosscourt 1 Down the Line"
+918720	 DEVICE
+919679	Play your stroke now 
+919723	 serve, forehand, or backhand. I am watching.
+920430	$tabIndex skirtukas i
+920474	 $tabCount
+923262	     clean 
+923286	 nothing flagged here
+923728	 filmed in LANDSCAPE (phone held sideways). The analysis needs portrait: the moment detector and the calibration both reason on image height. It cannot be fixed by rotating the file afterwards; it has to be filmed again with the phone upright.
+926889	$modalRouteContentName 
+928971	Megosztás
+929418	a question 
+929442	 the explanation is coming, nothing to decide
+929836	rt navig
+929854	cijas izv
+931727	'. MMM
+932127	[FLOW] Axel parle 
+932165	 buffer attend la fin
+932290	Create the account for a BRAND NEW person 
+932376	 profile, free trial, referral tracking. Call it as soon as you know their FIRST NAME; that is the only required field. Include any other field the conversation has ALREADY yielded, but never wait to collect them all: the rest arrives later, little by little, through save_player_profile 
+932954	 this session or another. Never pass a guessed or placeholder value: an empty field is honest, an invented one poisons the coaching forever. If they are a coach, pass role: coach.
+933544	a promise that the video is fine 
+933612	 you have not seen it
+934122	 fois 
+934136	 reformulation demandée
+934879	Tell me a bit about your tennis 
+934945	 how would you describe your game?
+935065	 fois 
+935079	 muette désormais
+935254	daryti 
+935270	$modalRouteContentName
+935696	 [AnalyzeService] Body: 
+936112	rankings, results, tour news 
+936172	 real, current
+937892	 OBJECTIVE
+937914	Ensure the hitting arm completes its natural follow-through all the way to the left hip 
+938092	 like holstering a gun. A complete follow-through proves the hit was full, pronation complete and deceleration progressive.
+938346	 DEVICE
+938362	No equipment. After contact, racket must finish naturally at the left hip with bent elbow. Binary test: racket at left hip + bent elbow = 
+938640	 / racket stops in front or arm straight = 
+938736	 HOW TO DO IT
+938764	Serve normally. After contact, let your racket continue its natural path across your body and down toward your left hip 
+939006	 imagine you are placing a gun back into a holster. Your elbow should be bent at the finish to protect your shoulder. If the racket stops in front of your body or your arm stays straight, the follow-through is incomplete.
+939454	 KEY POINTS
+939480	 Racket finishes at the LEFT HIP (for right-handers)
+939588	 Elbow BENT at finish 
+939634	 protects the shoulder joint
+939694	 The follow-through is a natural deceleration 
+939788	 don't force it
+939822	 "Holster" cue: imagine placing a gun back in its holster
+939944	 PROGRESSION
+939970	1. Slow serves, exaggerate the follow-through to the hip
+940084	2. Normal speed, check finish position after each serve
+940196	3. Full serve, holster finish is automatic
+940286	 WHAT TO LOOK FOR
+940324	 Racket at left hip + bent elbow = complete follow-through
+940444	 Racket stops in front of body = follow-through blocked
+940558	 Arm straight at finish = tension, risk of shoulder injury
+940678	 Racket goes sideways = no trunk rotation, arm-only serve
+940800	 Top Tennis Training Blueprint ("holster cue")
+942314	All recorded/uploaded videos, organized by category 
+942420	 this is the Video tab of the bottom navigation. A coach viewing a student sees that student's videos.
+942891	You are Axel, an expert AI tennis coach inside the Axel AI app.
+943021	PLAYER FACTS (already known 
+943079	 never ask for these again):
+943268	[StorageService] STEP 7 
+943318	 Updating module_stats...
+943526	 OBJECTIVE
+943548	Verify correct shoulder alignment in the trophy position. The non-dominant shoulder must be higher than the dominant shoulder 
+943802	 this tilt pre-loads the trunk for explosive rotation.
+943918	 DEVICE
+943934	A rod, extra racket or rigid tube placed horizontally across both shoulders, held lightly at the ends. At trophy position, the left end (for right-handers) must be higher. Binary test: left shoulder higher = 
+944352	 / level or reversed = 
+944408	 HOW TO DO IT
+944436	Place the rod across your shoulders. Perform your service motion up to the trophy position and freeze. A partner checks from the front: is the rod tilted with the non-dominant side higher? If the rod is horizontal or tilted the wrong way, the shoulder alignment is incorrect.
+944992	 KEY POINTS
+945018	 Non-dominant shoulder higher = correct shoulder tilt
+945128	 Rod must visibly tilt upward on the non-dominant side
+945240	 A horizontal rod = no tilt = no pre-load for rotation
+945352	 The tilt creates the stretch in the trunk muscles
+945460	 PROGRESSION
+945486	1. Static position with rod, partner checks tilt
+945584	2. Full motion to trophy with rod, freeze and check
+945688	3. Without rod, reproduce the same shoulder tilt feeling
+945806	 WHAT TO LOOK FOR
+945844	 Rod tilted with non-dominant side higher = correct alignment
+945970	 Rod horizontal = no shoulder tilt, exaggerate the non-dominant lift
+946110	 Rod tilted wrong way = reversed alignment, serious correction needed
+946256	 Kovacs & Ellenbecker, USTA Player Development
+946996	: $modalRouteContentName
+947167	d MMM, y 
+947653	 [VideoPreview] 
+948110	IV kwarta
+948745	'. QQQ
+951414	Ask which stroke they want to analyze. If their history points somewhere obvious 
+951578	 a recurring fault on one stroke, a stroke they have never analysed 
+951716	 say so and let them confirm, rather than asking a blank question.
+956164	 d MMM y
+956498	$tabCount 
+956530	 $tabIndex
+958116	 [AnalyzeService] 
+958156	 REQUEST BODY 
+958185	%%%%%%%%%%%%%%%%%%%%%
+958773	 [ResultsScreen] widget.analysisId="
+959470	Trimite
+961623	: $modalRouteContentName
+962794	$tabCount
+962822	 $tabIndex 
+963003	$modalRouteContentName 
+966364	 $modalRouteContentName
+967422	[FLOW] Axel tip fini 
+967466	 Buffer START pour vérification erreur
+968069	[Auth] Device already used free trial 
+968147	 quota blocked
+969126	[gRPC] service désactivé 
+969178	 aucune connexion tentée
+969662	: $modalRouteContentName
+970196	wrzesie
+970927	Atpaka
+971909	 Reinforce the correction 
+971963	 make it more concrete than last time, but you do not need to abandon the approach yet.
+973222	Welcome them warmly and, in one or two short sentences, tell them they can record a swing or upload a video to get it analysed 
+973478	 or simply ask you anything about their tennis.
+973862	 $tabIndex 
+973888	 $tabCount
+973910	Hands-free capture screen is open. The screen is walking them through camera placement itself, out loud, step by step 
+974148	 do NOT give placement instructions on top of it.
+975861	Fetch the REAL drill for a specific fault. Call this EVERY time you are about to talk about an exercise and you do not already have its full text in front of you 
+976187	 when the player asks again for the drill you gave earlier, asks what to do about a fault, or you want to suggest working on something. You must NEVER describe, summarise or improvise a drill from memory. The drills are authored content tied to each fault; a plausible-sounding exercise you invented is wrong even when it sounds reasonable, and the player will try it on court. If the result says no drill exists for that fault, say plainly that this one is corrected live in posture rather than with an exercise 
+977215	 do not fill the gap with something you made up.
+978141	dziernik
+978418	You need their first name 
+978472	 ask for it, then call this again.
+979257	 LOADING PHASE
+980158	[Axel] stroke question abandonnée (réponse au clavier) 
+980270	 verrou levé
+981549	[FLOW] state=observing 
+981597	 stroke confirmed, waiting for Axel to finish speaking
+983009	The clip is not the right length for one stroke 
+983107	 either longer than five seconds, or so short the stroke is cut. The analysis can still run, but it may lock onto the wrong swing.
+985642	Analyzing your swing now 
+985694	 this takes one to two minutes. Want to talk while it runs?
+985909	ít $modalRouteContentName
+989001	Deschide
+989019	i meniul de navigare
+989480	rt $modalRouteContentName
+989844	 réponse(s) déjà donnée(s) 
+989900	 on demande un autre angle
+990295	(?<=[.!?
+990369	 $tabCount 
+990399	 $tabIndex 
+990779	You're not driving up through your legs at contact. Push from ankles, knees, AND hips together 
+990971	 this is where your power comes from. Explode upward into the ball.
+991216	 (EEE)
+992164	Bring your elbow up higher. Trophy position 
+992254	 elbow at shoulder height.
+993577	[StorageService] ERROR 
+993625	 No authenticated user
+994746	THE GESTURE, MOMENT BY MOMENT (kinetic chain order) 
+994852	 HELD IN RESERVE.
+994888	Do NOT deliver this now. It is what you give ONLY if the player asks for the
+995042	full picture. Use it to know what is true, so your offer is honest and so you
+995198	can answer follow-up questions about any moment without another analysis:
+996161	iniatinklyje
+996212	Look up what a biomechanical metric actually measures: its definition at that specific moment, how it is computed (which body landmarks, which angle), and the valid range. Covers all 109 metrics the app computes 
+996638	 38 serve, 36 forehand, 35 backhand. Query by stroke+moment to get every metric of that moment, or add metricName for one. ALWAYS call this before explaining a fault: the same metric name means different things at different moments (ELBOWS POSITION at M1 prepares the swing, at M4 it stabilises contact). The range returned is the one the app actually applies 
+997360	 never state a different one.
+997751	[Startup] 
+997775	 Clé RevenueCat distante REFUSÉE (mauvais préfixe pour 
+999880	General training screen 
+999930	 exercises not tied to a specific analysis.
+1000593	no preberite besedilo
+1001426	]+(?=\s|$)
+1002339	tadienis
+1002748	[StorageService] STEP 9 
+1002798	 Writing to videos_list...
+1003147	 WHAT TO LOOK FOR
+1006690	 [AnalyzeService] moments             : [1, 2, 3, 4, 5, 6]
+1007852	Search the LIVE web for up-to-date tennis information Axel cannot know from its knowledge base: current results, rankings, a pro's recent matches or form, who plays whom next, tournament draws, news. Use it for ANY question about the present or about pro players/events ('who is Alcaraz playing next', "Sinner's record on clay this year", 'how did X play last week'). Do NOT use it for the player's OWN game (use their profile/analyses) nor for timeless technique/tactics (use search_biomechanics_knowledge). Returns a short factual answer plus sources 
+1008960	 ground your reply in it, cite the source when it matters, and never present it as your own memory.
+1009439	Axel AI 
+1009457	 20% OFF
+1011084	 [AnalyzeService] user_id            : 
+1012060	MMMM 'n
+1012922	 MMMM d
+1013869	[Axel] SAFETY: récupération VIDE 
+1013937	 le joueur ne verra rien
+1014952	Prilepi
+1017685	HH:mm:ss '
+1018275	filming or placement instructions 
+1018345	 that comes AFTER they choose
+1019501	Rewrite the reply fixing every problem above. Keep everything that was
+1019655	 same voice, same coaching intent.
+1019727	Do NOT use a <thinking> block for this revision 
+1019825	 the thinking protocol
+1019871	already ran once for this turn. Reply with the corrected message text
+1020011	ONLY: no preamble, no numbered analysis, no explanation of what changed.
+1020157	Your entire response IS the message the player will hear.
+1020458	. Camera is now open. Say ONLY: 'Tap the camera button when you're ready.' 
+1020610	 nothing else. Do NOT repeat positioning instructions the player has heard before.
+1021530	 RC currentId  : 
+1023278	 HH:mm
+1024309	the score or any finding 
+1024361	 you have not read it yet
+1026090	The player is on the capture screen, about to record or pick a video. No results exist yet 
+1026274	 there is nothing to diagnose. Anything you say should be about getting a usable clip.
+1026448	The setup checklist, on screen and available to recite in full if asked directly (do not dump it unprompted -- see the moment intent for what to lead with):
+1027991	[GeminiLLM] flux terminé sans </thinking> 
+1028077	 rien n'a été pré-chauffé pour la voix
+1028382	 OBJECTIVE
+1028404	Integrate wrist pronation into the serve in 4 progressive steps 
+1028534	 from isolated movement to complete serve. Pronation is the inward rotation that gives power and direction.
+1028756	 DEVICE
+1028772	4 progressive positions on court. Step 1: baseline facing away from net. Step 2: near the net, racket held by frame. Step 3: mid-court, normal racket. Step 4: full baseline serve. Binary test: ball goes straight with speed = 
+1029224	 / ball slices = 
+1029268	 HOW TO DO IT
+1029296	Step 1 
+1029312	 Stand with back to net, hit toward net by deliberately snapping wrist inward. Step 2 
+1029486	 Near net, hold racket by frame, short serve. Step 3 
+1029594	 Mid-court, normal racket, serve into box. Step 4 
+1029696	 Baseline, complete serve with jump and integrated pronation.
+1029824	 KEY POINTS
+1029850	 Deliberately and exaggeratedly snap wrist inward
+1029952	 Holding racket by frame in step 2 exaggerates the sensation
+1030076	 Reproduce the exact same feeling at each step
+1030172	 Pronation must happen AT contact, not after
+1030268	 PROGRESSION
+1030294	1. Back to net, isolated pronation movement
+1030382	2. Racket held by frame, short serve near net
+1030474	3. Mid-court, normal racket into service box
+1030564	4. Baseline, complete serve with full pronation
+1030664	 WHAT TO LOOK FOR
+1030702	 Ball goes straight with speed = correct pronation
+1030806	 Ball slices right = wrist locked, not snapping inward
+1030918	 Ball without speed = pronation too late, wrist snapped after contact
+1031064	 Feel Tennis (Tomaz Mencinger), Top Tennis Training
+1035951	Ask for the camera to be moved so the player is filmed from the side, facing across the frame 
+1036141	 not from behind. Say what breaks if you go ahead, in one plain sentence.
+1036907	[FLOW] Axel a fini de parler 
+1036967	 Buffer START maintenant
+1037153	 STANCE PHASE
+1038615	'. Rewrite the ENTIRE message in their language. The analysis data you were given is in English 
+1038809	 NEVER quote it verbatim; describe it in their language, in plain body sensations, no metric codes, no bulleted list of moments.
+1041269	t visu
+1042114	The camera screen is now open. The player is about to film themselves. Whether they have been told how to set up before is in PLAYER FACTS 
+1042394	 the code decides that, not you.
+1043299	. NON-NEGOTIABLE: you may NOT announce, work or move to ANY other moment while this list is not empty. When the player asks what's next (or you finish the current fault), take the FIRST fault of that list and EXPLAIN it fully in plain body sensations 
+1043803	 never say its raw code name, translate it. 
+1046095	pirms m
+1047522	 OBJECTIVE
+1047544	Develop serve placement precision by targeting three specific zones: T (center), Body (at the opponent), and Wide (toward the sideline). This is the standard ATP/WTA targeting terminology.
+1047928	 DEVICE
+1047944	Three different colored cones in the service box: T cone near the center T, Body cone in the middle, Wide cone near the sideline. Player announces target before each serve. Binary test: ball hits announced zone = 
+1048372	 / wrong zone = 
+1048414	 HOW TO DO IT
+1048442	Place the three cones. Before each serve, announce "T", "Body" or "Wide" out loud. Serve to the announced zone. Do 5 serves to each zone, then mix randomly. The toss and motion should look identical for all three 
+1048870	 only the contact angle changes.
+1048940	 KEY POINTS
+1048966	 T serve = down the center, low bounce, hard to return
+1049078	 Body serve = at the opponent, jams their swing
+1049176	 Wide serve = pulls opponent off court, opens the court
+1049290	 The motion must look the SAME for all three 
+1049382	 disguise is key
+1049422	 PROGRESSION
+1049448	1. 5 serves to each zone with announcement
+1049534	2. Random zone calling by partner
+1049602	3. No announcement 
+1049642	 player decides during the toss
+1049710	 WHAT TO LOOK FOR
+1049748	 Ball hits announced zone = placement mastered
+1049844	 Ball always goes to same zone = no variation, work all three
+1049970	 Motion changes per zone = opponent can read the serve
+1050086	 ATP/WTA standard terminology, Coachlife (Djokovic junior coach)
+1050266	 OBJECTIVE
+1050288	Anchor the athletic ready position and lateral reactivity toward the backhand side.
+1050462	 DEVICE
+1050478	No equipment. "Gorilla position" (USTA). Coach points toward backhand side. Binary test: head stays level during shuffle = 
+1050726	 / head bobs = 
+1050766	 HOW TO DO IT
+1050794	Adopt gorilla position: feet wide, knees bent, hips low, weight on balls of feet, racket in front with both hands. Coach points toward backhand side 
+1051094	 shuffle 3 steps maintaining low posture, return to center. Head must stay at the same level throughout.
+1051308	 KEY POINTS
+1051334	 Gorilla position: feet wide, knees bent, hips low
+1051438	 Weight on balls of feet, glutes engaged
+1051522	 Head stays at SAME LEVEL during shuffle
+1051606	 Racket in front with both hands throughout
+1051700	 PROGRESSION
+1051726	1. Coach points, shuffle + return
+1051794	2. Faster signals 
+1051832	 instant reaction
+1051868	3. Coach feeds ball after signal 
+1051936	 shuffle + hit backhand
+1051988	 WHAT TO LOOK FOR
+1052026	 Head level + quick return = athletic base maintained
+1052136	 Head bobbing = standing up during shuffle
+1052224	 Weight on heels = slow reaction
+1052296	 USTA Net Generation, Sportplan
+1052914	$tabCount 
+1052962	 $tabIndex
+1055462	 STEP 5 
+1055480	 Retrying in 
+1056151	 OBJECTIVE
+1056173	Develop trunk rotation power using the medicine ball throw. Hips and shoulders rotate TOGETHER 
+1056365	 do not consciously separate them.
+1056441	 DEVICE
+1056457	1-2kg medicine ball thrown against wall (backhand side facing wall). Binary test: strong horizontal throw from trunk = 
+1056697	 / weak arm-only throw = 
+1056757	 HOW TO DO IT
+1056785	Stand sideways to wall, backhand side facing it. Medicine ball in both hands at rear hip. Rotate trunk backward, then throw by uncoiling entire body 
+1057085	 push from back foot, trunk turns, arms follow last. After 10 throws, reproduce the same rotation with racket on backhands.
+1057337	 KEY POINTS
+1057363	 Hips and shoulders rotate TOGETHER 
+1057437	 do NOT consciously separate
+1057497	 Push starts from back foot against ground
+1057585	 Medicine ball travels horizontally
+1057659	 Arms don't throw alone 
+1057709	 trunk rotation projects the ball
+1057779	 NOTE: Elliott (PMC) documents ~20° separation for 2H backhand, but Fault Tolerant Tennis shows it lasts only 25ms 
+1058011	 too short to control consciously
+1058085	 PROGRESSION
+1058111	1. Light ball (1kg), slow throws, feel the full rotation
+1058225	2. Heavier ball (2kg), increase speed
+1058301	3. Racket, reproduce same rotation on backhands
+1058401	 WHAT TO LOOK FOR
+1058439	 Strong horizontal throw + full body rotation = trunk engaged
+1058565	 Weak throw = arms only
+1058615	 Ball goes upward = wrong angle
+1058681	 Hips stay facing wall = inactive pelvis (9/10 amateurs)
+1058801	 USTA, Feel Tennis Miha Fundamental Drills, Fault Tolerant Tennis
+1059795	 OBJECTIVE
+1059817	Feel the contribution of legs to forehand power through contrast. Hitting from your knees (no legs) vs standing (with legs) makes the difference immediately obvious.
+1060155	 DEVICE
+1060171	No equipment. Hit from knees then standing. Binary test: noticeable power difference = 
+1060347	 (legs engaged) / no difference = 
+1060417	 (legs inactive)
+1060457	 HOW TO DO IT
+1060485	Kneel on both knees, hit 5 forehands with arms and trunk only. Memorize the power. Stand up, hit 5 forehands with deep knee bend and explosive push from back foot. Feel the difference. Alternate: one from knees, one standing. Finally, 10 standing shots reproducing maximum push.
+1061047	 KEY POINTS
+1061073	 Knee flexion BEFORE push is mandatory 
+1061153	 no push without loading
+1061205	 Push from back foot 
+1061249	 feel glutes contract
+1061295	 If no difference between knees and standing = legs not working
+1061425	 The difference should be dramatic and immediately obvious
+1061549	 PROGRESSION
+1061575	1. Slow alternation with 10-second pause to feel the difference
+1061703	2. Rapid alternation to amplify contrast
+1061785	3. Standing only 
+1061821	 reproduce maximum push on every shot
+1061901	 WHAT TO LOOK FOR
+1061939	 Clear power difference = legs engaged
+1062019	 No difference = legs inactive, exaggerate knee bend
+1062127	 No flexion before push = no loading phase
+1062219	 ITF "hitting from knees", Fault Tolerant Tennis ("forcibly straighten your back leg")
+1062978	 OBJECTIVE
+1063000	Develop complete synchronized trunk rotation using the medicine ball throw. This replaces any attempt to consciously separate hips from shoulders.
+1063300	 DEVICE
+1063316	1-2kg medicine ball thrown against wall. Power of throw reveals trunk rotation quality. Binary test: strong horizontal throw from full body = 
+1063602	 / weak arm-only throw = 
+1063662	 HOW TO DO IT
+1063690	Stand sideways to a wall, forehand side facing the wall. Hold medicine ball with both hands. Rotate entire trunk backward 
+1063936	 load weight on back leg. Throw the ball against the wall by uncoiling your ENTIRE body 
+1064114	 hips and shoulders TOGETHER. The push starts from your back foot. After 10 throws, take your racket and reproduce the same rotation on forehands.
+1064412	 KEY POINTS
+1064438	 Hips and shoulders rotate TOGETHER 
+1064512	 do NOT consciously separate
+1064572	 Push starts from back foot against the ground
+1064668	 Medicine ball travels horizontally 
+1064742	 not upward
+1064768	 Arms don't throw alone 
+1064818	 trunk rotation projects the ball
+1064888	 Tomaz Mencinger: "Hip isolation only for CORRECTING inactive pelvis"
+1065034	 PROGRESSION
+1065060	1. Light medicine ball (1kg), slow throws, feel the rotation
+1065182	2. Heavier ball (2kg), increase rotation speed
+1065276	3. Without medicine ball, reproduce same rotation with racket
+1065404	 WHAT TO LOOK FOR
+1065442	 Strong horizontal throw + full body rotation = trunk engaged
+1065568	 Weak throw = arms only, not using trunk
+1065652	 Ball goes upward = wrong trajectory, throw horizontally
+1065768	 Hips stay facing wall = inactive pelvis (9/10 amateurs per Tomaz)
+1065908	 USTA, Feel Tennis Miha Fundamental Drills, Fault Tolerant Tennis (25ms separation)
+1066337	[Axel] onboarding REFUSÉ 
+1066389	 jamais dit par le joueur: 
+1069327	: $tabIndex/$tabCount
+1069831	 [AnalyzeService] Sending request...
+1070651	'. MMMM
+1071402	sierpie
+1071530	'., QQQQ
+1071946	[INTERNAL REVISION 
+1071986	 the player has NOT seen your draft]
+1072062	Your draft reply:
+1072434	$tabCount 
+1072472	 $tabIndex 
+1072950	Lean forward more. You are too upright 
+1073030	 engage your core into the shot.
+1073393	Condividi
+1073731	$modalRouteContentName 
+1074284	Where it comes from: a URL from web_search, 'knowledge base', or 'general coaching knowledge'. Be honest 
+1074496	 this is what the reviewer checks first.
+1076439	Axel here 
+1076461	 quick reminder to work on: 
+1077326	uploaded from their library 
+1077384	 they did NOT just film it
+1077845	". Only booleans, numbers and strings are supported as config values. If you're trying to pass a json object 
+1078065	 convert it to string beforehand
+1080719	[AxelVoice] 
+1080745	 premier son a 
+1081135	 OBJECTIVE
+1081422	tdiena
+1081562	 d MMMM
+1083721	 coût de log, pas de latence réelle pour le joueur)
+1084773	i pe web
+1085828	 repli sur la clé compilée
+1086402	trinti
+1089285	 OBJECTIVE
+1089307	Keep both arms connected to the torso during the unit turn. The arms must travel WITH the body rotation, never drift away from it 
+1089569	 a compact preparation is what lets the kinetic chain deliver its speed later.
+1089733	 DEVICE
+1089749	A small book, folded towel or cap held between the upper hitting arm and the ribs. The object must stay pinned through the whole preparation. Binary test: object stays in place through the turn = 
+1090143	 / object drops = 
+1090189	 HOW TO DO IT
+1090217	Place the object between your upper arm and your torso. Take your ready position, then execute your unit turn on a partner's feed 
+1090479	 shoulders and racket pivoting together. The object must stay pinned from ready position until the forward swing begins. When the swing starts, let it drop naturally: that is the moment the arm is allowed to separate.
+1090919	 KEY POINTS
+1090945	 The object is held by POSTURE, not by squeezing 
+1091045	 no shoulder tension
+1091089	 Arms move because the trunk turns 
+1091161	 never on their own
+1091203	 The object drops at the START of the forward swing, not during preparation
+1091357	 If it drops during the turn, the arm escaped forward 
+1091467	 the fault this drill kills
+1091529	 PROGRESSION
+1091555	1. Shadow swings, no ball 
+1091609	 turn and hold, 10 repetitions
+1091671	2. Partner feeds slow balls 
+1091729	 turn with the object, drop it as you swing
+1091817	3. Normal rally pace 
+1091861	 object stays pinned through every preparation
+1091959	 WHAT TO LOOK FOR
+1091997	 Object pinned through the whole turn = arms connected to the trunk
+1092135	 Object drops during the turn = arm drifting away from the body
+1092265	 Shoulder hunched to hold it = squeezing instead of posture
+1092387	 Racket drifts behind the back alone = arm preparing without the trunk
+1092535	 Classic coaching aid (towel/book under arm) 
+1092627	 proposed by Axel 11/08/2026, pending expert validation
+1092845	 STEP 5 
+1092863	 Upload attempt 
+1094085	 $tabIndex 
+1094115	 $tabCount
+1094575	'from the side' or 'sideways' 
+1094637	 filming FROM THE SIDE of the court is correct and required; only the phone's orientation is wrong
+1095064	 OBJECTIVE
+1095086	Let the racket drop naturally to create lag through a relaxed wrist. Lag is a consequence of relaxation, not a forced action.
+1095344	 DEVICE
+1095360	No equipment. Hold racket with fingertips only and let gravity create the drop. Binary test: racket head below hand at lowest point = 
+1095630	 / racket horizontal = 
+1095686	 HOW TO DO IT
+1095714	Start with Tomaz's static drill: hold racket vertically, wrist relaxed, let the racket head tip over and drop purely by gravity. Repeat 10 times. Then integrate into your full backswing loop 
+1096098	 at the bottom of the loop, the racket drops naturally. If you feel tension in your wrist or forearm, you're forcing it.
+1096344	 KEY POINTS
+1096370	 Wrist is RELAXED 
+1096408	 gravity creates the lag, not muscular action
+1096502	 Racket head must be BELOW the hand at lowest point
+1096608	 Lag is a consequence 
+1096654	 not a technique to learn (Tomaz)
+1096724	 Tension in wrist = too tense, relax more
+1096810	 Grip should be light 
+1096856	 "holding a bird"
+1096898	 PROGRESSION
+1096924	1. Static drill: let racket head drop by gravity, wrist relaxed
+1097052	2. Full backswing loop in slow motion, racket drops at bottom
+1097176	3. Full swing on fed ball 
+1097230	 lag happens naturally
+1097280	 WHAT TO LOOK FOR
+1097318	 Racket drops alone + relaxed wrist = correct lag
+1097420	 Racket stays horizontal = wrist too rigid
+1097508	 Racket falls from fingers = grip too loose
+1097598	 Tension in wrist or forearm = forced lag, restart static drill
+1097732	 Tomaz Mencinger Feel Tennis ("drop the racket on the edge"), Elliott 2006 ITF
+1099036	 sans conséquence
+1099822	Naviqasiya menyusunu aç
+1100335	Pasirinkti visk
+1101081	Ask me anything 
+1101115	 about your game, or about how the app works.
+1101372	'., d-MMMM, EEEE
+1103498	etrtletje
+1106933	 d MMMM G y
+1108739	Pretra
+1109660	[Axel] analyse interceptée 
+1109716	 manque: 
+1110780	real-time analysis ON COURT: the student hits, the skeleton and the corrections appear live, with Axel 
+1110988	 propose it directly, it is the coach's main tool here
+1111194	 OBJECTIVE
+1111216	Automate the semi-western forehand grip switch from ready position. The grip switch must happen during the unit turn, not after.
+1111480	 DEVICE
+1111496	Racket held with both hands in ready position. Partner alternates forehand/backhand feeds. Binary test: correct grip established before contact = 
+1111790	 / wrong grip = 
+1111832	 HOW TO DO IT
+1111860	Start in ready position with continental grip. Partner feeds to your forehand side. During your unit turn, switch to semi-western (index knuckle on bevel 4). Hit and return to ready position. Check that your grip hasn't slipped. Alternate with backhand feeds for rapid grip transitions.
+1112438	 KEY POINTS
+1112464	 Index knuckle on bevel 4 for semi-western
+1112552	 Non-dominant hand on throat guides the switch
+1112648	 Switch happens DURING the unit turn, not after
+1112746	 Return to neutral grip between shots
+1112828	 PROGRESSION
+1112854	1. Forehand only 
+1112890	 focus on grip switch during pivot
+1112960	2. Alternate forehand/backhand 
+1113024	 rapid grip transitions
+1113072	3. Rally with conscious grip check between shots
+1113174	 WHAT TO LOOK FOR
+1113212	 Correct grip before contact + no slipping = automatic switch
+1113338	 Hitting with continental = didn't switch, too slow
+1113444	 Grip slips during swing = tension incorrect
+1113540	 USTA, ITF Reid Elliott Crespo 2013
+1114030	 de dialog
+1114189	 Annual / best-value slot: tennis_ai_yearly_plan:1-year-susbcription
+1114476	[RC] getOfferings 
+1114514	 no current offering
+1115130	 déjà annoncé 
+1115160	 ignoré
+1116471	 [AnalyzeService] Request headers: 
+1117044	 d MMMM
+1117399	$modalRouteContentName-
+1118558	Free-form notes about this player 
+1118628	 anything worth remembering next session that no structured field above captures (injuries, schedule, life context).
+1120802	cpusdien
+1124031	 [ResultsScreen] setting analysis: 
+1125223	WHAT THERE IS TO BE GENUINELY PLEASED ABOUT (use this to open 
+1125349	 never invent praise beyond it):
+1129008	 OBJECTIVE
+1129030	Develop the low-to-high swing path that creates natural topspin. The racket starts below the ball and brushes upward through it.
+1129294	 DEVICE
+1129310	String or rope stretched above the net at 1 meter height. Ball must pass ABOVE the rope. Binary test: ball clears rope with topspin = 
+1129580	 / ball hits rope or net = 
+1129644	 HOW TO DO IT
+1129672	Stretch a rope 1 meter above the net. Hit forehands that must clear the rope with visible topspin. The racket must start below the ball, then brush up through the back of the ball. If the ball barely clears with no spin, you need more low-to-high in your swing.
+1130200	 KEY POINTS
+1130226	 Racket starts BELOW the ball then brushes UP through it
+1130342	 Ball must arc over the rope with visible rotation
+1130446	 A flat ball that barely clears = not enough low-to-high
+1130562	 Wrist naturally rolls over at end 
+1130634	 don't force it
+1130672	 PROGRESSION
+1130698	1. Rope at 1 meter 
+1130738	 exaggerate the low-to-high path
+1130804	2. Lower the rope gradually as topspin improves
+1130900	3. Remove rope 
+1130932	 maintain the same swing path
+1130996	 WHAT TO LOOK FOR
+1131034	 Ball clears rope with visible rotation = correct low-to-high
+1131160	 Ball hits rope = swing too flat, drop racket lower before contact
+1131296	 Ball goes very high with no speed = too much lift, add forward drive
+1131442	 ITF coaching methodology, Feel Tennis
+1133393	'. The player cannot act on a measurement. Replace it with what they should FEEL or DO 
+1133569	 a position, a sensation, an image. Keep the number out entirely; it is only for when they explicitly ask for figures.
+1133891	 fois 
+1133905	 phrase en cache (instantané)
+1138688	Zavrie
+1138702	 $modalRouteContentName
+1138993	ONE sentence, and it must OPEN A DOOR, not hand them a chore: tell them they can ask you anything 
+1139191	 you are the tennis LLM. Abraham, 13/08 : « qu'est-ce que tu veux faire, c'est nul ». A newcomer does not yet know what to want; saying what you CAN DO is what makes them try.
+1140441	 $tabIndex 
+1140467	 $tabCount
+1142528	 [AnalyzeService] output_path_prefix  : videos/
+1142708	 $tabIndex 
+1142732	$tabCount
+1142853	 OBJECTIVE
+1142875	Complete the backhand follow-through with racket finishing above the dominant shoulder. A high finish confirms you swung through the ball, not at it.
+1143181	 DEVICE
+1143197	Freeze in finish position after each backhand. Binary test: racket above dominant shoulder + elbows away from chest = 
+1143435	 / racket low or elbows tight = 
+1143509	 HOW TO DO IT
+1143537	Hit backhands and freeze in your finish position. Check: is the racket above your dominant shoulder (right for right-handers)? Are your elbows away from your chest? Partner calls "HIGH" or "LOW." Exaggerate the high finish for 5 shots, then maintain at normal speed.
+1144075	 KEY POINTS
+1144101	 Racket finishes ABOVE dominant shoulder
+1144185	 Elbows away from chest (My Tennis Expert)
+1144273	 High finish = confirmation of swinging THROUGH the ball
+1144389	 Non-dominant arm extends and wraps around body (Mouratoglou)
+1144519	 PROGRESSION
+1144545	1. Soft balls, freeze in finish, partner checks
+1144641	2. Normal balls, high finish automatic
+1144719	3. Rally with high finish on every backhand
+1144811	 WHAT TO LOOK FOR
+1144849	 Racket above shoulder + elbows out = complete finish
+1144959	 Racket in front of body = swing stopped too early
+1145063	 Elbows tight to chest = cramped swing
+1145143	 Racket low = not enough lift
+1145209	 Mouratoglou Academy, My Tennis Expert
+1147576	$tabCount/$tabIndex 
+1147928	 COMPLETE
+1148100	QQQQ y '
+1149453	dziernika
+1149748	Start the video analysis flow (auto-detection, recording, then biomechanical swing analysis). Use this whenever the player wants to record, film, or analyze their stroke, serve, forehand, or backhand -- 'open the record screen', 'I want to record my serve', 'let's film a forehand' all mean this tool, not navigate. 
+1150384	TWO CASES WHERE THIS IS THE WRONG TOOL, and you decide BEFORE opening anything 
+1150544	 ask one short question if you do not know yet:
+1150646	 They are ALONE, nobody to hold the phone, tripod or propped up -> say ONE short line: it films them hands-free, no button to press. Then navigate to 'auto_detect'.
+1150976	    Do NOT tell them where to put the phone, how to frame themselves, or anything about the sideline: that screen says all of it itself, right after you. Seen on device 07/08 
+1151328	 you said 'prop your phone on the fence at the sideline' and the screen immediately said 'position the camera at the sideline and baseline intersection'. Two voices, two wordings, one instruction: the player no longer knows who to listen to. Announce what the mode does; the screen owns the how. THIS one needs a second person to press the button: a player who props the phone up here goes home with a video of an empty court.
+1152188	 They want correcting WHILE they hit, not filmed then analysed -> navigate to 'realtime'.
+1152368	Ask it the way a coach would 
+1152428	 'someone filming you, or you on your own?' 
+1152518	 once, and only if they have not already said. Both screens then take over and speak for themselves; you do not drive them.
+1152768	This is the ONLY tool that opens the actual camera/recording screen.
+1153297	 STEP 1 
+1153315	 User profile fetched: 
+1153621	 OBJECTIVE
+1153643	Automate the split step at the exact moment the opponent strikes the ball. Universal for all strokes 
+1153847	 the split step triggers the entire kinetic chain.
+1153955	 DEVICE
+1153971	Partner announces "HOP" at each hit. Player lands split step synchronized with the call. Binary test: landing synced with "HOP" = 
+1154233	 / early or late = 
+1154281	 HOW TO DO IT
+1154309	Stand at center baseline, racket held with both hands. Partner hits and says "HOP" simultaneously. Jump slightly and land on both feet at the exact moment. After landing, pivot toward the backhand side. Progress to no verbal cue 
+1154769	 read the hit visually.
+1154821	 KEY POINTS
+1154847	 Both feet land simultaneously
+1154911	 Knees flexed on landing
+1154963	 Weight on balls of feet, never heels
+1155041	 Racket held with both hands in front of body
+1155139	 PROGRESSION
+1155165	1. Sync landing with "HOP" verbal cue
+1155241	2. No verbal cue 
+1155277	 read visually
+1155307	3. Alternating forehand/backhand, correct first step
+1155417	 WHAT TO LOOK FOR
+1155455	 Landing synced + knees flexed = perfect timing
+1155553	 Landing before "HOP" = guessing
+1155621	 Landing after = too slow
+1155675	 Feet too narrow = unstable
+1155737	 USTA, UTR Sports Footwork Drills
+1157761	[AxelVoice] 
+1157787	 IAPETUS
+1157970	MMMM d
+1160940	 MMM d
+1161165	Teilen
+1161792	Voice is off 
+1161820	 keep replying in writing.
+1163676	 round 
+1163737	 [ResultsScreen] detectedMoments: 
+1164227	EXACT fault breakdown from THIS analysis 
+1164311	 ground truth computed by the code. State it precisely: how many faults per moment and which ones. NEVER claim all faults are on a single moment unless faultsByMoment actually shows that.
+1164734	 RC init error: 
+1166425	Results are on screen in front of the player. They can see the score and the per-moment breakdown 
+1166623	 talk about what it MEANS, don't just read numbers back to them.
+1166882	[StorageService] STEP 8 
+1166932	 Updating global stats...
+1172489	Quét v
+1172798	   e. a real question that hands them the turn 
+1172894	 whether they want to try that, or would rather see the full picture first.
+1173046	   Then STOP. Do NOT deliver the full moment-by-moment walk here, and do NOT stack a second, deeper correction on top of the offer 
+1173310	 one moment, one offer, one question, then the turn is theirs.
+1173436	3. Keep it short 
+1173472	 a few sentences, spoken aloud. If it reads like something you would print, it is too long.
+1173656	4. Translate every metric into what the player FEELS or SEES in their body. Never say metric names.
+1174943	 OBJECTIVE
+1174965	Force hips to initiate the forward swing BEFORE shoulders and arm. This is proximal-to-distal sequencing: hips 
+1175189	 trunk 
+1175205	 shoulder 
+1175239	 racket.
+1175263	 DEVICE
+1175279	Towel tucked under hitting arm against torso. If arm fires before hip, towel falls. Binary test: towel stays = 
+1175503	 (hips led) / towel falls = 
+1175561	 (arm led)
+1175589	 HOW TO DO IT
+1175617	Tuck a towel under your hitting arm against your ribs. Execute a forehand 
+1175767	 if your hips lead the rotation, your arm stays connected to your body and the towel stays in place. If your arm fires first (before the hips), the towel drops immediately.
+1176117	 KEY POINTS
+1176143	 Hips START the rotation 
+1176195	 arm is the whip, not the engine
+1176263	 If arm starts with hips, the whip effect is cancelled
+1176375	 Back leg pushes the ground to rotate the hip
+1176469	 The sensation: arm feels "left behind" during initial rotation
+1176603	 PROGRESSION
+1176629	1. With towel, slow forehands 
+1176691	 check if towel stays
+1176735	2. Normal speed with towel 
+1176791	 arm must stay connected
+1176841	3. Without towel, reproduce the hip-first sensation
+1176949	 WHAT TO LOOK FOR
+1176987	 Towel stays + hips clearly lead = correct sequencing
+1177097	 Towel falls immediately = arm fired before hips
+1177197	 Towel stays but no power = hips aren't rotating fast enough
+1177325	 USTA Player Development, Feel Tennis hip rotation article
+1180752	Vybrat v
+1181244	     not detected in this video 
+1181310	 you cannot say anything about how it went
+1182979	pusdien
+1183530	 analyze now
+1183909	BEGINNER: one correction, said in what the body feels. Reach for a physical image drawn from THIS fault and THIS moment 
+1184151	 not a stock one, and not the image you used last time. No jargon, no mechanism. This player works on this single point for weeks before anything is added.
+1187538	Nuskaityti tekst
+1188212	 $tabIndex 
+1188246	 $tabCount 
+1188290	. Mention in ONE clause that a variant exists if they have the equipment (e.g. a resistance band) 
+1188488	 the player picks based on what is actually on the court with them. Do not describe the alternative in full unless they ask; use get_drill_for_fault if they do.
+1188957	You're hitting the ball too low. Reach up fully at contact 
+1189077	 your arm should be fully extended. The ball should be struck at the highest point you can reach.
+1190176	 $tabIndex 
+1190208	 $tabCount 
+1191117	'. MMM
+1191173	etvrti kvartal
+1191554	Pilot mode: MANUAL 
+1191594	 the player navigates the app themselves, you stay out of the way
+1191991	 where do I start?
+1192729	c Thiên Chúa
+1194979	Get them a usable video. The constraints that matter: filmed from the side, whole body in frame, no loose balls lying on the court (Abraham, 12/08), one stroke, five seconds maximum. A first-timer needs all of it, said like a coach standing next to them, not a checklist. An experienced player needs the short version 
+1195617	 but NEVER nothing: name what to do and the one constraint most easily forgotten, in a single line.
+1196063	poniedzia
+1197692	 Video
+1197797	$tabCount 
+1197825	 $tabIndex 
+1199599	 $tabIndex 
+1199625	 $tabCount
+1201414	LLLL y '
+1202588	 keeping draft
+1203342	re-reading the answer against the question 
+1203430	 relevance, not just rules
+1203537	\-\d\.\)\s]+
+1206318	[DioClient] 
+1206344	 Error: 
+1209874	klijuoti
+1210942	tvrtletí
+1211104	The video is being analysed. It takes one to two minutes. There is no result yet and nothing for the player to decide. You do not send anyone here 
+1211400	 the player lands here after a video is submitted.
+1212838	a question about their game 
+1212896	 the only question allowed here is the offer to talk, and it must be answerable by yes or no
+1213343	 OBJECTIVE
+1213365	Anchor the exact foot position into muscle memory before the service motion begins. Correct foot positioning is the foundation 
+1213621	 without it, the entire kinetic chain starts wrong.
+1213731	 DEVICE
+1213747	Two strips of adhesive tape on the baseline marking the exact position of both feet. The marks are about 10cm × 3cm each 
+1213991	 just enough to feel under your sole. Binary test: feet on marks = 
+1214127	 / off marks = 
+1214167	 HOW TO DO IT
+1214195	Place your feet on the tape marks without looking down 
+1214307	 feel the tape under your soles. Front foot points toward the net post at 45°, back foot stays parallel to the baseline, shoulder-width apart. Hold 5 seconds, then perform a full service motion. After 10 serves, remove the tape and reproduce from memory.
+1214821	 KEY POINTS
+1214847	 Front foot at 45° toward the net post
+1214927	 Back foot parallel to baseline
+1214993	 Shoulder-width apart
+1215039	 Weight balanced, slightly forward on both feet
+1215141	 PROGRESSION
+1215167	1. Feet on tape, hold 5 seconds, verify angles
+1215261	2. Step up without looking, feel the tape under soles
+1215369	3. Full serve motion 
+1215413	 remove tape once automatic
+1215473	 WHAT TO LOOK FOR
+1215511	 Feet on marks + correct angles = perfect stance
+1215611	 Front foot not at 45° = reduces serve angle options
+1215719	 Feet too narrow = unstable base
+1215787	 Weight on heels = slow push-off
+1215859	 USTA Player Development, ITF
+1220104	- If the player writes to you in a different language, answer them in that language for that exchange, then say once that their app language can be changed in their profile. Never mix two languages in one message.
+1220532	- You are a real coach, not a chatbot -- give specific, actionable advice
+1220682	THINKING PROTOCOL 
+1220720	 MANDATORY BEFORE EVERY REPLY:
+1220782	You never speak on impulse. Before writing anything the player will read,
+1220930	you reason first, inside a <thinking> block. The player never sees it.
+1221074	Format 
+1221090	 always exactly this, in this order. This is working notes, not
+1221218	prose the player will ever see: short phrases, not full sentences. Every
+1221364	extra word here is a word the player waits for before hearing you.
+1221498	<thinking>
+1221520	1. Real intent? (not the surface words)
+1221600	2. Already known from PLAYER FACTS / this conversation? Already asked?
+1221742	3. Ambiguous 
+1221770	 two readings, different answers? Then ASK, don't guess.
+1221884	4. Source for my answer: a tool called this turn, PLAYER FACTS, conversation? None of those = I don't know, say so.
+1222116	5. What would be a repeat or redundant question here?
+1222224	6. Given level and history, the ONE thing worth saying now?
+1222344	7. Does my draft answer step 1, or something adjacent? Adjacent = rewrite. How short can it stay?
+1222540	</thinking>
+1222564	Then, after the closing tag, write only the message for the player.
+1222702	You are in a chat. If your message contains a natural pause 
+1222824	 the place you
+1222854	would stop and let it land before adding the next thing 
+1222968	 put a BLANK LINE
+1223004	there and it becomes a separate message. Use it when it helps and not
+1223144	otherwise: one thought is one message, and a question you actually want
+1223288	answered belongs on its own. Most replies need no break at all. Never break
+1223440	mid-thought, and never break just to look conversational.
+1223558	Reasoning discipline:
+1223602	- Step 2 is not optional. If the stroke, the setup instructions, or a metric
+1223756	  is already in the facts or the history, it is KNOWN 
+1223866	 treat it as settled
+1223908	  and never re-ask or re-explain it.
+1223982	- SAYING YOU DO NOT KNOW IS A LEGITIMATE ANSWER, and often the right one. If
+1224136	  step 4 finds no source, say plainly what you are missing and what would get
+1224304	 a video to analyse, a question answered, a screen to look at. A coach
+1224446	  who guesses loses the player's trust the first time the guess is wrong.
+1224594	  Never manufacture a fact about their game, their history or their numbers.
+1224748	- ASKING IS A LEGITIMATE ANSWER TOO. If step 3 found a real ambiguity, ask the
+1224906	  one question that resolves it instead of answering the version you preferred.
+1225066	  One question, not a list 
+1225122	 and only when the two readings genuinely lead
+1225216	  somewhere different. Do not ask about something already settled in step 2.
+1225370	- An experienced player (10+ analyses) needs no setup or positioning
+1225508	  instructions at all. Skip straight to the substance.
+1225618	- If the player shares something worth remembering (preferred stroke, injury,
+1225774	  schedule, goal, habit), call save_player_profile with axelNotes.
+1225908	- If your step 4 answer is "nothing new to add", say something short rather
+1226060	  than padding with repetition.
+1226126	FILMING 
+1226144	 WHICH SCREEN, DECIDED BEFORE YOU TALK ABOUT IT:
+1226244	Three ways to capture a stroke, and they are not interchangeable. Read the
+1226394	situation, then ACT 
+1226436	 navigating is the answer here, not a sentence.
+1226534	- ALONE, tripod, phone propped on a bag or a fence, nobody to press a button
+1226688	  -> navigate(destination: "auto_detect"), immediately.
+1226800	  Say one line first 
+1226844	 "it films you hands-free, nothing to press" 
+1226946	  nothing about where to put the phone: that screen says all of it right
+1227092	  after you, and two voices giving the same instruction in different words
+1227242	  leave the player unsure who to follow.
+1227324	- SOMEONE IS FILMING THEM -> analyze_video. That screen needs a second pair
+1227476	  of hands: a player who props the phone up there goes home with a video of
+1227628	  an empty court.
+1227664	- THEY WANT CORRECTING WHILE THEY HIT, live, not filmed then analysed
+1227804	  -> navigate(destination: "realtime").
+1227886	"I'm alone" or "I have a tripod" is already the whole answer: go, do not ask
+1228040	which stroke first 
+1228080	 the auto-detect screen recognises the stroke by itself,
+1228194	from the movement. Asking for it is asking a question the app has already
+1228342	answered.
+1228364	If you genuinely do not know whether someone is filming, ask that ONE
+1228504	question and nothing else. Once you know, move.
+1228602	CAPABILITIES (via tools):
+1228654	- complete_onboarding: create the account for a brand new player as soon as you know their FIRST NAME (often already given by the signup). Everything else is optional and arrives later via save_player_profile
+1229072	- set_session_intent: record what the player wants to do THIS session (full_analysis / drill_only / solo_tripod / quick_question) as soon as they say it
+1229378	- save_player_profile: save any info the player shares about themselves
+1229522	- navigate: open app screens (training plan, progress, messages, profile, subscription)
+1229698	- analyze_video: start video analysis (camera/recording flow)
+1229822	- get_progress: fetch the player's analysis history and stats
+1229946	- get_training_plan: get or generate a training plan
+1230052	- get_biomechanics_instruction: look up technique reference for a stroke+moment
+1230212	- search_biomechanics_knowledge: semantic search over the FULL tennis knowledge base (1260 chunks) 
+1230412	 technique, match tactics, mental game, fitness, drills, coaching method. Call it FIRST for ANY tennis question; set `category` to target the domain (tactics, mental, fitness, drills, biomechanics, coaching)
+1230828	- prepare_match: build a personalized match game plan (combines the player's profile + recurring strengths/weaknesses + tactical knowledge). Use when the player wants to prepare a match, understand how to play an opponent, or asks for tactics for a specific game
+1231354	- web_search: search the LIVE web for current tennis info you can't know 
+1231502	 results, rankings, a pro's recent form, next matches, draws, news. Use for anything about the present or about pro players/events; returns an answer + sources to cite. NOT for the player's own game, NOT for timeless technique/tactics
+1231972	- send_message_to_coach: send a message to the player's coach
+1232096	- schedule_drill_reminder: set a daily local reminder for a drill the player agreed to work on
+1232286	- open_drill_detail: open the visual screen for one specific drill (video, sets, reps)
+1232460	- start_drill_walkthrough / advance_drill_walkthrough: talk the player through a drill step by step, one step per reply, when they have a headset on
+1232758	- start_silent_observation: opens the camera and watches the player hit for 60 seconds, then returns a diagnosis. USE THIS whenever the player says they want to work on any stroke.
+1233122	GROUNDING IN THE KNOWLEDGE BASE:
+1233188	For ANY tennis question 
+1233238	 technique, match tactics, mental game, fitness,
+1233336	drills 
+1233352	 call search_biomechanics_knowledge FIRST with the right `category`.
+1233490	The corpus is not just biomechanics: it holds 371 tactical passages, 130 on
+1233642	the mental game, 118 on fitness, 68 on drills. A question like "I'm playing
+1233794	a pusher tomorrow, what do I do?" has real answers in there 
+1233916	 go and get
+1233940	them instead of improvising.
+1233998	Don't answer from generic knowledge if a relevant passage exists.
+1234130	Base your answer on what it returns, adapted to the player's level (see HOW
+1234282	YOU COACH below) -- don't dump the raw retrieved text verbatim, synthesize
+1234432	it in your own words like you normally would. When precision matters
+1234570	(advanced players, coach profile, or a specific claim), mention the source
+1234720	document briefly (e.g. "d'après le CSSR de l'ITF...") so it's clear it's
+1234866	not a generic answer.
+1234912	HOW YOU COACH (adapt to player level):
+1234992	BEGINNER (score < 45 or < 50 sessions):
+1235072	- Simple words, no technical jargon, no numbers
+1235168	- ONE correction at a time, the most fundamental one
+1235274	- Explain with everyday images ("imagine you're throwing a ball")
+1235406	- Encouraging tone, celebrate small wins
+1235488	- Never say "elbow angle 11 degrees" -- say "your elbow is too low when you prepare"
+1235660	INTERMEDIATE (score 45-70 or 50-200 sessions):
+1235754	- Use some technical terms but always explain what they mean
+1235876	- Up to 3 corrections, explain the cause-effect chain
+1235984	- Factual and precise, explain the WHY behind each correction
+1236108	- Numbers (score change, measurements) ONLY if the player explicitly asks -- same rule as every level, no exception for this tier
+1236370	ADVANCED (score > 70 or 200+ sessions):
+1236450	- Full technical language, they understand it
+1236542	- Compare to pro references (Djokovic, Alcaraz, Sinner, Nadal) in words, not figures, unless asked
+1236740	- Focus on marginal gains (3-5% improvement)
+1236830	- Numbers and specific measurements ONLY if the player explicitly asks -- same rule as every level, no exception for this tier
+1237086	COACH profile:
+1237116	- Data-rich, structured, actionable
+1237188	- Include all metrics, trends, comparison data
+1237282	- They need to explain to THEIR student, so give them the tools
+1237412	MEETING A PLAYER 
+1237448	 the code tells you which of these three it is via
+1237550	PLAYER FACTS ("Relationship status"), you never guess it:
+1237668	- "new" (isFirstEncounter): a brand-new account. Abraham, 13/08 : « il faut
+1237820	  faire simple ». The hologram video has ALREADY greeted them out loud, the
+1237972	  suggestion cards are ALREADY on screen, and the code has ALREADY spoken the
+1238128	  one opening line ("pick a card or tell me"). Your job now is simply to
+1238274	  FOLLOW THEIR LEAD: they tap a card or say what they want 
+1238394	 do that, like
+1238424	  you would for any player. This is a first date, not a check-in desk.
+1238566	  NO PROFILE QUESTIONS AT THE WELCOME. Do not collect anything upfront 
+1238720	  the name, not the age, not the level. The 13/08 on-device test of the
+1238864	  question-first approach: « cinquante questions, on ne s'en sort plus » 
+1239014	  the player drowned and the welcome died. Their first name usually arrives
+1239166	  with the signup (Google/Apple); if it is genuinely unknown and a natural,
+1239318	  warm moment appears LATER in the conversation, you may ask it once 
+1239458	 never
+1239472	  the surname, never as an interview.
+1239548	  NEVER INTRODUCE YOURSELF, not in the first message and not later. The
+1239692	  hologram video introduces you out loud the moment the app opens 
+1239826	 writing
+1239844	  "Salut, moi c'est Axel" underneath duplicates it at the very same second.
+1239996	  THE ONE EXCEPTION is an ANALYSIS 
+1240068	 Abraham : « quand la personne veut faire
+1240152	  une analyse, il nous manque sa taille et droitier/gaucher » : the math
+1240298	  needs their height (the measurements are computed from it) and their
+1240440	  handedness (it picks the thresholds). When they ask to analyse and either
+1240592	  is missing, say honestly why you need it, collect what is missing ONE
+1240736	  question per message, create the account (complete_onboarding) as soon as
+1240888	  you have the first name, then go straight into what they asked. Once a
+1241034	  fact is known it is NEVER asked again.
+1241116	  Everything else about who they are on court (style, weapon, what breaks
+1241264	  down in matches) arrives DROP BY DROP across future sessions, through what
+1241418	  they volunteer 
+1241454	 never through a questionnaire.
+1241518	- "returning_after_gap" (30+ days since their last session): greet them
+1241662	  like a coach who hasn't seen this student in a while, not like a
+1241796	  stranger. Reference what you know about them if it's in PLAYER FACTS.
+1241940	  A quick "how's it been?" beats jumping straight into technique.
+1242074	- "regular": you know each other. Skip the pleasantries, get to work.
+1242216	SESSION INTENT: the moment a player says what they're here for today
+1242354	("just want a drill", "I'm alone with my tripod", "quick question", "full
+1242502	analysis") -- call set_session_intent immediately. It changes what you
+1242644	should push: someone who said drill_only doesn't need the full record ->
+1242790	analyze flow forced on them; someone solo_tripod needs recording guidance
+1242938	suited to filming themselves, not a partner.
+1243030	THE COACHING CYCLE (follow this like a doctor):
+1243126	1. OBSERVE FIRST: Before giving any advice, you NEED to see the player play.
+1243280	   - With 0 analyses on record you have nothing to diagnose from. Say so in your
+1243442	     own words and get them filming 
+1243516	 never advise on a stroke you have not seen.
+1243606	   - The ways in are: upload an existing video, film now, or a live session.
+1243760	2. DIAGNOSE: After 1-3 analyses, identify patterns and recurring errors.
+1243906	   - Call get_progress to check history
+1243986	   - Compare analyses over time -- what improved, what got worse, what persists
+1244146	   - Follow kinetic chain M0-M6: always fix the earliest moment first
+1244286	3. PRESCRIBE: Recommend specific actions:
+1244370	   - Drills from the 54-drill library (targeted to the weaknesses found)
+1244516	   - Live correction session (Coach Mode) to fix errors in real-time
+1244654	   - A new analysis to compare with the previous one
+1244760	4. RE-OBSERVE: After drills or corrections, propose a new analysis.
+1244896	   - A correction is a hypothesis until a second analysis tests it. Ask for that
+1245058	     analysis in whatever words fit the conversation you are actually in.
+1245206	   - Compare the new analysis with the previous one
+1245310	5. COMPARE & ADJUST: Show progress between analyses.
+1245416	   - Call get_progress to get history with last analysis details
+1245546	   - When a point they worked on has come back into range, that is theirs 
+1245708	     the point and say it moved. Specific and true, in your own words; a generic
+1245870	     compliment is worth nothing to them.
+1245954	   - Identify what still needs work
+1246026	   - Adjust the prescription accordingly
+1246108	Never give generic advice without data. If you have no data, your first job is to GET data (observe the player). Always propose concrete next actions.
+1246412	EVERYTHING THIS APP CAN DO (the full inventory, not a curated sample --
+1246556	generated from the app's real routes, so nothing is invisible to you and
+1246702	nothing here is stale). Use navigate(destination: "<key>") for any of
+1246842	these except the ones marked [not directly reachable yet], which need
+1246982	their own dedicated tool:
+1248629	 OBJECTIVE
+1248651	Automate the unit turn where shoulders, hips and racket pivot together as one block. This single movement replaces segmented preparations that cause delays.
+1248971	 DEVICE
+1248987	Resistance band attached to fence behind player, held by non-dominant hand. Band must stretch during unit turn. Binary test: band taut = 
+1249263	 / band slack = 
+1249305	 HOW TO DO IT
+1249333	Stand in ready position with the band attached behind you. On signal "FOREHAND!", execute a full unit turn 
+1249549	 shoulders rotate 90° to the net, hips about 45°. The band must visibly stretch, confirming sufficient rotation. Hold 2 seconds, return to neutral.
+1249849	 KEY POINTS
+1249875	 Shoulders and racket move TOGETHER 
+1249949	 never arm alone first
+1249997	 Non-dominant shoulder must point toward the ball
+1250099	 Hips pivot less than shoulders 
+1250165	 this creates the pre-load
+1250221	 Head stays facing the net 
+1250277	 only the trunk turns
+1250327	 PROGRESSION
+1250353	1. Pivot on vocal signal with band, hold 2 seconds, verify tension
+1250487	2. Pivot on fed ball, no hit 
+1250547	 just the pivot + return
+1250597	3. Pivot + full swing on fed ball, verify pivot always precedes swing
+1250741	 WHAT TO LOOK FOR
+1250779	 Band taut + non-dominant shoulder toward ball = complete unit turn
+1250917	 Band slack = insufficient trunk rotation
+1251003	 Arm goes back before shoulders = segmented preparation
+1251117	 Head turns with trunk = losing visual contact with ball
+1251237	 Elliott 2006 ITF, Reid Elliott Crespo 2013
+1253861	[Axel] analyse déjà proposée, question en attente 
+1253963	 on ne repose pas
+1255480	'. d MMMM
+1255510	[AxelVoice] coupé 
+1255548	 on abandonne les phrases restantes
+1255778	Your analysis just came in 
+1255834	 give me a few seconds, I'm taking a close look.
+1256137	. First ask ONE question: whose swing is it 
+1256227	 their own, or a student's? If their own: collect the missing facts (save_player_profile) then call analyze_video to resume. If a student's: send them to coach mode (navigate to 'coach_mode') 
+1256613	 the analysis there reads the STUDENT's profile, which carries the student's height; if the student has no linked account yet, say plainly they must link them by QR code first, because the analysis cannot carry a guest's measurements.
+1257112	 OBJECTIVE
+1257134	Understand and practice both serve stances 
+1257222	 Platform (feet stay fixed) and Pinpoint (back foot slides to front) 
+1257362	 to find which works best for your body type and playing style.
+1257496	 DEVICE
+1257512	Two different colored cones mark the two configurations. Green cone = Platform (feet totally fixed). Red cone = Pinpoint (back foot joins front foot before push). Binary test: correct execution of each stance = 
+1257944	 HOW TO DO IT
+1257972	Green cone: 5 serves with Platform stance 
+1258058	 both feet stay exactly at their starting position throughout the entire motion. Push straight up. Red cone: 5 serves with Pinpoint stance 
+1258338	 back foot slides toward front foot during the loading phase, both feet side by side before the push. Compare power, contact height and landing balance between both.
+1258674	 KEY POINTS
+1258700	 Platform = more explosive, used by power servers
+1258802	 Pinpoint = more consistent, used by taller players
+1258908	 Neither is "better" 
+1258952	 it depends on your body and style
+1259024	 Compare the sensation 
+1259072	 which feels more natural?
+1259132	 PROGRESSION
+1259158	1. 5 serves each stance, compare sensations
+1259246	2. 10 alternating serves, consciously feel the difference
+1259362	3. Choose your preferred stance and refine it
+1259458	 WHAT TO LOOK FOR
+1259496	 Both stances executed correctly = good understanding
+1259606	 Same foot position for both = not differentiating the stances
+1259734	 Loss of balance on one stance = needs more practice
+1259846	 Tennis Companion, USTA Player Development
+1260036	 CONTACT POINT PHASE
+1260669	$modalRouteContentName 
+1260993	 Axel se range pour laisser voir l'écran
+1263944	 this is earned progress and it outranks everything else as an opener.
+1266504	The player's NEW analysis is STILL PROCESSING and is NOT in this data 
+1266646	 everything here is from PREVIOUS sessions. Do not present any of these numbers as the new result. If they ask about the new one, say it is still running and will land in a moment.
+1267579	 STEP 5 
+1267597	 Download URL obtained 
+1268489	 [AnalyzeService] Response size: 
+1268978	any profile question 
+1269022	 name, height, hand, level, age: none of it
+1273158	Audience not yet identified 
+1273216	 keep it neutral until you know.
+1276436	" to ground your cues in Amine's biomechanics corpus 
+1276544	 use it to confirm or refine the causal link, not just to phrase the sentence.
+1276702	2. THIS IS THE OPENING TURN OF A CONVERSATION, NOT A REPORT. Abraham, 31/07: "il parle un petit peu, il pose une question, il ne dit pas tout d'un coup." Say this much, and then STOP:
+1277070	   a. OPEN WARM, AND EARN IT. They filmed themselves and waited for this 
+1277218	 the first thing they hear should recognise that. But calibrate to what is actually true, from WHAT THERE IS TO BE GENUINELY PLEASED ABOUT above. Something fixed since last time beats everything: lead with it. Otherwise lead with how much of the stroke is already in range, or where they sit against players like them. A high score deserves real congratulation; a low one deserves the honest version 
+1278020	 they showed up, most of the stroke holds, here is the one thing in the way. Never open with hollow praise on a weak result, and never open flat on a strong one. Say the result is in, on which stroke, and the score 
+1278452	 as a score out of 100, never as a percentage.
+1278546	   b. 
+1279620	 OBJECTIVE
+1279642	Develop explosive rotational power for the backhand. Same as B09 but focus on SPEED and POWER rather than technique.
+1279882	 DEVICE
+1279898	Medicine ball thrown against wall. Measure rebound distance. Binary test: far rebound = 
+1280076	 / weak rebound = 
+1280122	 HOW TO DO IT
+1280150	Series 1: slow throws, focus on technique. Series 2: 70% speed. Series 3: maximum power. After all 3 series, take racket and hit 10 backhands reproducing the explosive rotation. Speed progression prevents injury.
+1280580	 KEY POINTS
+1280606	 Rotation starts from feet, rises to hands 
+1280694	 complete kinetic chain
+1280744	 Medicine ball horizontal 
+1280798	 not upward
+1280824	 Arms don't throw alone 
+1280874	 trunk projects
+1280908	 Speed progression: slow 
+1280960	 medium 
+1280994	 PROGRESSION
+1281020	1. Light ball, slow 
+1281062	 perfect technique
+1281100	2. Medium speed 
+1281134	 build momentum
+1281166	3. Maximum power 
+1281202	 explosive rotation
+1281246	 WHAT TO LOOK FOR
+1281284	 Far rebound + full rotation = explosive power developed
+1281400	 Weak rebound = insufficient trunk involvement
+1281496	 Shoulder pain = arms throwing alone, use body
+1281596	 USTA, Feel Tennis Miha Fundamental Drills
+1282654	MMMM y
+1282678	Chia s
+1282805	 videoPath vide pour session: 
+1284051	baland
+1285588	The analysis is on screen: the score, and every metric red or green by moment. Red is outside the range the best players sit in, green is inside. Each moment opens when tapped. This is where the coaching happens. Open it with show_last_analysis, which carries the session 
+1286134	 navigate cannot.
+1286748	ON "what this moment is for" ABOVE: that is Amine's coaching intent, NOT a script.
+1286914	Convey the same things to feel and do in your own words, shaped for this player.
+1287076	Never reuse his phrasing verbatim, and never say the same sentence twice across sessions.
+1287258	PRINCIPLES FOR THIS WHOLE CONVERSATION 
+1287338	 not all of it goes in the first
+1287404	message. The opening turn is defined in INSTRUCTIONS at the end; everything
+1287556	below is what governs the exchange once the player has answered you.
+1287696	- ONE MOMENT. You work 
+1287779	AI TRACKING: ACTIVE 
+1287899	Tell them it is running and that it takes one to two minutes, then OFFER to keep them company 
+1288089	 ask if they want to talk while it runs. Offer, never impose: if they say nothing, stay silent.
+1288532	 $tabIndex 
+1288578	 $tabCount
+1290735	 is upstream, so what shows up later in the stroke is probably its consequence rather than a separate problem to fix. That is the reason to start here 
+1291039	 not a list of the downstream moments.
+1293124	Welcome to Axel AI! 
+1293403	' d. EEE
+1294378	You addressed the player by name. Never do that 
+1294476	 no first name, no last name, no 'hey <name>'. Start straight into what you have to say. Warmth comes from remembering what they are working on, not from saying who they are. Rewrite without the name.
+1295735	[Axel] appel d'outil écrit en texte 
+1295809	 on redemande un vrai appel
+1298204	 OBJECTIVE
+1298226	Verify complete trunk rotation using the "belt buckle trick." Start: buckle toward side fence. Finish: buckle toward net. If buckle doesn't reach the net, rotation is incomplete.
+1298590	 DEVICE
+1298606	No equipment. Binary test: belt buckle faces net at end of swing = 
+1298742	 / buckle still sideways = 
+1298806	 HOW TO DO IT
+1298834	Note where your belt buckle points at the start of your backhand (should be toward the side fence). After your swing, check: does it face the net? If it stays sideways, you didn't rotate fully. Partner can call "NET" (correct) or "SIDE" (incomplete).
+1299340	 KEY POINTS
+1299366	 Buckle toward SIDE FENCE at start = correct preparation
+1299482	 Buckle toward NET at finish = complete rotation
+1299582	 Buckle stays sideways = incomplete, lacks power
+1299682	 Works for one-handed AND two-handed backhand
+1299780	 PROGRESSION
+1299806	1. Static pivot, freeze, check buckle direction
+1299902	2. Hit soft balls, check buckle after each
+1299988	3. Rally with mental checkpoint "buckle to net"
+1300088	 WHAT TO LOOK FOR
+1300126	 Buckle faces net = complete rotation
+1300204	 Buckle sideways = incomplete rotation
+1300284	 No trunk rotation visible = hitting with arms only
+1300394	 My Tennis Expert ("belt buckle trick" 
+1300474	 documented textually)
+1300996	[CoachVoice] voix coupée par le joueur 
+1301076	 texte seulement
+1301109	[Calibration] 
+1301139	 Frame 
+1301932	their height 
+1301960	 the video measurements are computed from it; they answer in ANY unit (5'11", 1m81, 180 cm) and YOU convert to centimetres before saving
+1304428	Zavrie
+1304755	the ambiguity check 
+1304797	 this is where you ask instead of guessing
+1304951	 STEP 3 
+1304969	 global stats fetched: 
+1307964	tvrtletí
+1308181	Dijalo
+1308195	ki okvir
+1308469	 Cannot re-analyze output video: 
+1309364	$modalRouteContentName-
+1310858	 MMMM d
+1311089	HH:mm '
+1311613	[AxelVoice] 
+1311639	 REPLI VOIX SYSTEME 
+1311809	 OBJECTIVE
+1311831	Automate immediate recovery to center after every forehand. "Ready, Rally and Recover" (USTA): return to home base after every shot.
+1312103	 DEVICE
+1312119	Two cones: one at hitting point, one at center court. After each shot, touch center cone before partner hits next ball. Binary test: cone touched before partner's hit = 
+1312459	 / not reached = 
+1312503	 HOW TO DO IT
+1312531	Hit your forehand, then immediately shuffle laterally to the center cone. Touch it and do a split step at the moment your partner hits the next ball. Rhythm: hit 
+1312857	 rebalance 
+1312881	 shuffle 
+1312901	 split step 
+1312927	 ready.
+1312947	 KEY POINTS
+1312973	 First recovery step starts IMMEDIATELY after the hit
+1313083	 Lateral shuffles 
+1313121	 no crossing of feet
+1313165	 Split step at moment opponent hits 
+1313239	 not before, not after
+1313287	 Body stays low during recovery 
+1313353	 no standing up
+1313391	 PROGRESSION
+1313417	1. Hit + recovery to cone, no second ball
+1313501	2. Hit + recovery + split step + second ball
+1313591	3. Continuous rallies with center recovery every shot
+1313703	 WHAT TO LOOK FOR
+1313741	 Cone touched before partner hits = efficient recovery
+1313853	 Cone not reached = recovery too slow
+1313931	 Player stands still after hit = no recovery awareness
+1314047	 USTA "Ready Rally Recover" drill
+1315039	 OBJECTIVE
+1315061	Create the low-to-high swing path for topspin. Racket head must start BELOW the ball before contact.
+1315269	 DEVICE
+1315285	Mini tennis in service boxes. Binary test: ball with visible topspin = 
+1315429	 / flat ball = 
+1315469	 HOW TO DO IT
+1315497	Mini tennis (service boxes): deliberately lower the racket head below the ball before contact, then accelerate upward through the ball. The ball should cross the net with visible rotation. If flat 
+1315893	 racket wasn't low enough. Progress from service boxes to mid-court to baseline.
+1316059	 KEY POINTS
+1316085	 Racket head MUST be below ball before contact
+1316181	 Movement is low-to-high 
+1316233	 racket rises through ball
+1316289	 Wrist relaxed 
+1316321	 drop is natural, not forced
+1316381	 Visible ball rotation = correct path
+1316463	 PROGRESSION
+1316489	1. Mini tennis 
+1316521	 exaggerated low-to-high
+1316571	2. Mid-court 
+1316599	 controlled low-to-high
+1316647	3. Baseline 
+1316673	 integrate into full backhand
+1316737	 WHAT TO LOOK FOR
+1316775	 Visible topspin rotation = correct low-to-high
+1316873	 Flat ball = racket not low enough
+1316945	 Ball in net = too horizontal, brush more upward
+1317049	 TennisMindGame.com, Top Tennis Training Blueprint
+1317271	 [CoachHome] Loading students for coach uid: 
+1318334	What YOU said that they are correcting, quoted or closely paraphrased. Be specific 
+1318502	 'my last answer' is useless to whoever reviews this.
+1318849	WORKFLOW KNOWLEDGE (how the app works end to end):
+1318951	- To analyze a video the user uploads: user uploads video -> goes to video_preview -> starts analysis -> results screen with score + metrics
+1319233	- To record and analyze: user opens serve/forehand/backhand_analysis -> records from tripod -> analysis runs -> results
+1319473	- To do live correction: open coach_mode -> skeleton overlay shows on player -> Axel detects errors in real-time -> corrects one at a time
+1319751	- To auto-detect: open auto_detect -> camera detects which stroke -> analyzes automatically
+1319935	- After any analysis: results show M0-M6 moments, green/red metrics, overall score, annotated video
+1320135	- You can show past results anytime with show_last_analysis
+1320257	VIDEO RECORDING INSTRUCTIONS 
+1320317	 say these maximum TWICE per session:
+1320393	- First and second time the player records: give the full instructions.
+1320537	- Third time and beyond: just say "same setup as before 
+1320651	 side view, 5 seconds, full body." Do not repeat everything.
+1320775	VIDEO UPLOAD GUIDE (what you tell the user step by step):
+1320891	- Accepted formats: MP4, MOV, M4V, AVI
+1320969	- Video must be MAX 5 SECONDS -- just the stroke, nothing before or after. If longer, trim it first
+1321169	- SIDE VIEW ONLY -- the player must be filmed from the side (perpendicular to the camera) for the best analysis. This is critical
+1321429	- Camera position: at the sideline and baseline intersection, about 3-4 meters from the player
+1321619	- Full body must be visible from feet to racket at full extension
+1321751	- Good lighting, outdoor or well-lit indoor court
+1321851	- Only ONE person in the frame
+1321913	- Only ONE stroke per video
+1321969	- Tripod or stable surface strongly recommended
+1322065	- If the video is too long or from the wrong angle, tell the user to re-record or trim it
+1322247	ANALYSIS PROCESS (what happens after upload):
+1322339	1. Video is uploaded to Firebase Storage
+1322421	2. Backend (MediaPipe + YOLO) detects 33 skeleton keypoints at 30fps
+1322559	3. 6 key moments (M0-M6) are identified automatically
+1322667	4. 107 biomechanical metrics are calculated across all moments
+1322793	5. Each metric is compared to pro references (Djokovic, Alcaraz, Sinner, etc.)
+1322951	6. Metrics are marked green (within pro range) or red (outside)
+1323079	7. Overall score 0-100 is computed
+1323149	8. Annotated video with skeleton overlay is generated
+1323257	9. Results appear: score, annotated video, metrics by moment, recommendations
+1323413	Analysis takes about 1 minute for cloud, 5 minutes for on-device.
+1323547	WHAT AXEL DOES AT EACH STEP:
+1323605	- Before recording: explain camera positioning, what to wear, how to hit
+1323751	- During upload: they are waiting and cannot see progress. The fact you have is
+1323911	  that an analysis takes roughly a minute 
+1323997	 carry that, in your own words.
+1324061	- When results arrive: walk through the annotated video, explain each moment, highlight red metrics
+1324261	- After results: propose drills for red metrics, offer live correction, or suggest another analysis for comparison
+1324491	- On second+ analysis: compare with previous, celebrate improvements, focus on persistent errors
+1324685	- video_library: Player's recorded videos, organized by stroke type. Help them find and review past recordings
+1324907	- video_preview: Video about to be analyzed. Guide on camera angle, lighting, full body visibility
+1325105	- analysis_result: Results of a completed analysis. Explain score, red/green metrics, moments M0-M6, what to improve
+1325339	- analysis_archives: History of all analyses. Help track progress over time, identify recurring issues
+1325545	- pro_comparison: Side-by-side with a pro player. Explain the differences and what they mean
+1325731	- drill_library: Collection of 54 drills (18 serve, 18 forehand, 18 backhand). Recommend based on weaknesses
+1325949	- drill_detail: Specific drill instructions. Explain how to do it, why it helps, how often
+1326131	- training_plan: Personalized multi-week plan. Explain structure, progression, when to reanalyze
+1326325	- sessions: Past analysis sessions list. Help understand trends
+1326453	- skill_analysis: Detailed skill breakdown by stroke
+1326559	- profile: Player info, subscription, settings
+1326653	- onboarding: New user setup. Welcome, explain the app, collect profile info
+1326807	- dashboard_coach: Coach view of all students. Help manage and prioritize
+1326955	- coach_home: Coach landing page with student list and quick actions
+1327093	- coach_analysis: Coach reviewing a student analysis
+1327199	- ambassador: Referral program info
+1327271	- referral_history: Referral tracking
+1327349	RULES:
+1327363	- ALWAYS call get_player_profile first if you don't know the player's level yet
+1327523	- Use tools proactively when relevant (don't just describe what you could do)
+1327679	- If the player shares personal info (name, age, level, etc.), save it immediately via save_player_profile
+1327893	- When asked about progress, ALWAYS call get_progress first, then comment on the data
+1328065	- When showing analysis results, explain what the player SEES on screen (annotated video, skeleton, colored metrics)
+1328299	- Follow the kinetic chain M0 to M6 when explaining errors -- always fix the earliest moment first
+1330009	[StorageService] STEP 1 
+1330059	 Fetching user profile...
+1331479	ADVANCED: one correction, with the mechanism 
+1331571	 root cause, where it breaks the chain, what the marginal gain is. You may be technical; they can use it.
+1331866	Start playing 
+1331896	 AI will identify your stroke
+1334045	tvrtletí
+1335142	What surface do you play on most 
+1335210	 clay, hard, or grass?
+1340431	[Startup] Warning: No RevenueCat API key 
+1340515	 skipping RC init
+1341040	[RC] Live update 
+1341076	 isPro: 
+1341295	[RemoteConfig] fetchAndActivate timed out 
+1341381	 using defaults
+1342798	d MMMM y '
+1343191	'., MMMM
+1344020	Tell them what has to be true for the analysis to work 
+1344132	 five seconds maximum, side view, whole body 
+1344224	 and that they can trim it on the next screen if it is too long.
+1344372	 écran d'erreur, PAS de /results
+1345612	 _loadStats error: $e
+1347538	. Do not invent them. Ask the player for each one now, one question per message, then call this tool again. The account is NOT created 
+1347810	 do not tell the player you are done, do not move on to anything else until this tool returns success.
+1348558	 HOW TO DO IT
+1349044	$tabCount-
+1349066	 $tabIndex
+1349512	Semantic search over the full tennis knowledge base (1260 chunks from ITF coaching manuals and sport science reviews). This is NOT only biomechanics 
+1349812	 it covers match TACTICS (371 chunks: patterns, playing against a pusher, serve placement, court positioning), MENTAL game (130: pressure, tiebreaks, frustration, focus), FITNESS (118), DRILLS (68) and COACHING method (394).
+1350262	ALWAYS call this FIRST for ANY tennis question before answering from general knowledge 
+1350438	 technique, strategy, psychology, physical preparation, or what to do in a specific match situation. Set `category` to target the right domain. It returns the source passage with its document name. Ground your answer in what comes back, in your own words, adapted to the player's level 
+1351012	 never paste the raw passage. Name the source when precision matters.
+1351378	Support Axel AI 
+1351429	etvrti kvartal
+1353859	 [CoachDashboard] Stack: 
+1354533	etrtletje
+1356145	etvrtak
+1356267	 MMMM d
+1356631	Profile facts still unknown 
+1356689	 fill little by little, ONE at a natural moment, never as a form (height and handedness become required at the first analysis): 
+1356990	III kwarta
+1357402	 $modalRouteContentName
+1359418	[Axel] analyse coach bloquée 
+1359478	 note déjà en cours
+1359955	 OBJECTIVE
+1359977	Identify and anchor the Continental grip as the natural starting position for every serve. This grip allows wrist flexibility needed for pronation, spin and power.
+1360311	 DEVICE
+1360327	Racket laid flat on open palm, strings facing up. Grip naturally without changing orientation. When arm is raised, the frame should be perpendicular to the floor 
+1360653	 like holding a hammer. Binary test: frame perpendicular = 
+1360773	 / frame tilted = 
+1360819	 HOW TO DO IT
+1360847	Lay the racket on your open palm, strings up. Close your hand around the handle without rotating it. Raise your arm in front of you 
+1361113	 the frame edge should be perpendicular to the floor. Then do a slow swing to trophy position 
+1361303	 your wrist must flex freely backward. If it feels locked, the grip is wrong.
+1361463	 KEY POINTS
+1361489	 V of thumb-index sits on the thin edge of the handle
+1361599	 Heel of hand on the last bevel
+1361665	 Frame perpendicular when arm raised = correct Continental
+1361785	 Wrist must flex freely in trophy position
+1361877	 PROGRESSION
+1361903	1. Find grip from palm position, verify perpendicularity
+1362017	2. Switch from forehand grip to Continental in under 2 seconds
+1362143	3. Full serve with Continental, verify grip hasn't slipped after each serve
+1362299	 WHAT TO LOOK FOR
+1362337	 Frame perpendicular + wrist flexible = correct Continental
+1362459	 Frame tilted = wrong bevel, re-adjust V position
+1362561	 Wrist locked = grip too tight, relax hand pressure
+1362671	 USTA Player Development, ITF
+1365532	 they need them
+1367139	 Keep working on:
+1367613	i kvartal
+1368287	 Firebase uid  : 
+1368832	 $tabIndex 
+1368860	 $tabCount
+1369087	 Your approach is not reaching them. Own that out loud, briefly and without drama 
+1369253	 they already know it is not working, and pretending otherwise costs you their trust. Then change something real: a different image, a different drill, a different entry point in the chain, or an upstream link you have not tried.
+1370009	Vystrihnú
+1370944	 d MMM
+1371921	' d. EEEE
+1372919	 Iapetus indisponible: 
+1373011	NEXT SET 
+1373237	MMMM d
+1376166	. When the moment is calm and natural (a greeting, a lull 
+1376284	 NEVER mid-analysis and never right after they asked something else), you MAY ask ONE short, friendly question about it, e.g. "
+1377370	 na webe
+1378148	[StorageService] STEP 5 
+1378198	 Upload complete, fetching download URL...
+1378307	 [CoachDashboard] Error loading students: 
+1379074	Use this to know exactly what went wrong physically. Translate it into what the player feels 
+1379262	 never read the definition back to them.
+1379346	MEASUREMENT ON RECORD (for answering if asked 
+1379440	 never invent another):
+1379729	 uploadVideo() START 
+1379773	 strokeType: 
+1381373	 $tabIndex 
+1381407	 $tabCount 
+1383505	$modalRouteContentName 
+1383771	a verdict on whether the video is good 
+1383851	 you have not seen its content
+1384554	 using fallback
+1384676	Trimite
+1384943	what is already known 
+1384989	 prevents re-asking
+1386226	)QeyQQÉ===ñð
+1386266	)QeyQQÉ===ñð
+1386306	(QeyQQÉ===ñð
+1386346	(PdxPPÈ<<<ñð
+1386386	(PeyQQÉ===ñð
+1386426	(PdyPQÉ===ñð
+1386466	(QdxPPÉ===ñð
+1386506	(QeyQQÉ
+1386522	==ñððððððÜðððððððððððððð
+1386586	(QeyQQÉ===ñð
+1386626	(QeyQQÉ
+1386666	(QeyQQÉ===ñð
+1386706	(PdxPPÈ<<<ðð
+1386746	)QeyQQÉ===ðð??)
+1386784	?)QeyQQÉ=
+1386806	?ð??)==µ
+1386824	?)QeyQQÉ
+1386846	?ð??)==µ
+1386864	?)QeyQQÈ
+1386886	?ðÜÜÜÜÜ
+1386902	ÜÜÜÜÜÜÜÜÜÜÜÜÜ
+1386942	¡¡¡¡¡¡¡¡¡¡¡¡¡
+1387158	' QQQQ
+1388430	 falling back to on-device
+1389797	$modalRouteContentName 
+1390973	$modalRouteContentName 
+1391213	***/yr
+1392101	'. d MMM
+1393718	 analyses done 
+1393750	 they know this. Remove the positioning and filming instructions entirely and keep whatever you were doing otherwise.
+1393986	Do NOT replace them with an instruction to press anything: if the right move is to take them somewhere else 
+1394204	 they are alone, or they want live correction 
+1394298	 that decision still stands.
+1396361	$modalRouteContentName
+1399364	 [AnalyzeService] Message: 
+1401250	Tab $tabIndex trong t
+1401304	 $tabCount
+1402534	 do not repeat them
+1402894	for someone ALONE with a tripod: they set the phone down, the camera recognises the stroke by itself and analyses 
+1403124	 no one needs to hold anything
+1405112	I kwarta
+1407207	 d MMMM
+1407975	[OnDevice] 
+1407999	 Done in 
+1409153	$modalRouteContentName 
+1410562	'. d-MMM
+1411552	octubre
+1411676	 OBJECTIVE
+1411698	Automate the correct trophy position 
+1411774	 the maximum loading point of the serve. Kovacs & Ellenbecker (2011, USTA) identify this as stage 3 (Loading) and the priority correction point for serve development.
+1412114	 DEVICE
+1412130	No equipment required. Player performs full service motion and freezes in trophy position for 2-3 seconds before hitting. Binary test: non-dominant shoulder higher + knees flexed = 
+1412494	 / either missing = 
+1412544	 HOW TO DO IT
+1412572	Perform your full service motion and freeze in trophy position for 2 seconds. Check: is your non-dominant shoulder slightly higher? Is your hitting elbow pointing to the sky? Are your knees flexed? Then hit. After 5 serves with a 2-second pause, reduce to 1 second, then to a mental checkpoint with no visible pause.
+1413210	 KEY POINTS
+1413236	 Non-dominant shoulder must be slightly higher than dominant
+1413360	 Hitting elbow points toward the sky
+1413436	 Knees flexed 
+1413466	 ready to push upward
+1413512	 Pause allows you to verify all 3 elements simultaneously
+1413634	 PROGRESSION
+1413660	1. 2-second pause in trophy position, verify all elements
+1413776	2. 1-second pause, same verification
+1413850	3. Mental checkpoint only 
+1413904	 no visible pause, normal serves
+1413974	 WHAT TO LOOK FOR
+1414012	 Shoulder higher + knees flexed at checkpoint = correct trophy
+1414140	 Shoulders level = no pre-load, rework shoulder alignment
+1414258	 Knees straight = no leg drive, rework knee bend
+1414362	 Kovacs & Ellenbecker (USTA/Sports Health 2011), Athletes Untapped, Tennis Evolution
+1416840	[Startup] 
+1416864	 Clé RevenueCat distante REFUSÉE (mauvais préfixe pour Android) 
+1416994	 repli sur la clé compilée
+1418144	' MMMM'
+1418162	' d, EEEE '
+1419211	'. d MMM, EEE
+1421013	 axtar
+1421407	(^|\n)[ \t]*(\d+[.)]|[-*
+1421457	])?[ \t]*[*_#`]*[ \t]*(What did the player actually ask|Real intent\?|What do I already know from PLAYER FACTS|Already known from PLAYER FACTS|What have I ALREADY said or asked|Already asked\?|What would be a repetition or a redundant|repeat or redundant question|Given their level and history, what is the ONE|the ONE thing worth saying now|How short can this be|How short can it stay)
+1422818	 Platform: Android 
+1422858	 monthly: tennis_ai_monthly_plan:tennis-ai-monthly-plan
+1424392	introducing yourself by name 
+1424452	 the hologram just did, out loud
+1426630	 STEP 5 
+1426648	 ERROR: File does not exist at path: 
+1427474	". You invented it. Drill ids are never guessed from a title 
+1427598	 copy one EXACTLY from a tool result. Do not tell the player you opened anything.
+1428326	 RE-ANALYZE session: 
+1429903	Written down with the full context of this conversation and, if there is one, the analysis on the table. It will be reviewed by a human before anything changes. Acknowledge in ONE short sentence and go back to coaching. You have NOT learned it 
+1430393	 do not say you will remember it, and do not change your diagnosis of this player on the strength of it.
+1431614	Selecteaz
+1432074	, but this flow analyses under THEIR account 
+1432166	 the measurements would use THEIR body data, and you still do not know: 
+1432980	(^|\n)[ \t]*([-*
+1433014	]|\d+[.)])?[ \t]*[*_#`]*[ \t]*(Language|Tone|Voice|Style|Register|Player facts?( check)?|Facts check|Situation( right now)?|Capabilities|Personality|Relationship status|Reply language|Session intent)[*_`]*[ \t]*:
+1435617	You are recommending something without having called any tool this turn 
+1435763	 no data behind it. Either call get_progress / search_biomechanics_knowledge / get_biomechanics_instruction first and ground the advice in what comes back, or say plainly you'd need to see them play / look something up before giving a real answer.
+1436877	Your unit turn is too small 
+1436935	 your shoulders need to rotate more. Turn your chest until it faces the side fence. Your non-hitting hand should push the racket back.
+1437497	 OBJECTIVE
+1437519	Load the outside leg (dominant foot for right-handers) after the split step to push explosively toward the ball. "Load the outside leg" (UTR Sports).
+1437825	 DEVICE
+1437841	After split step, load weight on outside foot, hold 1 second. Binary test: explosive push from outside foot = 
+1438063	 / falling toward ball = 
+1438123	 HOW TO DO IT
+1438151	Split step, land and load your outside foot (right foot for right-handers). Hold the loaded position 1 second 
+1438373	 feel the pressure in your support leg. Then push explosively toward the backhand side. The sensation: your leg "launches" your body toward the ball.
+1438677	 KEY POINTS
+1438703	 Outside foot loaded BEFORE moving 
+1438775	 not during
+1438801	 Push is explosive 
+1438841	 body "launched" not "falling"
+1438905	 Knee of outside foot flexed during loading
+1438995	 For left-handers: outside foot is the left foot
+1439099	 PROGRESSION
+1439125	1. Split step + load with 1-second pause + move without hitting
+1439253	2. Split step + load + move + hit on soft ball
+1439347	3. Rally with outside foot loading on every backhand
+1439457	 WHAT TO LOOK FOR
+1439495	 Explosive push from outside foot = correct loading
+1439601	 Falling toward ball = no loading, maintain the 1-second pause
+1439729	 Knee straight during loading = no energy storage
+1439835	 UTR Sports ("load the outside leg"), PlayYourCourt
+1440127	$tabCount 
+1440159	 $tabIndex 
+1441611	MMM y '
+1442139	 $modalRouteContentName
+1442195	Compartilhar
+1448104	Two equally valid ways to hold the camera: a tripod/prop (bag, bench, fence) OR another person filming 
+1448312	 a coach, a partner, a hitting partner. Ask which one they have rather than assuming a tripod. 'No other people on court' means nobody else IN FRAME; the person filming stands off-court at the sideline/baseline corner and does not break that rule.
+1449554	 OBJECTIVE
+1449576	Memorize the optimal forehand contact point: in front of the body, at hip height, arm almost extended. This is where all kinetic chain energy converges.
+1449888	 DEVICE
+1449904	Cone placed 40cm in front of front foot in line with dominant shoulder. Ball must be contacted above the cone. Binary test: contact above cone = 
+1450196	 / contact behind cone = 
+1450256	 HOW TO DO IT
+1450284	Place a cone 40cm in front of your front foot. Partner feeds soft balls. Hit your forehand and make contact directly above the cone. Partner watches from the side and calls "IN FRONT" (correct), "GOOD" or "LATE" (too far back).
+1450744	 KEY POINTS
+1450770	 Contact is IN FRONT of the body 
+1450838	 never beside or behind the hip
+1450904	 Arm is almost extended but not locked 
+1450984	 slight elbow flexion
+1451030	 Ideal height is between hip and waist
+1451110	 Eyes watch ball AT MOMENT of contact 
+1451188	 not the target
+1451226	 PROGRESSION
+1451252	1. Soft balls, focus on contacting above the cone
+1451352	2. Normal balls, adjust feet to find the right contact point
+1451474	3. Rally 
+1451494	 remove the cone, maintain the same contact point
+1451598	 WHAT TO LOOK FOR
+1451636	 Contact above cone at hip height = optimal point
+1451738	 Contact behind cone = too late, prepare earlier
+1451838	 Contact too far in front = over-reaching, let ball come more
+1451968	 Mantis Sport, Feel Tennis contact point drills
+1452063	[AxelVoice] morceau muet 
+1452115	 on le recolle au suivant
+1453060	[Axel] analyse coach interceptée 
+1453128	 qui est filmé ?
+1453244	$modalRouteContentName
+1454545	Tell them what would help 
+1454599	 one stroke, first step to follow-through, five seconds is plenty 
+1454733	 and let them choose whether to send it anyway. This is advice, not a refusal.
+1455535	[StorageService] STEP 7 
+1455585	 module_stats updated 
+1457360	'., QQQ
+1458171	Hands-free capture screen is open. The player already knows the setup from previous sessions, so the screen said nothing about it 
+1458433	 do NOT explain camera placement. It is waiting for them to pick automatic or semi-automatic.
+1458625	 their app setting, stated above. Never mix two languages in one message
+1459139	 $modalRouteContentName
+1461109	 $modalRouteContentName
+1461959	 videoPath: 
+1462381	 OBJECTIVE
+1462403	Automate the two-handed backhand grip: dominant hand Continental below (passenger), non-dominant hand semi-western above (driver). The non-dominant hand generates the power.
+1462757	 DEVICE
+1462773	Alternate forehand/backhand feeds. Binary test: non-dominant hand "drives" the shot = 
+1462947	 / dominant hand hits alone = 
+1463017	 HOW TO DO IT
+1463045	Ready position with both hands on racket. Partner feeds to backhand. Focus on the sensation that the TOP hand (non-dominant) is pulling and driving the shot. The BOTTOM hand (dominant) just stabilizes. After each hit, check that both hands haven't slipped.
+1463563	 KEY POINTS
+1463589	 Non-dominant hand is the DRIVER 
+1463657	 generates power (USTA)
+1463707	 Dominant hand is the PASSENGER 
+1463773	 stabilizes and controls
+1463825	 Grip must not slip during swing
+1463893	 Both hands stay on racket between shots
+1463981	 PROGRESSION
+1464007	1. Backhand only 
+1464043	 focus on "driver/passenger" sensation
+1464121	2. Alternate forehand/backhand 
+1464185	 rapid grip transition
+1464231	3. Rally with attention on top hand driving every backhand
+1464353	 WHAT TO LOOK FOR
+1464391	 Top hand drives the shot + grip stable = correct configuration
+1464521	 Dominant hand hits alone = reversed driver/passenger
+1464631	 Grip slips = wrong tension
+1464693	 USTA Tips & Instruction ("driver/passenger"), Mouratoglou Academy
+1465000	' MMMM
+1467250	 [ResultsScreen] error: $e
+1468517	 $tabIndex / $tabCount-
+1468782	Call this the moment someone tells you that what you said about TENNIS ITSELF is wrong or incomplete 
+1468986	 'no, that's false', 'that's not what causes it', 'the cue for that moment isn't that', 'a pro doesn't do that'. It costs nothing to call and the correction is reviewed by a human before it changes anything, so when in doubt, record it. Do NOT call it for: a player disagreeing about their own body or feel ('I don't feel that'), a complaint about your tone, length or language, a preference, or an app problem 
+1469810	 none of those are tennis knowledge. You do not need to ask permission and you must not turn this into an interview: record what they told you. Ask ONE short question first only if you genuinely cannot tell what they say is true instead. Then acknowledge in one plain sentence 
+1470366	 you took it down, it will be checked 
+1470444	 and get back to coaching. Never claim you have learned it or that you will remember it: the correction changes nothing until a human validates it, and saying otherwise is a lie to someone who is trying to help you.
+1473083	 [CoachHome] Stack: 
+1473499	EEE, d.MM.y '
+1474184	Kopírova
+1474469	 Describe THIS one specifically 
+1474535	 what their body does and what it costs on the ball 
+1474641	 in plain sensations, never a metric code, and do NOT hedge ('too high or too low') when the analysis already knows which: say it precisely.
+1478672	$tabCount-
+1478708	 $tabIndex
+1479288	 $modalRouteContentName
+1480199	 MMM d
+1483291	 seçin
+1485986	That clip is longer than one stroke 
+1486060	 I might lock onto the wrong swing. One stroke, five seconds, and I'm much more precise. Send it anyway if you like.
+1487287	 $modalRouteContentName
+1487382	 OBJECTIVE
+1487404	Develop the loop backswing that increases racket speed compared to a straight-back preparation. The loop creates a stretch-shortening cycle in the shoulder muscles.
+1487740	 DEVICE
+1487756	Tennis balls placed on the ground tracing the ideal loop path. Player swings racket following the ball path. Binary test: racket follows the loop = 
+1488054	 / straight back = 
+1488102	 HOW TO DO IT
+1488130	Place balls on the ground tracing the ideal loop: up from the ready position, arcing back and up, then dropping down behind you. Swing your racket slowly following this path. The loop is continuous 
+1488528	 no stop at the top. Your wrist stays relaxed throughout.
+1488648	 KEY POINTS
+1488674	 Racket goes UP first then loops DOWN behind 
+1488766	 not straight back
+1488806	 The loop is continuous 
+1488856	 no stop at the top
+1488898	 Wrist stays relaxed throughout the loop
+1488982	 The loop creates the stretch-shortening cycle in shoulder muscles
+1489122	 PROGRESSION
+1489148	1. Trace the ball path slowly with racket
+1489232	2. Add speed, maintain the loop shape
+1489308	3. With ball feeds, maintain the loop on every preparation
+1489430	 WHAT TO LOOK FOR
+1489468	 Visible loop in backswing + continuous motion = correct path
+1489594	 Straight back preparation = no loop, missing elastic energy
+1489718	 Stop at top of loop = breaking the continuous motion
+1489832	 ITF Elliott Reid Crespo 2003, Feel Tennis
+1490366	 MMM d y
+1490596	 $tabIndex 
+1490620	 $tabCount
+1491360	Skeleton detected 
+1491398	 identifying stroke...
+1492400	tvrtletí
+1493745	 d MMM
+1494112	[FLOW] Buffer cleared 
+1494158	 fresh observation for 
+1494298	 OBJECTIVE
+1494320	Automate the split step at the exact moment the opponent strikes the ball. The split step is the trigger for the entire forehand kinetic chain 
+1494608	 without it, you're late on every ball.
+1494694	 DEVICE
+1494710	Partner announces "HOP" at each hit. Player lands split step synchronized with the call. Binary test: landing synced with "HOP" = 
+1494972	 / early or late = 
+1495020	 HOW TO DO IT
+1495048	Stand at center baseline in athletic position. Partner hits a ball and says "HOP" simultaneously. You jump slightly and land on both feet at the exact moment of "HOP". After landing, pivot toward the forehand side. After 10 reps with verbal cue, remove the cue 
+1495572	 read visually.
+1495608	 KEY POINTS
+1495634	 Both feet land simultaneously 
+1495698	 not one before the other
+1495752	 Knees flexed on landing 
+1495804	 not straight legs
+1495844	 Weight on balls of feet, never on heels
+1495928	 Jump is minimal 
+1495964	 2-3cm is enough
+1496004	 PROGRESSION
+1496030	1. Partner says "HOP" at each hit, sync your landing
+1496136	2. No verbal cue 
+1496172	 read the hit visually
+1496218	3. Alternating forehand/backhand balls, correct first step after split
+1496364	 WHAT TO LOOK FOR
+1496402	 Landing at moment of "HOP" + knees flexed = perfect timing
+1496524	 Landing before "HOP" = guessing instead of reading
+1496630	 Landing after "HOP" = reaction too slow
+1496714	 Feet too narrow at landing = unstable base
+1496808	 USTA, UTR Sports Footwork Drills, ITF Elliott Reid Crespo 2003
+1496941	 on laisse passer
+1497360	the diagnosis itself 
+1497404	 that is a separate, longer turn
+1497868	 "$modalRouteContentName"
+1499572	Your racket arm is too low at the trophy position. Bring your elbow up to shoulder height with the racket pointing straight up 
+1499828	 imagine holding a waiter's tray above your head.
+1500765	ad nahor
+1501090	EEE, d 
+1501605	Axel AI needs your support to keep going. Join us for one month 
+1501735	 it makes all the difference.
+1502739	 OBJECTIVE
+1502761	Develop a perfectly reproducible ball toss. 85% of serve faults in amateur players come from an irregular toss. A consistent toss is the foundation of any effective serve.
+1503111	 DEVICE
+1503127	Racket placed on the ground 65cm in front of your front foot, strings facing up. A cross is marked at the center of the strings with adhesive tape. The ball must land on the cross after the toss. Binary test: ball on cross = 
+1503579	 / ball off cross = 
+1503629	 HOW TO DO IT
+1503657	Stand in serve position. Tossing arm starts from the hip, rises slowly and straight, palm open under the ball. Release the ball precisely at eye level. It should rise vertically to about 1.2× your head height and briefly pause at its peak. Meanwhile, your hitting arm takes the trophy position. The ball falls back and must land on the racket on the ground.
+1504377	 KEY POINTS
+1504403	 Ball rises vertically 
+1504451	 no rotation or lateral drift
+1504513	 Tossing arm elbow stays extended until release
+1504611	 Head does not move 
+1504653	 only the eyes follow the ball
+1504717	 Body weight stays balanced on both feet during toss
+1504829	 PROGRESSION
+1504855	1. Entire racket frame as target 
+1504923	 large zone
+1504947	2. String area only 
+1504989	 reduced zone
+1505017	3. Center cross with tape 
+1505071	 maximum precision
+1505113	 WHAT TO LOOK FOR
+1505151	 Ball lands on the cross = perfect toss
+1505233	 Ball in front of racket = toss too far forward
+1505331	 Ball behind = toss too close to body
+1505409	 Ball left or right = lateral drift in tossing arm
+1505517	 The Tennis Menu, Feel Tennis, Sportplan
+1505952	kwiecie
+1507187	 [AnalyzeService] movement_type      : 
+1507801	 Annual / best-value slot: 
+1508809	[GeminiLLM] pas de session Firebase 
+1508883	 appel impossible
+1511211	 [ResultsScreen] overall_score: 
+1511683	LLL y '
+1511757	just talking things through 
+1511815	 technique, doubts, plans
+1512273	. QQQQ
+1514142	[AxelResults] tour toujours en vol après 10 s 
+1514236	 on passe outre
+1514677	k katman
+1514893	 $tabIndex 
+1514919	 $tabCount
+1516798	 the SAME metric name at a DIFFERENT moment is a DIFFERENT fault, never treat it as already covered
+1517949	$modalRouteContentName 
+1519166	Chia s
+1519848	kirpti
+1520249	'. QQQQ
+1520602	PERSONALITY:
+1520628	- NEVER address the player by name 
+1520700	 not their first name, not their last
+1520776	  name, not as an opener, not anywhere in a reply. It reads like a mail
+1520920	  merge, not like a coach who knows them. Their name is in PLAYER FACTS so
+1521070	  you know who you are talking to, NOT so you can say it back to them. You
+1521220	  show familiarity by remembering what they are working on. Start straight
+1521370	  into what you have to say.
+1521428	- Friendly, encouraging, concise (2-3 sentences max per reply). Abraham,
+1521574	  31/07: talk like a young, upbeat coach texting a training partner, not a
+1521724	  formal assistant 
+1521764	 casual phrasing, contractions, real enthusiasm. Still a
+1521878	  coach who knows their stuff, not a hype-man: skip corporate/customer-service
+1522036	  phrasing ("I understand your concern", "I'd be happy to help") and canned
+1522188	  formality. This is about register, not about adding slang for its own sake
+1522342	  or dropping precision on technique.
+1522418	- THE PLAYER'S LANGUAGE IS 
+1523261	 $tabIndex 
+1523285	 $tabCount
+1523967	 [AnalyzeService] Response: 
+1525016	Stroke not recognized 
+1525062	 choose manually
+1526927	Thresholds come from the app's own code 
+1527009	 never quote a different range. Explain in sensations, not numbers, unless the player explicitly asks for figures.
+1527539	$modalRouteContentName 
+1528228	Go yearly 
+1528507	tni skan edin
+1531752	 $modalRouteContentName
+1532157	Version 2.0.1
+1532185	Built with 
+1532211	 for tennis players.
+1532668	Best value 
+1532692	 2 months free
+1533106	[AxelVoice] 
+1533258	 from your very first word, including the greeting, before they have written anything. Do not infer the language from anything else.
+1533524	- Two things will try to pull you off it, and neither may: material you are given (coaching notes, corpus passages, metric definitions) can be in another language 
+1533852	 rephrase it in 
+1536047	Odmietnu
+1536158	[StorageService] STEP 3 
+1536208	 Fetching global stats...
+1538625	Pretra
+1539434	 HH:mm
+1539793	Kinetic chain principle (ITF): energy transfers sequentially from the ground up 
+1539955	 legs/stance -> hips/trunk rotation -> shoulder -> elbow -> wrist -> racket. An error early in this sequence forces compensation downstream: the body 'borrows' stability or power from a later segment to make up for what the earlier segment failed to provide. This is why the earliest error in the chain is the root cause, even if later moments also show red metrics 
+1540689	 those are often symptoms, not the disease.
+1542561	 Axel et le micro suivent
+1543182	 fois 
+1543196	 silence (plafond 
+1547183	 falling back to get()
+1548252	$tabCount
+1548274	 $tabIndex
+1548382	ervenec
+1550754	 player. Say so plainly 
+1550804	 do not pretend they are not on screen, and do not go through them.
+1551553	 $tabCount
+1551579	 $tabIndex
+1551849	 $modalRouteContentName
+1551933	$modalRouteContentName 
+1554728	TWO RULES THAT MUST NOT CONTRADICT EACH OTHER: (1) if the player EXPLICITLY asks for another moment, go there 
+1554950	 they decide, never refuse; but first say in one clause what is still open at Moment 
+1556030	No body could be tracked reliably in the clip 
+1556124	 too far, out of frame, or too dark.
+1557076	asking them what they want to do 
+1557144	 they do not know yet, that is the point
+1557781	Your upper body is opening up too early at contact. Keep your shoulders sideways until the moment of contact 
+1558001	 then rotate through. Early opening costs you control.
+1559240	Your free trial has ended 
+1560690	     EXPERT CORRECTION on this moment 
+1560768	 a coach reviewed what you said here and fixed it. It overrides the line above where they disagree: 
+1561153	[StorageService] STEP 5 
+1561203	 ERROR: downloadUrl is null after 3 attempts, marking session as error
+1562547	etrtletje
+1562756	EEEE, d 
+1562774	MMMM y
+1563662	The analysis is still RUNNING. There are no results yet. Do not comment on performance, scores, or technique 
+1563882	 you would be inventing it. Keep the player informed and wait.
+1564795	 $tabIndex
+1564823	 $tabCount
+1567151	ít naviga
+1567171	ní nabídku
+1568925	Offer to walk them through it. Make clear the screen alone does not tell them what matters 
+1569109	 that is what you are for.
+1569815	Everything this person can do in the app, matched to their role (player or coach), with what they have already used and which tool opens each capability. Call it when you are about to propose a next step, when the conversation has a natural opening for discovering something new, or when they ask what you / the app can do. Pick ONE item that fits the moment 
+1570535	 never recite the list. Prefer something they have not used yet.
+1571037	d MMM y '
+1571406	Build a concrete game plan IN YOUR OWN WORDS from the data above 
+1571538	 2 to 4 key points, no more. Lean on the player's weapon (mainWeapon) and protect their weakness (perceivedWeakness + measured trends), exploit the opponent's style, and adapt to the surface. Ground each tactical point in the tacticalKnowledge passages 
+1572046	 never invent. If key match info is missing (you know nothing about the opponent), ask ONE short question first instead of guessing.
+1572651	számításunk szerint
+1572750	na apak
+1572772	as lapa
+1573442	 $tabIndex 
+1573470	 $tabCount
+1575541	. MMMM d, EEEE
+1577518	$tabCount-
+1577540	 $tabIndex-
+1577702	 STEP 2 
+1577720	 module_stats fetched: 
+1579478	 [AnalyzeService] Unexpected error: 
+1580435	$modalRouteContentName
+1581377	$tabIndex. 
+1581419	 $tabCount
+1582831	 cm/px 
+1583301	 OBJECTIVE
+1583323	Develop balanced landing after the serve. The landing is the transition from serve to the next shot 
+1583525	 an unstable landing delays recovery and loses the advantage.
+1583655	 DEVICE
+1583671	A strip of adhesive tape 50cm in front of the front foot on the baseline. After each serve, the back foot must land behind this line and stay stable for 2 seconds. Binary test: stable landing behind line for 2 seconds = 
+1584113	 / unstable or past line = 
+1584177	 HOW TO DO IT
+1584205	Mark the line with tape. Serve normally. After contact, your back foot should land behind the tape line and you should be stable enough to hold for 2 seconds. If you fall forward past the line or lose balance, the landing needs work.
+1584677	 KEY POINTS
+1584703	 Landing starts AT the moment of contact 
+1584787	 not after a full stop
+1584835	 Back foot lands behind the line 
+1584903	 controlled deceleration
+1584955	 Hold stable for 2 seconds 
+1585011	 no wobbling
+1585039	 First step after landing is a split step toward the baseline
+1585169	 PROGRESSION
+1585195	1. Serve and land, hold 2 seconds behind line
+1585287	2. Serve, land, and immediately split step
+1585373	3. Serve, land, split step, and move to return position
+1585489	 WHAT TO LOOK FOR
+1585527	 Stable landing behind line + 2 second hold = balanced finish
+1585653	 Falls past the line = too much forward momentum
+1585753	 Wobbles on landing = poor balance, strengthen landing leg
+1585873	 Lands on heels = shift to balls of feet
+1585961	 USTA Player Development
+1586271	 RECOVERY PHASE
+1586550	Watching for the stroke now. The on-device detection recognises it from the movement 
+1586722	 never guess the stroke yourself.
+1589246	Partager
+1589607	$modalRouteContentName
+1591087	sklanda
+1591116	 across 3 analyses and it has not resolved. OWN IT in one honest, plain sentence 
+1591280	 the spirit is: "on a bien essayé de corriger cette erreur, ça ne passe pas encore, on la met de côté pour l'instant" 
+1591518	 no drama, no blame on the player, and never a vague "on avance dans la chaîne". Then say you are moving to 
+1592012	 car.) 
+1592028	 un appel modèle économisé
+1592081	d MMMM
+1593001	' MMM'
+1600568	Axel AI has helped you analyze your game 
+1600652	 and we hope you felt the difference.
+1600730	To keep improving and to help us continue building the best AI coaching tool for tennis players worldwide, we'd love for you to join us as a Pro member.
+1601038	Every subscription directly funds new features, better analysis, and the future of Axel AI.
+1602148	 OBJECTIVE
+1602170	Develop conscious alternation between crosscourt and down-the-line on the backhand. Pattern 2+1: two crosscourt to build, one down-the-line to attack.
+1602478	 DEVICE
+1602494	Cones in target zones. Pattern 2+1. Binary test: pattern respected + accurate placement = 
+1602676	 / wrong direction = 
+1602728	 HOW TO DO IT
+1602756	Hit 2 backhands crosscourt then 1 down the line, repeat. Partner returns all balls to same spot. The swing stays the same 
+1603002	 only contact timing changes direction. Earlier = crosscourt. Slightly later = down the line.
+1603194	 KEY POINTS
+1603220	 Swing does NOT change 
+1603268	 only contact timing changes direction
+1603348	 Crosscourt = percentage shot, lower net, longer court
+1603460	 Down the line = attack shot, changes direction
+1603558	 Pattern 2+1: secure with 2 cross, attack with 1 line
+1603672	 PROGRESSION
+1603698	1. Pattern 2+1 with announcement
+1603764	2. Pattern 2+1 without announcement
+1603836	3. Free rally 
+1603866	 change direction at will
+1603922	 WHAT TO LOOK FOR
+1603960	 Pattern respected + accurate = point construction mastered
+1604082	 All balls same direction = no timing variation
+1604180	 Down the line in net = contact too late
+1604268	 USTA Player Development "2 Crosscourt 1 Down the Line"
+1605345	 OBJECTIVE
+1605367	Use the internal foot pivot (non-dominant foot) to orient the body toward the ball on the backhand side. The pivot must be at least 20° on the toe.
+1605669	 DEVICE
+1605685	No equipment. Binary test: foot pivoted 
+1605767	20° + body oriented toward ball = 
+1605837	 / foot flat = 
+1605877	 HOW TO DO IT
+1605905	Ready position, feet parallel. On signal "BACKHAND!", pivot your internal foot (left foot for right-handers) on the toe at least 20° toward the backhand side. This orients your entire body. Follow immediately with a crossover step to move toward the ball. Start with 6-8 slow pivots (Feel Tennis recommendation).
+1606535	 KEY POINTS
+1606561	 Pivot at least 20° 
+1606603	 less doesn't reorient the body
+1606669	 Pivot on the TOE 
+1606707	 not the heel
+1606737	 Crossover step follows IMMEDIATELY after pivot
+1606835	 For left-handers: internal foot is the right foot
+1606943	 PROGRESSION
+1606969	1. Slow pivots (6-8 reps), feel the body reorientation
+1607079	2. Pivot + crossover + move toward fed ball
+1607167	3. Rally with internal foot pivot on every backhand
+1607275	 WHAT TO LOOK FOR
+1607313	 Foot pivoted 
+1607343	20° + body oriented = correct pivot
+1607417	 Foot stays flat = body facing net, inefficient lateral move
+1607541	 Crossover before pivot = wrong sequence
+1607629	 Tomaz Mencinger Feel Tennis (Warm-Up Footwork Drills 
+1607739	 pivots)
+1608440	 repli en anglais
+1608570	II kwarta
+1610554	INTERMEDIATE: one correction, plus the cause-effect link that makes it make sense 
+1610720	 why this position produces that ball. Enough mechanism to understand, not enough to analyse themselves.
+1612418	[StorageService] STEP 6 
+1612468	 Updating session videoUrl and status...
+1616633	$tabCount 
+1616663	 $tabIndex 
+1617809	Cues that DID land with this player before (this register works for them 
+1617957	 reuse the style, not the words): 
+1619627	 [CoachHome] Error loading students: 
+1620047	You already asked them to choose between recording and uploading, and they have not answered yet. The choice is on their screen. Do not ask again and do not open anything 
+1620391	 say nothing about it, or answer what they actually asked.
+1622798	 $tabIndex / $tabCount
+1623286	Kopyalay
+1624836	t tekstu
+1626573	Go monthly 
+1627052	[Axel] WARNING: no <thinking> block 
+1627126	 model skipped reasoning
+1627631	[Axel] SAFETY: appel analyze_video écrit en TEXTE 
+1627733	 on exécute réellement le flux
+1628596	 TOSS AND BACKSWING
+1628927	 and nothing else. Say which one plainly 
+1629011	 "Moment 
+1629082	Sprawd
+1629854	Not measured 
+1629882	 this moment was not detected
+1634557	 OBJECTIVE
+1634579	Connect the serve to the point that follows by developing immediate post-serve recovery momentum. The serve is not the end 
+1634827	 it's the start of the point.
+1634893	 DEVICE
+1634909	A line marked 3 meters in front of the baseline. After each serve, one foot must cross this line BEFORE the ball bounces in the opponent's service box. Binary test: crosses before bounce = 
+1635289	 / doesn't reach = 
+1635337	 HOW TO DO IT
+1635365	Mark a line 3 meters in front of the baseline. Serve and use your landing momentum to move toward the net immediately. One foot must cross the line before your serve bounces in the opposite box. This forces you to move forward immediately after serving.
+1635877	 KEY POINTS
+1635903	 Forward movement starts AT landing 
+1635977	 not after a full stop
+1636025	 First step is a split step, then move forward
+1636121	 Stay balanced 
+1636153	 no uncontrolled sprint
+1636203	 Works best on first serve 
+1636259	 second serve must also allow progression
+1636349	 PROGRESSION
+1636375	1. Serve and reach the line, no return ball
+1636463	2. Serve, reach line, partner returns 
+1636541	 must be stable at line
+1636589	3. Serve and volley pattern 
+1636647	 serve, move, split step, volley
+1636717	 WHAT TO LOOK FOR
+1636755	 Foot crosses line before bounce = good recovery momentum
+1636873	 Doesn't reach line = too slow starting, use landing momentum
+1636999	 Reaches line but off balance = slow down, stay controlled
+1637123	 USTA Player Development, Sportplan
+1637891	Do not repeat what it has already said. Comment, encourage, or warn if something looks wrong 
+1638079	 but the screen is running the session.
+1639553	End with: propose the drill below for this fault, with a confident, specific correction. You have several analyses on this player now, so the picture is solid 
+1639873	 no need to ask for more.
+1642823	 [AnalyzeService] StackTrace: 
+1645394	[RevenueCat] Skipping 
+1645440	 empty API key
+1646628	Say in ONE short sentence that the analysis is in and you are taking a close look 
+1646794	 buying the few seconds the real explanation needs.
+1646950	[FCM] 
+1646964	 Token saved for $uid
+1649262	 d/M/y
+1649288	[Auth] First account on this device 
+1649362	 free trial granted
+1652106	 KEY POINTS
+1652591	DRILL SELECTED BY THE ENGINE (this one, not another 
+1652697	 do not invent a drill):
+1653750	 Drill parse error 
+1653814	bazar ert
+1654768	You stated something about their record 
+1654850	 a score, a count, a progression, a past session 
+1654950	 without calling a tool this turn, so you cannot know it. Call get_progress or show_last_analysis and use what actually comes back, or drop the claim and say you need to look it up. Never produce a number or a trend from memory.
+1656462	 score: 
+1657467	 d MMMM y
+1659767	d MMMM y '
+1660215	 Platform: 
+1660394	 pré-chauffage dans la langue disponible
+1661144	 [AnalyzeService] Request path: 
+1661692	No fault in context. Ask the player which fault they mean, or open their last analysis first 
+1661880	 do not describe a drill from memory.
+1663071	[Axel] recording guide already shown (persisted) 
+1663171	 skipping
+1665759	Închide
+1666204	EEE, d MMM y '
+1666300	 I'm Axel. Ask me anything about your tennis. Or record a swing or upload a video, and I'll break it down for you.
+1666556	 sessionId is null 
+1666596	 skipping Firestore reset
+1667540	 Resolved 
+1667562	 monthly: 
+1668437	 OBJECTIVE
+1668459	Force the player to complete the unit turn BEFORE the ball bounces. Late preparation is the #1 error in amateur players.
+1668707	 DEVICE
+1668723	Cone at approximate bounce point. Partner announces "TOO LATE" if pivot not complete at bounce. Binary test: pivot complete before bounce = 
+1669005	 / pivot incomplete at bounce = 
+1669079	 HOW TO DO IT
+1669107	Place a cone at the expected bounce point. Partner feeds balls. You must have your shoulders at 90° (pivot complete) BEFORE the ball bounces at the cone. If the partner says "TOO LATE", your preparation needs to be faster. The time between bounce and contact is for adjusting your feet 
+1669681	 not for preparing.
+1669725	 KEY POINTS
+1669751	 Split step starts when partner hits 
+1669827	 not when ball arrives
+1669875	 Pivot begins immediately after split step landing
+1669979	 Pivot must be complete at the bounce 
+1670057	 that's the deadline
+1670101	 After bounce = adjust feet, no more preparation
+1670205	 PROGRESSION
+1670231	1. Slow, high balls 
+1670273	 plenty of time to prepare
+1670327	2. Normal speed 
+1670361	 pivot must be automatic
+1670411	3. Fast, low balls 
+1670451	 visual reading and instant reaction
+1670529	 WHAT TO LOOK FOR
+1670567	 Pivot complete before bounce + fluid swing = early preparation
+1670697	 Pivot at bounce but rushed = improving but still tight
+1670811	 Pivot after bounce = late preparation, go back to slow balls
+1670941	 USTA Player Development, ITF coaching methodology
+1671156	tvrtek
+1671949	mtina edin
+1674892	MM.y '
+1675621	 [ResultsScreen] momentSummaries keys: 
+1676300	 doublon immédiat ignoré
+1676763	There is deliberately NO drill for this fault 
+1676857	 it is corrected live, in posture, not with a basket exercise. Tell the player exactly that. Do NOT invent an exercise to fill the gap.
+1680176	[Axel] stroke question already pending 
+1680256	 ignoring 
+1680463	HH:mm '
+1683304	 file relâchée
+1683443	Pretra
+1684179	an option the screen does not offer 
+1684253	 there are exactly three
+1684860	tdiena
+1685763	[INTERNAL 
+1685785	 the player has NOT seen this]
+1685849	You wrote your reasoning instead of your reply:
+1686179	CORRECTED 
+1686624	 OBJECTIVE
+1686646	Develop wrist stability at the moment of contact. The wrist must be firm (not floppy, not rigid) to maintain racket face angle through the hitting zone.
+1686958	 DEVICE
+1686974	Hit forehands against a wall from 2 meters. Binary test: ball returns straight = 
+1687138	 / ball wobbles or spins off = 
+1687210	 HOW TO DO IT
+1687238	Stand 2 meters from a wall. Hit gentle forehands against the wall. Focus on keeping your wrist stable at contact 
+1687466	 the ball should return straight and predictably. Grip pressure increases slightly just before contact, then releases into follow-through.
+1687748	 KEY POINTS
+1687774	 Wrist is firm at contact 
+1687828	 not floppy, not rigid
+1687876	 Grip pressure increases slightly just before contact
+1687986	 Racket face stays stable through the hitting zone
+1688090	 After contact, wrist can release naturally into follow-through
+1688224	 PROGRESSION
+1688250	1. Gentle hits, focus purely on wrist stability
+1688346	2. Increase power while maintaining stability
+1688438	3. Full rally 
+1688468	 stable wrist on every contact
+1688534	 WHAT TO LOOK FOR
+1688572	 Ball returns straight and predictably = stable wrist
+1688682	 Ball wobbles or spins off unpredictably = floppy wrist
+1688796	 Arm feels tense after = grip too tight, relax between shots
+1688924	 ITF coaching methodology, Feel Tennis
+1689646	$tabCount 
+1689678	 $tabIndex 
+1689739	 Analysis error: 
+1690851	QQQQ y '
+1692248	' to this player this session. Do not explain it again 
+1692360	 either move to the next priority or reference it in one short clause without re-teaching it.
+1692975	$tabCount 
+1693007	 $tabIndex 
+1693436	iadienis
+1694016	RESOLVED since you last coached them (name at least one, briefly 
+1694148	 earned progress matters): 
+1694645	[StorageService] STEP 4 
+1694695	 Session created with status: pending 
+1694798	camera or placement instructions 
+1694866	 that comes after they choose
+1695311	 OBJECTIVE
+1695333	Identify the optimal backhand contact point using the catch drill. For the two-handed backhand, contact is slightly closer to the body than the forehand.
+1695647	 DEVICE
+1695663	No racket. Catch ball with non-dominant hand after bounce. Binary test: contact in front at waist height = 
+1695879	 / late or too high = 
+1695933	 HOW TO DO IT
+1695961	No racket 
+1695983	 catch the ball with your non-dominant hand (the "driver") after it bounces. Where you catch it is your natural contact point. Do 10 catches. Then take your racket and hit at exactly the same point. Partner calls "IN FRONT" or "LATE."
+1696457	 KEY POINTS
+1696483	 Contact slightly IN FRONT of body 
+1696555	 closer than forehand (Feel Tennis)
+1696629	 Height at waist level
+1696677	 Catch with NON-DOMINANT hand 
+1696739	 it's the "driver" (USTA)
+1696793	 Eyes watch ball AT contact 
+1696851	 not the target
+1696889	 PROGRESSION
+1696915	1. Catch without racket 
+1696965	 identify natural contact point
+1697029	2. Racket in hand 
+1697067	 hit at same point as catch
+1697123	3. Rally with conscious contact point awareness
+1697223	 WHAT TO LOOK FOR
+1697261	 Contact in front at waist = optimal point
+1697349	 Contact beside body = too late
+1697415	 Contact too far in front = overreaching
+1697503	 WebTennis24, Feel Tennis ("contact closer to body for 2H backhand")
+1698623	 [AnalyzeService] render_video        : true
+4756831	,,,,,,,,,,,
+4774173	8$$$$8$h888
+4784921	,,,,,,,,
+4807948	<4 4$4
+4807977	@4$4$4$4$4$4$4$4$4$4$4$4$4
+4808138	@4$4$4$4$4$4
+4821920	$$$$$$$$
+4821940	$4$$$$d$($((((,
+4873166	,,,,,,
+4881803	,,,,,,(
+4908269	0,,,(,(,
+4925617	@0 4 4$0$@
+4926516	(,,,,,,
+4960994	P,,,<,(
+4963903	L000000
+5054001	<PPPPPP
+5054087	<PPPPPPPPXXLL
+5054143	$`888888
+5055627	$L88888$88$$8$8$
+5055826	$L$$$$
+5061206	$`8hPP88P888
+5062337	|8888@<
+5062639	$T$$88
+5062788	x88888884
+5068208	T0000000000000
+5160681	0,DDDDDDDDDDDDDDDDDD

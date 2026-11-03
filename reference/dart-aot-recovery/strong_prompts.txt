@@ -1,0 +1,237 @@
+=== 315181 (141) ===
+Coach's main hub: tiles for MY STUDENTS, ANALYSES, REPORTS, DASHBOARD, SHARE QR CODE (to link a student) and START LIVE SESSION (coach mode).
+
+=== 316636 (433) ===
+Tell them what they can do here, and name the three actions the screen actually offers: analyse the clip, trim it down to the stroke itself, or take another video. Abraham, 04/08: he asked explicitly for all three to be said on arrival -- this is the only moment the clip can still be trimmed or replaced, and nothing on screen tells them the trim handles are draggable. Say them naturally, in your own words, not as a bulleted menu.
+
+=== 328259 (142) ===
+Welcome to Axel AI! I'm Axel, your AI coach. I'll ask you a few quick questions to personalize your experience. First, what's your first name?
+
+=== 343367 (154) ===
+Fetch recommended drills or the active training plan. Optionally pass an analysisId to get drills targeted at the weaknesses found in a specific analysis.
+
+=== 352817 (127) ===
+The review screen is open with the clip loaded. The player can see it and has to decide what to do before anything is analysed.
+
+=== 359519 (176) ===
+You're not turning your shoulders early enough. Start the unit turn the moment you recognize the ball is coming to your backhand. Both hands stay on the racket during the turn.
+
+=== 362742 (211) ===
+Turn your own voice on or off, when the player asks -- 'stop talking', 'be quiet', 'I'll read instead', or later 'you can speak again'. Turning it off does not end the conversation: you keep replying in writing.
+
+=== 374044 (98) ===
+Position the camera at the sideline and baseline intersection. Make sure I can see your full body.
+
+=== 415027 (133) ===
+The analysis result JUST landed. Axel is about to read it closely; the full explanation will follow in a few seconds as its own turn.
+
+=== 416088 (189) ===
+[SYSTEM: you just WROTE a tool call as text instead of emitting it. Nothing ran, and nothing opened. Emit the real function call now. Do not describe it, do not tell the player it is done.]
+
+=== 421912 (153) ===
+The clip is in landscape: the PHONE was held horizontally while filming. The analysis cannot run on it, and rotating the file afterwards does not fix it.
+
+=== 425614 (100) ===
+The player chose an existing video from their library instead of filming now. You cannot see it yet.
+
+=== 440618 (216) ===
+You are talking to a COACH, not the player. They need data they can act on and relay to their student: metrics, trends, comparisons, what to work on in the next lesson. Do not address them as if they hit the strokes.
+
+=== 441905 (130) ===
+A brand-new player just opened the app. The hologram video has just greeted them out loud, and the suggestion cards are on screen.
+
+=== 445159 (97) ===
+A specific student's detail page (coach only). Needs the student's name -- no dedicated tool yet.
+
+=== 466881 (175) ===
+The stroke the player named, if they named one -- 'analyse my serve', 'my forehand'. Fill it whenever they say it, even in passing: it is what stops the app asking them again.
+
+=== 472537 (122) ===
+The ultimate AI platform for elite academies. Pro-level video analysis, biomechanics, scouting tools, and full API access.
+
+=== 489317 (93) ===
+, never quote it across. And your own reasoning may run in any language; the reply is always
+
+=== 502773 (104) ===
+Welcome to the review screen. You can analyse your swing, trim it with the two handles, or record again.
+
+=== 776931 (91) ===
+Whether the player plays matches/tournaments (competitive) or plays for fun (recreational).
+
+=== 790945 (177) ===
+A trophy screen shown right after the player completes a training session or hits a milestone. There is nothing to diagnose here -- this is a moment to acknowledge, not analyse.
+
+=== 799179 (405) ===
+Start a step-by-step voice walkthrough of a drill: Objective, Setup, How to do it, Key points, Progression, What to look for. Use this when the player says they have a headset on and want you to talk them through a drill. Say ONLY the first step's content in your reply -- do not read the whole drill at once. The player will say 'next' or similar to advance; call advance_drill_walkthrough at that point.
+
+=== 800428 (128) ===
+The results screen is open. The player can see a score and a list of flagged points, but nothing has been explained to them yet.
+
+=== 840817 (112) ===
+One specific drill's screen (video, sets, reps). Reachable via the open_drill_detail tool, not generic navigate.
+
+=== 900617 (165) ===
+The fault, exactly as it appears in the analysis (e.g. 'ARMS POSITION', 'WRIST AND RACKET POSITION'). Omit to get the drill for the fault currently being worked on.L
+
+=== 907369 (114) ===
+You cannot send anyone to the analysis screen: it needs a video already submitted. Use analyze_video to start one.
+
+=== 914615 (199) ===
+Proposal saved for expert review. You may share the idea with the player now, saying plainly it is an extra idea from you and not yet part of the validated library. Do not promise it will be adopted.
+
+=== 926945 (139) ===
+What the player says gives them trouble IN A MATCH (nerves, second serve, long rallies, closing out sets...). Their words, not a diagnosis.
+
+=== 930204 (238) ===
+Player's overview. Four stat cards: total sessions, average analysis score (%), training plans count, unread messages. Below: recent activity feed (each practice session by stroke, Today/Yesterday, status Completed / Analyzing / Pending).
+
+=== 942115 (94) ===
+Choose which dashboard view to open (relevant for accounts with both player and coach roles).L
+
+=== 953182 (118) ===
+Equip your club with AI coaching tools for all members. Centralized dashboard, progress tracking, and group analytics.
+
+=== 999369 (262) ===
+You are asking the player ONE question: record now, or upload a video they already have. The two choices are on screen. Do NOT open any screen yourself, do NOT give filming or placement instructions, do NOT tell them to press a button. Say nothing else about it.
+
+=== 1004962 (120) ===
+The video is being analysed. This takes one to two minutes. There is no result yet and nothing for the player to decide.
+
+=== 1007112 (181) ===
+Fetch the current player profile (name, age, height, weight, handedness, level, goal, whether they have a coach). Use this to personalize advice or check what info you already have.
+
+=== 1015209 (218) ===
+The photo library is opening now. Do NOT tell the player to press any button -- you already opened it. If the stroke was unknown, they are being asked for it right now; say nothing about it. One short sentence at most.
+
+=== 1017502 (115) ===
+Full-featured AI platform for established clubs. Unlimited members, multi-coach management, and advanced reporting.
+
+=== 1037536 (108) ===
+This will permanently delete your account, all your data and analysis history. This action cannot be undone.
+
+=== 1042685 (286) ===
+Open the visual detail screen for ONE specific drill (video, sets, reps, tips). Use this whenever the player asks to SEE a drill screen, not just hear it narrated. Different from start_drill_walkthrough, which reads it aloud step by step -- use both together when the player wants both.
+
+=== 1066623 (178) ===
+The player just opened the app. The big Axel hologram and the words 'Meet Axel AI' are on screen, and two buttons sit at the bottom: one to record a swing, one to upload a video.
+
+=== 1070300 (86) ===
+Fetch the player's active training plan. If no active plan exists, generate a new one.
+
+=== 1075974 (122) ===
+Bienvenue sur Axel AI ! Je suis Axel, ton coach IA. Je vais te poser quelques questions rapides pour personnaliser ton exp
+
+=== 1088046 (96) ===
+What the player THEMSELVES feels is their weak point (self-reported, not the measured analysis).
+
+=== 1105713 (197) ===
+Move to the next step of the drill walkthrough started with start_drill_walkthrough. Returns the next step's content, or tells you the walkthrough is finished. Say ONLY that one step, nothing else.
+
+=== 1138394 (254) ===
+Schedule a daily local notification reminding the player to do a drill. Use this whenever the player agrees to a daily reminder for a drill you just recommended -- do not ask again if they already said yes. Defaults to 6pm local time if no time is given.
+
+=== 1146979 (131) ===
+End with: propose the drill below for this fault. Add that with a second analysis in, the picture is getting clearer, and one more
+
+=== 1184623 (82) ===
+-- an invitation to sharpen the picture, never a condition for getting the drill.
+
+=== 1201309 (104) ===
+How the player plays: e.g. baseliner, all-court, serve-and-volley, counterpuncher, aggressive baseliner.
+
+=== 1202639 (198) ===
+. Tell the player honestly why you need it, ask ONE question per message, store answers with save_player_profile (complete_onboarding first if the account does not exist), then call this tool again.
+
+=== 1271699 (122) ===
+I'm seeing your back, not your side. Move the camera to the sideline so I can see you across the frame, and film it again.
+
+=== 1282466 (81) ===
+The player's strongest shot / weapon, e.g. forehand, first serve, backhand slice.
+
+=== 1330913 (217) ===
+End with: propose the drill below as a starting point for this fault, presented as a first suggestion drawn from this single analysis. Then say briefly that this is based on ONE analysis, and that doing a couple more
+
+=== 1338698 (262) ===
+. The detailed metrics did not come through, so you cannot diagnose anything this time. In 2 sentences: give them the score, say the moment-by-moment detail is on the screen for them to tap through, and offer to look again. Do NOT invent a fault or a correction.
+
+=== 1342156 (218) ===
+Fetch the player's analysis session history (total sessions, average score, breakdown by stroke, and details of the most recent analysis including score, red metrics, and date) to answer questions about their progress.
+
+=== 1365076 (104) ===
+The player wants an analysis but has not said which stroke, and the conversation gives no reliable clue.
+
+=== 1371035 (336) ===
+\b((your|the)\s+(score|overall\s+score)\b|\d+\s*(/|out of)\s*100|\d+\s+(analys|session|video|serve|forehand|backhand)\w*\b|(you|you've|you have)\s+(done|completed|recorded|filmed)\b|(went|gone|moved)\s+from\s+(red|green)\b|(improved|progressed|got\s+better|got\s+worse)\s+(since|from|by)\b|last\s+(time|session|analysis)\s+(you|your)\b)
+
+=== 1381516 (322) ===
+Record what the player wants to do THIS session, as soon as they say it in their own words -- e.g. 'I just want to do a drill today', 'I'm alone with my tripod', 'give me a full analysis'. Call this once, as soon as the intent is clear, so the app doesn't push the wrong flow. Do not ask the player to restate it once set.
+
+=== 1390116 (301) ===
+. In their language, explain in ONE honest sentence why the analysis needs it, then ask ONE question. As they answer, store each fact (save_player_profile, or complete_onboarding first if the account does not exist). When you have everything, call analyze_video yourself to resume what they asked for.
+
+=== 1393290 (122) ===
+Filming now. The player needs the clip to show one stroke, filmed from the side, whole body in frame, around five seconds.
+
+=== 1399922 (612) ===
+Change the language of the whole app -- menus, screens, your own voice and the microphone -- when the player asks for it: 'parle-moi en francais', 'switch to Spanish', 'can you speak my language', or when they answer your onboarding language check. Call it as soon as they ask; do not send them to the profile screen to do it by hand, and do not ask them to confirm. Only these are available: en, fr, es, it, de, zh, hi, pt, tr, ar. If they ask for anything else, say plainly that you do not have it yet and keep going in the language you are already using -- never call this with a code that is not on the list.
+
+=== 1403938 (141) ===
+You already gave the positioning/filming instructions earlier in this session. Remove them and just tell the player to tap the camera button.
+
+=== 1416302 (175) ===
+A clip is loaded and waiting. From here the player can trim it to the stroke, start the analysis, film again, or pick a different video. Nothing is analysed until they choose.
+
+=== 1428604 (131) ===
+Smart coaching tools for your tennis club. Member management, group performance tracking, and AI-assisted training for every court.
+
+=== 1446572 (314) ===
+Restart voice input when the player says it is not working -- 'the mic isn't picking me up', 'you're not hearing me', 'the microphone is stuck'. Call it once, then tell them to try again. If they say it still fails after this, do NOT call it again -- tell them plainly it may be a permission issue in iOS settings.
+
+=== 1461662 (103) ===
+Make sure the video is max 5 seconds, side view, full body visible. You can trim it on the next screen.
+
+=== 1501875 (179) ===
+The body is tracked, but the player has their back to the camera through most of the clip. Left and right are swapped that way, so every angle would be measured on the wrong side.
+
+=== 1516105 (84) ===
+' is a coach-only screen and this account is a player. Do not offer or attempt this.
+
+=== 1527718 (250) ===
+full_analysis: wants the complete record+analyze flow. drill_only: just wants a drill, no video analysis. solo_tripod: alone, using a tripod, needs recording guidance suited to that. quick_question: just asking something, not here to train right now.
+
+=== 1531988 (157) ===
+how to read what is on screen, once and briefly: red is outside the range the best players sit in, green is inside it. This is the only time you will say it.
+
+=== 1543642 (84) ===
+Hello! Let me load your errors from your last analysis. We will fix them one by one.
+
+=== 1567483 (784) ===
+Open an app screen. ONLY these exact destination values exist -- generated from the app's real route list (axel_capabilities.dart), so this is always in sync with what the app can actually show. Player-only and coach-only destinations are both listed here, but the app will refuse a coach-only one for a player account and vice versa. To show ONE specific drill's screen (with video, sets, reps), use open_drill_detail instead -- it needs an id, generic navigate can't carry one. Do NOT use this for 'serve_setup', 'serve_analysis', 'forehand_analysis', or 'backhand_analysis' when the player wants to record or analyze a stroke -- those look like the right destination but land on a calibration screen, not the camera. Use analyze_video instead; it opens the actual recording screen.
+
+=== 1578564 (202) ===
+Coach overview. Four stat cards: my students count, average analysis score (%), training plans, unread messages. Below: each student's recent sessions (Today/Yesterday, Completed / Analyzing / Pending).
+
+=== 1588324 (216) ===
+Change how fast you speak, when the player asks -- 'talk faster', 'you're going too fast', 'slow down a bit'. Apply it immediately and confirm in one short sentence. Do NOT offer this on your own; only when they ask.
+
+=== 1593656 (354) ===
+. Nothing flagged in this analysis. Open the conversation in 2-3 spoken sentences: their result is in and what it is (a score out of 100, never a percentage); on screen, red means outside the range the best players sit in and green means inside it, so nothing is red here; one more analysis would confirm the level holds. End on a real question and stop.
+
+=== 1615439 (102) ===
+Welcome to Real-Time Analysis! I will analyze your technique live. Let me guide you through the setup.
+
+=== 1615557 (116) ===
+Send a text message to the player's coach (if they have one). Use this when the player wants to contact their coach.
+
+=== 1640273 (187) ===
+The player asked to analyze a stroke in conversation, but has not said HOW to give the video: record now (the camera screen) or upload a clip they already have. Two choices sit on screen.
+
+=== 1651092 (89) ===
+Elite-level coaching with AI-powered analysis, periodization, and tournament preparation.
+
+=== 1654305 (275) ===
+camera: film the stroke now (default). gallery: the player already HAS a clip on their phone and wants to import it -- 'j'ai une video', 'je veux uploader', 'importer'. Choosing gallery opens the photo library directly; do not tell them to press a button, you are opening it.
+
+=== 1664626 (111) ===
+). The analysis needs a portrait frame; a square crop distorts the scale used to convert pixels to centimetres.
+

@@ -1,0 +1,25 @@
+{
+  "name": "@tennis-ai/engine",
+  "version": "0.1.0",
+  "description": "Biomechanics engine: pose → phases M0–M6 → metrics → scoring. Pure functions, runnable in a Web Worker.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig.esm.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "clean": "node -e \"fs.rmSync('dist',{recursive:true,force:true})\""
+  },
+  "dependencies": {
+    "@tennis-ai/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.0"
+  }
+}

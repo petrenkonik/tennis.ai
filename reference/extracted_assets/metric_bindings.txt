@@ -1,0 +1,359 @@
+===== M1_ARMS_POSITION =====
+_toMessage@217240691
+TextInputAction.next
+identityHashCode
+M1_ARMS_POSITION
+package:flutter/src/material/button.dart
+_handleMoveCursorBackwardByWord@78245603
+UserInfo
+purchaseDate
+
+===== M1_FOOT_ANGLE =====
+package:string_scanner/src/exception.dart
+conversationLength
+Font.helveticaBold
+M1_FOOT_ANGLE
+groupIdx
+SECURE CONNECTION ESTABLISHED
+_HttpConnection@17463476
+FocusHighlightMode.
+
+===== M2_KNEES_POSITION =====
+application/tei+xml
+_primaryShadowAnimation@226053933
+DioException.receiveTimeout
+M2_KNEES_POSITION
+canUpdate
+segunda-feira
+QrDataModuleShape
+degrees. Bend it. Target: 65-160.
+
+===== M2_UNIT_TURN =====
+We were on
+lerpFontVariations
+getLineMetricsAt
+M2_UNIT_TURN
+AnalysisService
+Outside heel >= 0.5cm elevation
+NumpadMultiply
+package:riverpod/src/listenable.dart
+
+===== M2_WEIGHT_TRANSFER =====
+_getFile@1427152746
+ColorFloat32.rgba
+_simpleInstanceOfTrue@0150898
+M2_WEIGHT_TRANSFER
+freeExpiresAt
+attachNotificationTree
+WebRTCCallService
+get:distanceSquared
+
+===== M3_TRIPLE_EXTENSION =====
+_RenderInputPadding@55219276.
+entitlementVerificationMode
+HeroFlightDirection
+M3_TRIPLE_EXTENSION
+Animate.delay has no effect when used with Animate.autoPlay=false
+Android push notification channel
+dyn:toInt
+get:_index@3099033
+
+===== M3_TROPHY_POSITION =====
+_decodeDisplayFeatures@23065589
+_BaseHandler@273263083
+SharedPreferencesAsyncAndroid.
+M3_TROPHY_POSITION
+moveByWordBoundary
+QueueList.
+ContainerBoxParentData
+_loadSessions@1519418246
+
+===== M4_TRUNK_ROTATION_BODY_ALIGNMENT =====
+package:image/src/exif/ifd_container.dart
+get:callback
+_createData@1370004559
+M4_TRUNK_ROTATION_BODY_ALIGNMENT
+_CupertinoEdgeShadowPainter@226053933
+M-d, EEE
+Delete message?
+get:_maxSliderPartHeight@106317193
+
+===== M5_CONTACT_POINT_HEIGHT_DISTANCE =====
+_createBytes@1370004559
+package:flutter/src/widgets/viewport.dart
+Tafuta kwenye Wavuti
+M5_CONTACT_POINT_HEIGHT_DISTANCE
+IosRecordConfig
+_colors@105243954K
+tall displayLarge 2014
+SliverGridDelegate
+
+===== M5_RACKET_HEAD_POSITION =====
+start_silent_observation
+HanjaMode
+set:port
+M5_RACKET_HEAD_POSITION
+_drag@114231897
+package:image/src/formats/png/png_info.dart
+dart.isolate
+get:contains
+
+===== DOM_KNEE =====
+firstEventOnly
+Tap to record
+YResolution
+DOM_KNEE
+dart:core/list.dart
+Push your weight forward into the shot.
+DefaultWidgetsLocalizations
+Could not load video URL:
+
+===== NDOM_KNEE =====
+_adjustRect@487467860
+captureMethodNeeded
+_UnmodifiableUint32ArrayView@8027147.
+NDOM_KNEE
+positionedChildConstraints
+Ton profil est pr
+t, {name} ! Qu'est-ce que tu veux faire aujourd'hui ?
+_UnmodifiableUint8ClampedArrayView@8027147
+
+===== RACQUET_PATH =====
+QuotaService.
+[Axel] recording guide skipped: totalSessions=
+_ConnectionInfo@17463476
+RACQUET_PATH
+_Exception@0150898
+init:_TfLiteModelCreate@1561204773
+_PageViewState@345030489
+Main weapon (self-reported):
+
+===== KNEE_FLEXION =====
+init:_firestore@1564441827
+_turbulenceSeed@640321118
+_bringIntoViewBySelectionState@177183791
+knee_flexion
+PlatformConfigurationNativeApi::ScheduleFrame
+singleLineFormatter
+androidOffloadSchedulingEnabled
+ImageProxyUtils
+
+===== Knee bend during loading =====
+_bchDigit@1412241772
+setState
+_getNextKey@1227237914
+Knee bend during loading or contact. Deep bend stores elastic energy for explosive extension.
+findCredentials
+_buildSubscriptionCard@1528078232
+GroupAlertBehavior.
+MethodChannelWriteBatch
+
+===== Angle between shoulder line =====
+processStarted
+_CupertinoTextThemeDefaults@121195667
+com.ryanheise.just_audio.methods
+Angle between shoulder line and hip line. Creates the coil for power.
+AxelSuggestion
+package:mobile_scanner/src/enums/email_type.dart
+get:fontName
+sunnuntaina
+
+===== classic pose before the forward =====
+Desember
+application/vnd.criticaltools.wbs+xml
+es-ES-language
+The classic pose before the forward swing. Shoulder-elbow alignment and racket drop angle.
+application/oda
+TVInputComposite2
+ExifVersion
+_dispatchPointerDataPacket@23065589
+
+===== Racket face angle at trophy =====
+Alles selecteren
+Socket_CreateBindConnect
+, credential:
+Racket face angle at trophy position. Should be parallel to shoulders.
+your extension
+blackMountainView bodyLarge
+_addZero@1278441731
+elbow_angle
+
+===== Ball height and forward distance =====
+ResolutionUnit
+_buildLoading@1535257248
+if-modified-since
+Ball height and forward distance at contact point.
+Unterminated number literal
+VP8BitReader
+_LinkedListIterator@4220832
+ndomKnee
+
+===== Wrist leads racket head =====
+NotificationService.
+application/x-dtbncx+xml
+init:goalProvider
+Wrist leads racket head at contact for lag and power.
+Frame.parseFirefox
+dev.flutter.pigeon.camera_android_camerax.UseCase.pigeon_newInstance
+MediaStepBackward
+_decodeApplePvrtcHeader@1173272571
+
+===== Back leg angle during landing =====
+CupertinoLocalizationLo
+constructor
+_AnimatedDefaultTextStyleState@92443363
+Back leg angle during landing. Stable landing on front foot.
+package:camera_platform_interface/src/types/camera_exception.dart
+_transformCanvas@640321118
+UIKeyInputF3
+thumbnailColor
+
+===== Speed of the toss arm =====
+_AudioMessageBubbleState@1523383347
+_startMainIsolate@1026248
+_NotificationNode@260426236
+Speed of the toss arm during ball release. Controlled speed ensures consistent toss height.
+_setPointer@16069316
+, isStreamingImages:
+_rootRunBinary@5048458
+_ImageFilterRenderObject@336362382.
+
+===== ball leaves the toss hand =====
+postureHalfOpened
+whiteMountainView bodyMedium
+_extractFrame@1540171222
+Height at which the ball leaves the toss hand. Should be above eye level.
+_bubbleUp@1026248
+package:collection/src/equality.dart
+WidgetStateMouseCursor(textable)
+JsonUnsupportedObjectError
+
+===== Maximum height reached by the ball toss =====
+_RenderSliverPrototypeExtentList@369197657
+_checkMove@64069716
+migrateOnAlgorithmChange
+Maximum height reached by the ball toss. Should be 1.8-2.3x player height.
+No analysis found
+PeriodUnit.
+analysis_in_progress
+_MixinApplication124&State&SingleTickerProviderStateMixin@18353248
+
+===== Wrist position relative to hip =====
+_lastBottomViewInset@177183791
+_sendInternal@1026248
+Skeniraj tekst
+Wrist position relative to hip during preparation. Wrist should be above hip.
+ndomHeel
+flutter.arthenica.com/ffmpeg_kit_event
+englishLike bodySmall 2014
+toward_goal
+
+===== Racket face angle during backswing =====
+ParentDataClass
+uploadVideo
+_updateRouting@138236006
+Racket face angle during backswing. Controls spin type.
+application/vnd.immervision-ivp
+replaceAll
+PdfSettings
+Couldn't parse package:stack_trace stack trace line 'c
+
+===== Wrist and racket relationship =====
+application/vnd.anser-web-certificate-issue-initiation
+Empty query
+_convertNotificationSoundToMap@963519573
+Wrist and racket relationship during backhand preparation.
+_writeDQT@1169305986
+PdfDict.
+Can't modify a finalized Request.
+_getStartMainIsolateFunction@1026248
+
+===== Both arms position =====
+dart:io-patch/io_service_patch.dart
+_onPause@5048458
+RACKET HEAD DROP
+Both arms position during the stroke. Guides racket and balances body.
+AxelStrings
+" is not a valid DeviceOrientation value
+outputAsync
+imageFormatGroup
+
+===== stance classification =====
+get:nearestScope
+notifyClients
+InternalWebPFrame.
+Open or neutral stance classification at contact.
+CompoundAnimation
+AggregateQueryPlatform
+_buildHuffmanTable@1227237914
+Alcaraz: 39
+
+===== Core rotation during the backswing =====
+training_modules
+package:stack_trace/src/unparsed_frame.dart%
+Dydd Iau
+Core rotation during the backswing. Full rotation creates the coil for power.
+_handleBackGestureInvocation@22399801
+_restorationManager@125240726
+prep_match
+LiveText
+
+===== Body center offset =====
+CustomerInfo.fromJson
+Exists failed
+_m5@1552389629
+Body center offset from the baseline. Should be centered and balanced.
+Skanna text
+application/shf+xml
+FlutterError
+No stream event
+
+===== Height gained during the serve =====
+addressZip
+dev.flutter.pigeon.camera_android_camerax.Recorder.pigeon_newInstance
+eventHandlerSendData
+Height gained during the serve motion. Higher jump means higher contact point.
+_checkDragOffset@112083489
+package:flutter_local_notifications/src/platform_specifics/android/initialization_settings.dart
+Path::arcTo
+GPSDestBearing
+
+===== Kinetic chain alignment =====
+Directory_Current
+BackButton
+get:_floatingCursorOffset@177183791
+Kinetic chain alignment from ankle through hip to shoulder.
+RenderAbsorbPointer.
+_isPort@0150898
+_fourDigits@0150898
+_Utf8ConversionSink@12003594
+
+===== Elbow angle at contact =====
+TERMINISTE (aucun appel LLM)
+_flushDirtyElements@26042623
+isRelative
+Elbow angle at contact. Slightly bent, not locked.
+__arcTo$Method$FfiNative@23065589
+RenderIntrinsicHeight.
+_shouldAcceptNumLock@196043213
+getMediaInformationSessionCompleteCallback
+
+===== Arm angle at contact =====
+bottomNavigationBarTop
+_sanitizeRadians@1291253021
+setFirstFocus
+Arm angle at contact point. Full extension for maximum reach.
+application/vnd.tmobile-livetv
+allowFirstFrame
+Tokens and palettes match source color.
+Primary Container is source color, adjusted to ensure contrast with surfaces.
+
+===== Dominant arm angle during follow =====
+[VideoAnnotation] canvasToJpg error:
+documentReferenceSet
+ChipAttributes
+Dominant arm angle during follow-through.
+wristracketposition
+get:layer
+_startPopGesture@226053933
+init:_defaultCursor@221145554

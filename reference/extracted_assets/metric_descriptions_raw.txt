@@ -1,0 +1,85 @@
+84
+- was disposed during loading state, yet no value could be emitted.
+- Body alignment from feet through shoulders during forward swing.
+- Ball height and forward distance at contact point.
+- Keep the racket head above your wrist during preparation.
+- You're not turning your shoulders early enough. Start the unit turn the moment you recognize the ball is coming to your backhand. Both hands stay on the racket during the turn.
+- Extension of the toss arm elbow. Straight arm produces consistent toss.
+- The racket throat is at chest height, supported by your non-dominant hand.
+- Open your arm more away from your body at contact.
+- Hit at the highest point! Full extension at contact.
+- Open or neutral stance classification at contact.
+- Racket face angle during backswing. Controls spin type.
+- Input error: Inputs should not be null or empty.
+- Your arms are hanging too low in the ready position. Hold the racket at chest height with both hands, elbows slightly away from your body. This lets you react faster.
+- Widen your stance. Feet should be shoulder-width apart.
+- Wrist and racket relationship during backhand preparation.
+- Speed of the toss arm during ball release. Controlled speed ensures consistent toss height.
+- ' has been assigned during initialization.
+- Open, semi-open, or closed stance at contact.
+- Elbow angle at contact. Slightly bent, not locked.
+- is not a valid link-local address but contains %. Scope id should be used as part of link-local address.
+- Weight transfer pattern during loading. Back foot should push forward.
+- Your hitting arm is fully straight at contact, like reaching for something on a high shelf.
+- Lower your free arm. It should drop after the follow-through.
+- Control your racket face. Keep it square at contact.
+- Wrist position relative to hip during preparation. Wrist should be above hip.
+- Wrist leads racket head at contact for lag and power.
+- Bend your knees more! Load the spring before you push up.
+- Too much lean. Stay more upright at contact.
+- Horizontal alignment of both shoulders. Should be level during stance.
+- Control your racket face angle at contact.
+- Push up more! Drive from ankles, knees and hips together.
+- Knee flexion angles during the stance phase. Slight bend allows explosive push-off.
+- Adjust your leg position. Bend and push.
+- Extend your arm more. You need more extension at contact.
+- Your hands are too low in the ready position. For the backhand, keep both hands on the racket at chest height with your non-dominant hand on the throat of the racket.
+- Dominant arm angle during follow-through.
+- Both arms position during the stroke. Guides racket and balances body.
+- Edit profile fields (name, age, height, weight, handedness, level).
+- Racket face angle at trophy position. Should be parallel to shoulders.
+- Knee bend during loading or contact. Deep bend stores elastic energy for explosive extension.
+- Angle between shoulder line and hip line. Creates the coil for power.
+- Forward distance of contact point from the body.
+- Back foot push initiates weight transfer and rotation.
+- Both hands are on the racket at chest height, elbows relaxed but lifted.
+- ValueStream has no error. You should check ValueStream.hasError before accessing ValueStream.error, or use ValueStream.errorOrNull instead.
+- Fetch the current player profile (name, age, height, weight, handedness, level, goal, whether they have a coach). Use this to personalize advice or check what info you already have.
+- New? A password creates your account automatically.
+- Body center offset from the baseline. Should be centered and balanced.
+- Core rotation during the backswing. Full rotation creates the coil for power.
+- Lateral tilt of the trunk. Controlled tilt helps direct the ball.
+- What the player THEMSELVES feels is their weak point (self-reported, not the measured analysis).
+- Elbow angle of the toss arm. Extended arm guides a consistent toss.
+- Back leg angle during landing. Stable landing on front foot.
+- Input error: Outputs should not be null or empty.
+- Simultaneous extension of ankle, knee, and hip.
+- Concurrent modification during iteration.
+- The classic pose before the forward swing. Shoulder-elbow alignment and racket drop angle.
+- " did not return a path while reporting success. The platform should always return a valid path or report an error.
+- Height gained during the serve motion. Higher jump means higher contact point.
+- Alignment from heel through hip to shoulder. Should be nearly straight.
+- Position your phone at waist height, 3m away.
+- Keep your wrist above hip level during preparation.
+- ValueStream has no value. You should check ValueStream.hasValue before accessing ValueStream.value, or use ValueStream.valueOrNull instead.
+- Your elbow is at shoulder height and the racket points to the sky.
+- Extend fully during the upward phase. Rise on your toes.
+- Push up from ankles, knees and hips together.
+- Non-dominant arm position during follow-through. Should tuck in.
+- Height at which the ball leaves the toss hand. Should be above eye level.
+- Height at which the ball leaves the toss hand. Should be above eye level (player height - 10cm, -5cm to +25cm).
+- Kinetic chain alignment from ankle through hip to shoulder.
+- The body is tracked, but the player has their back to the camera through most of the clip. Left and right are swapped that way, so every angle would be measured on the wrong side.
+- The platform did not return a path while reporting success. The platform should always return a valid path or report an error.
+- Arm angle at contact point. Full extension for maximum reach.
+- , and the one thing I should feel to fix it.
+- Smoothness and distance of the racket path during backswing. Should be fluid.
+- Asymmetry between front and back foot positioning. The front foot should be angled toward the target.
+- Racket head position relative to wrist. Head should stay above wrist in backswing.
+- Extend your arm fully. Reach up and out at contact.
+- Speed of the dominant wrist at contact. Indicator of arm acceleration and serve power.
+- is provided without a codec. Consider provide a codec to GoRouter to prevent extra being dropped during serialization.
+- Jump up into the shot. Push off both feet for height.
+- Angle of the racket face during preparation. Should be relatively flat for a continental grip.
+- Keep your non-hitting elbow up. It guides your toss and balance.
+- Maximum height reached by the ball toss. Should be 1.8-2.3x player height.

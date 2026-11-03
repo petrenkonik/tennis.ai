@@ -1,0 +1,26 @@
+node_modules/
+dist/
+coverage/
+*.log
+.env
+.env.local
+.DS_Store
+
+# Реверс-артефакты: тяжёлые бинарники не должны попадать в git
+reference/apks/
+reference/rea-outputs/
+reference/extracted_assets/models/
+*.apk
+*.so
+*.jdb2
+
+# Локальный инструментарий (Gradle-дистрибутив > лимита GitHub)
+tools/
+
+# Android / Gradle сборка
+build/
+.gradle/
+local.properties
+.idea/
+captures/
+*.hprof
