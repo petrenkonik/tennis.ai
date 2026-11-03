@@ -1,4 +1,6 @@
 import { getInitDataRaw } from '../tma';
+import { isDemo } from '../services/demoMode';
+import { demoFetch } from '../services/demoBackend';
 import type { UserDto } from '@tennis-ai/shared';
 
 const BASE = import.meta.env.VITE_API_URL ?? 'http://localhost:3000/api';
@@ -26,6 +28,8 @@ export class ApiError extends Error {
 }
 
 export async function api<T>(path: string, opts: RequestInit = {}): Promise<T> {
+  // Demo mode (no Telegram, no backend): all routes are served by the local mock backend.
+  if (isDemo()) return demoFetch<T>(path, opts);
   const res = await fetch(`${BASE}${path}`, {
     ...opts,
     headers: {
@@ -55,6 +59,8 @@ export async function loginWithTelegram(): Promise<UserDto> {
 
 /** Uploads a file to S3 via presigned PUT (the file goes directly, bypassing the API). */
 export async function uploadToPresigned(url: string, file: Blob, contentType: string): Promise<void> {
+  // Demo mode: presign URLs are fake — there is nothing to upload to.
+  if (isDemo()) return;
   const res = await fetch(url, {
     method: 'PUT',
     headers: { 'content-type': contentType },

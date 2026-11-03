@@ -283,6 +283,12 @@ const EN: Record<string, string> = {
   // Boot
   starting: 'Starting…',
   retry_login: 'Retry login',
+  not_in_telegram: 'Open this app inside Telegram, or try the demo mode.',
+  try_demo: 'Try demo',
+  demo_badge: 'DEMO',
+  demo_coach_reply:
+    'Demo mode: the AI coach is offline here. Everything else — pose analysis, metrics and drills — works right in your browser.',
+  demo_paywall: 'Demo mode: payments are unavailable. PRO unlocks inside the Telegram app.',
 };
 
 const RU: Record<string, string> = {
@@ -496,4 +502,10 @@ const RU: Record<string, string> = {
   // Boot
   starting: 'Запуск…',
   retry_login: 'Повторить вход',
+  not_in_telegram: 'Открой приложение внутри Telegram или попробуй демо-режим.',
+  try_demo: 'Открыть демо',
+  demo_badge: 'ДЕМО',
+  demo_coach_reply:
+    'Демо-режим: AI-тренер здесь офлайн. Всё остальное — анализ поз, метрики и упражнения — работает прямо в браузере.',
+  demo_paywall: 'Демо-режим: оплата недоступна. PRO открывается внутри приложения Telegram.',
 };

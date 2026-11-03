@@ -49,6 +49,7 @@
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 import { api } from '../api/client';
+import { isDemo } from '../services/demoMode';
 import { useAppStore } from '../stores/app';
 import { useAuthStore } from '../stores/auth';
 import { t } from '../i18n/T';
@@ -73,6 +74,10 @@ const busy = ref(false);
 const status = ref('');
 
 async function buy(productId: ProductId): Promise<void> {
+  if (isDemo()) {
+    status.value = tt('demo_paywall');
+    return;
+  }
   busy.value = true;
   status.value = '';
   try {

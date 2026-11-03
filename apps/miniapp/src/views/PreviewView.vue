@@ -130,6 +130,7 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue';
 import { useRouter } from 'vue-router';
+import { ApiError } from '../api/client';
 import { useAnalysisStore, type AnalyzeStage } from '../stores/analysis';
 import { useAppStore } from '../stores/app';
 import { speak, spokenOnce, markSpoken, stopSpeaking, ttsAvailable } from '../services/tts';
@@ -253,7 +254,12 @@ async function analyze(): Promise<void> {
     analysis.clearPendingPreview();
     await router.push(`/analysis/${res.id}`);
   } catch (err) {
-    status.value = `${tt('failed')}: ${err instanceof Error ? err.message : err}`;
+    // Quota exhausted — the API returns 402; lead the user to the paywall (same in demo mode).
+    if (err instanceof ApiError && err.status === 402) {
+      void router.push('/paywall');
+    } else {
+      status.value = `${tt('failed')}: ${err instanceof Error ? err.message : err}`;
+    }
   } finally {
     busy.value = false;
   }
