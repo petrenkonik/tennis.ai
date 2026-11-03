@@ -1,6 +1,6 @@
 # Tennis AI 2.0 — rebuild (Telegram Mini App)
 
-Rebuild of the original `com.tennis.ai` v2.0.19 (Flutter/Android) as a Telegram Mini App.
+Rebuild of the original Tennis AI app v2.0.19 (Flutter/Android) as a Telegram Mini App.
 Product knowledge was recovered via reverse engineering (REA) — see [reference/ANALYSIS_FINDINGS.md](./reference/ANALYSIS_FINDINGS.md).
 Owner-approved decisions — [reference/DECISIONS.md](./reference/DECISIONS.md).
 
