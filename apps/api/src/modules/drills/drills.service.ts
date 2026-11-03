@@ -4,7 +4,7 @@ import { Model } from 'mongoose';
 import { Drill, DrillDocument } from '../../common/schemas/drill.schema';
 import { Analysis, AnalysisDocument } from '../../common/schemas/analysis.schema';
 
-/** Подбор drills по weaknesses анализа (порт drill_recommendation_service). */
+/** Drill selection based on analysis weaknesses (port of drill_recommendation_service). */
 @Injectable()
 export class DrillsService {
   constructor(

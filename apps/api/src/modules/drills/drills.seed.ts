@@ -3,7 +3,7 @@ import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { Drill, DrillDocument } from '../../common/schemas/drill.schema';
 
-/** Стартовый набор drills (порт полей из drill_service оригинала). targetMetrics — коды из packages/shared. */
+/** Starter set of drills (port of fields from the original drill_service). targetMetrics — codes from packages/shared. */
 const SEED_DRILLS = [
   {
     slug: 'deep-knee-load-serves',

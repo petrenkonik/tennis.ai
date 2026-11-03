@@ -17,7 +17,7 @@ import type { JwtPayload } from '../../common/current-user.decorator';
 import { AXEL_TOOLS, TOOL_CALL_NUDGE } from './axel-tools';
 import type { DetectStrokeResponse } from '@tennis-ai/shared';
 
-/** Действие для мини-аппа: инструмент, исполнение которого на клиенте. */
+/** Action for the mini app: a tool whose execution happens on the client. */
 export interface ClientAction {
   tool: string;
   args: Record<string, unknown>;
@@ -42,9 +42,9 @@ interface GlmMessage {
 }
 
 /**
- * Системный промпт Axel — собран из дословных фрагментов Dart AOT оригинала
- * (reference/dart-aot-recovery/AXEL_RECOVERY.md; в оригинале он тоже собирается
- * интерполяцией констант, одной строки в снапшоте нет).
+ * Axel system prompt — assembled from verbatim fragments of the original
+ * Dart AOT (reference/dart-aot-recovery/AXEL_RECOVERY.md; in the original it
+ * is also assembled by interpolating constants, there is no single string in the snapshot).
  */
 const AXEL_SYSTEM_PROMPT = `You are Axel, an expert tennis coach inside the Tennis AI app. You are talking to the player themselves.
 You coach them about their stroke technique based on biomechanical analysis: the stroke is split into phases M0-M6 (ready, stance/split step, toss/unit turn, loading, extension/drive, contact point, recovery) and each metric is green when its value is inside the range the best players sit in, red when it is outside.
@@ -92,7 +92,7 @@ export class CoachService {
 
     const user = await this.users.me(u.sub);
 
-    // Контекст анализа (если чат привязан к сессии) — как в оригинале, данные в промпт.
+    // Analysis context (when the chat is bound to a session) — as in the original, the data goes into the prompt.
     let analysisContext = '';
     if (analysisId) {
       const doc = await this.analyses.findById(analysisId);
@@ -154,7 +154,7 @@ export class CoachService {
       }
     }
 
-    // Исчерпали раунды — просим финальный ответ без инструментов.
+    // Ran out of rounds — ask for a final answer without tools.
     const final = await this.completion(key, messages, /* disableTools */ true);
     return { reply: (final.choices?.[0]?.message?.content ?? '').trim(), actions: clientActions };
   }
@@ -188,7 +188,7 @@ export class CoachService {
     return (await res.json()) as { choices?: Array<{ message: { content: string | null; tool_calls?: GlmToolCall[] } }> };
   }
 
-  /** Исполнение инструментов. SERVER — здесь; CLIENT — уходит мини-аппу как action. */
+  /** Tool execution. SERVER — here; CLIENT — passed to the mini app as an action. */
   private async executeTool(
     u: JwtPayload,
     name: string,
@@ -242,7 +242,7 @@ export class CoachService {
       case 'advance_drill_walkthrough':
         return this.advanceWalkthrough(u);
       case 'send_message_to_coach':
-        // Связки игрок<->тренер в v1 ещё нет — честный ответ вместо молчаливой отправки.
+        // No player<->coach link in v1 yet — an honest answer instead of a silent send.
         return { sent: false, reason: 'coach link is not available yet' };
       case 'schedule_drill_reminder':
         return { scheduled: false, reason: 'push notifications are not configured yet' };
@@ -343,18 +343,18 @@ export class CoachService {
   }
 
   private async advanceWalkthrough(u: JwtPayload): Promise<unknown> {
-    // Состояние walkthrough клиент держит в диалоге: шаги уже возвращены модели.
+    // The walkthrough state is kept by the client in the conversation: the steps have already been returned to the model.
     return { note: 'The walkthrough state lives in the conversation; say the next step from the steps already fetched.' , advanced: false, hint: 're-call start_drill_walkthrough if steps are lost' };
   }
 
-  /** POST /api/analysis/detect-stroke — классификация кадра (порт CF strokeDetect) на GLM vision. */
+  /** POST /api/analysis/detect-stroke — frame classification (port of CF strokeDetect) via GLM vision. */
   async detectStroke(u: JwtPayload, frameKey: string): Promise<DetectStrokeResponse> {
     const key = Env.glmKey();
     if (!key) throw new ServiceUnavailableException('GLM_API_KEY is not configured');
 
     const buf = await this.s3.getObjectBuffer(frameKey);
     if (!buf) throw new ServiceUnavailableException(`frame not readable: ${frameKey}`);
-    // Ключ выдаётся presign'ом в скоупе пользователя — чужой кадр не попадёт.
+    // The key is issued by presign within the user's scope — someone else's frame cannot get through.
     await this.users.me(u.sub);
 
     const res = await fetch(`${Env.glmBaseUrl()}/chat/completions`, {

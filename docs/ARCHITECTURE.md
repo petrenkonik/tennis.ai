@@ -1,19 +1,19 @@
-# Архитектура
+# Architecture
 
-Полные зафиксированные решения — [reference/DECISIONS.md](../reference/DECISIONS.md).
-Здесь — краткая карта для разработчика.
+All recorded decisions — see [reference/DECISIONS.md](../reference/DECISIONS.md).
+This is a brief map for the developer.
 
 ```
 ┌──────────────────────────┐         ┌──────────────────────────────────┐
 │  Telegram Mini App       │  HTTPS  │  Nest.js API (prefix /api)       │
 │  Vite + Vue 3 + Pinia    │ ──────► │  Auth: initData → JWT            │
-│  @telegram-apps/sdk      │  WSS    │  Users: профиль, квоты           │
+│  @telegram-apps/sdk      │  WSS    │  Users: profile, quotas          │
 │                          │ ──────► │  Uploads: presigned PUT (S3)     │
-│  CV-пайплайн (worker):   │         │  Analyses: CRUD + результаты     │
+│  CV pipeline (worker):   │         │  Analyses: CRUD + results        │
 │   MediaPipe Pose (33 lm) │         │  Payments: Telegram Stars (XTR)  │
-│   YOLO11 ONNX (мяч/рак.) │         │  Drills + Plans (по weaknesses)  │
-│   packages/engine:       │         │  Coach: Axel на GLM-5.3-Flash    │
-│   фазы M0–M6 → метрики → │         │  WS: progress / completed        │
+│   YOLO11 ONNX (ball/rac.)│         │  Drills + Plans (by weaknesses)  │
+│   packages/engine:       │         │  Coach: Axel on GLM-5.3-Flash    │
+│   phases M0–M6 → metrics │         │  WS: progress / completed        │
 │   green/red → score      │         └──────────────┬───────────────────┘
 └──────────────────────────┘                        │
                                              MongoDB (users, analyses, videos,
@@ -21,28 +21,28 @@
                                              metric_definitions, knowledge)
 ```
 
-## Поток анализа (порт оригинала v2.0.19)
+## Analysis flow (port of original v2.0.19)
 
-1. Пользователь снимает видео (портрет, ≤5 с, один удар) — `<input type="file" capture>`.
-2. Кадр → `POST /api/analysis/detect-stroke` → тип удара (или выбор вручную).
-3. `POST /api/uploads/presign` → клиент льёт оригинал напрямую в S3 →
-   `POST /api/analyses` (проверка квоты Stars: free = 9 lifetime, pro = 20/мес).
-4. Клиент в Web Worker: извлечение кадров (30 fps, 640px) → pose → YOLO →
-   `runAnalysis()` из `packages/engine` → метрики green/red + overall_score.
-5. `POST /api/analyses/:id/results` — сохранение отчёта (+ WS-уведомление).
-6. Аннотированное видео: клиентский canvas-оверлей + MediaRecorder → upload →
-   `POST /api/analyses/:id/annotated` (fallback — серверный рендер, DECISIONS §7.2).
-7. Drills/план подбираются по `topWeaknesses`; Axel-коуч отвечает с контекстом анализа.
+1. User records a video (portrait, ≤5 s, one stroke) — `<input type="file" capture>`.
+2. Frame → `POST /api/analysis/detect-stroke` → stroke type (or manual selection).
+3. `POST /api/uploads/presign` → client uploads the original directly to S3 →
+   `POST /api/analyses` (Stars quota check: free = 9 lifetime, pro = 20/month).
+4. Client in a Web Worker: frame extraction (30 fps, 640px) → pose → YOLO →
+   `runAnalysis()` from `packages/engine` → green/red metrics + overall_score.
+5. `POST /api/analyses/:id/results` — report is saved (+ WS notification).
+6. Annotated video: client-side canvas overlay + MediaRecorder → upload →
+   `POST /api/analyses/:id/annotated` (fallback — server-side render, DECISIONS §7.2).
+7. Drills/plan are selected by `topWeaknesses`; the Axel coach answers with analysis context.
 
-## Скоринг
+## Scoring
 
-green = значение внутри про-диапазона, red = вне — правило перенесено 1:1.
-`overall_score` v0 = доля зелёных метрик (равные веса); точные веса оригинала
-не восстановлены (DECISIONS §6.4) — точка замены в `packages/engine/src/scoring.ts`.
+green = value inside the pro range, red = outside — rule carried over 1:1.
+`overall_score` v0 = share of green metrics (equal weights); the original's exact
+weights were not recovered (DECISIONS §6.4) — replacement point in `packages/engine/src/scoring.ts`.
 
-## Что осознанно НЕ портировано
+## Deliberately NOT ported
 
-- Firebase (Auth/Storage/Firestore/FCM) → заменён на Nest + Mongo + S3 + Bot API.
-- RevenueCat/Play Billing → Telegram Stars (периоды без авто-renew).
-- Cloud Run-анализатор и CF-функции → тонкий API; анализ on-device в TMA.
-- Нативное Android-приложение → вне скоупа (reference/ только).
+- Firebase (Auth/Storage/Firestore/FCM) → replaced with Nest + Mongo + S3 + Bot API.
+- RevenueCat/Play Billing → Telegram Stars (periods without auto-renew).
+- Cloud Run analyzer and CF functions → thin API; analysis on-device in the TMA.
+- Native Android app → out of scope (reference/ only).

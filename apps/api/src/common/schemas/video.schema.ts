@@ -1,7 +1,7 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { HydratedDocument } from 'mongoose';
 
-/** Метаданные файлов (DECISIONS §7.2: бинарники — НЕ в Mongo, только ключи в S3-совместимом хранилище). */
+/** File metadata (DECISIONS §7.2: binaries are NOT stored in Mongo, only keys in S3-compatible storage). */
 @Schema({ collection: 'videos', timestamps: true })
 export class Video {
   @Prop({ required: true, index: true })

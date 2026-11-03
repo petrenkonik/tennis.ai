@@ -1,11 +1,11 @@
 /**
- * Строки интерфейса — порт `tennis-ai-android/core/i18n/T.kt`.
- * EN — дословно из оригинального `reference/extracted_assets/en.json` (реверс APK v2.0.19);
- * RU — перевод, язык по умолчанию.
- * НЕизвестный ключ возвращается как есть — так в оригинале выглядели невыровненные
- * i18n-ключи («track_progression», «no_data», «record_first_video», «manage_students_perf»).
- * Ключи с префиксом `live_`/`analyze_`/`results_`/`drills_`/`paywall_` — экраны анализа TMA
- * (в оригинале имели RU/EN, статусы пайплайна — наши, CLONE_SPEC §5).
+ * UI strings — port of `tennis-ai-android/core/i18n/T.kt`.
+ * EN — verbatim from the original `reference/extracted_assets/en.json` (APK v2.0.19 reverse);
+ * RU — translation, the default language.
+ * An unknown key is returned as-is — that is how misaligned i18n keys looked in the
+ * original ("track_progression", "no_data", "record_first_video", "manage_students_perf").
+ * Keys prefixed with `live_`/`analyze_`/`results_`/`drills_`/`paywall_` are the TMA analysis
+ * screens (the original had RU/EN for them; pipeline statuses are ours, CLONE_SPEC §5).
  */
 
 export type Lang = 'ru' | 'en';
@@ -16,7 +16,7 @@ export function t(lang: Lang, key: string): string {
   return lang === 'ru' ? (RU[key] ?? EN[key] ?? key) : (EN[key] ?? key);
 }
 
-/** «N sessions» / «N сессий» — сборка метки модуля, как в оригинале. */
+/** "N sessions" — module label assembly, as in the original. */
 export function sessions(n: number, lang: Lang): string {
   return `${n} ${t(lang, 'sessions')}`;
 }
@@ -171,7 +171,7 @@ const EN: Record<string, string> = {
   drills: 'Drills',
   videos_upper: 'VIDEOS',
   no_videos_yet: 'No videos yet',
-  // My Videos actions (en.json дословно)
+  // My Videos actions (verbatim from en.json)
   avg_score_upper: 'AVG SCORE',
   video_saved_to: 'Video saved to',
   download_failed: 'Download failed',
@@ -209,11 +209,11 @@ const EN: Record<string, string> = {
   thinking: 'Axel is thinking…',
   toast_voice_in: 'Voice input is not available in this build',
   toast_voice_out: 'Voice playback is not available in this build',
-  // Экраны анализа TMA (RU/EN были в оригинале; статусы пайплайна — наши)
+  // TMA analysis screens (RU/EN existed in the original; pipeline statuses are ours)
   live_title: 'LIVE CORRECT',
   live_desc: 'Real-time stroke correction with instant voice feedback.',
   live_unavailable: 'Real-time mode needs camera access inside Telegram — coming soon in the Mini App. Use Auto Detect for now.',
-  // Live-флоу (en.json/libapp дословно)
+  // Live flow (verbatim from en.json/libapp)
   rec: 'REC',
   hd_30fps: 'HD @ 30FPS',
   ai_tracking_active: 'AI TRACKING: ACTIVE',
@@ -243,7 +243,7 @@ const EN: Record<string, string> = {
   stage_engine: 'Computing metrics and phases…',
   stage_upload: 'Uploading video…',
   failed: 'Failed',
-  // VIDEO PREVIEW (экран ревью после записи; EN — дословно из en.json/libapp оригинала)
+  // VIDEO PREVIEW (post-recording review screen; EN verbatim from the original's en.json/libapp)
   video_preview: 'VIDEO PREVIEW',
   checking_video: 'CHECKING VIDEO...',
   video_too_low_quality: 'VIDEO TOO LOW QUALITY',
@@ -422,11 +422,11 @@ const RU: Record<string, string> = {
   thinking: 'Axel думает…',
   toast_voice_in: 'Голосовой ввод недоступен в этой сборке',
   toast_voice_out: 'Голосовое воспроизведение недоступно в этой сборке',
-  // Экраны анализа TMA
+  // TMA analysis screens
   live_title: 'КОРРЕКЦИЯ В РЕАЛЬНОМ ВРЕМЕНИ',
   live_desc: 'Коррекция удара в реальном времени с голосовыми подсказками.',
   live_unavailable: 'Реальному режиму нужен доступ к камере внутри Telegram — скоро в Mini App. Пока используй авто-определение.',
-  // Live-флоу
+  // Live flow
   rec: 'REC',
   hd_30fps: 'HD @ 30FPS',
   ai_tracking_active: 'AI-ТРЕКИНГ: АКТИВЕН',

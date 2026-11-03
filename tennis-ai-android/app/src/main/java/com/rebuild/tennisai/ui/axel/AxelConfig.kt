@@ -18,7 +18,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import com.rebuild.tennisai.axel.AxelBrain
 
-/** Диалог GLM API (ключ/baseURL/model). Открывается из Axel и из «App Version» на Profile. */
+/** GLM API dialog (key/baseURL/model). Opened from Axel and from "App Version" on Profile. */
 @Composable
 fun GlmConfigDialog(onDismiss: () -> Unit) {
     val context = LocalContext.current

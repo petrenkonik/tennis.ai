@@ -18,8 +18,8 @@ import com.rebuild.tennisai.core.phases.MomentBoundaries
 import com.rebuild.tennisai.core.phases.detectorFor
 
 /**
- * Пайплайн офлайн-анализа: позы → фазы → метрики → скоринг.
- * Структура и пороги — клон оригинала v2.0.19 (GAP_ANALYSIS.md).
+ * Offline analysis pipeline: poses → phases → metrics → scoring.
+ * Structure and thresholds are a clone of the original v2.0.19 (GAP_ANALYSIS.md).
  */
 object AnalysisEngine {
 
@@ -39,7 +39,7 @@ object AnalysisEngine {
             val metrics = layout[m].orEmpty().mapNotNull { (def, _) ->
                 val c = MetricsCalculator.compute(def.id, phaseFrames, handedness, frames, contactIdx)
 
-                // Классификация (стойка) — информационная метрика без скоринга.
+                // Classification (stance) — an informational metric with no scoring.
                 if (c.classification != null) {
                     return@mapNotNull MetricResult(
                         id = def.id, value = 0f, proMin = 0f, proMax = 360f, kind = def.kind,
@@ -52,7 +52,7 @@ object AnalysisEngine {
                     (def.ndMin == null || def.ndMax == null || nd == null ||
                         (nd >= def.ndMin && nd <= def.ndMax))
                 val status =
-                    // Метрики, требующие детекции ракетки/мяча, отсутствуют в этой сборке.
+                    // Metrics that require racket/ball detection are not available in this build.
                     if (def.id == MetricDefs.M5_RACKET_HEAD_POSITION.id || def.id == MetricDefs.RACQUET_PATH.id) MetricStatus.NA
                     else if (inRange) MetricStatus.GREEN else MetricStatus.RED
                 MetricResult(
@@ -72,8 +72,8 @@ object AnalysisEngine {
             MomentResult(m, range.first, range.last + 1, metrics)
         }
 
-        // Взвешенный общий балл (веса фаз/метрик — наша калибровка; веса оригинала
-        // хранились в Firestore metric_definitions и не восстановлены).
+        // Weighted overall score (phase/metric weights are our calibration; the original's
+        // weights were stored in Firestore metric_definitions and were not recovered).
         var num = 0f
         var den = 0f
         momentResults.forEach { mr ->
@@ -98,7 +98,7 @@ object AnalysisEngine {
         )
     }
 
-    /** Кадр контакта: пик скорости доминантного запястья в окне M4–M5. */
+    /** Contact frame: peak dominant-wrist speed within the M4–M5 window. */
     fun findContactIdx(frames: List<PoseFrame>, h: Handedness, bounds: MomentBoundaries): Int {
         if (frames.isEmpty()) return 0
         val wrist = { f: PoseFrame -> f.p(if (h == Handedness.RIGHT) Lm.RIGHT_WRIST else Lm.LEFT_WRIST) }

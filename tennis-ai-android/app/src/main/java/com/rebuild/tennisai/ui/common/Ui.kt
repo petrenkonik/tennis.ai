@@ -60,7 +60,7 @@ import com.rebuild.tennisai.ui.theme.TextDim
 import com.rebuild.tennisai.ui.theme.TextPrimary
 import com.rebuild.tennisai.ui.theme.TextSecondary
 
-/** Текст с неоновым свечением (заголовки «AXEL AI», «SELECT DASHBOARD»). */
+/** Text with a neon glow (headers "AXEL AI", "SELECT DASHBOARD"). */
 @Composable
 fun GlowText(
     text: String,
@@ -84,7 +84,7 @@ fun GlowText(
     )
 }
 
-/** Секционный заголовок: зелёная черта + белый bold («Recent Activity», «Settings»). */
+/** Section header: green bar + white bold ("Recent Activity", "Settings"). */
 @Composable
 fun SectionBar(title: String, modifier: Modifier = Modifier) {
     Row(modifier = modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
@@ -94,7 +94,7 @@ fun SectionBar(title: String, modifier: Modifier = Modifier) {
     }
 }
 
-/** Карточка клона: тёмная заливка + тонкая граница + радиус. */
+/** Clone card: dark fill + thin border + rounded corners. */
 @Composable
 fun AppCard(
     modifier: Modifier = Modifier,
@@ -115,7 +115,7 @@ fun AppCard(
     )
 }
 
-/** Цветная иконка-плитка (модули Home, карточки Analyses/Videos, Ambassador). */
+/** Colored icon tile (Home modules, Analyses/Videos cards, Ambassador). */
 @Composable
 fun IconTile(
     icon: ImageVector,
@@ -137,7 +137,7 @@ fun IconTile(
     }
 }
 
-/** Кольцо процента (модули Home): серый трек + цветная дуга + «0%» в центре. */
+/** Percent ring (Home modules): gray track + colored arc + "0%" in the center. */
 @Composable
 fun RingPercent(percent: Int, color: Color, modifier: Modifier = Modifier) {
     Box(modifier, contentAlignment = Alignment.Center) {
@@ -158,7 +158,7 @@ fun RingPercent(percent: Int, color: Color, modifier: Modifier = Modifier) {
     }
 }
 
-/** FAB Axel: круг с зелёной границей и «sparkles». */
+/** Axel FAB: circle with a green border and a "sparkles" icon. */
 @Composable
 fun AxelFab(onClick: () -> Unit, modifier: Modifier = Modifier) {
     Box(
@@ -174,7 +174,7 @@ fun AxelFab(onClick: () -> Unit, modifier: Modifier = Modifier) {
     }
 }
 
-/** Pill-бейдж («✓ 0», «🕐 0») — тонкая цветная граница. */
+/** Pill badge ("✓ 0", "🕐 0") — thin colored border. */
 @Composable
 fun PillBadge(icon: ImageVector, label: String, color: Color) {
     Row(
@@ -190,7 +190,7 @@ fun PillBadge(icon: ImageVector, label: String, color: Color) {
     }
 }
 
-/** Строка настроек с тумблером. */
+/** Settings row with a toggle. */
 @Composable
 fun ToggleRow(icon: ImageVector, label: String, checked: Boolean, onChange: (Boolean) -> Unit) {
     AppCard(Modifier.fillMaxWidth().padding(horizontal = 16.dp), radius = 16.dp) {
@@ -224,7 +224,7 @@ private enum class Tab(val route: String, val icon: ImageVector) {
     PROFILE("profile", Icons.Outlined.Person),
 }
 
-/** Нижняя навигация: 5 табов, активный — зелёный с чертой у верхнего края. */
+/** Bottom navigation: 5 tabs; the active one is green with a bar at the top edge. */
 @Composable
 fun BottomNavBar(currentRoute: String?, onSelect: (String) -> Unit) {
     val current = when {
@@ -271,7 +271,7 @@ fun BottomNavBar(currentRoute: String?, onSelect: (String) -> Unit) {
     }
 }
 
-/** Подпись-«шпонка» monospace (METKA, no_data, VIDEOS…). */
+/** Monospace caption label (METKA, no_data, VIDEOS…). */
 @Composable
 fun MonoCaption(text: String, color: Color = TextSecondary, modifier: Modifier = Modifier, fontSize: Int = 12) {
     Text(

@@ -1,6 +1,6 @@
-// Telegram Stars (XTR) через Bot API. Важно: Stars не поддерживают авто-renew —
-// подписка = покупка периода, срок хранится на бэке, бот напоминает о продлении
-// (см. reference/DECISIONS.md §2 «Платежи»).
+// Telegram Stars (XTR) via the Bot API. Important: Stars do not support auto-renew —
+// a subscription = buying a period, its expiry is stored on the backend, and the bot
+// reminds the user to renew (see reference/DECISIONS.md §2 "Payments").
 
 export interface StarsProduct {
   id: 'pro_1m' | 'pro_3m' | 'pro_12m';
@@ -35,8 +35,8 @@ export async function callBotApi<T>(botToken: string, method: string, body: Reco
 }
 
 /**
- * createInvoiceLink для Stars: currency=XTR, provider_token пустой (обязателен для XTR),
- * prices — одна позиция в звёздах. Ссылку открывает клиент через Telegram.WebApp.openInvoice.
+ * createInvoiceLink for Stars: currency=XTR, empty provider_token (required for XTR),
+ * prices — a single item in stars. The client opens the link via Telegram.WebApp.openInvoice.
  */
 export async function createStarsInvoiceLink(
   botToken: string,
@@ -57,7 +57,7 @@ export function buildSubscriptionPayload(userId: number, productId: string): str
   return `sub:${userId}:${productId}`;
 }
 
-/** payload вида `sub:<userId>:<productId>` → части; null при чужом/битом payload. */
+/** payload of the form `sub:<userId>:<productId>` → parts; null for a foreign/malformed payload. */
 export function parseSubscriptionPayload(payload: string): { userId: number; productId: string } | null {
   const parts = payload.split(':');
   if (parts.length !== 3 || parts[0] !== 'sub') return null;

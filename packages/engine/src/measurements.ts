@@ -4,12 +4,12 @@ import { LM, lmPx, sideIndex, type Side } from './landmarks';
 
 export interface CalcContext {
   frames: PoseFrame[];
-  /** Фаза, к которой привязана метрика (порождающая фаза из определения метрики). */
+  /** Phase the metric is attached to (the originating phase from the metric definition). */
   phase: PhaseCode;
   phases: DetectedPhase[];
   detections: ObjectDetection[];
   calibration: Calibration;
-  /** Частота кадров исходного видео — нужна метрикам скорости. */
+  /** Frame rate of the source video — needed by speed metrics. */
   fps: number;
 }
 
@@ -38,7 +38,7 @@ function angle(frames: PoseFrame[], i: number, a: number, v: number, b: number):
   return pa && pv && pb ? angleAtDeg(pa, pv, pb) : null;
 }
 
-// ---- Реестр калькуляторов: имя из metrics.json → функция измерения ----
+// ---- Calculator registry: name from metrics.json → measurement function ----
 
 export const CALCULATORS: Record<string, MeasurementFn> = {
   feetShoulderRatio(ctx) {
@@ -60,7 +60,7 @@ export const CALCULATORS: Record<string, MeasurementFn> = {
     const side = sideOf(ctx.calibration);
     const heel = lmPx(f, sideIndex(side, 'HEEL'));
     const toe = lmPx(f, sideIndex(side, 'FOOT_INDEX'));
-    // v0-аппроксимация: базовая линия считается горизонтальной в кадре.
+    // v0 approximation: the baseline is assumed horizontal in the frame.
     return heel && toe ? lineToHorizontalDeg(heel, toe) : null;
   },
 
@@ -135,8 +135,8 @@ export const CALCULATORS: Record<string, MeasurementFn> = {
   },
 
   trunkRotationCm(ctx) {
-    // v0-аппроксимация: разница ширины плеч и бёдер × масштаб.
-    // Точная формула оригинала из Dart AOT не восстановлена.
+    // v0 approximation: difference between shoulder width and hip width × scale.
+    // The exact original formula from Dart AOT was not recovered.
     const i = phaseFrameIndex(ctx.frames, ctx.phases, ctx.phase);
     const f = ctx.frames[i];
     const cm = ctx.calibration.cmPerPixel;
@@ -172,7 +172,7 @@ export const CALCULATORS: Record<string, MeasurementFn> = {
     let ankle: { x: number; y: number } | null = null;
     for (const fr of ctx.frames) {
       const p = lmPx(fr, LM.LEFT_ANKLE) ?? lmPx(fr, LM.RIGHT_ANKLE);
-      if (p && (!ankle || p.y > ankle.y)) ankle = p; // самая нижняя точка стоп — основание роста
+      if (p && (!ankle || p.y > ankle.y)) ankle = p; // lowest foot point — base of the height measurement
     }
     const wrist = lmPx(f, sideIndex(side, 'WRIST'));
     if (!head || !ankle || !wrist) return null;
@@ -212,7 +212,7 @@ export const CALCULATORS: Record<string, MeasurementFn> = {
   },
 };
 
-/** Пиковая скорость запястья (м/с) в окрестности фазы: смещение за кадр × fps × масштаб. */
+/** Peak wrist speed (m/s) around the phase: per-frame displacement × fps × scale. */
 function peakWristSpeed(ctx: CalcContext, side: Side, phase: PhaseCode): number | null {
   const cm = ctx.calibration.cmPerPixel;
   if (!cm) return null;
@@ -225,7 +225,7 @@ function peakWristSpeed(ctx: CalcContext, side: Side, phase: PhaseCode): number 
     const a = lmPx(ctx.frames[i - 1], wristIdx);
     const b = lmPx(ctx.frames[i], wristIdx);
     if (!a || !b) continue;
-    const v = (dist(a, b) * cm * ctx.fps) / 100; // px → см → м; за кадр × fps → м/с
+    const v = (dist(a, b) * cm * ctx.fps) / 100; // px → cm → m; per frame × fps → m/s
     peak = peak === null ? v : Math.max(peak, v);
   }
   return peak;

@@ -39,22 +39,22 @@ class CoreEngineTest {
         assertTrue(result.frameCount == frames.size)
         assertTrue(result.overallScore in 0..100)
 
-        // В синтетике (палка-скелет) часть метрик честно уходит в red (наклон 0° и т.п.),
-        // но известные корректные значения должны быть зелёными: KNEE_FLEXION в стойке.
+        // In the synthetic clip (stick-figure skeleton) some metrics honestly go red (0° tilt etc.),
+        // but known correct values must be green: KNEE_FLEXION in stance.
         val kneeGreen = result.moments.any { m -> m.metrics.any { it.id == "KNEE_FLEXION" && it.status == MetricStatus.GREEN } }
         assertTrue(kneeGreen, "expected KNEE_FLEXION GREEN in stance")
         val greens = result.moments.sumOf { m -> m.metrics.count { it.status == MetricStatus.GREEN } }
         assertTrue(greens > 0, "expected some greens")
 
-        // Метрика контакта существует и имеет валидный статус
+        // The contact metric exists and has a valid status
         val contact = result.moments.first { it.moment == com.rebuild.tennisai.core.model.Moment.M5 }
         assertTrue(contact.metrics.isNotEmpty(), "contact moment must have metrics")
     }
 
     @Test
     fun `deep knees in loading turn triple extension red with correction`() {
-        // В раскладке оригинала фаза загрузки (M3) — M3_TRIPLE_EXTENSION + M3_TROPHY_POSITION.
-        // Согнутые колени (90°) ломают тройное разгибание (порог 140-180).
+        // In the original's layout the loading phase (M3) is M3_TRIPLE_EXTENSION + M3_TROPHY_POSITION.
+        // Deeply bent knees (90°) break triple extension (threshold 140-180).
         val frames = syntheticServe(kneeBendOverride = 90f)
         val result = AnalysisEngine.analyze(frames, StrokeType.SERVE, Handedness.RIGHT)
         val red = result.moments.flatMap { it.metrics }
@@ -65,8 +65,8 @@ class CoreEngineTest {
     }
 
     /**
-     * Синтетическая подача: игрок стоит, подбрасывает (левая кисть вверх), правая бьёт вверх.
-     * y направлен вниз. 30 кадров @ 33мс.
+     * Synthetic serve: the player stands, tosses (left wrist up) and hits upward with the right.
+     * y points down. 30 frames @ 33ms.
      */
     private fun syntheticServe(kneeBendOverride: Float? = null): List<PoseFrame> {
         val n = 30
@@ -79,19 +79,19 @@ class CoreEngineTest {
                 i < 18 -> 0.55f
                 else -> (0.55f - (i - 18) * 0.035f).coerceAtLeast(0.15f)
             }
-            // колени: сгиб до ~120 в середине, разгиб к контакту
+            // knees: bend to ~120 mid-way, extend toward contact
             kneeAngle = if (i < 12) 165f - i * 3f else if (i < 22) 120f + (i - 12) * 4f else 160f
             if (kneeBendOverride != null && i in 12..26) kneeAngle = kneeBendOverride
 
             val pts = arrayOfNulls<Vec3>(33)
-            // базовый «стоящий» скелет (вид сбоку, правша: правая сторона чуть левее в кадре)
+            // base "standing" skeleton (side view, right-handed: the right side slightly left in frame)
             fun put(l: Lm, x: Float, y: Float) { pts[l.idx] = Vec3(x, y) }
             put(Lm.NOSE, 0.5f, 0.12f)
             put(Lm.LEFT_SHOULDER, 0.46f, 0.25f); put(Lm.RIGHT_SHOULDER, 0.54f, 0.25f)
             put(Lm.LEFT_ELBOW, 0.44f, 0.35f); put(Lm.RIGHT_ELBOW, 0.56f, 0.35f)
             put(Lm.LEFT_WRIST, 0.42f, tossY); put(Lm.RIGHT_WRIST, 0.58f, hitY)
             put(Lm.LEFT_HIP, 0.47f, 0.50f); put(Lm.RIGHT_HIP, 0.53f, 0.50f)
-            // колени/стопы из угла kneeAngle вокруг бедра (радиус 0.12)
+            // knees/feet derived from kneeAngle around the hip (radius 0.12)
             val kneeRad = Math.toRadians((180f - kneeAngle).toDouble())
             val kneeX = 0.50f + 0.0f
             val kneeY = 0.50f + 0.12f * cos(kneeRad).toFloat()
@@ -101,7 +101,7 @@ class CoreEngineTest {
             put(Lm.LEFT_ANKLE, ankleX - 0.02f, ankleY); put(Lm.RIGHT_ANKLE, ankleX + 0.02f, ankleY)
             put(Lm.LEFT_HEEL, ankleX - 0.03f, ankleY + 0.02f); put(Lm.RIGHT_HEEL, ankleX + 0.01f, ankleY + 0.02f)
             put(Lm.LEFT_FOOT_INDEX, ankleX - 0.05f, ankleY + 0.03f); put(Lm.RIGHT_FOOT_INDEX, ankleX - 0.01f, ankleY + 0.03f)
-            // прочие точки — тихо на месте, чтобы массив был полным
+            // remaining points parked in place so the array is complete
             for (k in 0 until 33) if (pts[k] == null) pts[k] = Vec3(0.5f, 0.5f)
 
             out.add(PoseFrame(tMillis = (i * 33L), points = pts.map { it!! }.toTypedArray()))

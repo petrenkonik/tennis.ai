@@ -1,169 +1,169 @@
-# Карта портирования: Dart (оригинал) → монорепа
+# Porting map: Dart (original) → monorepo
 
-Источник имён: `reference/ANALYSIS_FINDINGS.md` + строки `reference/extracted_assets/libapp_strings.txt`.
-Статусы: ✅ сделано · 🔶 каркас готов, логика TODO · ⬜ не начато.
+Source of names: `reference/ANALYSIS_FINDINGS.md` + strings from `reference/extracted_assets/libapp_strings.txt`.
+Statuses: ✅ done · 🔶 skeleton ready, logic TODO · ⬜ not started.
 
-| Dart-сервис оригинала | Куда портировано | Статус |
+| Original Dart service | Ported to | Status |
 |---|---|---|
-| `pose_service.dart` (ML Kit 33 landmark) | `apps/miniapp/src/services/poseService.ts` + `videoPipeline.ts` (`@mediapipe/tasks-vision@1.1.1`, VIDEO-режим = встроенный трекинг, GPU→CPU fallback, модель lite float16) | ✅ v0; смоук на живом видео ⬜ |
-| `yolo_detector_service.dart` / `ball_detection_service.dart` | там же → onnxruntime-web (int8) | 🔶 интерфейс готов |
-| `calibration_service.dart` (px → см) | `Calibration.cmPerPixel` в `@tennis-ai/shared` | 🔶 поле есть, калибровка ⬜ |
+| `pose_service.dart` (ML Kit 33 landmark) | `apps/miniapp/src/services/poseService.ts` + `videoPipeline.ts` (`@mediapipe/tasks-vision@1.1.1`, VIDEO mode = built-in tracking, GPU→CPU fallback, lite float16 model) | ✅ v0; smoke test on live video ⬜ |
+| `yolo_detector_service.dart` / `ball_detection_service.dart` | same place → onnxruntime-web (int8) | 🔶 interface ready |
+| `calibration_service.dart` (px → cm) | `Calibration.cmPerPixel` in `@tennis-ai/shared` | 🔶 field exists, calibration ⬜ |
 | `moment_detector*.dart` (M0–M6) | `packages/engine/src/phases.ts` | 🔶 heuristic v0 |
-| `metrics_calculator.dart` | `packages/engine/src/measurements.ts` + `metrics.ts` | 🔶 17 калькуляторов из 24; пороги из реверса |
-| Пороги Firestore `metric_definitions` | `packages/shared/src/metrics/metrics.json` | ✅ восстановленное; остальное — unknown-range |
-| Скоринг green/red + overall | `packages/engine/src/scoring.ts` | ✅ правило; веса = v0-аппроксимация |
-| `video_annotation_service.dart` (FFmpeg) | клиентский canvas + MediaRecorder → fallback серверный | ⬜ |
-| Компрессия видео (FFmpeg Kit) | сервер (fluent-ffmpeg, 720p/crf 28) | ⬜ воркер в API |
+| `metrics_calculator.dart` | `packages/engine/src/measurements.ts` + `metrics.ts` | 🔶 17 of 24 calculators; thresholds from the reverse |
+| Firestore `metric_definitions` thresholds | `packages/shared/src/metrics/metrics.json` | ✅ recovered ones; the rest — unknown-range |
+| Scoring green/red + overall | `packages/engine/src/scoring.ts` | ✅ rule; weights = v0 approximation |
+| `video_annotation_service.dart` (FFmpeg) | client canvas + MediaRecorder → server fallback | ⬜ |
+| Video compression (FFmpeg Kit) | server (fluent-ffmpeg, 720p/crf 28) | ⬜ worker in the API |
 | `stroke_detection_service.dart` | `POST /api/analysis/detect-stroke` (Gemini vision) | ✅ |
 | `quota_service.dart` (9/20) | `apps/api/src/modules/users/users.service.ts` | ✅ |
 | `drill_recommendation_service.dart` | `apps/api/src/modules/drills` | ✅ v0 (intersect weaknesses×targetMetrics) |
 | `training_plan_service.dart` | `apps/api/src/modules/plans` | ✅ v0 |
-| `axel/*` (Gemini function calling, память) | `apps/api/src/modules/coach` | 🔶 прокси + инструменты; память коуча ⬜ |
-| LIVE CORRECT (realtime) | ожидает спайка `getUserMedia` в Telegram WebView (DECISIONS §6.3) | ⬜ |
-| Firebase Auth/Storage/Firestore | Nest + Mongo + S3 (осознанная замена, не порт) | ✅ каркас |
-| RevenueCat + Play Billing | Telegram Stars (осознанная замена) | ✅ каркас |
-| pairip license check | не нужен (TMA = initData-подпись) | — |
-| UI-клоны экранов оригинала (CLONE_SPEC) | Android: 1:1 (SECTION_AUDIT); TMA: рескин 2026-10-18 | ✅ v0 TMA; сверка скриншотами ⬜ |
+| `axel/*` (Gemini function calling, memory) | `apps/api/src/modules/coach` | 🔶 proxy + tools; coach memory ⬜ |
+| LIVE CORRECT (realtime) | waiting for the `getUserMedia` spike in the Telegram WebView (DECISIONS §6.3) | ⬜ |
+| Firebase Auth/Storage/Firestore | Nest + Mongo + S3 (deliberate replacement, not a port) | ✅ skeleton |
+| RevenueCat + Play Billing | Telegram Stars (deliberate replacement) | ✅ skeleton |
+| pairip license check | not needed (TMA = initData signature) | — |
+| UI clones of the original screens (CLONE_SPEC) | Android: 1:1 (SECTION_AUDIT); TMA: reskin 2026-10-18 | ✅ v0 TMA; screenshot comparison ⬜ |
 
-## VIDEO PREVIEW + нативный TTS (2026-10-18)
+## VIDEO PREVIEW + native TTS (2026-10-18)
 
-Порт `video_preview_screen.dart` в TMA (evidence: `reference/extracted_assets/`
+Port of `video_preview_screen.dart` to the TMA (evidence: `reference/extracted_assets/`
 libapp_strings, en.json, long_strings):
 
-- Флоу: выбор видео в `/record` → `/preview` — зацикленный `<video>` (порт
-  `setLooping`), гейт качества («CHECKING VIDEO...», ландшафт с дословным текстом
-  «rotating the file afterwards does not fix it», квадратный кроп, <360px →
-  «VIDEO TOO LOW QUALITY» + RETAKE), «TRIM YOUR STROKE» — RangeSlider с двумя
-  ручками (порт `_previewTrim`/`trimStartSec`), три действия ANALYZE/RETAKE.
-- Окно трима режет кадровую выборку позы (startSec/endSec в `videoPipeline`),
-  сам оригинал грузится целиком; `trimStartSec/trimEndSec` сохраняются в сессии
+- Flow: video selection in `/record` → `/preview` — looping `<video>` (port of
+  `setLooping`), quality gate («CHECKING VIDEO...», landscape with the verbatim text
+  «rotating the file afterwards does not fix it», square crop, <360px →
+  «VIDEO TOO LOW QUALITY» + RETAKE), «TRIM YOUR STROKE» — RangeSlider with two
+  handles (port of `_previewTrim`/`trimStartSec`), three actions ANALYZE/RETAKE.
+- The trim window cuts the pose frame sampling (startSec/endSec in `videoPipeline`),
+  the original itself is loaded in full; `trimStartSec/trimEndSec` are stored in the session
   (`shared/api.ts` + analyses schema/DTO/service).
-- Дефект UX оригинала воспроизведён: подписи «ручки тащатся» на экране нет —
-  её произносит голос (см. TTS).
-- **Нативный TTS** (`services/tts.ts`, Web Speech API): одноразовый голосовой
-  гид экрана ревью (порт `axel_recording_guide_shown_`), озвучка ответов Axel
-  по тумблеру speaker (ttsOn в store), красный stop глушит речь. В Android-клоне
-  TTS пока флаг без движка (CLONE_SPEC §6.4) — зеркало на Kotlin TextToSpeech TODO.
-- Из разобранного реверса осталось на потом: скачивание/share/RE-ANALYZE в My Videos,
-  live-элементы.
+- The original's UX defect reproduced: there is no on-screen caption saying "the
+  handles are being dragged" — it is spoken by voice (see TTS).
+- **Native TTS** (`services/tts.ts`, Web Speech API): one-time voice guide of the
+  review screen (port of `axel_recording_guide_shown_`), voicing Axel's answers
+  via the speaker toggle (ttsOn in the store), the red stop mutes speech. In the Android clone
+  TTS is still a flag without an engine (CLONE_SPEC §6.4) — mirror onto Kotlin TextToSpeech TODO.
+- Left for later from the parsed reverse: download/share/RE-ANALYZE in My Videos,
+  live elements.
 
-## Results-плеер: перемотка по фазам (2026-10-18)
+## Results player: seeking by phases (2026-10-18)
 
-Порт видеоплеера `results_screen.dart` в `AnalysisView.vue` (evidence:
+Port of the `results_screen.dart` video player into `AnalysisView.vue` (evidence:
 `_seekToMoment`, `_applyPlaybackSpeed`, `PlaySpeedReset`, `isLooping`,
-`annotated_video_url` в строках libapp.so):
+`annotated_video_url` in the libapp.so strings):
 
-- Плеер над карточкой балла: зацикленный `<video>` (порт `isLooping`), muted+playsinline.
-- Чипы фаз M0–M6 теперь и выбирают фазу, и перематывают клип на таймкод фазы —
-  порт `_seekToMoment`: `currentTime = trimStartSec + startFrame / fps`
-  (кадры сэмплированы от начала окна трима, поэтому в отчёте `frame/fps`
-  отсчитывается от `trimStartSec`).
-- Скорости 0.25x/0.5x/1x под плеером — порт `_applyPlaybackSpeed`
-  (`playbackRate`). Точный набор скоростей оригинала из строк не восстановлен —
-  ближайшая реконструкция по `PlaySpeedReset`.
-- URL плеера: новый `GET /api/analyses/:id/video` — presigned GET (S3Service
-  `presignGet`), играет `videos.annotated`, пока его нет — `videos.original`
-  (порт `annotated_video_url`; аннотированное видео — порт ⬜, шаг «серверный
-  ffmpeg-воркер»). Контракт `AnalysisVideoResponse` в `shared/api.ts`,
-  клиент — `analysis.fetchVideoUrl(id)`.
+- Player above the score card: looping `<video>` (port of `isLooping`), muted+playsinline.
+- The M0–M6 phase chips now both select a phase and seek the clip to the phase's timecode —
+  port of `_seekToMoment`: `currentTime = trimStartSec + startFrame / fps`
+  (frames are sampled from the start of the trim window, so in the report `frame/fps`
+  counts from `trimStartSec`).
+- Speeds 0.25x/0.5x/1x below the player — port of `_applyPlaybackSpeed`
+  (`playbackRate`). The original's exact set of speeds was not recovered from the strings —
+  closest reconstruction based on `PlaySpeedReset`.
+- Player URL: new `GET /api/analyses/:id/video` — presigned GET (S3Service
+  `presignGet`), plays `videos.annotated`, until it exists — `videos.original`
+  (port of `annotated_video_url`; annotated video — port ⬜, step "server-side
+  ffmpeg worker"). The `AnalysisVideoResponse` contract in `shared/api.ts`,
+  client — `analysis.fetchVideoUrl(id)`.
 
-## My Videos: действия над сессией (2026-10-18)
+## My Videos: session actions (2026-10-18)
 
-Порт действий `video_library_screen.dart` в `VideosView.vue` (evidence: ключи
+Port of the `video_library_screen.dart` actions into `VideosView.vue` (evidence: keys
 en.json `re_analyze`, `delete_video`+`delete_video_confirm`, `video_deleted`,
-`download_failed`, `video_saved_to`, `share_plus` в манифесте):
+`download_failed`, `video_saved_to`, `share_plus` in the manifest):
 
-- Карточка сессии в бакете: Open + строка действий RE-ANALYZE / Share /
-  Download / Delete Video (красная). Busy-состояние «Preparing…» на время
-  скачивания blob.
-- **RE-ANALYZE**: оригинал сессии (presigned GET → File, стор
-  `analysis.fetchVideoFile`) кладётся в `pendingPreview` и открывается `/preview`
-  — тот же флоу ревью/трима/анализа, что и у нового видео; квота списывается при
-  создании сессии, как в оригинале.
-- **Share** (порт share_plus): `navigator.share({ files })` при доступности
-  (canShare), иначе скачивание как фолбэк; отмена системного листа — не ошибка.
-- **Download**: anchor+blob, тост `video_saved_to` / при ошибке
+- Session card in the bucket: Open + a row of actions RE-ANALYZE / Share /
+  Download / Delete Video (red). Busy state «Preparing…» while the blob is
+  being downloaded.
+- **RE-ANALYZE**: the session's original (presigned GET → File, store
+  `analysis.fetchVideoFile`) is put into `pendingPreview` and `/preview` is opened —
+  the same review/trim/analyze flow as for a new video; the quota is charged when
+  the session is created, as in the original.
+- **Share** (port of share_plus): `navigator.share({ files })` when available
+  (canShare), otherwise download as fallback; cancelling the system sheet is not an error.
+- **Download**: anchor+blob, toast `video_saved_to` / on error
   `download_failed`.
-- **Delete Video**: подтверждение оригинала (`delete_video_confirm`, кнопки
-  CANCEL/DELETE), тосты `video_deleted`/`delete_failed`; каскад — существующий
+- **Delete Video**: confirmation from the original (`delete_video_confirm`, buttons
+  CANCEL/DELETE), toasts `video_deleted`/`delete_failed`; cascade — the existing
   `DELETE /analyses/:id`.
-- Тот же паттерн подтверждения добавлен в My Analyses (ключи оригинала
-  `delete_session` + `delete_session_confirm` — раньше удаляло без диалога).
+- The same confirmation pattern added to My Analyses (the original's keys
+  `delete_session` + `delete_session_confirm` — it used to delete without a dialog).
 
-## LIVE CORRECT: спайк getUserMedia + live-цикл (2026-10-18)
+## LIVE CORRECT: getUserMedia spike + live cycle (2026-10-18)
 
-`LiveView.vue` переписан из заглушки в рабочий live-режим (порты: клон
-`LiveAnalysisScreen.kt`, строки оригинала `en.json`/libapp):
+`LiveView.vue` rewritten from a stub into a working live mode (ports: the clone's
+`LiveAnalysisScreen.kt`, the original's `en.json`/libapp strings):
 
-- **Спайк getUserMedia**: в Chromium (headless, `--use-fake-device-for-media-stream`)
-  полный флоу `/live` проходит — старт → «Get in position. 15 seconds.» →
-  live-фид с чипами → стоп → итог; MediaPipe Pose грузится по GPU-делегату,
-  `detectForVideo` крутится без ошибок. Открытый вопрос — тот же флоу внутри
-  Telegram WebView на iOS/Android (проверить на реальном устройстве).
-- Флоу: idle (выбор удара чипами + «START LIVE ANALYSIS») → prepare 15 c
-  («Get in position. 15 seconds.» → «Go!», дословно) → live → summary.
-- Live-цикл: `getUserMedia(facingMode: environment)` с фолбэком на фронталку
-  (зеркалится), rAF + `detectForVideo` (~15 fps), скелет BlazePose на canvas
-  поверх фида (FILL_CENTER, порт SkeletonOverlay клона), чипы REC /
+- **getUserMedia spike**: in Chromium (headless, `--use-fake-device-for-media-stream`)
+  the full `/live` flow passes — start → «Get in position. 15 seconds.» →
+  live feed with chips → stop → summary; MediaPipe Pose loads via the GPU delegate,
+  `detectForVideo` runs without errors. Open question — the same flow inside
+  the Telegram WebView on iOS/Android (verify on a real device).
+- Flow: idle (stroke selection via chips + «START LIVE ANALYSIS») → prepare 15 s
+  («Get in position. 15 seconds.» → «Go!», verbatim) → live → summary.
+- Live cycle: `getUserMedia(facingMode: environment)` with a fallback to the front camera
+  (mirrored), rAF + `detectForVideo` (~15 fps), BlazePose skeleton on a canvas
+  over the feed (FILL_CENTER, port of the clone's SkeletonOverlay), chips REC /
   HD @ 30FPS / AI TRACKING: ACTIVE / SUBJECT IN FRAME ✓.
-- Метрики live: `METRIC_DEFINITIONS` выбранного удара с кадровыми
-  калькуляторами и восстановленным proRange; первая метрика вне диапазона —
-  красная карточка «LIVE CORRECTION» с 15-секундным окном на исправление
-  (порт countdown оригинала), возврат в диапазон засчитывается как corrected.
-  Скорости/мяч (YAML null-range и не-кадровые калькуляторы) в live не участвуют.
-- Итог (дословные строки libapp): «All metrics corrected! Excellent form!»
-  либо «Errors found but none fixable live. Try drills.» + счётчики
-  corrected/errors, кнопки Try again / Drills. TTS озвучивает поправки и итог
-  при включённом спикере (`app.ttsOn`).
-- Отказ камеры/отсутствие API → прежняя заглушка + «Camera permission required».
-- **Dev-offline** (`VITE_DEV_OFFLINE=1`, только в DEV-сборке): auth-стор выдаёт
-  мок-пользователя без Telegram initData — локальный запуск `pnpm dev:miniapp`
-  вне Telegram для всех экранов. Спайк гонялся именно в этом режиме.
+- Live metrics: `METRIC_DEFINITIONS` of the selected stroke with frame-based
+  calculators and recovered proRange; the first metric outside the range —
+  a red «LIVE CORRECTION» card with a 15-second window to correct it
+  (port of the original's countdown), returning into the range counts as corrected.
+  Speeds/ball (YAML null-range and non-frame calculators) do not participate in live.
+- Summary (verbatim libapp strings): «All metrics corrected! Excellent form!»
+  or «Errors found but none fixable live. Try drills.» + corrected/errors counters,
+  buttons Try again / Drills. TTS voices the corrections and the summary
+  when the speaker is enabled (`app.ttsOn`).
+- Camera refusal/missing API → the former stub + «Camera permission required».
+- **Dev-offline** (`VITE_DEV_OFFLINE=1`, DEV build only): the auth store issues a
+  mock user without Telegram initData — local `pnpm dev:miniapp` run
+  outside Telegram for all screens. The spike was run precisely in this mode.
 
-## Рескин TMA по CLONE_SPEC (2026-10-18)
+## TMA reskin per CLONE_SPEC (2026-10-18)
 
-`apps/miniapp` приведён к дизайн-системе и экранам клона (источники —
-`tennis-ai-android` после аудита 2026-10-17 + `docs/CLONE_SPEC.md`):
+`apps/miniapp` brought to the design system and screens of the clone (sources —
+`tennis-ai-android` after the 2026-10-17 audit + `docs/CLONE_SPEC.md`):
 
-- Дизайн-система в `src/styles.css` (палитра §1.1, три регистра типографики §1.2),
-  примитивы — `src/components/ui.ts` + `Icon.vue` (порт `ui/common/Ui.kt`).
-- Иконки — официальные Material Symbols outlined (weight 400), те же глифы, что
-  `Icons.Outlined.*` клона: реестр `src/components/materialIcons.ts` генерируется
-  `apps/miniapp/scripts/icon-fetch.mjs` из `@material-symbols/svg-400@0.48.0`
-  (Apache-2.0). Для «MY ANALYSES» взят `show_chart` (пульс-линия) — по аудиту §2
-  SECTION_AUDIT так в оригинале.
-- Навигация §3: bottom-nav home|videos|analyses|dashboard|profile + FAB Axel;
-  select/edit/axel/record/live/analysis/drills/paywall — fullscreen без навигации.
-- Экраны: Home (6 модулей с кольцами и метками COACH/NEW/N sessions), My Videos,
-  My Analyses (бакеты serve blue/forehand lime/backhand amber/drills red,
-  `no_data` воспроизводится дословно), Select/Player/Coach Dashboard
-  (невыровненные ключи `track_progression`/`manage_students_perf`/`record_first_video`
-  — дословно), Profile + Edit Profile (General|Additional, чипы, пересчёт Progress),
-  Axel (голограф, подсказки 2×2, пузыри, чип Auto/Manual, красный stop = AbortController).
-- i18n: `src/i18n/T.ts` — порт `core/i18n/T.kt`; RU по умолчанию, EN дословно из
-  `reference/extracted_assets/en.json`; выбор языка в Settings.
-- Состояние: `src/stores/app.ts` — порт `AppState.kt` (профиль/настройки/lang,
+- Design system in `src/styles.css` (palette §1.1, three typographic registers §1.2),
+  primitives — `src/components/ui.ts` + `Icon.vue` (port of `ui/common/Ui.kt`).
+- Icons — official Material Symbols outlined (weight 400), the same glyphs as the
+  clone's `Icons.Outlined.*`: the registry `src/components/materialIcons.ts` is generated
+  by `apps/miniapp/scripts/icon-fetch.mjs` from `@material-symbols/svg-400@0.48.0`
+  (Apache-2.0). For «MY ANALYSES» `show_chart` is used (pulse line) — per the §2 audit
+  SECTION_AUDIT that's how it is in the original.
+- Navigation §3: bottom-nav home|videos|analyses|dashboard|profile + Axel FAB;
+  select/edit/axel/record/live/analysis/drills/paywall — fullscreen without navigation.
+- Screens: Home (6 modules with rings and COACH/NEW/N sessions labels), My Videos,
+  My Analyses (buckets serve blue/forehand lime/backhand amber/drills red,
+  `no_data` reproduced verbatim), Select/Player/Coach Dashboard
+  (untranslated keys `track_progression`/`manage_students_perf`/`record_first_video`
+  — verbatim), Profile + Edit Profile (General|Additional, chips, Progress recalculation),
+  Axel (hologram, 2×2 hints, bubbles, Auto/Manual chip, red stop = AbortController).
+- i18n: `src/i18n/T.ts` — port of `core/i18n/T.kt`; RU by default, EN verbatim from
+  `reference/extracted_assets/en.json`; language selection in Settings.
+- State: `src/stores/app.ts` — port of `AppState.kt` (profile/settings/lang,
   localStorage ≈ SharedPreferences).
 
-Осознанные отклонения TMA от клона (продуктовая замена, не расхождение с оригиналом):
+Deliberate TMA deviations from the clone (product replacement, not a divergence from the original):
 
-1. Axel говорит через `POST /api/coach/chat` (ключ на сервере), а не GLM-конфиг
-   из «App Version»; `set_app_language` переключает язык приложения.
-2. Карточка «Free Plan» ведёт на Stars-пейволл `/paywall` (в клоне — Edit Profile).
-3. Счётчики дашбордов/бакетов — реальные данные API (список анализов), а не нули;
-   тап по бакету раскрывает список сессий (Открыть/Удалить).
-4. Live — стилизованная заглушка до спайка `getUserMedia` (см. шаг 2 ниже).
+1. Axel speaks via `POST /api/coach/chat` (key on the server), not the GLM config
+   from «App Version»; `set_app_language` switches the app language.
+2. The «Free Plan» card leads to the Stars paywall `/paywall` (in the clone — Edit Profile).
+3. Dashboard/bucket counters — real API data (list of analyses), not zeros;
+   tapping a bucket expands the list of sessions (Open/Delete).
+4. Live — a styled stub until the `getUserMedia` spike (see step 2 below).
 
-## Ближайшие шаги (по приоритету)
+## Next steps (by priority)
 
-1. ~~Подключить `@mediapipe/tasks-vision`~~ ✅ (2026-10-16): `poseService.ts` + потоковый
-   `analyzeVideoPoses` (seek → canvas → `detectForVideo`), кадры не буферизуются. WASM/модель —
-   CDN по умолчанию, самохостинг через `VITE_MEDIAPIPE_WASM_URL` / `VITE_POSE_MODEL_URL`.
-   Осталось: смоук на реальном видео в Telegram WebView.
-2. ~~Спайк `getUserMedia`~~ ✅ в браузере (2026-10-18, LiveView live-цикл);
-   осталось проверить тот же флоу внутри Telegram WebView (iOS/Android/desktop).
-3. Портировать точные веса `overall_score`, когда формула будет восстановлена
-   (или зафиксировать свою калибровку на живых данных).
-4. Серверный ffmpeg-воркер компрессии + аннотированное видео.
-5. Заменить heuristic-фазы `phases.ts` на порт логики `moment_detector_ondevice`
-   (последовательности порогов движения по кадрам из строк `libapp_strings.txt`).
+1. ~~Connect `@mediapipe/tasks-vision`~~ ✅ (2026-10-16): `poseService.ts` + streaming
+   `analyzeVideoPoses` (seek → canvas → `detectForVideo`), frames are not buffered. WASM/model —
+   CDN by default, self-hosting via `VITE_MEDIAPIPE_WASM_URL` / `VITE_POSE_MODEL_URL`.
+   Remaining: smoke test on a real video in the Telegram WebView.
+2. ~~`getUserMedia` spike~~ ✅ in the browser (2026-10-18, LiveView live cycle);
+   remaining: verify the same flow inside the Telegram WebView (iOS/Android/desktop).
+3. Port the exact `overall_score` weights once the formula is recovered
+   (or fix our own calibration on live data).
+4. Server-side ffmpeg worker for compression + annotated video.
+5. Replace the heuristic phases of `phases.ts` with a port of the `moment_detector_ondevice`
+   logic (motion-threshold sequences over frames from the `libapp_strings.txt` strings).

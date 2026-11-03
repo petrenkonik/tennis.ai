@@ -16,7 +16,7 @@
     </div>
 
     <div v-else style="padding: 16px; display: flex; flex-direction: column; gap: 14px">
-      <!-- Плеер сессии (results_screen.dart): loop, скорость — PlaySpeedReset, чипы фаз его перематывают (_seekToMoment) -->
+      <!-- Session player (results_screen.dart): loop, speed — PlaySpeedReset, phase chips seek it (_seekToMoment) -->
       <div v-if="videoUrl" class="card" style="padding: 0; overflow: hidden">
         <video
           ref="videoEl"
@@ -41,7 +41,7 @@
         </div>
       </div>
 
-      <!-- Балл /100: цветной квадрат + «ANALYSIS COMPLETE» (ResultsScreen.kt) -->
+      <!-- Score /100: colored square + "ANALYSIS COMPLETE" (ResultsScreen.kt) -->
       <AppCard>
         <div class="row" style="padding: 18px; gap: 16px">
           <div
@@ -74,7 +74,7 @@
         </div>
       </AppCard>
 
-      <!-- Фазы: чипы M0–M6, по умолчанию — фаза контакта (последняя) -->
+      <!-- Phases: M0–M6 chips, the contact phase (last) selected by default -->
       <div>
         <div class="mono-caption" style="font-size: 12px; color: var(--text-secondary); margin-bottom: 10px">
           {{ tt('stroke_phases') }}
@@ -93,7 +93,7 @@
         </div>
       </div>
 
-      <!-- Метрики выбранной фазы -->
+      <!-- Metrics of the selected phase -->
       <template v-if="selectedPhase">
         <div style="font-weight: 600; font-size: 16px">{{ phaseName(selectedPhase) }}</div>
         <AppCard v-if="phaseMetrics.length > 0">
@@ -116,7 +116,7 @@
       </div>
       </template>
 
-      <!-- Слабые места → упражнения -->
+      <!-- Weaknesses → drills -->
       <template v-if="topWeaknesses.length > 0">
         <div class="section-bar"><span class="mono-label" style="font-size: 14px">{{ tt('weaknesses') }}</span></div>
         <AppCard>
@@ -175,7 +175,7 @@ const reds = computed(() => metrics.value.filter((m) => m.status === 'red').leng
 const unknowns = computed(() => metrics.value.filter((m) => m.status === 'unknown').length);
 const topWeaknesses = computed<string[]>(() => (report.value?.topWeaknesses as string[] | undefined) ?? []);
 
-/** Цвет квадрата балла (аналог scoreColor в клоне): зелёный/янтарный/красный. */
+/** Color of the score square (analogous to scoreColor in the clone): green/amber/red. */
 const scoreColor = computed(() => {
   const s = overallScore.value;
   if (s === null) return 'var(--track)';
@@ -189,7 +189,7 @@ function phaseName(code: PhaseCode): string {
   return `${code} · ${PHASE_NAMES[stroke]?.[code] ?? code}`;
 }
 
-// По умолчанию — фаза контакта (последняя обнаруженная), как в клоне (selected = M5).
+// The contact phase (last detected) is selected by default, as in the clone (selected = M5).
 const selectedPhase = ref<PhaseCode | null>(null);
 const phaseMetrics = computed<MetricRow[]>(() => {
   const sel = selectedPhase.value;
@@ -197,19 +197,19 @@ const phaseMetrics = computed<MetricRow[]>(() => {
   return metrics.value.filter((m) => m.phase === sel);
 });
 
-// --- Плеер Results (порт results_screen.dart): loop + _applyPlaybackSpeed + _seekToMoment ---
+// --- Results player (port of results_screen.dart): loop + _applyPlaybackSpeed + _seekToMoment ---
 const SPEEDS = [0.25, 0.5, 1] as const;
 const videoEl = ref<HTMLVideoElement | null>(null);
 const videoUrl = ref<string | null>(null);
 const speed = ref<number>(1);
 
-/** Порт _applyPlaybackSpeed; набор значений 0.25/0.5/1 — ближайшая реконструкция (PlaySpeedReset). */
+/** Port of _applyPlaybackSpeed; the 0.25/0.5/1 set is the closest reconstruction (PlaySpeedReset). */
 function applySpeed(s: number): void {
   speed.value = s;
   if (videoEl.value) videoEl.value.playbackRate = s;
 }
 
-/** Порт _seekToMoment: таймкод фазы = trimStart + startFrame / fps (кадры сэмплированы от trimStart). */
+/** Port of _seekToMoment: phase timecode = trimStart + startFrame / fps (frames are sampled from trimStart). */
 function seekToPhase(p: PhaseRow): void {
   const fps = report.value?.fps as number | undefined;
   const v = videoEl.value;

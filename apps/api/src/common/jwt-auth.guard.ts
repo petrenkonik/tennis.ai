@@ -5,7 +5,7 @@ import { Env } from '../config/env';
 import { IS_PUBLIC_KEY } from './public.decorator';
 import type { JwtPayload } from './current-user.decorator';
 
-/** Глобальный guard: всё, кроме @Public(), требует Bearer JWT. */
+/** Global guard: everything except @Public() requires a Bearer JWT. */
 @Injectable()
 export class JwtAuthGuard implements CanActivate {
   constructor(

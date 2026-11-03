@@ -12,10 +12,10 @@ import kotlin.math.abs
 import kotlin.math.atan2
 import kotlin.math.sqrt
 
-/** Рост игрока в см — база перевода нормализованных координат в сантиметры. */
+/** Player height in cm — the basis for converting normalized coordinates to centimeters. */
 var playerHeightCm: Float = 175f
 
-/** Результат вычисления метрики: значение D, опционально ND, опционально классификация. */
+/** Metric computation result: D value, optional ND value, optional classification. */
 data class Computed(
     val value: Float?,
     val valueNd: Float? = null,
@@ -23,8 +23,8 @@ data class Computed(
 )
 
 /**
- * Расчёт метрик по фазе. Формулы — наша геометрия (в снапшоте восстанавливаются
- * только пороги/описания), диапазоны — оригинальные.
+ * Per-phase metric computation. Formulas are our geometry (only thresholds/descriptions
+ * are recoverable from the snapshot), ranges are the original ones.
  */
 object MetricsCalculator {
 
@@ -57,7 +57,7 @@ object MetricsCalculator {
             MetricDefs.M3_TROPHY_POSITION.id -> trophyArms(frames, dom, ndom)
             MetricDefs.M4_TRUNK_ROTATION.id -> Computed(median(frames.map { tiltFromVerticalDeg(it.hipMid, it.shoulderMid) }))
             MetricDefs.M5_CONTACT_POINT_HEIGHT_DISTANCE.id -> Computed(contactHeightRatio(frames, contactIdx))
-            MetricDefs.M5_RACKET_HEAD_POSITION.id -> Computed(null) // требует детекции ракетки (YOLO) — NA
+            MetricDefs.M5_RACKET_HEAD_POSITION.id -> Computed(null) // requires racket detection (YOLO) — NA
             MetricDefs.TOSS_ARM_EXTENSION.id -> Computed(medAngle(frames, ndom) { p, s -> angleDeg(p.p(s.shoulder()), p.p(s.elbow()), p.p(s.wrist())) })
             MetricDefs.TOSS_ARM_SPEED.id -> Computed(maxSpeedMs(allFrames, ndom, phaseRange(frames, allFrames)))
             MetricDefs.WRIST_SPEED.id -> Computed(speedMs(allFrames, dom, contactIdx))
@@ -67,7 +67,7 @@ object MetricsCalculator {
             MetricDefs.UNIT_TURN.id, MetricDefs.TORSO_ROTATION.id -> Computed(unitTurn(frames))
             MetricDefs.WRIST_OVER_HIP.id -> Computed(wristOverHip(frames, dom))
             MetricDefs.CONTACT_IN_FRONT.id -> Computed(contactInFront(frames, dom, h))
-            MetricDefs.RACQUET_PATH.id -> Computed(null) // требует детекции ракетки — NA
+            MetricDefs.RACQUET_PATH.id -> Computed(null) // requires racket detection — NA
             MetricDefs.STANCE_TYPE.id -> Computed(null, null, stanceClassification(frames, h))
             else -> Computed(null)
         }
@@ -107,7 +107,7 @@ object MetricsCalculator {
     private fun bodyCenter(frames: List<PoseFrame>): Float? =
         median(frames.map { ((it.hipMid.x + it.shoulderMid.x) / 2f) - 0.5f })
 
-    /** Средний угол обеих рук (плечо-локоть-запястье), вертикальности готовности. */
+    /** Average angle of both arms (shoulder-elbow-wrist), readiness verticality. */
     private fun armsPosition(frames: List<PoseFrame>): Float? {
         val vals = frames.map { f ->
             val l = angleDeg(f.p(Lm.LEFT_SHOULDER), f.p(Lm.LEFT_ELBOW), f.p(Lm.LEFT_WRIST))
@@ -117,7 +117,7 @@ object MetricsCalculator {
         return median(vals)
     }
 
-    /** Угол стопы (пятка→носок) к горизонтали кадра. */
+    /** Foot angle (heel→toe) relative to the frame's horizontal. */
     private fun footAngle(frames: List<PoseFrame>, dom: SideRef): Float? =
         median(frames.map { f ->
             val heel = f.p(dom.heel())
@@ -132,14 +132,14 @@ object MetricsCalculator {
             minOf(knee, hip)
         }.maxOrNull()
 
-    /** Trophy: угол плечо–локоть от вертикали; D 40–120, ND 79–170. */
+    /** Trophy: shoulder-elbow angle from vertical; D 40–120, ND 79–170. */
     private fun trophyArms(frames: List<PoseFrame>, dom: SideRef, ndom: SideRef): Computed {
         fun armAngle(f: PoseFrame, s: SideRef): Float {
             val v = f.p(s.elbow()) - f.p(s.shoulder())
             val horiz = sqrt(v.x * v.x + v.z * v.z)
             val len = sqrt(horiz * horiz + v.y * v.y)
             if (len < 1e-6f) return 0f
-            // угол от вертикали «вниз» — поднятая рука даёт 120–180
+            // angle from the "downward" vertical — a raised arm yields 120–180
             return Math.toDegrees(atan2(horiz, abs(v.y)).toDouble()).toFloat() + (if (v.y < 0) 90f else 0f)
         }
         val d = median(frames.map { armAngle(it, dom) })
@@ -147,7 +147,7 @@ object MetricsCalculator {
         return Computed(d, n)
     }
 
-    /** Высота контакта в долях роста игрока (запястье над голеностопами / высота тела в кадре). */
+    /** Contact height as a fraction of player height (wrist above ankles / body height in frame). */
     private fun contactHeightRatio(frames: List<PoseFrame>, contactIdx: Int): Float? {
         val f = frames.maxByOrNull { it.shoulderMid.x * 0f + (it.p(Lm.LEFT_WRIST).distTo(it.shoulderMid)) } ?: return null
         val ankleMidY = (f.p(Lm.LEFT_ANKLE).y + f.p(Lm.RIGHT_ANKLE).y) / 2f
@@ -157,7 +157,7 @@ object MetricsCalculator {
         return (ankleMidY - wristY) / bodyH
     }
 
-    /** Скорость запястья в м/с через масштаб роста игрока. */
+    /** Wrist speed in m/s, scaled by player height. */
     private fun speedMs(all: List<PoseFrame>, side: SideRef, contactIdx: Int): Float? {
         if (all.size < 3) return null
         val i = contactIdx.coerceIn(1, all.size - 2)
@@ -187,7 +187,7 @@ object MetricsCalculator {
     private fun backLegLanding(frames: List<PoseFrame>, ndom: SideRef): Float? =
         frames.map { angleDeg(it.p(ndom.hip()), it.p(ndom.knee()), it.p(ndom.ankle())) }.maxOrNull()
 
-    /** Разворот плеч к камере (acos dx/len) — малые значения = сильная ротация. */
+    /** Shoulder turn relative to the camera (acos dx/len) — small values mean strong rotation. */
     private fun unitTurn(frames: List<PoseFrame>): Float? {
         val vals = frames.mapNotNull { f ->
             val ls = f.p(Lm.LEFT_SHOULDER); val rs = f.p(Lm.RIGHT_SHOULDER)
@@ -227,8 +227,8 @@ object MetricsCalculator {
     }
 
     /**
-     * Классификация стойки на контакте: угол линии стоп к горизонтали кадра.
-     * <25° открытая, 25–50° полузакрытая, >50° нейтральная/закрытая.
+     * Stance classification at contact: angle of the feet line to the frame's horizontal.
+     * <25° open, 25–50° semi-open, >50° neutral/closed.
      */
     private fun stanceClassification(frames: List<PoseFrame>, h: Handedness): String? {
         val f = frames.lastOrNull() ?: return null

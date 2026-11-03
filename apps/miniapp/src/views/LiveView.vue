@@ -1,6 +1,6 @@
 <template>
   <div class="screen full" style="background: #000; position: relative; overflow: hidden">
-    <!-- Шапка — на idle и summary; в live/prepare экран отдан под камеру -->
+    <!-- Header — on idle and summary; in live/prepare the screen is given to the camera -->
     <TopBar v-if="phase === 'idle' || phase === 'summary'" :title="tt('live_title')" variant="mono-accent">
       <template #left>
         <span style="cursor: pointer; display: inline-flex" @click="router.back()">
@@ -9,7 +9,7 @@
       </template>
     </TopBar>
 
-    <!-- Живой фид + скелет (v-show: элемент живёт, чтобы srcObject не сбрасывался) -->
+    <!-- Live feed + skeleton (v-show: the element stays alive so srcObject is not reset) -->
     <div v-show="streamOn" style="position: absolute; inset: 0">
       <video
         ref="videoEl"
@@ -34,7 +34,7 @@
         }"
       ></canvas>
 
-      <!-- Верхние плашки (клон: LIVE · удар + Stop; оригинал: REC / HD @ 30FPS / AI TRACKING) -->
+      <!-- Top overlays (clone: LIVE · stroke + Stop; original: REC / HD @ 30FPS / AI TRACKING) -->
       <div style="position: absolute; top: 12px; left: 12px; right: 12px; display: flex; flex-direction: column; gap: 8px">
         <div class="row" style="justify-content: space-between">
           <span
@@ -70,7 +70,7 @@
         </div>
       </div>
 
-      <!-- Prepare: «Get in position. 15 seconds.» → «Go!» -->
+      <!-- Prepare: "Get in position. 15 seconds." → "Go!" -->
       <div
         v-if="phase === 'prepare'"
         style="
@@ -90,7 +90,7 @@
         </div>
       </div>
 
-      <!-- LIVE CORRECTION: красная карточка поправки с 15-секундным окном -->
+      <!-- LIVE CORRECTION: red correction card with a 15-second window -->
       <div
         v-if="phase === 'live' && correction"
         style="
@@ -110,7 +110,7 @@
         <div style="color: #fff; margin-top: 4px; font-size: 14px; line-height: 19px">{{ correction.correction }}</div>
       </div>
 
-      <!-- Стоп-зона: TAP TO STOP на весь низ -->
+      <!-- Stop zone: TAP TO STOP across the bottom -->
       <div
         v-if="phase === 'live' && !correction"
         class="mono-label"
@@ -120,7 +120,7 @@
       </div>
     </div>
 
-    <!-- IDLE: выбор удара + START LIVE ANALYSIS -->
+    <!-- IDLE: stroke selection + START LIVE ANALYSIS -->
     <div
       v-if="phase === 'idle'"
       style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px; text-align: center"
@@ -161,7 +161,7 @@
       </button>
     </div>
 
-    <!-- SUMMARY: GOOD / ERRORS (финальные строки оригинала дословно) -->
+    <!-- SUMMARY: GOOD / ERRORS (the original's final lines verbatim) -->
     <div
       v-if="phase === 'summary'"
       style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px; text-align: center"
@@ -200,7 +200,7 @@ const router = useRouter();
 const app = useAppStore();
 const tt = (key: string) => t(app.lang, key);
 
-/** Чип-оверлей поверх фида (полупрозрачная плашка, как 0xAA101814 в клоне). */
+/** Chip overlay on top of the feed (semi-transparent plate, like 0xAA101814 in the clone). */
 const LiveChip = defineComponent({
   props: { color: { type: String, default: '#fff' } },
   setup(props, { slots }) {
@@ -243,7 +243,7 @@ const verdict = ref<'excellent' | 'drills'>('drills');
 const videoEl = ref<HTMLVideoElement | null>(null);
 const canvasEl = ref<HTMLCanvasElement | null>(null);
 
-/** Скелет BlazePose: пары соединений (порт CONNECTIONS из клона LiveAnalysisScreen.kt). */
+/** BlazePose skeleton: connection pairs (port of CONNECTIONS from the clone's LiveAnalysisScreen.kt). */
 const CONNECTIONS: Array<[number, number]> = [
   [11, 12], [11, 13], [13, 15], [12, 14], [14, 16],
   [11, 23], [12, 24], [23, 24],
@@ -251,7 +251,7 @@ const CONNECTIONS: Array<[number, number]> = [
   [27, 31], [28, 32], [27, 29], [28, 30],
 ];
 
-/** Live-метрики: кадровые калькуляторы с восстановленным proRange для выбранного удара. */
+/** Live metrics: per-frame calculators with a restored proRange for the selected stroke. */
 const liveDefs = computed(() =>
   METRIC_DEFINITIONS.filter(
     (d) => d.strokeTypes.includes(stroke.value) && d.calculator !== null && d.proRange !== null && CALCULATORS[d.calculator!],
@@ -262,7 +262,7 @@ function calibration(): Calibration {
   return { handedness: app.handRight ? 'right' : 'left' };
 }
 
-// --- Поток и цикл ---
+// --- Stream and loop ---
 let stream: MediaStream | null = null;
 let landmarker: PoseLandmarker | null = null;
 let raf = 0;
@@ -289,7 +289,7 @@ async function start(): Promise<void> {
       });
       mirrored.value = false;
     } catch {
-      // фронталка как фолбэк (предпросмотр зеркалится)
+      // front camera as a fallback (preview is mirrored)
       stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
       mirrored.value = true;
     }
@@ -299,7 +299,7 @@ async function start(): Promise<void> {
       await videoEl.value.play().catch(() => undefined);
     }
     streamOn.value = true;
-    // «Get in position. 15 seconds.» — порт отсчёта готовности оригинала
+    // "Get in position. 15 seconds." — port of the original's readiness countdown
     phase.value = 'prepare';
     countdown.value = 15;
     countdownTimer = setInterval(() => {
@@ -337,7 +337,7 @@ function loop(): void {
   const v = videoEl.value;
   if (!v || v.readyState < 2 || !landmarker) return;
   const now = performance.now();
-  if (now - lastDetectAt < 66) return; // детекция ~15 fps, отрисовка — каждый кадр
+  if (now - lastDetectAt < 66) return; // detection ~15 fps, drawing — every frame
   lastDetectAt = now;
   const result = landmarker.detectForVideo(v, now);
   const frame = toPoseFrame(0, now, v.videoWidth, v.videoHeight, result);
@@ -346,7 +346,7 @@ function loop(): void {
   updateCorrection(frame);
 }
 
-/** Порт updateLiveMetrics (клон): первая метрика вне pro-диапазона → карточка поправки. */
+/** Port of updateLiveMetrics (clone): the first metric outside the pro range → correction card. */
 function updateCorrection(frame: PoseFrame): void {
   const cal = calibration();
   for (const def of liveDefs.value) {
@@ -363,7 +363,7 @@ function updateCorrection(frame: PoseFrame): void {
     if (ev.status === 'red') {
       if (!errorCodes.has(def.code)) errorCodes.add(def.code);
       if (currentCode !== def.code) {
-        // новая поправка: 15-секундное окно на исправление (порт countdown оригинала)
+        // new correction: a 15-second window to fix it (port of the original's countdown)
         currentCode = def.code;
         correction.value = ev;
         correctionLeft.value = 15;
@@ -397,7 +397,7 @@ function drawSkeleton(frame: PoseFrame): void {
   const bw = frame.width;
   const bh = frame.height;
   if (!bw || !bh) return;
-  // FILL_CENTER: масштаб с сохранением пропорций + центрирование (как SkeletonOverlay в клоне)
+  // FILL_CENTER: proportional scale + centering (like SkeletonOverlay in the clone)
   const scale = Math.max(cw / bw, ch / bh);
   const sw = bw * scale;
   const sh = bh * scale;
@@ -429,7 +429,7 @@ function stop(): void {
   cancelAnimationFrame(raf);
   clearInterval(countdownTimer);
   clearInterval(windowTimer);
-  // Итог по финальным строкам оригинала: всё исправлено → «Excellent form!», иначе — drills.
+  // Verdict per the original's final lines: everything corrected → "Excellent form!", otherwise — drills.
   const open = [...errorCodes].filter((code) => !correctedCodes.has(code)).length;
   correctedCount.value = correctedCodes.size;
   errorCount.value = errorCodes.size;

@@ -20,7 +20,7 @@ export interface EvaluateNote {
   reason: string;
 }
 
-/** Порт правила скоринга оригинала: green = значение внутри про-диапазона, red = вне. */
+/** Port of the original scoring rule: green = value inside the pro range, red = outside. */
 export function evaluateMetric(def: MetricDefinition, value: number | null, note?: EvaluateNote): MetricEvaluation {
   const base = {
     code: def.code,

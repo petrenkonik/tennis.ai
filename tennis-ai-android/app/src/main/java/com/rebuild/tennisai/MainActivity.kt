@@ -50,7 +50,7 @@ fun App(state: AppState = viewModel()) {
     val backStack by nav.currentBackStackEntryAsState()
     val route = backStack?.destination?.route
 
-    // Табы с нижней навигацией (CLONE_SPEC §3): select/edit/axel/analyze/live/results — fullscreen
+    // Tabs with the bottom navigation bar (CLONE_SPEC §3): select/edit/axel/analyze/live/results are fullscreen
     val showBottomBar = route in setOf(
         AppState.ROUTE_HOME,
         AppState.ROUTE_VIDEOS,
@@ -61,7 +61,7 @@ fun App(state: AppState = viewModel()) {
     )
 
     fun goTab(target: String) {
-        // grid-таб ведёт на select_dashboard, остальные — на корни табов
+        // the grid tab leads to select_dashboard, the rest go to their tab roots
         val dest = if (target == AppState.ROUTE_DASHBOARD) AppState.ROUTE_SELECT_DASHBOARD else target
         nav.navigate(dest) {
             popUpTo(nav.graph.findStartDestination().id) { saveState = true }
@@ -109,7 +109,7 @@ fun App(state: AppState = viewModel()) {
                     onAxel = { nav.navigate(AppState.ROUTE_AXEL) },
                 )
             }
-            // Fullscreen-экраны
+            // Fullscreen screens
             composable(AppState.ROUTE_SELECT_DASHBOARD) {
                 SelectDashboardScreen(
                     lang = state.lang,

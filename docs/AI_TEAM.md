@@ -1,53 +1,53 @@
-# Штаб пересборки Tennis.AI — команда ИИ-агентов
+# Tennis.AI Rebuild HQ — AI Agent Team
 
-Команда ИИ-агентов для реинжиниринга `com.tennis.ai` v2.0.19. В команде только
-ИИ-модели; координатор (основная сессия ZCode) раздаёт задачи и принимает работу.
-Все агенты отвечают и документируют на русском.
+A team of AI agents for reverse-engineering `com.tennis.ai` v2.0.19. The team
+consists of AI models only; the coordinator (the main ZCode session) assigns
+tasks and reviews the work. All agents respond and document in Russian.
 
-Агенты определены файлами в `.zcode/agents/*.md` — ZCode подхватывает их как
-кастомные типы агентов (новые/изменённые агенты активируются в новой сессии).
-Каждого можно вызывать по имени; координатор сам решает, кто исполняет задачу.
+Agents are defined by files in `.zcode/agents/*.md` — ZCode picks them up as
+custom agent types (new/modified agents activate in a new session).
+Each can be invoked by name; the coordinator decides who executes a task.
 
-## Состав
+## Team
 
-| Слаг агента | Роль | Зона | Фаза |
+| Agent slug | Role | Domain | Phase |
 |---|---|---|---|
-| `rea-analyst` | Реверс-аналитик | `reference/` — факты об оригинале (только чтение) | все фазы |
-| `android-dev` | Android-разработчик | `tennis-ai-android/` (Kotlin + Compose, клон 1:1) | **фаза 1 — активна** |
-| `engine-porter` | Портировщик движка | `packages/engine` (TS) ↔ `tennis-ai-android/.../core/` (Kotlin), всегда зеркально | фаза 1–2 |
-| `api-dev` | Бэкенд-разработчик | `apps/api/` (Nest.js, уже начат — продолжать, не переписывать) | фаза 2 |
-| `tma-dev` | TMA-разработчик | `apps/miniapp/` (Vite + Vue 3 + Pinia) | фаза 3 — консерв |
-| `qa-verifier` | Контролёр качества | гейты: `pnpm typecheck`, сборка engine, `gradlew assembleDebug/test`, сверка скриншотов | все фазы |
+| `rea-analyst` | Reverse analyst | `reference/` — facts about the original (read-only) | all phases |
+| `android-dev` | Android developer | `tennis-ai-android/` (Kotlin + Compose, 1:1 clone) | **phase 1 — active** |
+| `engine-porter` | Engine porter | `packages/engine` (TS) ↔ `tennis-ai-android/.../core/` (Kotlin), always mirrored | phases 1–2 |
+| `api-dev` | Backend developer | `apps/api/` (Nest.js, already started — continue, don't rewrite) | phase 2 |
+| `tma-dev` | TMA developer | `apps/miniapp/` (Vite + Vue 3 + Pinia) | phase 3 — dormant |
+| `qa-verifier` | Quality controller | gates: `pnpm typecheck`, engine build, `gradlew assembleDebug/test`, screenshot comparison | all phases |
 
-## Порядок фаз (задано владельцем — не менять без него)
+## Phase order (set by the owner — do not change without them)
 
-1. **Фаза 1 — Android-клон (сейчас).** Все силы в `tennis-ai-android/`:
-   экраны 1:1 по `docs/OriginalScrean/`, логика — порт из `packages/engine`.
-   API на этом этапе не требуется (приложение работает автономно).
-2. **Фаза 2 — полный продукт.** Доводка начатого Nest.js API (`apps/api/`),
-   подключение Android-клона к серверу (auth, квоты, uploads, analyses, payments).
-3. **Фаза 3 — Telegram App.** Доведение Mini App (`apps/miniapp/`) до клона.
-   До наступления фазы TMA не трогать.
+1. **Phase 1 — Android clone (now).** All effort in `tennis-ai-android/`:
+   screens 1:1 per `docs/OriginalScrean/`, logic ported from `packages/engine`.
+   The API is not required at this stage (the app works standalone).
+2. **Phase 2 — full product.** Finishing the started Nest.js API (`apps/api/`),
+   connecting the Android clone to the server (auth, quotas, uploads, analyses, payments).
+3. **Phase 3 — Telegram App.** Bringing the Mini App (`apps/miniapp/`) up to clone level.
+   Until the phase starts, do not touch the TMA.
 
-Правило владельца: **не делать всё сразу — работать по частям.** Одна фаза,
-один экран/модуль за заход; после каждой правки — гейты `qa-verifier`.
+Owner's rule: **don't do everything at once — work in parts.** One phase,
+one screen/module per pass; after each change — the `qa-verifier` gates.
 
-## Типовые цепочки работы
+## Typical work chains
 
-- **Новый экран Android:** `rea-analyst` (как в оригинале) → `android-dev`
-  (реализация) → `qa-verifier` (сборка + сверка скриншотов).
-- **Правка движка:** `engine-porter` (TS↔Kotlin зеркально) → `qa-verifier`.
-- **Серверная задача (фаза 2):** `api-dev` → `qa-verifier` (`pnpm typecheck`).
-- **Спор «как в оригинале?»:** останавливаемся, `rea-analyst` даёт факт/гипотезу
-  с источником; спор о подходе решает только владелец через
+- **New Android screen:** `rea-analyst` (how it is in the original) → `android-dev`
+  (implementation) → `qa-verifier` (build + screenshot comparison).
+- **Engine change:** `engine-porter` (TS↔Kotlin mirrored) → `qa-verifier`.
+- **Server task (phase 2):** `api-dev` → `qa-verifier` (`pnpm typecheck`).
+- **"How is it in the original?" dispute:** we stop, `rea-analyst` provides a fact/hypothesis
+  with a source; disputes about the approach are settled only by the owner via
   `reference/DECISIONS.md`.
 
-## Общие правила команды
+## Team-wide rules
 
-- `reference/` — только чтение; тяжёлые бинарники не коммитятся.
-- Главный автоматический гейт TS-репозитория — `pnpm typecheck` (линтера и
-  тест-раннера нет). Android — `./gradlew assembleDebug` и `./gradlew test`.
-- `overall_score` v0 = доля зелёных метрик; замена — только `scoring.ts`
-  по решению владельца (DECISIONS §6.4).
-- Русский язык: документация, ответы агентов, RU-строки UI по умолчанию
+- `reference/` is read-only; heavy binaries are not committed.
+- The main automatic gate of the TS repository is `pnpm typecheck` (there is no
+  linter or test runner). Android — `./gradlew assembleDebug` and `./gradlew test`.
+- `overall_score` v0 = share of green metrics; replacement — only in `scoring.ts`,
+  per the owner's decision (DECISIONS §6.4).
+- Russian language: documentation, agent responses, RU UI strings by default
   (`tennis-ai-android/.../core/i18n/T.kt`).

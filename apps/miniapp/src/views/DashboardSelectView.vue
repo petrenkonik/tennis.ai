@@ -54,7 +54,10 @@
         </div>
         <div class="grow">
           <div class="mono-label" style="font-size: 15px; color: var(--accent)">{{ tt('coach_dashboard') }}</div>
-          <!-- Невыровненный i18n-ключ оригинала — воспроизводим дословно (CLONE_SPEC §2.3) -->
+          <!-- The original's misaligned i18n key — reproduced verbatim (CLONE_SPEC §2.3) -->
+          <div class="muted" style="margin-top: 4px; line-height: 18px; font-size: 14px">
+            {{ t(app.lang, 'manage_students_perf') }}
+          </div>
           <div class="muted" style="margin-top: 4px; line-height: 18px; font-size: 14px">
             {{ t(app.lang, 'manage_students_perf') }}
           </div>

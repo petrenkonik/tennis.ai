@@ -94,7 +94,7 @@ fun HomeScreen(
                 .statusBarsPadding()
                 .verticalScroll(rememberScrollState()),
         ) {
-            // Топ-бар: chevron (декоративный) + serif AXEL AI, фон Bar + волосяная линия (как в оригинале)
+            // Top bar: chevron (decorative) + serif AXEL AI, Bar background + hairline (as in the original)
             Column(Modifier.fillMaxWidth().background(Bar)) {
                 Box(Modifier.fillMaxWidth().height(56.dp).padding(horizontal = 8.dp)) {
                     Icon(
@@ -176,7 +176,7 @@ private fun ModuleRow(m: Module, lang: com.rebuild.tennisai.core.model.Lang, onC
                 RingPercent(0, m.color, Modifier.size(44.dp))
             }
             Spacer(Modifier.height(12.dp))
-            // В оригинале линия-прогресс ~84% ширины, метка — ПОД ней, справа
+            // In the original, the progress line is ~84% wide and the label sits BELOW it, right-aligned
             Box(
                 Modifier
                     .fillMaxWidth(0.84f)

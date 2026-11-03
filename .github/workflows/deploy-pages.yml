@@ -20,7 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Версия pnpm берётся из поля packageManager корневого package.json
+      # pnpm version comes from the packageManager field of the root package.json
       - uses: pnpm/action-setup@v4
 
       - uses: actions/setup-node@v4
@@ -30,11 +30,11 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
 
-      # miniapp импортирует dist пакетов workspace — собираем в порядке зависимостей
+      # miniapp imports the workspace packages' dist — build in dependency order
       - run: pnpm --filter @tennis-ai/shared build
       - run: pnpm --filter @tennis-ai/engine build
 
-      # base=/tennis.ai/ соответствует Pages-URL проекта petrenkonik.github.io/tennis.ai/
+      # base=/tennis.ai/ matches the project Pages URL petrenkonik.github.io/tennis.ai/
       - run: pnpm --filter @tennis-ai/miniapp exec vite build --base=/tennis.ai/
 
       - uses: actions/upload-pages-artifact@v3

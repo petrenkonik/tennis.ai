@@ -1,13 +1,13 @@
 /*
- * Дизайн-система клона — снята со скриншотов оригинала com.tennis.ai v2.0.19.
- * Источник: tennis-ai-android/ui/theme/Theme.kt + docs/CLONE_SPEC.md §1.
- * Три регистра типографики: serif display со свечением, monospace-лейблы, sans.
+ * Clone design system — taken from the com.tennis.ai v2.0.19 original screenshots.
+ * Sources: tennis-ai-android/ui/theme/Theme.kt + docs/CLONE_SPEC.md §1.
+ * Three typography registers: glowing serif display, monospace labels, sans.
  */
 
 :root {
   color-scheme: dark;
 
-  /* Палитра (CLONE_SPEC §1.1) */
+  /* Palette (CLONE_SPEC §1.1) */
   --bg: #050505;
   --bar: #0a0a0a;
   --hairline: #1f1f22;
@@ -63,7 +63,7 @@ body {
   padding-bottom: env(safe-area-inset-bottom);
 }
 
-/* ---- Регистры типографики ---- */
+/* ---- Typography registers ---- */
 
 .serif-display {
   font-family: var(--serif);
@@ -97,7 +97,7 @@ body {
   color: var(--text-dim);
 }
 
-/* ---- Топ-бар: фон Bar + волосяная линия ---- */
+/* ---- Top bar: Bar background + hairline ---- */
 
 .top-bar {
   position: relative;
@@ -134,7 +134,7 @@ body {
   right: 8px;
 }
 
-/* ---- Карточки ---- */
+/* ---- Cards ---- */
 
 .card {
   background: var(--card);
@@ -175,7 +175,7 @@ body {
   font-weight: 700;
 }
 
-/* ---- Иконка-плитка ---- */
+/* ---- Icon tile ---- */
 
 .icon-tile {
   display: flex;
@@ -188,7 +188,7 @@ body {
   color: var(--tile-color);
 }
 
-/* ---- Кнопки ---- */
+/* ---- Buttons ---- */
 
 .btn {
   display: block;
@@ -220,7 +220,7 @@ body {
   border: 1px solid var(--card-border);
 }
 
-/* ---- Чипы ---- */
+/* ---- Chips ---- */
 
 .chip {
   display: inline-flex;
@@ -262,7 +262,7 @@ body {
   font-weight: 500;
 }
 
-/* ---- Тумблер ---- */
+/* ---- Toggle ---- */
 
 .toggle {
   position: relative;
@@ -294,7 +294,7 @@ body {
   transform: translateX(20px);
 }
 
-/* ---- Поля ввода ---- */
+/* ---- Input fields ---- */
 
 .input {
   width: 100%;
@@ -310,7 +310,7 @@ body {
   color: var(--text-dim);
 }
 
-/* ---- Нижняя навигация: 5 табов, активный зелёный с чертой у верхнего края ---- */
+/* ---- Bottom navigation: 5 tabs, active green with a bar at the top edge ---- */
 
 .bottom-nav {
   position: fixed;
@@ -371,7 +371,7 @@ body {
   bottom: calc(env(safe-area-inset-bottom) + 24px);
 }
 
-/* ---- Метрики (Results) ---- */
+/* ---- Metrics (Results) ---- */
 
 .metric-row {
   display: flex;
@@ -405,7 +405,7 @@ body {
   background: var(--text-dim);
 }
 
-/* ---- Пузыри Axel ---- */
+/* ---- Axel bubbles ---- */
 
 .bubble {
   max-width: 86%;
@@ -428,7 +428,7 @@ body {
   margin-right: auto;
 }
 
-/* ---- Общее ---- */
+/* ---- Common ---- */
 
 .row {
   display: flex;

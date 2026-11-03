@@ -8,9 +8,9 @@ declare module '*.vue' {
 
 interface ImportMetaEnv {
   readonly VITE_API_URL?: string;
-  /** Самохостинг MediaPipe WASM (по умолчанию CDN jsdelivr, версия = @mediapipe/tasks-vision). */
+  /** Self-hosted MediaPipe WASM (defaults to the jsdelivr CDN, version = @mediapipe/tasks-vision). */
   readonly VITE_MEDIAPIPE_WASM_URL?: string;
-  /** Самохостинг модели pose_landmarker_lite.task (по умолчанию Google storage). */
+  /** Self-hosted pose_landmarker_lite.task model (defaults to Google storage). */
   readonly VITE_POSE_MODEL_URL?: string;
 }
 

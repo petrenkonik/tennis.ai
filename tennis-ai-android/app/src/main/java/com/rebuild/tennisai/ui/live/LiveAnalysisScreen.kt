@@ -58,7 +58,7 @@ import com.rebuild.tennisai.engine.PoseEngine
 import java.util.concurrent.Executors
 import kotlin.math.sqrt
 
-/** Скелет BlazePose: пары соединений. */
+/** BlazePose skeleton: connection pairs. */
 private val CONNECTIONS = listOf(
     11 to 12, 11 to 13, 13 to 15, 12 to 14, 14 to 16,
     11 to 23, 12 to 24, 23 to 24,
@@ -120,8 +120,8 @@ fun LiveAnalysisScreen(state: AppState, onBack: () -> Unit) {
                                     try {
                                         val t = System.currentTimeMillis()
                                         val raw = proxy.toBitmap()
-                                        // Кадры ImageAnalysis приходят в ориентации сенсора (обычно +90°).
-                                        // Поворачиваем до инференса, чтобы координаты совпали с превью.
+                                        // ImageAnalysis frames arrive in the sensor orientation (usually +90°).
+                                        // Rotate before inference so the coordinates match the preview.
                                         val rotation = proxy.imageInfo.rotationDegrees
                                         val bmp = if (rotation == 0) raw else {
                                             val m = android.graphics.Matrix()
@@ -154,12 +154,12 @@ fun LiveAnalysisScreen(state: AppState, onBack: () -> Unit) {
                 },
             )
 
-            // скелет поверх превью
+            // skeleton over the preview
             lastFrame?.let { pf ->
                 SkeletonOverlay(pf, frameDims)
             }
 
-            // верхняя плашка
+            // top bar
             Row(
                 Modifier
                     .fillMaxWidth()
@@ -181,7 +181,7 @@ fun LiveAnalysisScreen(state: AppState, onBack: () -> Unit) {
                 }
             }
 
-            // карточка поправки
+            // correction card
             correction?.let { c ->
                 Card(
                     modifier = Modifier
@@ -221,7 +221,7 @@ private fun strokeLabel(state: AppState): String {
     }
 }
 
-/** Real-time: все доступные покадровые метрики (как в оригинале — «coach all metrics»). */
+/** Real-time: all available per-frame metrics (as in the original — "coach all metrics"). */
 private val LIVE_METRIC_IDS = listOf(
     "KNEE_FLEXION", "ALIGNMENT", "TRUNK_TILT", "SHOULDERS_LEVEL", "STANCE_WIDTH", "WRIST_OVER_HIP", "ARMS_POSITION",
 )
@@ -247,8 +247,8 @@ private fun SkeletonOverlay(pf: PoseFrame, dims: Pair<Int, Int>) {
         val bw = dims.first
         val bh = dims.second
         if (bw < 1 || bh < 1) return@Canvas
-        // PreviewView FILL_CENTER: масштабируем кадр с сохранением пропорций и центрируем,
-        // иначе скелет уползает при несовпадении соотношений сторон камеры и экрана.
+        // PreviewView FILL_CENTER: scale the frame while keeping its aspect ratio and center it,
+        // otherwise the skeleton drifts when the camera and screen aspect ratios differ.
         val scale = maxOf(w / bw, hgt / bh)
         val scaledW = bw * scale
         val scaledH = bh * scale

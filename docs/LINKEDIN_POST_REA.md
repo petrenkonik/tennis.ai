@@ -1,16 +1,16 @@
-# LinkedIn-пост: REA (v9, человеческий голос)
+# LinkedIn post: REA (v9, human voice)
 
-Дата: 2026-10-19. Две версии: **EN (публикуемая)** и RU (зеркало). ~850 символов.
-Стиль: живой, от первого лица, без ярлыков-двоеточий, без тройков-перечислений, без хэштегов (при желании добавить 1–2 вручную).
-Ссылки в первый комментарий:
-1. https://github.com/morluto/rea — скилл REA
-2. https://github.com/skylot/jadx — открытый декомпилятор
+Date: 2026-10-19. Two versions: **EN (the one to publish)** and RU (mirror). ~850 characters.
+Style: lively, first person, no colon-labels, no lists of three, no hashtags (optionally add 1–2 manually).
+Links in the first comment:
+1. https://github.com/morluto/rea — the REA skill
+2. https://github.com/skylot/jadx — open-source decompiler
 
-Карусель к посту: `post_linkedin/collage_1.png`, `post_linkedin/collage_2.png` (1080×1350, подписи на английском).
+Carousel for the post: `post_linkedin/collage_1.png`, `post_linkedin/collage_2.png` (1080×1350, captions in English).
 
 ---
 
-## Версия EN
+## EN version
 
 I've been playing with REA — an open source skill that lets an AI agent do reverse engineering. Wanted to see if it's really as good as they say, so I handed it a commercial APK.
 
@@ -26,16 +26,16 @@ Just research, nothing was copied. Links in comments.
 
 ---
 
-## Версия RU
+## RU version
 
-Я тут играюсь с REA — опенсорсный скилл, который позволяет ИИ-агенту заниматься реверс-инжинирингом. Захотел проверить, так ли он хорош, как говорят, и отдал ему коммерческий APK.
+I've been playing with REA — an open source skill that lets an AI agent do reverse engineering. I wanted to check whether it's really as good as they say, so I handed it a commercial APK.
 
-Коротко: сработало. Агент сначала посмотрел Java-код и нашёл там только обвязку, потом вытащил все строки из нативной библиотеки приложения и прямо из них прочитал его логику. Что увидел — записал, что не смог понять — честно пометил.
+In short: it worked. The agent first looked at the Java code and found only a wrapper there, then pulled all the strings out of the app's native library and read its logic straight from them. What it saw, it wrote down; what it couldn't understand, it honestly marked.
 
-Чтобы убедиться, что записи полные, попросил его пересобрать приложение по ним. Один раз на Kotlin, один раз для веба. Обе сборки запускаются.
+To make sure the notes were complete, I asked it to rebuild the app from them. Once in Kotlin, once for the web. Both builds run.
 
-Ушло сильно больше одного промпта, но сильно меньше времени, чем я ожидал. И модель везде была дешёвая, flash.
+It took far more than one prompt, but far less time than I expected. And the model was a cheap flash one throughout.
 
-Кажется, люди пока не понимают, что это значит: чтение чужого приложения становится задачей на выходные.
+It seems people don't yet understand what this means: reading someone else's app is becoming a weekend task.
 
-Это было исследование, ничего не копировалось. Ссылки в комментариях.
+This was research, nothing was copied. Links in the comments.

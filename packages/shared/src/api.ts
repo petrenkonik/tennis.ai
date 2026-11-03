@@ -33,7 +33,7 @@ export interface TelegramAuthResponse {
   user: UserDto;
 }
 
-// ---- Квоты (порт quota_service: free = 9 видеоанализов навсегда; pro = 20/мес) ----
+// ---- Quotas (port of quota_service: free = 9 video analyses lifetime; pro = 20/month) ----
 
 export interface QuotaState {
   plan: 'free' | 'pro';
@@ -42,7 +42,7 @@ export interface QuotaState {
   periodEndsAt?: string | null;
 }
 
-// ---- Uploads (DECISIONS §7.2: presigned PUT в S3-совместимое хранилище) ----
+// ---- Uploads (DECISIONS §7.2: presigned PUT to S3-compatible storage) ----
 
 export type UploadKind = 'original' | 'frame' | 'annotated';
 
@@ -64,7 +64,7 @@ export interface PresignResponse {
 export interface CreateAnalysisRequest {
   strokeType: StrokeType;
   videoKey: string;
-  /** Окно трима из VIDEO PREVIEW (порт trimStartSec оригинала); undefined = без трима. */
+  /** Trim window from VIDEO PREVIEW (port of the original trimStartSec); undefined = no trim. */
   trimStartSec?: number;
   trimEndSec?: number;
 }
@@ -107,7 +107,7 @@ export interface AnalysisDto {
   createdAt: string;
 }
 
-/** GET /analyses/:id/video — presigned URL плеера (annotated, иначе original). */
+/** GET /analyses/:id/video — presigned URL for the player (annotated, otherwise original). */
 export interface AnalysisVideoResponse {
   url: string | null;
   expiresInSec: number;

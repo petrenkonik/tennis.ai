@@ -9,7 +9,7 @@ import {
 import { getSignedUrl } from '@aws-sdk/s3-request-presigner';
 import { Env } from '../../config/env';
 
-/** S3-совместимое хранилище (Cloudflare R2 / MinIO): presigned PUT + каскадное удаление префикса. */
+/** S3-compatible storage (Cloudflare R2 / MinIO): presigned PUT + cascade prefix deletion. */
 @Injectable()
 export class S3Service {
   private client(): S3Client {
@@ -37,7 +37,7 @@ export class S3Service {
     return getSignedUrl(this.client(), cmd, { expiresIn: expiresInSec });
   }
 
-  /** Каскадное удаление: все объекты под префиксом сессии. */
+  /** Cascade delete: all objects under the session prefix. */
   async deletePrefix(prefix: string): Promise<number> {
     const client = this.client();
     const bucket = Env.s3().bucket;

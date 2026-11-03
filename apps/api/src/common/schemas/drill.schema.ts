@@ -1,7 +1,7 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { HydratedDocument } from 'mongoose';
 
-/** Drills-библиотека (порт drill_service: objective / setup / progression / reps / sets / difficulty / targetMetrics). */
+/** Drill library (port of drill_service: objective / setup / progression / reps / sets / difficulty / targetMetrics). */
 @Schema({ collection: 'drills', timestamps: true })
 export class Drill {
   @Prop({ required: true, unique: true })
@@ -31,7 +31,7 @@ export class Drill {
   @Prop({ enum: ['beginner', 'intermediate', 'advanced', 'pro'], default: 'beginner' })
   difficulty!: string;
 
-  /** Коды метрик (packages/shared metrics.json), которые тренирует drill. */
+  /** Metric codes (packages/shared metrics.json) that the drill trains. */
   @Prop({ type: [String], default: [], index: true })
   targetMetrics!: string[];
 }

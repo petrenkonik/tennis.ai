@@ -61,7 +61,7 @@ private val BUCKETS = listOf(
     Bucket("drills", DrillsRed, null),
 )
 
-/** Общий каркас Analyses/Videos (CLONE_SPEC §2.8/§2.9). */
+/** Shared scaffold for Analyses/Videos (CLONE_SPEC §2.8/§2.9). */
 @Composable
 private fun LibraryScaffold(
     topIcon: ImageVector,
@@ -158,7 +158,7 @@ fun VideosScreen(state: AppState, onAxel: () -> Unit, onOpen: (StrokeType) -> Un
 private fun BucketCard(bucket: Bucket, lang: Lang, modifier: Modifier = Modifier, analyses: Boolean) {
     AppCard(modifier.fillMaxWidth(), borderColor = bucket.color.copy(alpha = 0.45f), radius = 18.dp) {
         Column(Modifier.padding(12.dp)) {
-            // Внутренняя плитка: цветная рамка, иконка + no_data / VIDEOS
+            // Inner tile: colored frame, icon + no_data / VIDEOS
             Box(
                 Modifier
                     .fillMaxWidth()

@@ -8,7 +8,7 @@ import kotlin.math.max
 import kotlin.math.min
 import kotlin.math.sqrt
 
-/** Угол в точке b для трёх точек a-b-c, в градусах (0..180). */
+/** Angle at point b for three points a-b-c, in degrees (0..180). */
 fun angleDeg(a: Vec3, b: Vec3, c: Vec3): Float {
     val u = a - b
     val v = c - b
@@ -19,7 +19,7 @@ fun angleDeg(a: Vec3, b: Vec3, c: Vec3): Float {
     return Math.toDegrees(acos(cos).toDouble()).toFloat()
 }
 
-/** Угол линии a-b относительно вертикали (вниз), в градусах 0..90. */
+/** Angle of line a-b relative to vertical (pointing down), in degrees 0..90. */
 fun tiltFromVerticalDeg(a: Vec3, b: Vec3): Float {
     val v = b - a
     val horiz = sqrt(v.x * v.x + v.z * v.z)
@@ -29,8 +29,8 @@ fun tiltFromVerticalDeg(a: Vec3, b: Vec3): Float {
 }
 
 /**
- * Угол между двумя 2D-линиями (в плоскости XY кадра), градусы 0..180.
- * Используется для «скрутки» плеч/бёдер.
+ * Angle between two 2D lines (in the frame's XY plane), degrees 0..180.
+ * Used for the shoulder/hip "twist".
  */
 fun lineAngleDeg(p1: Vec3, p2: Vec3, q1: Vec3, q2: Vec3): Float {
     val u = Vec3(p2.x - p1.x, p2.y - p1.y)
@@ -41,7 +41,7 @@ fun lineAngleDeg(p1: Vec3, p2: Vec3, q1: Vec3, q2: Vec3): Float {
     return Math.toDegrees(acos(dot).toDouble()).toFloat()
 }
 
-/** Центрированное скользящее среднее с окном w (нечётным). */
+/** Centered moving average with window w (odd). */
 fun smooth(values: List<Float>, w: Int = 5): List<Float> {
     if (values.isEmpty()) return values
     val half = max(1, w) / 2
@@ -52,7 +52,7 @@ fun smooth(values: List<Float>, w: Int = 5): List<Float> {
     }
 }
 
-/** Скорость сигнала (единиц в секунду) по кадрам. */
+/** Signal velocity (units per second) across frames. */
 fun velocity(frames: List<PoseFrame>, values: List<Float>): List<Float> {
     val n = values.size
     if (n < 2) return List(n) { 0f }
@@ -71,7 +71,7 @@ private fun dtSec(frames: List<PoseFrame>, i: Int): Float {
     return max(1f, (b - a).toFloat()) / 1000f
 }
 
-/** Модуль скорости точки (единиц кадра в секунду), сглаженный. */
+/** Point speed magnitude (frame units per second), smoothed. */
 fun pointSpeed(frames: List<PoseFrame>, pick: (PoseFrame) -> Vec3): List<Float> {
     val n = frames.size
     if (n == 0) return emptyList()
@@ -85,7 +85,7 @@ fun pointSpeed(frames: List<PoseFrame>, pick: (PoseFrame) -> Vec3): List<Float> 
     return smooth(out.toList(), 5)
 }
 
-/** Индекс первого элемента, удовлетворяющего предикату, начиная с from. */
+/** Index of the first element matching the predicate, starting at from. */
 fun firstIdx(values: List<Float>, from: Int, pred: (Float) -> Boolean): Int {
     for (i in from until values.size) if (pred(values[i])) return i
     return -1

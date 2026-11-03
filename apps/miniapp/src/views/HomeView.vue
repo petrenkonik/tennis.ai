@@ -5,7 +5,7 @@
     </TopBar>
 
     <div style="padding: 16px">
-      <!-- REAL-TIME ANALYSIS: только граница accent, без заливки (аудит §1 п.3) -->
+      <!-- REAL-TIME ANALYSIS: accent border only, no fill (audit §1 item 3) -->
       <button class="btn secondary" style="height: 52px" @click="router.push('/live')">
         <span class="row" style="gap: 10px; justify-content: center">
           <Icon name="sensors" :size="20" />
@@ -13,7 +13,7 @@
         </span>
       </button>
 
-      <!-- TRAINING MODULES: monospace-метка + линия до края -->
+      <!-- TRAINING MODULES: monospace label + line to the edge -->
       <div class="row" style="margin: 18px 0; gap: 12px">
         <MonoCaption :size="13">{{ tt('training_modules') }}</MonoCaption>
         <div class="grow" style="height: 1px; background: var(--hairline)"></div>
@@ -31,7 +31,7 @@
               <RingPercent :percent="0" :color="m.color" :size="44" />
             </div>
             <div style="height: 12px"></div>
-            <!-- В оригинале линия-прогресс ~84% ширины, метка — ПОД ней, справа (аудит §1 п.1) -->
+            <!-- In the original the progress line is ~84% wide, the label sits BELOW it, on the right (audit §1 item 1) -->
             <div style="width: 84%; height: 3px; border-radius: 2px; background: var(--track)"></div>
             <div style="height: 5px"></div>
             <div class="row" style="justify-content: flex-end">
@@ -80,15 +80,15 @@ const modules: Module[] = [
   { titleKey: 'ai_drills', subtitleKey: 'personalized_exercises', icon: 'dumbbell', color: 'var(--red)', tagKey: null, stroke: null },
 ];
 
-/** Реальное число сессий по типу удара — из API-списка анализов. */
+/** Actual session count per stroke type — from the API analyses list. */
 const strokeSessions = computed<Record<string, number>>(() => {
   const acc: Record<string, number> = { serve: 0, forehand: 0, backhand: 0 };
   for (const a of analysis.list) acc[a.strokeType] = (acc[a.strokeType] ?? 0) + 1;
   return acc;
 });
 
-// CLONE_SPEC §2.1: Coach Mode/REAL-TIME → Live; Serve/Forehand/Backhand → анализ с предустановленным
-// ударом; Auto Detect → анализ (ручной выбор); AI Drills → Axel.
+// CLONE_SPEC §2.1: Coach Mode/REAL-TIME → Live; Serve/Forehand/Backhand → analysis with a preset
+// stroke; Auto Detect → analysis (manual selection); AI Drills → Axel.
 function open(m: Module): void {
   if (m.titleKey === 'coach_mode') void router.push('/live');
   else if (m.titleKey === 'ai_drills') void router.push('/axel');

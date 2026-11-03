@@ -1,7 +1,7 @@
 import type { PoseFrame } from '@tennis-ai/shared';
 import type { Pt } from './geometry';
 
-// Индексы 33 landmark модели MediaPipe Pose Landmarker (как в ML Kit оригинала).
+// Indices of the 33 landmarks of the MediaPipe Pose Landmarker model (same as the original's ML Kit).
 export const LM = {
   NOSE: 0,
   LEFT_EYE_INNER: 1,
@@ -42,7 +42,7 @@ export type Side = 'left' | 'right';
 
 const MIN_VISIBILITY = 0.3;
 
-/** Landmark в нормализованных координатах либо null при низкой видимости. */
+/** Landmark in normalized coordinates, or null when visibility is low. */
 export function lmNorm(f: PoseFrame, index: number): Pt | null {
   const p = f.landmarks[index];
   if (!p) return null;
@@ -50,7 +50,7 @@ export function lmNorm(f: PoseFrame, index: number): Pt | null {
   return { x: p.x, y: p.y };
 }
 
-/** Landmark в пикселях кадра — базовое пространство всех угловых измерений. */
+/** Landmark in frame pixels — the base space for all angular measurements. */
 export function lmPx(f: PoseFrame, index: number): Pt | null {
   const p = lmNorm(f, index);
   if (!p) return null;

@@ -9,18 +9,18 @@ import {
 } from '../i18n/T';
 
 /**
- * Общее состояние приложения — порт `tennis-ai-android/AppState.kt`:
- * язык, профиль игрока (Edit Profile), настройки и чип режима Axel.
- * Персистится в localStorage (аналог SharedPreferences клона).
+ * Shared application state — port of `tennis-ai-android/AppState.kt`:
+ * language, player profile (Edit Profile), settings and the Axel mode chip.
+ * Persisted to localStorage (an analogue of the clone's SharedPreferences).
  */
 
 const STORE_KEY = 'tennis_ai_app_state';
 
 export const useAppStore = defineStore('app', () => {
-  // --- Язык (русский — по умолчанию, как в клоне) ---
+  // --- Language (Russian is the default, as in the clone) ---
   const lang = ref<Lang>(DEFAULT_LANG);
 
-  // --- Профиль (CLONE_SPEC §4) ---
+  // --- Profile (CLONE_SPEC §4) ---
   const name = ref('');
   const heightCm = ref('');
   const age = ref('');
@@ -29,16 +29,16 @@ export const useAppStore = defineStore('app', () => {
   const experience = ref<Experience>('UNDER_1');
   const handRight = ref(true);
   const goal = ref<MainGoal>('IMPROVE');
-  const progress = ref(78); // значение из скриншота оригинала; пересчитывается после ручного Save
+  const progress = ref(78); // value from the original screenshot; recomputed after a manual Save
 
-  // --- Настройки ---
+  // --- Settings ---
   const pushOn = ref(true);
   const aiTipsOn = ref(true);
   const emailOn = ref(true);
-  const voiceModeAuto = ref(false); // чип Auto/Manual в Axel
-  const ttsOn = ref(true); // speaker в Axel: нативный TTS озвучивает ответы
+  const voiceModeAuto = ref(false); // Auto/Manual chip in Axel
+  const ttsOn = ref(true); // speaker in Axel: native TTS voices the answers
 
-  // --- Восстановление (до первого Save — дефолты как в AppState.kt) ---
+  // --- Restore (before the first Save — defaults as in AppState.kt) ---
   let persisted = false;
   try {
     const raw = localStorage.getItem(STORE_KEY);
@@ -62,7 +62,7 @@ export const useAppStore = defineStore('app', () => {
       persisted = true;
     }
   } catch {
-    // битый JSON — начинаем с дефолтов
+    // corrupted JSON — start from defaults
   }
 
   watch(
@@ -92,7 +92,7 @@ export const useAppStore = defineStore('app', () => {
     { deep: true },
   );
 
-  /** Заполненность 9 полей профиля → «Progress: N%» (CLONE_SPEC §2.6). */
+  /** Fill state of the 9 profile fields → "Progress: N%" (CLONE_SPEC §2.6). */
   function recomputeProgress(): void {
     const filled = [
       name.value.trim().length > 0,
@@ -103,17 +103,17 @@ export const useAppStore = defineStore('app', () => {
       true,
       true,
       true,
-      true, // skill/experience/hand/goal + предустановка
+      true, // skill/experience/hand/goal + presets
     ];
     progress.value = Math.min(100, Math.max(0, Math.round((filled.filter(Boolean).length * 100) / 9)));
   }
 
-  /** «Save» в Edit Profile — пересчёт прогресса + персист (watch выше). */
+  /** "Save" in Edit Profile — progress recompute + persist (watch above). */
   function saveProfile(): void {
     recomputeProgress();
   }
 
-  /** Дефолты из Telegram-профиля при первом запуске (имя; рука — из API-профиля). */
+  /** Defaults from the Telegram profile on first launch (name; hand — from the API profile). */
   function initFromTelegram(firstName?: string, dominantHand?: 'left' | 'right'): void {
     if (!persisted && name.value.length === 0 && firstName) name.value = firstName;
     if (!persisted && dominantHand) handRight.value = dominantHand !== 'left';

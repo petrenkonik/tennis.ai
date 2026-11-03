@@ -14,10 +14,10 @@ enum class ValueKind { DEGREES, RATIO, SPEED_MS, DIST_SH, PERCENT;
 }
 
 /**
- * Результат одной метрики в одной фазе.
- * value/proMin/proMax — доминантная сторона; valueNd/proMinNd/proMaxNd —
- * недоминантная (пары D/ND из оригинала). Если ND-диапазон задан, GREEN
- * только когда обе стороны в своих диапазонах.
+ * Result of a single metric within a single phase.
+ * value/proMin/proMax are the dominant side; valueNd/proMinNd/proMaxNd are the
+ * non-dominant one (the original's D/ND pairs). When an ND range is set, the status
+ * is GREEN only if both sides are within their own ranges.
  */
 data class MetricResult(
     val id: String,
@@ -30,15 +30,15 @@ data class MetricResult(
     val valueNd: Float? = null,
     val proMinNd: Float? = null,
     val proMaxNd: Float? = null,
-    /** Классификация вместо числа (например, стойка: Open/Semi-open/Closed/Neutral). */
+    /** Classification instead of a number (e.g. stance: Open/Semi-open/Closed/Neutral). */
     val classification: String? = null,
-    /** Дословные строки сравнения с профи из оригинала (offset'ы в реверсе). */
+    /** Verbatim pro-comparison strings from the original (offsets in the reverse engineering). */
     val proNote: String? = null,
 )
 
 data class CorrectionText(val title: String, val body: String)
 
-/** Метрики одной фазы + сводка. */
+/** Metrics of a single phase + summary. */
 data class MomentResult(
     val moment: Moment,
     val frameFrom: Int,

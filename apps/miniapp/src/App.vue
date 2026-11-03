@@ -48,18 +48,18 @@ const app = useAppStore();
 
 onMounted(() => {
   void auth.login().then(() => {
-    // Дефолты профиля из Telegram при первом запуске (AppState.initFromTelegram).
+    // Profile defaults from Telegram on first launch (AppState.initFromTelegram).
     if (auth.user) app.initFromTelegram(auth.user.firstName, auth.user.profile.dominantHand);
   });
 });
 
-// Табы с нижней навигацией (CLONE_SPEC §3): select/edit/axel/record/live/analysis/drills/paywall — fullscreen.
+// Bottom-navigation tabs (CLONE_SPEC §3): select/edit/axel/record/live/analysis/drills/paywall — fullscreen.
 const chrome = computed(() => auth.ready && !auth.error);
 const tabRoutes = ['/', '/videos', '/analyses', '/dashboard/player', '/dashboard/coach', '/profile'];
 const showNav = computed(() => tabRoutes.includes(route.path));
 const fab = showNav;
 
-/** grid-таб ведёт на select_dashboard, остальные — на корни табов. */
+/** The grid tab leads to select_dashboard; the rest lead to their tab roots. */
 function dashboardTarget(): string {
   return route.path === '/dashboard/player' || route.path === '/dashboard/coach'
     ? route.path

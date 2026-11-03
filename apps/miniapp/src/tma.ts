@@ -2,18 +2,18 @@ import { init, retrieveLaunchParams } from '@telegram-apps/sdk';
 
 let initialized = false;
 
-/** Инициализация @telegram-apps/sdk. Вне Telegram (dev в браузере) — молча продолжаем. */
+/** Initializes @telegram-apps/sdk. Outside Telegram (browser dev) — silently continue. */
 export function initTma(): void {
   if (initialized) return;
   try {
     init();
     initialized = true;
   } catch {
-    // Не в среде Telegram — dev-режим.
+    // Not in a Telegram environment — dev mode.
   }
 }
 
-/** Сырой initData для POST /api/auth/telegram; null вне Telegram. */
+/** Raw initData for POST /api/auth/telegram; null outside Telegram. */
 export function getInitDataRaw(): string | null {
   try {
     const raw = retrieveLaunchParams().initDataRaw as string | null | undefined;
@@ -23,7 +23,7 @@ export function getInitDataRaw(): string | null {
   }
 }
 
-/** Открыть Stars-инвойс (t.me/$ ссылка из createInvoiceLink). */
+/** Opens a Stars invoice (t.me/$ link from createInvoiceLink). */
 export function openPaymentInvoice(link: string): void {
   const w = window as unknown as { Telegram?: { WebApp?: { openInvoice?: (url: string) => void } } };
   try {

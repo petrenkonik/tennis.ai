@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "note": "Диапазоны восстановлены из строк libapp.so оригинального com.tennis.ai v2.0.19 (см. reference/ANALYSIS_FINDINGS.md). proRange:null = диапазон отдаётся из Firestore metric_definitions и из APK восстановлен не был. Поправки — английские шаблоны с плейсхолдером {value}, в тоне оригинальных текстов.",
+  "note": "Ranges recovered from strings in the original com.tennis.ai v2.0.19 libapp.so (see reference/ANALYSIS_FINDINGS.md). proRange:null = the range is served from Firestore metric_definitions and was not recovered from the APK. Corrections are English templates with the {value} placeholder, in the tone of the original texts.",
   "metrics": [
     {
       "code": "SERVE_M1_STANCE_WIDTH",

@@ -1,8 +1,8 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
 
-// Hash-история: надёжнее внутри Telegram WebView (без настройки серверных rewrite).
-// Карта навигации — CLONE_SPEC §3: табы home|videos|analyses|dashboard|profile;
-// select/edit/axel/record/live/analysis/drills/paywall — fullscreen, без bottom nav.
+// Hash history: more reliable inside the Telegram WebView (no server rewrite config needed).
+// Navigation map — CLONE_SPEC §3: tabs home|videos|analyses|dashboard|profile;
+// select/edit/axel/record/live/analysis/drills/paywall — fullscreen, without bottom nav.
 export const router = createRouter({
   history: createWebHashHistory(),
   routes: [

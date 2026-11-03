@@ -6,7 +6,7 @@ import { Subscription, SubscriptionDocument } from '../../common/schemas/subscri
 import { User, UserDocument } from '../../common/schemas/user.schema';
 import type { QuotaState, UserDto } from '@tennis-ai/shared';
 
-// Порт квот оригинала: free = 9 видеоанализов навсегда; pro = 20/мес + unlimited real-time.
+// Port of the original quotas: free = 9 lifetime video analyses; pro = 20/month + unlimited real-time.
 const FREE_LIFETIME_ANALYSES = 9;
 const PRO_MONTHLY_ANALYSES = 20;
 

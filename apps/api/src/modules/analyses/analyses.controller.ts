@@ -26,7 +26,7 @@ export class AnalysesController {
     return this.analyses.attachAnnotated(u, id, dto.annotatedKey);
   }
 
-  /** Тип удара по кадру: кадр грузится через /uploads/presign(kind: frame), API классифицирует через Gemini vision. */
+  /** Stroke type from a frame: the frame is uploaded via /uploads/presign (kind: frame), the API classifies it via Gemini vision. */
   @Post('analysis/detect-stroke')
   detectStroke(@CurrentUser() u: JwtPayload, @Body() dto: DetectStrokeDto) {
     return this.coach.detectStroke(u, dto.frameKey);
@@ -42,7 +42,7 @@ export class AnalysesController {
     return this.analyses.get(u, id);
   }
 
-  /** Presigned URL видео сессии для плеера Results (annotated, иначе original). */
+  /** Presigned URL of the session video for the Results player (annotated, otherwise original). */
   @Get('analyses/:id/video')
   video(@CurrentUser() u: JwtPayload, @Param('id') id: string) {
     return this.analyses.videoUrl(u, id);

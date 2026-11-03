@@ -9,7 +9,7 @@
     </TopBar>
 
     <div style="padding: 18px 16px 0; display: flex; flex-direction: column; gap: 14px">
-      <!-- Тип удара: чипы -->
+      <!-- Stroke type: chips -->
       <AppCard>
         <div class="mono-caption" style="font-size: 12px; color: var(--text-secondary)">{{ tt('stroke_type') }}</div>
         <div class="row" style="gap: 8px; margin-top: 10px; flex-wrap: wrap">
@@ -25,7 +25,7 @@
         </div>
       </AppCard>
 
-      <!-- Авто-определение по кадру -->
+      <!-- Auto-detect from a frame -->
       <AppCard>
         <div class="muted">{{ tt('auto_detect_frame') }}</div>
         <label class="btn ghost" style="margin-top: 10px; text-align: center">
@@ -34,7 +34,7 @@
         </label>
       </AppCard>
 
-      <!-- Видео: выбор уходит на VIDEO PREVIEW (ревью/трим/качество — как в оригинале) -->
+      <!-- Video: selection goes to VIDEO PREVIEW (review/trim/quality — as in the original) -->
       <AppCard>
         <div class="muted">{{ tt('video_label') }}</div>
         <label class="btn ghost" style="margin-top: 10px; text-align: center">
@@ -78,7 +78,7 @@ const busy = ref(false);
 const status = ref('');
 
 onMounted(() => {
-  // Home прокидывает предустановленный удар: /record?stroke=forehand (CLONE_SPEC §2.1)
+  // Home passes a preset stroke: /record?stroke=forehand (CLONE_SPEC §2.1)
   const q = String(route.query.stroke ?? '');
   if (q === 'serve' || q === 'forehand' || q === 'backhand') strokeType.value = q;
 });
@@ -88,7 +88,7 @@ function onVideoPicked(e: Event): void {
   const picked = input.files?.[0];
   if (!picked) return;
   fileName.value = picked.name;
-  // Дальше — экран ревью оригинала: loop-превью, гейт качества, трим, ANALYZE/RETAKE.
+  // Next — the original's review screen: loop preview, quality gate, trim, ANALYZE/RETAKE.
   analysis.setPendingPreview(picked, strokeType.value);
   void router.push('/preview');
 }

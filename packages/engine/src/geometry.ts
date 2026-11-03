@@ -1,6 +1,6 @@
-// 2D-геометрия в пиксельном пространстве кадра.
-// ВАЖНО: углы считаются в пикселях (x*W, y*H), а не в нормализованных
-// координатах — иначе искажение пропорций кадра ломает все углы.
+// 2D geometry in the pixel space of the frame.
+// IMPORTANT: angles are computed in pixels (x*W, y*H), not in normalized
+// coordinates — otherwise frame aspect-ratio distortion breaks all angles.
 
 export interface Pt {
   x: number;
@@ -9,7 +9,7 @@ export interface Pt {
 
 const DEG = 180 / Math.PI;
 
-/** Угол (0..180°) при вершине v между лучами v→a и v→b. */
+/** Angle (0..180°) at vertex v between rays v→a and v→b. */
 export function angleAtDeg(a: Pt, v: Pt, b: Pt): number {
   const v1x = a.x - v.x;
   const v1y = a.y - v.y;
@@ -22,19 +22,19 @@ export function angleAtDeg(a: Pt, v: Pt, b: Pt): number {
   return Math.acos(c) * DEG;
 }
 
-/** Угол линии a→b относительно горизонтали, нормирован в 0..90°. */
+/** Angle of line a→b relative to horizontal, normalized to 0..90°. */
 export function lineToHorizontalDeg(a: Pt, b: Pt): number {
   const deg = Math.atan2(Math.abs(b.y - a.y), Math.abs(b.x - a.x)) * DEG;
   return deg > 90 ? 180 - deg : deg;
 }
 
-/** Угол линии a→b относительно вертикали, нормирован в 0..90°. */
+/** Angle of line a→b relative to vertical, normalized to 0..90°. */
 export function lineToVerticalDeg(a: Pt, b: Pt): number {
   const deg = Math.atan2(Math.abs(b.x - a.x), Math.abs(b.y - a.y)) * DEG;
   return deg > 90 ? 180 - deg : deg;
 }
 
-/** Разница углов двух линий (a1→b1 и a2→b2), нормирована в 0..90°. */
+/** Angle between two lines (a1→b1 and a2→b2), normalized to 0..90°. */
 export function linesAngleDeg(a1: Pt, b1: Pt, a2: Pt, b2: Pt): number {
   const ang1 = Math.atan2(b1.y - a1.y, b1.x - a1.x);
   const ang2 = Math.atan2(b2.y - a2.y, b2.x - a2.x);

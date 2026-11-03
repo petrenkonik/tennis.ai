@@ -30,7 +30,7 @@ export class AnalysesService {
   async create(u: JwtPayload, dto: { strokeType: string; videoKey: string; trimStartSec?: number; trimEndSec?: number }) {
     const { allowed, quota } = await this.users.canCreateAnalysis(u.sub);
     if (!allowed) {
-      // 402: квота исчерпана — клиент ведёт на paywall (Stars).
+      // 402: quota exhausted — the client leads the user to the paywall (Stars).
       throw new HttpException(
         `Quota exhausted: ${quota.plan} plan, ${quota.analysesUsed}/${quota.analysesLimit ?? '∞'} analyses used`,
         402,
@@ -103,8 +103,8 @@ export class AnalysesService {
   }
 
   /**
-   * GET /analyses/:id/video — URL для плеера Results (порт annotated_video_url:
-   * в оригинале плеер играет аннотированное видео, пока его нет — оригинал).
+   * GET /analyses/:id/video — URL for the Results player (port of annotated_video_url:
+   * in the original the player plays the annotated video; until it exists — the original one).
    */
   async videoUrl(u: JwtPayload, id: string): Promise<{ url: string | null; expiresInSec: number }> {
     const doc = await this.owned(u.sub, id);
@@ -113,13 +113,13 @@ export class AnalysesService {
     return { url: await this.s3.presignGet(key), expiresInSec: 3600 };
   }
 
-  /** Каскадное удаление: Mongo (analyses + videos) + все объекты хранилища сессии (DECISIONS §7.2). */
+  /** Cascade delete: Mongo (analyses + videos) + all storage objects of the session (DECISIONS §7.2). */
   async remove(u: JwtPayload, id: string): Promise<void> {
     const doc = await this.owned(u.sub, id);
     await this.videos.deleteMany({ analysisId: id });
     await this.analyses.deleteOne({ _id: id });
     const prefix = `users/${u.sub}/analyses/${id}/`;
-    // sessionId в ключе мог не совпасть с _id (клиент генерировал сам) — чистим оба префикса.
+    // The sessionId in the key may not match the _id (the client generated it itself) — clean both prefixes.
     await this.s3.deletePrefix(prefix);
     const original = doc.videos?.original;
     if (original && !original.startsWith(prefix)) {

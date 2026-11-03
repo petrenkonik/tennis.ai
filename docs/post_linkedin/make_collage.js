@@ -1,7 +1,7 @@
 const sharp = require('sharp');
 const path = require('path');
 
-// Пересборка коллажа: npm i sharp && node make_collage.js (sharp ставится рядом со скриптом)
+// Rebuild the collage: npm i sharp && node make_collage.js (sharp is installed next to the script)
 const SRC = __dirname;
 const OUT = SRC;
 const W = 1080, H = 1350, M = 48;

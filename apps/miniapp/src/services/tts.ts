@@ -1,7 +1,7 @@
 /**
- * Нативный TTS через Web Speech API (speechSynthesis) — то, что в оригинале делает
- * голос Axel (`axelSpeak`/Gemini TTS), но без внешнего сервиса: голос движка WebView.
- * Порт флагов оригинала: ttsOn (speaker в Axel) + одноразовый голосовой экранов
+ * Native TTS via the Web Speech API (speechSynthesis) — what Axel's voice does in the
+ * original (`axelSpeak`/Gemini TTS), but without an external service: the WebView engine's voice.
+ * Port of the original's flags: ttsOn (speaker in Axel) + one-shot screen voice
  * (`axel_recording_guide_shown_` → SPEAK_ONCE_KEYS).
  */
 
@@ -9,7 +9,7 @@ export function ttsAvailable(): boolean {
   return typeof window !== 'undefined' && 'speechSynthesis' in window;
 }
 
-/** Одноразовые голосовые подсказки-проводники (флаг в localStorage, как в оригинале). */
+/** One-shot voice guide prompts (flag in localStorage, as in the original). */
 const SPEAK_ONCE_KEYS = 'axel_guide_';
 
 export function spokenOnce(key: string): boolean {

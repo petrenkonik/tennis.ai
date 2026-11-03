@@ -18,9 +18,9 @@ export interface AnalysisInput {
 }
 
 /**
- * Полный прогон анализа (v0):
- *   pose-последовательность + детекции → фазы M0–M6 → метрики → green/red → overall_score.
- * Выполняется целиком на клиенте (Web Worker Mini App), как в оригинале v2.0.19.
+ * Full analysis run (v0):
+ *   pose sequence + detections → phases M0–M6 → metrics → green/red → overall_score.
+ * Runs entirely on the client (Mini App Web Worker), like the original v2.0.19.
  */
 export function runAnalysis(input: AnalysisInput): AnalysisOutcome {
   const { pose, detections, strokeType, fps, calibration } = input;

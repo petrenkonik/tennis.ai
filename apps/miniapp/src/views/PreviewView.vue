@@ -13,7 +13,7 @@
     </div>
 
     <div v-else style="padding: 16px; display: flex; flex-direction: column; gap: 14px">
-      <!-- Зацикленный плеер превью (порт video_preview_screen: loop через setLooping) -->
+      <!-- Looping preview player (port of video_preview_screen: loop via setLooping) -->
       <video
         ref="videoEl"
         :src="clip.url"
@@ -31,7 +31,7 @@
         @loadedmetadata="onMeta"
       ></video>
 
-      <!-- CHECKING VIDEO... → гейт качества (тексты — дословные литералы оригинала) -->
+      <!-- CHECKING VIDEO... → quality gate (texts are the original's verbatim literals) -->
       <div v-if="verdict === 'checking'" class="card">
         <span class="row" style="gap: 10px">
           <span class="spinner" style="margin: 0"></span>
@@ -50,7 +50,7 @@
       </template>
 
       <template v-else>
-        <!-- Проверки пройдены -->
+        <!-- Checks passed -->
         <div class="card accent">
           <span class="muted" style="color: var(--accent-soft)">{{ tt('good_angle_lighting_tip') }}</span>
         </div>
@@ -58,8 +58,8 @@
           <span class="muted" style="color: var(--amber)">{{ tt('clip_too_long') }}</span>
         </div>
 
-        <!-- TRIM YOUR STROKE: RangeSlider с двумя ручками (_previewTrim; исходно без подсказки —
-             что ручки тащатся, говорит только голос Axel, дефект UX оригинала воспроизведён) -->
+        <!-- TRIM YOUR STROKE: RangeSlider with two handles (_previewTrim; originally without a hint —
+             only Axel's voice says the handles are draggable, the original's UX defect is reproduced) -->
         <template v-if="duration > 0">
           <div class="mono-caption" style="font-size: 12px; color: var(--text-secondary); letter-spacing: 2px">
             {{ tt('trim_your_stroke') }}
@@ -147,13 +147,13 @@ const clip = computed(() => analysis.pendingPreview);
 const videoEl = ref<HTMLVideoElement | null>(null);
 const track = ref<HTMLElement | null>(null);
 
-/** verdict 'checking' → 'ok' | 'fail'; failKey — ключ текста причины (ландшафт/квадрат/качество). */
+/** verdict 'checking' → 'ok' | 'fail'; failKey — the key of the reason text (landscape/square/quality). */
 const verdict = ref<'checking' | 'ok' | 'fail'>('checking');
 const failKey = ref('video_too_low_quality');
 const duration = ref(0);
 const tooLong = ref(false);
 
-// Окно трима (порт trimStartSec/_previewTrim); минимальное окно 0.5 c.
+// Trim window (port of trimStartSec/_previewTrim); minimum window 0.5 s.
 const trimStart = ref(0);
 const trimEnd = ref(0);
 const busy = ref(false);
@@ -164,8 +164,8 @@ onMounted(() => {
     void router.replace('/record');
     return;
   }
-  // Одноразовый голосовой гид экрана ревью (как Axel в оригинале: единственный момент,
-  // когда клип ещё можно обрезать или переснять; флаг — порт axel_recording_guide_shown_).
+  // One-shot voice guide of the review screen (like Axel in the original: the only moment
+  // when the clip can still be trimmed or retaken; the flag ports axel_recording_guide_shown_).
   if (app.ttsOn && ttsAvailable() && !spokenOnce('preview')) {
     speak(tt('review_guide'), app.lang);
     markSpoken('preview');
@@ -174,7 +174,7 @@ onMounted(() => {
 
 onBeforeUnmount(() => stopSpeaking());
 
-/** Гейт качества (GAP §A: ландшафт, квадратный кроп, низкое разрешение; длительность — предупреждение). */
+/** Quality gate (GAP §A: landscape, square crop, low resolution; duration — a warning). */
 function onMeta(): void {
   const v = videoEl.value;
   if (!v) return;
@@ -193,7 +193,7 @@ function onMeta(): void {
   duration.value = d;
   trimStart.value = 0;
   trimEnd.value = d;
-  tooLong.value = d > 5.2; // протокол съёмки: один удар, ≤ 5 c
+  tooLong.value = d > 5.2; // recording protocol: one stroke, ≤ 5 s
 }
 
 function retake(): void {
@@ -201,7 +201,7 @@ function retake(): void {
   router.back();
 }
 
-// ---- Ручки трима: указатель берёт ближайшую ручку и тащит её (RangeSlider оригинала) ----
+// ---- Trim handles: the pointer grabs the nearest handle and drags it (the original's RangeSlider) ----
 let activeHandle: 'start' | 'end' | null = null;
 
 function posToSec(clientX: number): number {

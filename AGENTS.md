@@ -1,88 +1,95 @@
-# AGENTS.md — инструкции для агентов
+# AGENTS.md — instructions for agents
 
-Ребилд реверс-инжиниренного `com.tennis.ai` v2.0.19 (Flutter/Android). Два продукта:
-1. **Telegram Mini App + Nest.js API** — pnpm-монорепа (`apps/`, `packages/`), Node ≥ 22, pnpm 10.
-2. **Нативное Android-приложение** (`tennis-ai-android/`) — **полный клон оригинала,
-   максимально похожий, но на Kotlin** (Jetpack Compose). Не «вдохновение», а копия
-   UI и функциональности оригинала 1:1.
+Rebuild of the reverse-engineered `com.tennis.ai` v2.0.19 (Flutter/Android). Two products:
+1. **Telegram Mini App + Nest.js API** — pnpm monorepo (`apps/`, `packages/`), Node ≥ 22, pnpm 10.
+2. **Native Android app** (`tennis-ai-android/`) — **a full clone of the original,
+   as close as possible, but in Kotlin** (Jetpack Compose). Not "inspiration" — a 1:1
+   copy of the original UI and functionality.
 
-Вся документация в репо — на русском.
+## Language policy
 
-## Команды
+**All documentation and code comments must be in English only** — README, `docs/`,
+`reference/` docs, `AGENTS.md`, agent definitions (`.zcode/agents/`), commit messages,
+and comments in source code (`//`, `/* */`, `<!-- -->`, `#`). Never add new Russian
+text to documentation or comments. Runtime product content (UI strings, i18n values,
+API error messages) is exempt — it follows the app's own i18n.
+
+## Commands
 
 ```bash
 pnpm install
-pnpm build            # все пакеты (engine/shared собираются дважды: CJS + ESM)
-pnpm typecheck        # главная проверка качества
-pnpm dev:api          # Nest.js на :3000 (нужен apps/api/.env, шаблон — .env.example)
-pnpm dev:miniapp      # Vite на :5173
-pnpm seed:drills      # наполнить библиотеку drills
-pnpm --filter @tennis-ai/engine build   # точечная сборка пакета
+pnpm build            # all packages (engine/shared are built twice: CJS + ESM)
+pnpm typecheck        # the main quality gate
+pnpm dev:api          # Nest.js on :3000 (needs apps/api/.env, template: .env.example)
+pnpm dev:miniapp      # Vite on :5173
+pnpm seed:drills      # populate the drills library
+pnpm --filter @tennis-ai/engine build   # targeted package build
 ```
 
-**Линтера (ESLint/Prettier) и тестового раннера в репо нет** — `pnpm typecheck`
-после изменений обязателен, это единственный автоматический гейт.
+**There is no linter (ESLint/Prettier) or test runner in the repo** — `pnpm typecheck`
+after changes is mandatory; it is the only automated gate.
 
-## Структура
+## Structure
 
 - `apps/miniapp/` — TMA: Vite + Vue 3 + TS + Pinia, `@telegram-apps/sdk`.
-  CV-пайплайн (MediaPipe Pose 33 landmark + YOLO ONNX) живёт в
-  `src/workers/analysis.worker.ts`; экраны — `src/views`, состояние — `src/stores`.
-- `apps/api/` — Nest.js, глобальный префикс `/api`, Mongoose. Модули в
-  `src/modules`: auth (initData → JWT), users (квоты: free 9 lifetime / pro 20 в
-  мес), uploads (S3 presign), analyses, payments (Telegram Stars, currency
-  `XTR`, без авто-renew), drills, plans, coach; прогресс анализа — через WS (`src/ws`).
-- `packages/shared/` — доменные типы, API-контракты, пороги метрик из реверса
-  (`src/metrics/metrics.json`, неизвестные диапазоны помечены unknown-range).
-- `packages/engine/` — биомех-движок: `phases.ts` (фазы M0–M6) →
-  `measurements.ts` + `metrics.ts` → `scoring.ts`. Только чистые функции,
-  **без DOM/Node API** — исполняется в Web Worker.
-- `packages/telegram/` — HMAC-верификация initData, Stars-инвойсы. Только для сервера.
-- `reference/` — артефакты реверса оригинала. **Только чтение, не билдится.**
-  Тяжёлые бинарники (`apks/`, `rea-outputs/`, `extracted_assets/models/`,
-  `*.apk`, `*.so`) в .gitignore — не коммитить.
-- `tennis-ai-android/` — **нативное Android-приложение, в скоупе** (Kotlin + Compose,
-  `com.rebuild.tennisai`, Gradle 8.9 лежит в `tools/`), не входит в pnpm-workspace.
-  Независимая сборка через `gradlew` в этой папке. Требование — полный клон
-  оригинала на Kotlin: экраны, флоу и логика повторяют оригинал максимально точно.
-  Эталон UI — скриншоты оригинала в `docs/OriginalScrean/`; логика движка портируется
-  из `packages/engine`, не пишется заново.
-- `docs/ARCHITECTURE.md`, `docs/PORTING.md` — карта портирования Dart → TS со статусами.
+  The CV pipeline (MediaPipe Pose 33 landmarks + YOLO ONNX) lives in
+  `src/workers/analysis.worker.ts`; screens are in `src/views`, state in `src/stores`.
+- `apps/api/` — Nest.js, global prefix `/api`, Mongoose. Modules in
+  `src/modules`: auth (initData → JWT), users (quotas: free 9 lifetime / pro 20 per
+  month), uploads (S3 presign), analyses, payments (Telegram Stars, currency
+  `XTR`, no auto-renew), drills, plans, coach; analysis progress is delivered
+  via WS (`src/ws`).
+- `packages/shared/` — domain types, API contracts, metric thresholds from the reverse
+  (`src/metrics/metrics.json`, unknown ranges are marked unknown-range).
+- `packages/engine/` — biomech engine: `phases.ts` (phases M0–M6) →
+  `measurements.ts` + `metrics.ts` → `scoring.ts`. Pure functions only,
+  **no DOM/Node APIs** — runs inside a Web Worker.
+- `packages/telegram/` — HMAC verification of initData, Stars invoices. Server-only.
+- `reference/` — reverse-engineering artifacts of the original. **Read-only, not built.**
+  Heavy binaries (`apks/`, `rea-outputs/`, `extracted_assets/models/`,
+  `*.apk`, `*.so`) are gitignored — do not commit them.
+- `tennis-ai-android/` — **native Android app, in scope** (Kotlin + Compose,
+  `com.rebuild.tennisai`, Gradle 8.9 lives in `tools/`), not part of the pnpm workspace.
+  Independent builds via `gradlew` in that folder. The requirement is a full Kotlin
+  clone of the original: screens, flows and logic replicate the original as closely
+  as possible. The UI reference is the original screenshots in `docs/OriginalScrean/`;
+  engine logic is ported from `packages/engine`, not rewritten from scratch.
+- `docs/ARCHITECTURE.md`, `docs/PORTING.md` — Dart → TS porting map with statuses.
 
-## Команда ИИ-агентов
+## AI agent team
 
-Работу ведёт «Штаб пересборки Tennis.AI» — манифест и состав в `docs/AI_TEAM.md`,
-определения агентов в `.zcode/agents/`. Порядок фаз задан владельцем:
-**1) Android-клон (активна) → 2) полный продукт (Nest.js API) → 3) Telegram Mini App**.
-Не делать всё сразу — работать по частям; после правок прогонять гейты
+The work is done by the "Tennis.AI Rebuild HQ" team — manifest and roster in
+`docs/AI_TEAM.md`, agent definitions in `.zcode/agents/`. The phase order is set by
+the owner: **1) Android clone (active) → 2) full product (Nest.js API) → 3) Telegram
+Mini App**. Do not do everything at once — work in parts; after edits run the gates
 (`pnpm typecheck`, `gradlew assembleDebug/test`).
 
-## Границы и правила
+## Boundaries and rules
 
-- Направление зависимостей: `shared → engine → (miniapp, api)`;
-  `shared → telegram → api`. Код приложений не импортируется из `packages/*`.
-- **Логика движка продублирована в Kotlin** — `tennis-ai-android/.../core/`
+- Dependency direction: `shared → engine → (miniapp, api)`;
+  `shared → telegram → api`. App code must not import from `packages/*`.
+- **Engine logic is duplicated in Kotlin** — `tennis-ai-android/.../core/`
   (`metrics/MetricsCalculator.kt`, `phases/MomentDetector.kt`, `engine/PoseEngine.kt`).
-  Меняя `packages/engine`, зеркаль правки в Android-порт.
-- `overall_score` v0 = доля зелёных метрик с равными весами; точные веса
-  оригинала не восстановлены — точка замены `packages/engine/src/scoring.ts`
+  When changing `packages/engine`, mirror the change in the Android port.
+- `overall_score` v0 = share of green metrics with equal weights; the exact weights
+  of the original were not recovered — replacement point `packages/engine/src/scoring.ts`
   (DECISIONS §6.4).
-- Фазы и часть метрик — пока heuristic-порт (статусы 🔶/⬜ в `PORTING.md`);
-  сверяй статус перед «исправлением» расхождений с оригиналом.
-- Miniapp — ESM (`"type": "module"`); `engine`/`shared` шипуют dual CJS+ESM
-  (`dist/` + `dist/esm/`) — не ломай двойную сборку.
+- Phases and some metrics are still a heuristic port (statuses 🔶/⬜ in `PORTING.md`);
+  check the status before "fixing" mismatches with the original.
+- Miniapp is ESM (`"type": "module"`); `engine`/`shared` ship dual CJS+ESM
+  (`dist/` + `dist/esm/`) — do not break the dual build.
 - ENV: `apps/api/.env` — `MONGO_URI`, `JWT_SECRET`, `TELEGRAM_BOT_TOKEN`,
-  `S3_*`, `GEMINI_API_KEY`; `apps/miniapp/.env` — `VITE_API_URL` (по умолчанию
-  `http://localhost:3000/api`), опционально `VITE_MEDIAPIPE_WASM_URL` /
-  `VITE_POSE_MODEL_URL` (иначе CDN).
+  `S3_*`, `GEMINI_API_KEY`; `apps/miniapp/.env` — `VITE_API_URL` (default
+  `http://localhost:3000/api`), optional `VITE_MEDIAPIPE_WASM_URL` /
+  `VITE_POSE_MODEL_URL` (otherwise CDN).
 
-## Обязательно к прочтению перед правками
+## Required reading before changes
 
-- `reference/DECISIONS.md` — зафиксированные владельцем архитектурные решения;
-  менять подход (стек, замены Firebase/RevenueCat, схема оплаты) можно только через него.
-  ⚠️ Пункт §2 «нативное Android-приложение не входит в проект» устарел: нативный
-  клон на Kotlin — в скоупе (см. выше).
-- `reference/ANALYSIS_FINDINGS.md` — знания о продукте из реверса оригинала.
-- `docs/PORTING.md` — что портировано, что TODO и ближайшие шаги.
-- `docs/OriginalScrean/` — 11 скриншотов оригинального приложения; эталон UI
-  для Android-клона (и TMA-экранов).
+- `reference/DECISIONS.md` — owner-approved architectural decisions; the approach
+  (stack, Firebase/RevenueCat replacements, payment scheme) may only be changed
+  through that file. ⚠️ Item §2 "the native Android app is not part of the project"
+  is outdated: the native Kotlin clone is in scope (see above).
+- `reference/ANALYSIS_FINDINGS.md` — product knowledge recovered from the original.
+- `docs/PORTING.md` — what is ported, what is TODO, and the next steps.
+- `docs/OriginalScrean/` — 11 screenshots of the original app; the UI reference
+  for the Android clone (and TMA screens).

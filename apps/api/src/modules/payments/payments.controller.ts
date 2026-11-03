@@ -21,7 +21,7 @@ export class PaymentsController {
     return this.payments.createInvoice(u.sub, u.telegramId, dto.productId);
   }
 
-  /** Вебхук бота (setWebhook с secret_token). Public: Telegram не имеет нашего JWT. */
+  /** Bot webhook (setWebhook with secret_token). Public: Telegram does not have our JWT. */
   @Post('webhook')
   async webhook(@Req() req: RawBodyRequest<Request>) {
     const expected = Env.botWebhookSecret();

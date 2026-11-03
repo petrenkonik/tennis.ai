@@ -4,7 +4,7 @@ export * from './api';
 import metricsJson from './metrics/metrics.json';
 import type { MetricDefinition, StrokeType } from './types';
 
-/** Все определения метрик, портированные из реверса (пороги + тексты поправок). */
+/** All metric definitions ported from the reverse engineering (thresholds + correction texts). */
 export const METRIC_DEFINITIONS = metricsJson.metrics as unknown as MetricDefinition[];
 
 export function metricsForStroke(strokeType: StrokeType): MetricDefinition[] {

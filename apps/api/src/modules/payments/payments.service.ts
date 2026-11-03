@@ -30,7 +30,7 @@ export class PaymentsService {
     @InjectModel(Subscription.name) private readonly subs: Model<SubscriptionDocument>,
   ) {}
 
-  /** POST /api/payments/invoice → ссылка, которую клиент открывает через Telegram.WebApp.openInvoice. */
+  /** POST /api/payments/invoice → a link the client opens via Telegram.WebApp.openInvoice. */
   async createInvoice(userId: string, telegramId: number, productId: string): Promise<{ link: string }> {
     const product = productById(productId);
     if (!product) throw new Error(`unknown product: ${productId}`);
@@ -44,7 +44,7 @@ export class PaymentsService {
     return { link: res.link };
   }
 
-  /** Вебхук бота: pre_checkout_query → approve; successful_payment → активация периода. */
+  /** Bot webhook: pre_checkout_query → approve; successful_payment → period activation. */
   async handleUpdate(raw: TelegramUpdate): Promise<{ handled: boolean }> {
     if (raw.pre_checkout_query) {
       await callBotApi(Env.botToken(), 'answerPreCheckoutQuery', {
@@ -68,7 +68,7 @@ export class PaymentsService {
     invoice_payload: string;
   }): Promise<void> {
     const exists = await this.subs.findOne({ telegramPaymentChargeId: payment.telegram_payment_charge_id });
-    if (exists) return; // идемпотентность
+    if (exists) return; // idempotency
 
     const parsed = parseSubscriptionPayload(payment.invoice_payload);
     if (!parsed) {
@@ -82,9 +82,9 @@ export class PaymentsService {
     const periodEnd = new Date();
     periodEnd.setMonth(periodEnd.getMonth() + product.months);
 
-    // Подписчик идентифицируется по telegramId из payload (user мог быть создан ранее).
+    // The subscriber is identified by telegramId from the payload (the user may have been created earlier).
     await this.subs.create({
-      userId: parsed.userId, // временно telegramId; резолвится в mongo _id ниже
+      userId: parsed.userId, // temporarily telegramId; resolved to a mongo _id below
       telegramPaymentChargeId: payment.telegram_payment_charge_id,
       productId: product.id,
       months: product.months,

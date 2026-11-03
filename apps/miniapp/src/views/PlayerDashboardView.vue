@@ -1,12 +1,12 @@
 <template>
   <div class="screen">
-    <!-- Топ-бар: globe + AXEL AI monospace БЕЛЫЙ (CLONE_SPEC §2.4) -->
+    <!-- Top bar: globe + AXEL AI monospace WHITE (CLONE_SPEC §2.4) -->
     <TopBar title="AXEL AI" icon="globe" variant="mono-white" />
 
     <div style="padding: 18px 16px 0">
       <div style="text-align: center">
         <div style="font-size: 28px; font-weight: 700; color: var(--accent)">{{ tt('my_dashboard') }}</div>
-        <!-- Невыровненный i18n-ключ оригинала — дословно (CLONE_SPEC §2.4) -->
+        <!-- The original's misaligned i18n key — verbatim (CLONE_SPEC §2.4) -->
         <div class="muted" style="margin-top: 6px; font-size: 15px">{{ t(app.lang, 'track_progression') }}</div>
       </div>
 
@@ -20,7 +20,7 @@
           <StatCell icon="chat" value="0" :label="tt('messages')" mono class="grow" />
         </div>
 
-        <!-- Реферальный баннер (cardAccent) -->
+        <!-- Referral banner (cardAccent) -->
         <AppCard accent clickable @click="router.push('/paywall')">
           <div class="row" style="padding: 16px; gap: 14px">
             <Icon name="gift" :size="26" :style="{ color: 'var(--accent)' }" />
@@ -37,7 +37,7 @@
         <div style="height: 8px"></div>
         <SectionBar :title="tt('recent_activity')" />
 
-        <!-- Пустое состояние оригинала («record_first_video» — ключ дословно) или последние сессии -->
+        <!-- The original's empty state ("record_first_video" — key verbatim) or the latest sessions -->
         <AppCard v-if="analysis.list.length === 0" clickable @click="router.push('/record')">
           <div style="text-align: center; padding: 20px 12px">
             <Icon name="videocam" :size="30" :style="{ color: 'var(--text-dim)', margin: '0 auto' }" />

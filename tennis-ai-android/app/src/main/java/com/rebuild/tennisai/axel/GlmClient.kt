@@ -10,8 +10,8 @@ import java.net.HttpURLConnection
 import java.net.URL
 
 /**
- * Минимальный клиент Z.ai GLM (OpenAI-совместимый chat completions + tools).
- * Без внешних зависимостей: HttpURLConnection + org.json.
+ * Minimal Z.ai GLM client (OpenAI-compatible chat completions + tools).
+ * No external dependencies: HttpURLConnection + org.json.
  */
 data class GlmConfig(val baseUrl: String, val apiKey: String, val model: String)
 

@@ -13,8 +13,8 @@ import com.rebuild.tennisai.core.model.PoseFrame
 import com.rebuild.tennisai.core.model.Vec3
 
 /**
- * Обёртка MediaPipe Pose Landmarker (BlazePose, 33 точки).
- * GPU-делегат с автоматическим откатом на CPU (на эмуляторе GPU-делегат недоступен).
+ * MediaPipe Pose Landmarker wrapper (BlazePose, 33 landmarks).
+ * GPU delegate with an automatic fallback to CPU (the GPU delegate is unavailable on the emulator).
  */
 class PoseEngine private constructor(private val landmarker: PoseLandmarker) {
 
@@ -62,7 +62,7 @@ fun PoseLandmarkerResult.toPoseFrame(tMillis: Long): PoseFrame? {
         Vec3(p.x(), p.y(), p.z())
     }
     if (pts.size < 33) return null
-    // bounding box по видимым точкам
+    // bounding box over the visible points
     var minX = Float.MAX_VALUE; var minY = Float.MAX_VALUE; var maxX = -Float.MAX_VALUE; var maxY = -Float.MAX_VALUE
     for (p in pts) {
         if (p.x < minX) minX = p.x

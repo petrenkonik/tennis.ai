@@ -1,7 +1,7 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { HydratedDocument } from 'mongoose';
 
-/** Период Pro-подписки (Telegram Stars не поддерживают авто-renew — период покупается явно). */
+/** Pro subscription period (Telegram Stars do not support auto-renew — the period is purchased explicitly). */
 @Schema({ collection: 'subscriptions', timestamps: true })
 export class Subscription {
   @Prop({ required: true, index: true })

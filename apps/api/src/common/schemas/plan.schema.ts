@@ -1,7 +1,7 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { HydratedDocument } from 'mongoose';
 
-/** Тренировочный план, собранный по weaknesses анализа (порт training_plan_service). */
+/** Training plan built from analysis weaknesses (port of training_plan_service). */
 @Schema({ collection: 'plans', timestamps: true })
 export class Plan {
   @Prop({ required: true, index: true })

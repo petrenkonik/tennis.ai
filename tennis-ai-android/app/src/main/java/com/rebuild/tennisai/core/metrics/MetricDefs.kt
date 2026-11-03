@@ -7,12 +7,12 @@ import com.rebuild.tennisai.core.model.StrokeType
 import com.rebuild.tennisai.core.model.ValueKind
 
 /**
- * Определение метрики — клон системы оригинала: коды 1:1, описания и диапазоны
- * дословно из Dart AOT v2.0.19 (reference/dart-aot-recovery/, offset'ы в
- * GAP_ANALYSIS.md). Формулы вычисления — наша геометрия (исходники формул
- * в снапшоте не восстанавливаются), диапазоны — оригинальные.
+ * Metric definition — a clone of the original's system: codes are 1:1, descriptions and
+ * ranges are verbatim from Dart AOT v2.0.19 (reference/dart-aot-recovery/, offsets in
+ * GAP_ANALYSIS.md). The computation formulas are our geometry (the formula sources
+ * are not recoverable from the snapshot), the ranges are the original ones.
  *
- * ndMin/ndMax — диапазон недоминантной стороны (пары D/ND оригинала).
+ * ndMin/ndMax — the non-dominant side range (the original's D/ND pairs).
  */
 data class MetricDef(
     val id: String,
@@ -29,7 +29,7 @@ data class MetricDef(
     val descRu: String,
     val lowEn: String, val lowRu: String,
     val highEn: String, val highRu: String,
-    /** Дословная строка про-сравнения из оригинала (если восстановлена). */
+    /** Verbatim pro-comparison string from the original (if recovered). */
     val proNote: String? = null,
 ) {
     fun name(lang: Lang) = if (lang == Lang.RU) nameRu else nameEn
@@ -44,7 +44,7 @@ data class MetricDef(
 
 object MetricDefs {
 
-    // ---- Общие ---------------------------------------------------------------
+    // ---- Common ---------------------------------------------------------------
     val KNEE_FLEXION = MetricDef(
         id = "KNEE_FLEXION", kind = ValueKind.DEGREES, proMin = 110f, proMax = 170f,
         nameEn = "Knee Flexion", nameRu = "Сгибание коленей",
@@ -137,7 +137,7 @@ object MetricDefs {
         highRu = "Подстрой положение корпуса. Держи баланс.",
     )
 
-    // ---- Подача ---------------------------------------------------------------
+    // ---- Serve ---------------------------------------------------------------
     val M1_ARMS_POSITION = MetricDef(
         id = "M1_ARMS_POSITION", kind = ValueKind.DEGREES, proMin = 20f, proMax = 170f,
         nameEn = "Arms Position", nameRu = "Позиция рук",
@@ -303,7 +303,7 @@ object MetricDefs {
         highRu = "Мах задней ногой в порядке — держи баланс.",
     )
 
-    // ---- Ударные ---------------------------------------------------------------
+    // ---- Groundstrokes ---------------------------------------------------------------
     val UNIT_TURN = MetricDef(
         id = "UNIT_TURN", kind = ValueKind.DEGREES, proMin = 40f, proMax = 90f,
         nameEn = "Unit Turn", nameRu = "Замах (скрутка)",
@@ -366,7 +366,7 @@ object MetricDefs {
         highRu = "Траектория плавная.",
     )
 
-    /** Классификация стойки — отдельный элемент, не числовая метрика. */
+    /** Stance classification — a separate entry, not a numeric metric. */
     val STANCE_TYPE = MetricDef(
         id = "STANCE_TYPE", kind = ValueKind.RATIO, proMin = 0f, proMax = 360f,
         nameEn = "Stance Classification", nameRu = "Классификация стойки",
@@ -388,8 +388,8 @@ object MetricDefs {
     ).associateBy { it.id }
 
     /**
-     * Раскладка метрик по фазам — как в оригинале: коды модулей на каждую фазу.
-     * M5/M4 — самые «дорогие».
+     * Metric layout per phase — as in the original: module codes for each phase.
+     * M5/M4 are the most heavily weighted.
      */
     fun layout(stroke: StrokeType): Map<Moment, List<Pair<MetricDef, Float>>> = when (stroke) {
         StrokeType.SERVE -> mapOf(

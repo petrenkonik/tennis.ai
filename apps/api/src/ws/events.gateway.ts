@@ -9,7 +9,7 @@ import { Env } from '../config/env';
 import type { Socket } from 'socket.io';
 import type { Server } from 'socket.io';
 
-/** WS-канал прогресса/результатов: авторизация по JWT в handshake.auth.token, комнаты на пользователя. */
+/** WS channel for progress/results: JWT auth via handshake.auth.token, per-user rooms. */
 @WebSocketGateway({ path: '/ws', cors: { origin: '*' } })
 export class EventsGateway implements OnGatewayConnection {
   @WebSocketServer()

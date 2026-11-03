@@ -2,34 +2,34 @@ import type { ObjectDetection, PoseFrame } from '@tennis-ai/shared';
 import { disposePoseLandmarker, hasDetectablePose, loadPoseLandmarker, toPoseFrame } from './poseService';
 
 /**
- * Клиентский CV-пайплайн (порт on_device_analysis_service.dart, DECISIONS §7.2):
- *   1. analyzeVideoPoses — потоково: кадры fps=30, scale≈640px → Pose Landmarker → PoseFrame[]
- *      (кадры не буферизуются: seek → canvas → detect → в память идёт только PoseFrame ~2 КБ)
- *   2. detectObjects     — TODO: YOLO11 ONNX (onnxruntime-web, int8): мяч + ракетка; пока [] —
- *                          engine деградирует на эвристические фазы (analyze.ts notes)
- *   3. runAnalysis       — реализовано в packages/engine, вызывается из воркера analysis.worker.ts
+ * Client-side CV pipeline (port of on_device_analysis_service.dart, DECISIONS §7.2):
+ *   1. analyzeVideoPoses — streaming: frames at fps=30, scale≈640px → Pose Landmarker → PoseFrame[]
+ *      (frames are not buffered: seek → canvas → detect; only a ~2 KB PoseFrame goes into memory)
+ *   2. detectObjects     — TODO: YOLO11 ONNX (onnxruntime-web, int8): ball + racket; [] for now —
+ *                          the engine degrades to heuristic phases (analyze.ts notes)
+ *   3. runAnalysis       — implemented in packages/engine, called from the analysis.worker.ts worker
  */
 
 export interface ExtractOptions {
-  /** Частота выборки кадров (оригинал: 30 fps). */
+  /** Frame sampling rate (original: 30 fps). */
   targetFps?: number;
-  /** Целевая ширина кадра (оригинал: scale=640:-2). */
+  /** Target frame width (original: scale=640:-2). */
   maxWidth?: number;
-  /** Жёсткий лимит кадров на сессию (5 c × 30 fps = 150). */
+  /** Hard limit of frames per session (5 s × 30 fps = 150). */
   maxFrames?: number;
-  /** Начало окна трима из VIDEO PREVIEW, сек (порт trimStartSec оригинала). */
+  /** Start of the trim window from VIDEO PREVIEW, seconds (port of the original's trimStartSec). */
   startSec?: number;
-  /** Конец окна трима, сек; undefined = до конца видео. */
+  /** End of the trim window, seconds; undefined = until the end of the video. */
   endSec?: number;
 }
 
 export interface VideoPosesResult {
-  /** Все кадры выборки; кадры без найденной позы содержат landmark с visibility 0 и игнорируются engine. */
+  /** All sampled frames; frames without a detected pose contain a landmark with visibility 0 and are ignored by the engine. */
   poses: PoseFrame[];
   frameWidth: number;
   frameHeight: number;
   fps: number;
-  /** Сколько кадров с реально найденной позой (ядро тела видимо) — 0 значит «видео без человека». */
+  /** How many frames actually detected a pose (body core visible) — 0 means "video without a person". */
   poseFrames: number;
   totalFrames: number;
 }
@@ -65,9 +65,9 @@ export async function analyzeVideoPoses(
     if (!ctx2d) throw new Error('canvas 2d context unavailable');
 
     const stepMs = 1000 / targetFps;
-    // Некоторые webm-потоки отдают duration = Infinity — fallback на лимит кадров
+    // Some webm streams report duration = Infinity — fall back to the frame limit
     const durationSec = Number.isFinite(video.duration) ? video.duration : maxFrames / targetFps;
-    // Окно трима: сэмплируем только его; длительность сессии считается от окна (как _previewTrim)
+    // Trim window: only it is sampled; session duration is computed from the window (like _previewTrim)
     const fromSec = Math.min(Math.max(opts.startSec ?? 0, 0), Math.max(0, durationSec - 0.1));
     const toSec = Math.min(opts.endSec ?? durationSec, durationSec);
     const windowSec = Math.max(0.2, toSec - fromSec);
@@ -113,9 +113,9 @@ function seek(video: HTMLVideoElement, timeSec: number): Promise<void> {
 }
 
 /**
- * TODO(step 3): YOLO11 ONNX → детекции мяча и ракетки (порт yolo_detector_service /
- * ball_detection_service; репасс при промахе — [YOLO-REPASSE]). Пока пусто: engine строит
- * эвристические фазы и помечает это в notes результата анализа.
+ * TODO(step 3): YOLO11 ONNX → ball and racket detections (port of yolo_detector_service /
+ * ball_detection_service; re-pass on a miss — [YOLO-REPASSE]). Empty for now: the engine
+ * builds heuristic phases and flags that in the analysis result notes.
  */
 export async function detectObjects(): Promise<ObjectDetection[]> {
   return [];

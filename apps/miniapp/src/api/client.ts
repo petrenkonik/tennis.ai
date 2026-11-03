@@ -41,7 +41,7 @@ export async function api<T>(path: string, opts: RequestInit = {}): Promise<T> {
   return (await res.json()) as T;
 }
 
-/** POST /api/auth/telegram — обмен initData на JWT. Бросает, если запущено вне Telegram. */
+/** POST /api/auth/telegram — exchanges initData for a JWT. Throws if not running inside Telegram. */
 export async function loginWithTelegram(): Promise<UserDto> {
   const initData = getInitDataRaw();
   if (!initData) throw new ApiError(0, 'Not running inside Telegram (initData unavailable)');
@@ -53,7 +53,7 @@ export async function loginWithTelegram(): Promise<UserDto> {
   return res.user;
 }
 
-/** Загрузка файла в S3 по presigned PUT (файл идёт напрямую, минуя API). */
+/** Uploads a file to S3 via presigned PUT (the file goes directly, bypassing the API). */
 export async function uploadToPresigned(url: string, file: Blob, contentType: string): Promise<void> {
   const res = await fetch(url, {
     method: 'PUT',

@@ -3,10 +3,10 @@ import { runAnalysis } from '@tennis-ai/engine';
 import type { AnalysisOutcome, Calibration, ObjectDetection, PoseFrame, StrokeType } from '@tennis-ai/shared';
 
 /**
- * Воркер анализа (DECISIONS §7.2: «Анализ целиком on-device в packages/engine»).
- * Вход: последовательность pose-кадров + детекции мяча/ракетки + тип удара.
- * Интеграция MediaPipe Pose Landmarker / onnxruntime-web живёт в src/services/videoPipeline.ts
- * и передаёт сюда уже готовые данные.
+ * Analysis worker (DECISIONS §7.2: "the analysis is fully on-device in packages/engine").
+ * Input: a sequence of pose frames + ball/racket detections + stroke type.
+ * The MediaPipe Pose Landmarker / onnxruntime-web integration lives in src/services/videoPipeline.ts
+ * and passes ready-made data here.
  */
 
 interface AnalyzeRequest {

@@ -1,7 +1,7 @@
 import { createParamDecorator, ExecutionContext } from '@nestjs/common';
 
 export interface JwtPayload {
-  sub: string; // Mongo _id пользователя
+  sub: string; // User's Mongo _id
   telegramId: number;
 }
 

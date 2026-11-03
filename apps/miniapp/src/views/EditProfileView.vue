@@ -1,6 +1,6 @@
 <template>
   <div class="screen full">
-    <!-- Шапка: back · Edit Profile · Save -->
+    <!-- Header: back · Edit Profile · Save -->
     <div class="row" style="height: 54px; padding: 0 8px; position: relative">
       <span class="side-btn" @click="router.back()"><Icon name="arrow-left" :size="26" /></span>
       <span
@@ -22,7 +22,7 @@
     </div>
 
     <div style="padding: 10px 16px 0">
-      <!-- Сегмент General | Additional -->
+      <!-- General | Additional segment -->
       <div :style="{ background: 'var(--card)', borderRadius: '16px', height: '52px', padding: '5px', display: 'flex' }">
         <div
           v-for="(seg, i) in [tt('general'), tt('additional')]"
@@ -48,7 +48,7 @@
 
     <div style="padding: 18px 16px 0; display: flex; flex-direction: column; gap: 14px">
       <template v-if="tab === 0">
-        <!-- General — восстановлен по логике (в скриншотах не показан, CLONE_SPEC §6.3) -->
+        <!-- General — reconstructed from logic (not shown in the screenshots, CLONE_SPEC §6.3) -->
         <FieldRow>
           <input class="input" v-model="app.name" :placeholder="tt('name')" />
         </FieldRow>
@@ -61,7 +61,7 @@
       </template>
 
       <template v-else>
-        <!-- Additional — 1:1 по скриншоту -->
+        <!-- Additional — 1:1 per the screenshot -->
         <FieldRow>
           <div class="row" style="gap: 12px">
             <Icon name="scale" :size="20" :style="{ color: 'var(--accent)' }" />
@@ -165,9 +165,9 @@ const router = useRouter();
 const app = useAppStore();
 
 const tt = (key: string) => t(app.lang, key);
-const tab = ref(1); // 0 = General, 1 = Additional (как на скриншоте оригинала)
+const tab = ref(1); // 0 = General, 1 = Additional (as in the original's screenshot)
 
-// Вес: только цифры, до 3 знаков — как в клоне (weightKg.filter(isDigit).take(3))
+// Weight: digits only, up to 3 digits — as in the clone (weightKg.filter(isDigit).take(3))
 const weight = ref(app.weightKg);
 watch(
   weight,
@@ -179,7 +179,7 @@ watch(
   { immediate: true },
 );
 
-/** Строка-поле (EditProfile.FieldRow): карточка 56px с контентом. */
+/** Field row (EditProfile.FieldRow): a 56px card with content. */
 const FieldRow = defineComponent({
   name: 'FieldRow',
   setup(_, { slots }) {

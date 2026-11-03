@@ -2,7 +2,7 @@ import { defineComponent, h, type CSSProperties } from 'vue';
 import { AppCard } from './ui';
 import Icon from './Icon.vue';
 
-/** Стат-ячейка сетки 2×2 дашборда (DashboardScreens.StatCell): зелёная иконка, число 30px, метка. */
+/** Stat cell of the 2×2 dashboard grid (DashboardScreens.StatCell): green icon, 30px number, label. */
 export const StatCell = defineComponent({
   name: 'StatCell',
   props: {

@@ -3,7 +3,7 @@
     <TopBar :title="tt('my_analyses')" icon="chart" variant="mono-accent" />
 
     <div style="padding: 18px 16px 0; display: flex; flex-direction: column; gap: 14px">
-      <!-- Стат-карточка: TOTAL / Completed / Analyzing (CLONE_SPEC §2.8) -->
+      <!-- Stat card: TOTAL / Completed / Analyzing (CLONE_SPEC §2.8) -->
       <AppCard>
         <div class="row" style="justify-content: space-between; padding: 20px 0">
           <div v-for="s in stats" :key="s.label" class="grow" style="text-align: center">
@@ -20,7 +20,7 @@
         </div>
       </AppCard>
 
-      <!-- Сетка 2×2 с цветной границей: плитка activity + no_data (ключ-дефект оригинала — дословно) -->
+      <!-- 2×2 grid with colored border: activity tile + no_data (the original's key defect — verbatim) -->
       <div v-for="(row, ri) in bucketRows" :key="ri" class="row" style="gap: 14px; align-items: stretch">
         <AppCard
           v-for="b in row"
@@ -62,7 +62,7 @@
         </AppCard>
       </div>
 
-      <!-- Раскрытый список отчётов бакета (реальные данные API; в клоне бакет статичен) -->
+      <!-- Expanded report list of the bucket (real API data; in the clone the bucket is static) -->
       <template v-if="opened">
         <div v-if="openedList.length === 0" class="muted" style="text-align: center; padding: 8px">
           {{ tt('empty_list') }}
@@ -95,7 +95,7 @@
       </template>
     </div>
 
-    <!-- Delete Session: подтверждение оригинала (delete_session_confirm) -->
+    <!-- Delete Session: the original's confirmation (delete_session_confirm) -->
     <div
       v-if="confirmDelete"
       style="
@@ -146,7 +146,7 @@ interface Bucket {
   color: string;
 }
 
-// Бакеты и цвета — как в LibraryScreens.kt.
+// Buckets and colors — as in LibraryScreens.kt.
 const buckets: Bucket[] = [
   { key: 'serve', titleKey: 'serve', color: 'var(--serve-blue)' },
   { key: 'forehand', titleKey: 'forehand', color: 'var(--accent)' },
@@ -200,14 +200,14 @@ function openBucket(b: Bucket): void {
   opened.value = opened.value === b ? null : b;
 }
 
-// Delete Session — с подтверждением оригинала (delete_session_confirm).
+// Delete Session — with the original's confirmation (delete_session_confirm).
 const confirmDelete = ref<AnalysisDto | null>(null);
 
 async function del(): Promise<void> {
   const a = confirmDelete.value;
   if (!a) return;
   confirmDelete.value = null;
-  // Каскад: API удаляет Mongo-записи и объекты хранилища сессии.
+  // Cascade: the API deletes the session's Mongo records and storage objects.
   await analysis.remove(a.id).catch(() => undefined);
 }
 

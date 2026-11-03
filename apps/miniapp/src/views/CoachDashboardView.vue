@@ -1,6 +1,6 @@
 <template>
   <div class="screen">
-    <!-- Топ-бар: person + COACH DASHBOARD monospace БЕЛЫЙ (CLONE_SPEC §2.5) -->
+    <!-- Top bar: person + COACH DASHBOARD monospace WHITE (CLONE_SPEC §2.5) -->
     <TopBar :title="tt('coach_dashboard')" icon="person" variant="mono-white" />
 
     <div style="padding: 18px 16px 0">

@@ -2,11 +2,11 @@ import { defineComponent, h, type CSSProperties, type PropType, type VNodeChild 
 import Icon from './Icon.vue';
 
 /**
- * UI-примитивы клона — порт `tennis-ai-android/ui/common/Ui.kt` + `ui/theme/Theme.kt`.
- * Стили берутся из классов styles.css; цвета прокидываются inline-переменными.
+ * UI primitives of the clone — port of `tennis-ai-android/ui/common/Ui.kt` + `ui/theme/Theme.kt`.
+ * Styles come from styles.css classes; colors are passed via inline CSS variables.
  */
 
-/** Текст с неоновым свечением («AXEL AI», «SELECT DASHBOARD», «My Profile»). */
+/** Text with neon glow ("AXEL AI", "SELECT DASHBOARD", "My Profile"). */
 export const GlowText = defineComponent({
   name: 'GlowText',
   props: {
@@ -26,7 +26,7 @@ export const GlowText = defineComponent({
   },
 });
 
-/** Секционный заголовок: зелёная черта + белый bold («Recent Activity», «Settings»). */
+/** Section heading: green bar + white bold ("Recent Activity", "Settings"). */
 export const SectionBar = defineComponent({
   name: 'SectionBar',
   props: { title: { type: String, required: true } },
@@ -35,7 +35,7 @@ export const SectionBar = defineComponent({
   },
 });
 
-/** Monospace-подпись («TRAINING MODULES», «no_data», метка под линией модуля). */
+/** Monospace caption ("TRAINING MODULES", "no_data", label under the module line). */
 export const MonoCaption = defineComponent({
   name: 'MonoCaption',
   props: {
@@ -57,7 +57,7 @@ export const MonoCaption = defineComponent({
 
 export type TopBarVariant = 'serif' | 'mono-accent' | 'mono-white';
 
-/** Топ-бар: фон Bar + волосяная линия, центр — иконка+тайтл, слева/справа — слоты. */
+/** Top bar: Bar background + hairline, center — icon+title, left/right — slots. */
 export const TopBar = defineComponent({
   name: 'TopBar',
   props: {
@@ -96,7 +96,7 @@ export const TopBar = defineComponent({
   },
 });
 
-/** Карточка клона: тёмная заливка + тонкая граница + радиус. */
+/** Clone card: dark fill + thin border + radius. */
 export const AppCard = defineComponent({
   name: 'AppCard',
   props: {
@@ -124,7 +124,7 @@ export const AppCard = defineComponent({
   },
 });
 
-/** Цветная иконка-плитка (модули Home, карточки Analyses/Videos, Ambassador). */
+/** Colored icon tile (Home modules, Analyses/Videos cards, Ambassador). */
 export const IconTile = defineComponent({
   name: 'IconTile',
   props: {
@@ -152,7 +152,7 @@ export const IconTile = defineComponent({
   },
 });
 
-/** Кольцо процента (модули Home): серый трек + цветная дуга + «N%» в центре. */
+/** Percent ring (Home modules): gray track + colored arc + "N%" in the center. */
 export const RingPercent = defineComponent({
   name: 'RingPercent',
   props: {
@@ -220,7 +220,7 @@ export const RingPercent = defineComponent({
   },
 });
 
-/** FAB Axel: круг с зелёной границей и «sparkles». */
+/** Axel FAB: circle with a green border and a "sparkles" icon. */
 export const AxelFab = defineComponent({
   name: 'AxelFab',
   emits: ['click'],
@@ -237,7 +237,7 @@ export const AxelFab = defineComponent({
   },
 });
 
-/** Pill-бейдж («✓ 0», «🕐 0») — тонкая цветная граница. */
+/** Pill badge ("✓ 0", "🕐 0") — thin colored border. */
 export const PillBadge = defineComponent({
   name: 'PillBadge',
   props: {
@@ -260,7 +260,7 @@ export const PillBadge = defineComponent({
   },
 });
 
-/** Строка настроек с тумблером. */
+/** Settings row with a toggle. */
 export const ToggleRow = defineComponent({
   name: 'ToggleRow',
   props: {

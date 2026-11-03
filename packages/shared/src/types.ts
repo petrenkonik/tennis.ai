@@ -1,5 +1,5 @@
-// Доменные типы, общие для Mini App, API и CV-движка.
-// Портировано из реверс-инжиниринга com.tennis.ai v2.0.19 (reference/ANALYSIS_FINDINGS.md).
+// Domain types shared by the Mini App, API and CV engine.
+// Ported from reverse engineering of com.tennis.ai v2.0.19 (reference/ANALYSIS_FINDINGS.md).
 
 export type StrokeType = 'serve' | 'forehand' | 'backhand';
 export type Handedness = 'left' | 'right';
@@ -7,10 +7,10 @@ export type PhaseCode = 'M0' | 'M1' | 'M2' | 'M3' | 'M4' | 'M5' | 'M6';
 export type MetricStatus = 'green' | 'red' | 'unknown';
 export type MeasurementUnit = 'deg' | 'cm' | 'ratio' | 'm_s';
 
-/** MediaPipe Pose Landmarker: 33 landmark, x/y нормализованы к ширине/высоте кадра, z — относительно бёдер. */
+/** MediaPipe Pose Landmarker: 33 landmarks, x/y normalized to frame width/height, z relative to the hips. */
 export interface LandmarkPoint {
-  x: number; // 0..1 ширины кадра
-  y: number; // 0..1 высоты кадра
+  x: number; // 0..1 of frame width
+  y: number; // 0..1 of frame height
   z?: number;
   visibility?: number; // 0..1
 }
@@ -18,10 +18,10 @@ export interface LandmarkPoint {
 export interface PoseFrame {
   frameIndex: number;
   timestampMs: number;
-  /** Пиксельный размер исходного кадра — нормализованные координаты нужно масштабировать до угловых расчётов. */
+  /** Pixel size of the source frame — normalized coordinates must be scaled before angular calculations. */
   width: number;
   height: number;
-  landmarks: LandmarkPoint[]; // длина 33
+  landmarks: LandmarkPoint[]; // length 33
 }
 
 export interface BoundingBox {
@@ -35,21 +35,21 @@ export interface ObjectDetection {
   frameIndex: number;
   label: 'ball' | 'racket';
   confidence: number;
-  box: BoundingBox; // нормализованные координаты
+  box: BoundingBox; // normalized coordinates
 }
 
 export interface DetectedPhase {
   code: PhaseCode;
   startFrame: number;
   endFrame: number;
-  /** Кадр контакта живёт внутри фазы (M5) — используется для оверлея аннотации. */
+  /** The contact frame lives inside a phase (M5) — used for the annotation overlay. */
   contactFrame?: number;
   confidence?: number;
 }
 
 export interface Calibration {
   handedness: Handedness;
-  /** Физический масштаб из калибровки; без него метрики в см/м·с остаются unknown. */
+  /** Physical scale from calibration; without it, cm / m·s metrics stay unknown. */
   cmPerPixel?: number;
   playerHeightCm?: number;
 }
@@ -60,9 +60,9 @@ export interface ProRange {
 }
 
 /**
- * Определение метрики. Пороги, восстановленные из libapp.so оригинала.
- * proRange: null = диапазон отдаётся из Firestore `metric_definitions` в рантайме
- * и из APK восстановлен не был (см. ANALYSIS_FINDINGS.md «Ограничения анализа»).
+ * Metric definition. Thresholds recovered from the original's libapp.so.
+ * proRange: null = the range is served from Firestore `metric_definitions` at runtime
+ * and was not recovered from the APK (see ANALYSIS_FINDINGS.md, "Analysis limitations").
  */
 export interface MetricDefinition {
   code: string;
@@ -72,9 +72,9 @@ export interface MetricDefinition {
   phase: PhaseCode;
   proRange: ProRange | null;
   description: string | null;
-  /** Шаблоны поправок с плейсхолдером {value}. */
+  /** Correction templates with the {value} placeholder. */
   corrections: { tooLow: string | null; tooHigh: string | null };
-  /** Ключ функции-калькулятора в реестре engine; null = ещё не реализовано. */
+  /** Key of the calculator function in the engine registry; null = not implemented yet. */
   calculator: string | null;
   confidence: 'recovered' | 'partial' | 'unknown-range';
 }
@@ -93,7 +93,7 @@ export interface MetricEvaluation {
 }
 
 export interface OverallScore {
-  /** 0..100 — доля зелёных метрик (v1-аппроксимация: точные веса оригинала не восстановлены, DECISIONS §6.4). */
+  /** 0..100 — share of green metrics (v1 approximation: exact original weights not recovered, DECISIONS §6.4). */
   score: number | null;
   greens: number;
   reds: number;
@@ -107,7 +107,7 @@ export interface AnalysisOutcome {
   phases: DetectedPhase[];
   metrics: MetricEvaluation[];
   overall: OverallScore;
-  /** Коды слабых мест, отсортированные по удалённости от про-диапазона. */
+  /** Weakness codes sorted by distance from the pro range. */
   topWeaknesses: string[];
   notes: string[];
 }

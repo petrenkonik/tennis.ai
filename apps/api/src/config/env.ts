@@ -1,4 +1,4 @@
-/** Простой доступ к окружению без внешних зависимостей. Валидация критичных значений — по месту. */
+/** Simple environment access with no external dependencies. Critical values are validated where they are used. */
 export const Env = {
   port(): number {
     return Number(process.env.PORT ?? 3000);
@@ -6,7 +6,7 @@ export const Env = {
   jwtSecret(): string {
     const v = process.env.JWT_SECRET;
     if (!v || v === 'change-me') {
-      // Не роняем dev-запуск, но кричим в лог.
+      // Do not break the dev startup, but log loudly.
       console.warn('[env] JWT_SECRET is not set or default — do not use in production');
       return 'dev-insecure-secret';
     }
@@ -21,7 +21,7 @@ export const Env = {
   geminiKey(): string {
     return process.env.GEMINI_API_KEY ?? '';
   },
-  /** Z.ai GLM: OpenAI-совместимый chat completions. */
+  /** Z.ai GLM: OpenAI-compatible chat completions. */
   glmKey(): string {
     return process.env.GLM_API_KEY ?? process.env.ZAI_API_KEY ?? '';
   },
@@ -31,7 +31,7 @@ export const Env = {
   glmModel(): string {
     return process.env.GLM_MODEL ?? 'glm-5.3-flash';
   },
-  /** Для detect-stroke (vision). По умолчанию — основная модель. */
+  /** For detect-stroke (vision). Defaults to the main model. */
   glmVisionModel(): string {
     return process.env.GLM_VISION_MODEL ?? this.glmModel();
   },

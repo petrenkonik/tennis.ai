@@ -1,9 +1,9 @@
 import type { MetricEvaluation, OverallScore } from '@tennis-ai/shared';
 
 /**
- * v1-аппроксимация overall_score: равные веса, доля зелёных метрик.
- * Точные веса оригинала не восстановлены из AOT (DECISIONS §6.4) — сюда
- * портируется формула metrics_calculator.dart, когда она будет известна.
+ * v1 approximation of overall_score: equal weights, share of green metrics.
+ * The exact original weights were not recovered from AOT (DECISIONS §6.4) —
+ * the metrics_calculator.dart formula is ported here once it becomes known.
  */
 export function computeOverall(metrics: MetricEvaluation[]): OverallScore {
   let greens = 0;
@@ -23,7 +23,7 @@ export function computeOverall(metrics: MetricEvaluation[]): OverallScore {
   };
 }
 
-/** Слабые места: красные метрики, отсортированные по относительному выходу за диапазон. */
+/** Weaknesses: red metrics sorted by relative out-of-range deviation. */
 export function topWeaknesses(metrics: MetricEvaluation[], limit = 5): string[] {
   const score = (m: MetricEvaluation): number => {
     if (m.value === null) return 0;

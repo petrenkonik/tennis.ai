@@ -12,7 +12,7 @@ import com.rebuild.tennisai.core.model.StrokeType
 import com.rebuild.tennisai.core.model.Vec3
 
 /**
- * Границы фаз по индексам кадров: границы[i] = [from, to) для момента i (M0..M6).
+ * Phase boundaries by frame indices: boundaries[i] = [from, to) for moment i (M0..M6).
  */
 data class MomentBoundaries(val ranges: List<IntRange>) {
     operator fun get(m: Int) = ranges[m]
@@ -26,8 +26,8 @@ interface MomentDetector {
 }
 
 /**
- * Подача: опорные события — старт подброса (недоминантное запястье пошло вверх),
- * вершина подброса, контакт (пик скорости доминантного запястья выше плеч).
+ * Serve: anchor events — toss start (the non-dominant wrist moves up),
+ * toss apex, contact (peak dominant-wrist speed above the shoulders).
  */
 class ServeMomentDetector : MomentDetector {
 
@@ -45,19 +45,19 @@ class ServeMomentDetector : MomentDetector {
             if (i == 0) 0f else (tossY[i] - tossY[i - 1]) / dtSec(frames, i)
         }, 5)
 
-        // Старт подброса: устойчивое движение руки вверх (y уменьшается)
-        val thresh = -0.35f // кадра/сек в норм. координатах (y вниз)
+        // Toss start: sustained upward arm motion (y decreasing)
+        val thresh = -0.35f // frames/sec in normalized coordinates (y down)
         var tossStart = firstIdx(vyToss, 1) { it < thresh }
         if (tossStart < 0) tossStart = n / 3
 
-        // Вершина подброса: минимум y подбрасывающего запястья между стартом и 3/4 клипа
+        // Toss apex: minimum y of the tossing wrist between the start and 3/4 of the clip
         val apex = argmin(tossY, tossStart, (n * 3) / 4 + 1).coerceAtLeast(tossStart + 1)
 
-        // Контакт: максимум скорости бьющего запястья после вершины, при кисти выше плеч
+        // Contact: maximum hitting-wrist speed after the apex, with the wrist above the shoulders
         val speed = pointSpeed(frames) { hitWrist(it) }
         val contactWindowFrom = apex.coerceAtMost(n - 2)
         var contact = argmax(speed, contactWindowFrom, n)
-        // если пик скорости пришёлся низко (замах), ищем ближайший к верхнему сегменту
+        // if the speed peak landed low (backswing), search for the one closest to the upper segment
         if (contact < n - 1 && frames[contact].let { it.p(if (h == Handedness.RIGHT) Lm.RIGHT_WRIST else Lm.LEFT_WRIST).y } > yShoulder) {
             val highZone = (contactWindowFrom until n).filter { frames[it].p(if (h == Handedness.RIGHT) Lm.RIGHT_WRIST else Lm.LEFT_WRIST).y < yShoulder }
             if (highZone.isNotEmpty()) contact = argmax(speed, highZone.first(), (highZone.last() + 1).coerceAtMost(n))
@@ -85,8 +85,8 @@ class ServeMomentDetector : MomentDetector {
 }
 
 /**
- * Ударные (forehand/backhand): опорные события — сплит-шаг (расширение стоп),
- * замах (максимальный разворот плеч), контакт (пик скорости запястья), проводка.
+ * Groundstrokes (forehand/backhand): anchor events — split step (feet widening),
+ * takeback (maximum shoulder turn), contact (wrist speed peak), follow-through.
  */
 class GroundstrokeMomentDetector : MomentDetector {
 
@@ -98,20 +98,20 @@ class GroundstrokeMomentDetector : MomentDetector {
         val feetWidth = frames.map { it.p(Lm.LEFT_ANKLE).distTo(it.p(Lm.RIGHT_ANKLE)) }
         val fw = smooth(feetWidth, 5)
 
-        // Сплит-шаг: локальное расширение стоп в первой трети
+        // Split step: local feet-width expansion in the first third
         val firstThird = (n / 3).coerceAtLeast(2)
         val splitEnd = argmax(fw, 0, firstThird)
 
-        // Разворот плеч (unit turn): угол линии плеч относительно вертикали экрана,
-        // максимум до контакта
+        // Shoulder turn (unit turn): angle of the shoulder line relative to the screen vertical,
+        // maximum before contact
         val shoulderAngle = frames.map { tilt(it) }
         val sa = smooth(shoulderAngle, 5)
 
-        // Контакт: пик скорости бьющего запястья во второй половине
+        // Contact: peak hitting-wrist speed in the second half
         val speed = pointSpeed(frames) { hitWrist(it) }
         val contact = argmax(speed, splitEnd.coerceAtMost(n - 2), n).coerceAtLeast(splitEnd + 1)
 
-        // Замах: максимум разворота плеч до контакта
+        // Takeback: maximum shoulder turn before contact
         val takeback = argmax(sa, 0, contact)
 
         val readyEnd = (splitEnd * 0.5f).toInt().coerceAtLeast(1)
@@ -136,7 +136,7 @@ class GroundstrokeMomentDetector : MomentDetector {
         val dy = rs.y - ls.y
         val len = kotlin.math.sqrt(dx * dx + dy * dy)
         if (len < 1e-6f) return 0f
-        // угол линии плеч к горизонтали кадра
+        // angle of the shoulder line to the frame's horizontal
         return Math.toDegrees(kotlin.math.atan2(kotlin.math.abs(dy), kotlin.math.abs(dx)).toDouble()).toFloat()
     }
 }
@@ -146,5 +146,5 @@ fun detectorFor(stroke: StrokeType): MomentDetector = when (stroke) {
     else -> GroundstrokeMomentDetector()
 }
 
-/** Проверка, что точка «достаточно видимая» для метрики. */
+/** Checks that a point is "visible enough" for a metric. */
 fun Vec3.visible(vis: Float, min: Float = 0.35f) = vis >= min

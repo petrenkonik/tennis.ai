@@ -6,7 +6,7 @@ coverage/
 .env.local
 .DS_Store
 
-# Реверс-артефакты: тяжёлые бинарники не должны попадать в git
+# Reverse-engineering artifacts: heavy binaries must not be committed
 reference/apks/
 reference/rea-outputs/
 reference/extracted_assets/models/
@@ -14,10 +14,10 @@ reference/extracted_assets/models/
 *.so
 *.jdb2
 
-# Локальный инструментарий (Gradle-дистрибутив > лимита GitHub)
+# Local tooling (Gradle distribution exceeds the GitHub file-size limit)
 tools/
 
-# Android / Gradle сборка
+# Android / Gradle build outputs
 build/
 .gradle/
 local.properties

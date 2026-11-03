@@ -50,7 +50,7 @@ fun ResultsScreen(state: AppState, onAgain: () -> Unit) {
         return
     }
     val ru = state.lang == Lang.RU
-    var selected by remember { mutableIntStateOf(4) } // по умолчанию фаза контакта
+    var selected by remember { mutableIntStateOf(4) } // default is the contact phase
     val prefs = LocalContext.current.getSharedPreferences("profile", android.content.Context.MODE_PRIVATE)
 
     Column(
@@ -60,7 +60,7 @@ fun ResultsScreen(state: AppState, onAgain: () -> Unit) {
             .padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(12.dp),
     ) {
-        // Балл /100 (в оригинале: «a score out of 100, never a percentage»)
+        // Score /100 (in the original: "a score out of 100, never a percentage")
         Card(Modifier.fillMaxWidth(), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)) {
             Row(Modifier.padding(18.dp), verticalAlignment = Alignment.CenterVertically) {
                 Box(
@@ -77,13 +77,13 @@ fun ResultsScreen(state: AppState, onAgain: () -> Unit) {
                     Text(if (ru) "АНАЛИЗ ЗАВЕРШЁН" else "ANALYSIS COMPLETE", style = MaterialTheme.typography.titleLarge)
                     val reds = result.redMetrics.size
                     Text(
-                        // Правило оригинала: красный — вне диапазона лучших, зелёный — внутри
+                        // The original's rule: red is outside the best players' range, green is inside it
                         if (ru) "Красных метрик: $reds. Красный — вне диапазона лучших игроков, зелёный — внутри."
                         else "Red metrics: $reds. Red means outside the range the best players sit in, green means inside it.",
                         style = MaterialTheme.typography.bodyMedium,
                         color = MaterialTheme.colorScheme.onSurfaceVariant,
                     )
-                    // Награда оригинала: «You earned 150 XP and unlocked a new badge.»
+                    // The original's reward: "You earned 150 XP and unlocked a new badge."
                     Text(
                         "+150 XP 🏅",
                         style = MaterialTheme.typography.labelLarge,
@@ -94,7 +94,7 @@ fun ResultsScreen(state: AppState, onAgain: () -> Unit) {
             }
         }
 
-        // Фазы
+        // Phases
         Text(if (ru) "ФАЗЫ УДАРА" else "STROKE PHASES", style = MaterialTheme.typography.titleMedium)
         Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(6.dp)) {
             Moment.entries.forEachIndexed { i, m ->
@@ -109,7 +109,7 @@ fun ResultsScreen(state: AppState, onAgain: () -> Unit) {
                     "${moment.moment.key} · ${moment.moment.title(result.stroke, state.lang)}",
                     style = MaterialTheme.typography.titleLarge,
                 )
-                // «WHAT THIS MOMENT IS FOR»
+                // "WHAT THIS MOMENT IS FOR"
                 Text(
                     moment.moment.hint(result.stroke, state.lang),
                     style = MaterialTheme.typography.bodyMedium,

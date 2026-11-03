@@ -11,7 +11,7 @@ export const useAuthStore = defineStore('auth', () => {
   const quota = computed<QuotaState | null>(() => user.value?.quota ?? null);
   const isPro = computed(() => quota.value?.plan === 'pro');
 
-  /** Локальная разработка вне Telegram: VITE_DEV_OFFLINE=1 выдаёт мок-пользователя без API. */
+  /** Local development outside Telegram: VITE_DEV_OFFLINE=1 serves a mock user without the API. */
   const DEV_USER: UserDto = {
     id: 'dev-local',
     telegramId: 0,

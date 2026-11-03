@@ -1,7 +1,7 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { HydratedDocument } from 'mongoose';
 
-/** База знаний Axel (порт knowledge: домены biomechanics, tactics, fitness, mental, drills, coaching). */
+/** Axel knowledge base (port of knowledge: domains biomechanics, tactics, fitness, mental, drills, coaching). */
 @Schema({ collection: 'knowledge', timestamps: true })
 export class KnowledgeDoc {
   @Prop({ required: true })

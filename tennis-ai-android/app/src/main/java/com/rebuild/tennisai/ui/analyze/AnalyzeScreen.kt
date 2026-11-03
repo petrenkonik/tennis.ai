@@ -41,9 +41,9 @@ import com.rebuild.tennisai.data.FrameExtractor
 import kotlinx.coroutines.launch
 
 /**
- * Экран анализа видео: выбор клипа → проверки качества (как в оригинале) →
- * пайплайн «DETECTING KEYPOINTS → CALCULATING JOINT ANGLES → MAPPING TORSO
- * ROTATION → ANALYZING KNEE FLEXION → FINALIZING REPORT».
+ * Video analysis screen: clip pick → quality checks (as in the original) →
+ * the "DETECTING KEYPOINTS → CALCULATING JOINT ANGLES → MAPPING TORSO
+ * ROTATION → ANALYZING KNEE FLEXION → FINALIZING REPORT" pipeline.
  */
 @Composable
 fun AnalyzeScreen(state: AppState, onDone: () -> Unit) {
@@ -76,14 +76,14 @@ fun AnalyzeScreen(state: AppState, onDone: () -> Unit) {
 
     fun onVideoPicked(uri: Uri?) {
         if (uri == null) return
-        // --- Проверки клипа (тексты — дословно из оригинала) ---
+        // --- Clip checks (texts are verbatim from the original) ---
         val check = checkClip(context, uri)
         if (check != null) {
             error = check
             stage = null
             return
         }
-        // Рост игрока обязателен: база перевода нормализованных координат в сантиметры.
+        // Player height is required: the basis for converting normalized coordinates to centimeters.
         val saved = prefs.getInt("height_cm", 0)
         if (saved in 120..230) {
             playerHeightCm = saved.toFloat()
@@ -177,7 +177,7 @@ private fun strokeTitle(state: AppState): String {
     }
 }
 
-/** Проверки клипа с текстами оригинала. null — всё в порядке. */
+/** Clip checks with the original's texts. null means everything is fine. */
 private fun checkClip(context: android.content.Context, uri: Uri): String? {
     val r = MediaMetadataRetriever()
     return try {
@@ -188,13 +188,13 @@ private fun checkClip(context: android.content.Context, uri: Uri): String? {
         val durationMs = r.extractMetadata(MediaMetadataRetriever.METADATA_KEY_DURATION)?.toLongOrNull() ?: 0L
         val (pw, ph) = if (rot == 90 || rot == 270) h to w else w to h
         when {
-            // «The clip is in landscape: the PHONE was held horizontally while filming...»
+            // "The clip is in landscape: the PHONE was held horizontally while filming..."
             pw > ph -> "Клип в альбомной ориентации: телефон держали горизонтально. Анализ невозможен — снимите в портретном режиме. / The clip is in landscape: the PHONE was held horizontally while filming. Film again in portrait."
-            // «VIDEO TOO LOW QUALITY»
+            // "VIDEO TOO LOW QUALITY"
             ph < 480 -> "ВИДЕО СЛИШКОМ НИЗКОГО КАЧЕСТВА / VIDEO TOO LOW QUALITY"
-            // «The analysis needs a portrait frame; a square crop distorts the scale used to convert pixels to centimetres.»
+            // "The analysis needs a portrait frame; a square crop distorts the scale used to convert pixels to centimetres."
             ph < pw * 4 / 3 -> "Нужен вертикальный кадр: квадратный кроп искажает масштаб перевода пикселей в сантиметры. / The analysis needs a portrait frame; a square crop distorts the scale."
-            // ≤5 секунд в оригинале; допускаем до 8 с предупреждением ниже не делаем — просто отсекаем длинные
+            // ≤5 seconds in the original; we simply reject overly long clips without a separate warning
             durationMs > 12_000 -> "Слишком длинный клип: один удар, до 5 секунд, можно обрезать на следующем экране. / Make sure the video is max 5 seconds. You can trim it on the next screen."
             else -> null
         }
@@ -221,7 +221,7 @@ private suspend fun runAnalysis(
         )
     }
     if (frames.size < 8) {
-        // «SUBJECT IN FRAME» — игрок не распознан
+        // "SUBJECT IN FRAME" — the player was not recognized
         throw IllegalStateException(
             if (ru) "ИГРОК НЕ В КАДРЕ. Снимите так, чтобы всё тело было видно с бокового ракурса."
             else "SUBJECT IN FRAME. Film from the side with the full body visible."

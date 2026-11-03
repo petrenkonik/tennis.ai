@@ -1,6 +1,6 @@
 <template>
   <div class="screen full" style="display: flex; flex-direction: column">
-    <!-- Шапка (CLONE_SPEC §2.2) -->
+    <!-- Header (CLONE_SPEC §2.2) -->
     <div class="row" style="padding: 10px 14px; gap: 8px">
       <Icon name="sparkles" :size="22" :style="{ color: 'var(--accent)' }" />
       <span style="font-size: 22px; font-weight: 700">Axel</span>
@@ -20,7 +20,7 @@
         {{ app.voiceModeAuto ? tt('auto') : tt('manual') }}
       </span>
       <span class="grow"></span>
-      <!-- Speaker: нативный TTS вкл/выкл (в оригинале — голос Axel; тут speechSynthesis WebView) -->
+      <!-- Speaker: native TTS on/off (in the original — Axel's voice; here the WebView's speechSynthesis) -->
       <Icon
         name="volume"
         :size="22"
@@ -46,7 +46,7 @@
       <Icon name="arrow-down" :size="24" :style="{ color: 'var(--text-secondary)' }" @click="router.back()" />
     </div>
 
-    <!-- Idle: голограф + «Meet Axel AI» + подсказки 2×2 -->
+    <!-- Idle: hologram + "Meet Axel AI" + 2×2 suggestions -->
     <div v-if="messages.length === 0" style="flex: 1; overflow-y: auto; padding-bottom: 12px">
       <div style="padding: 0 20px">
         <svg class="hologram" viewBox="0 0 300 300" style="height: 300px" aria-hidden="true">
@@ -57,7 +57,7 @@
             </radialGradient>
           </defs>
           <circle cx="150" cy="160" r="125" fill="url(#holo-glow)" />
-          <!-- голова + волосы -->
+          <!-- head + hair -->
           <circle cx="150" cy="88" r="25" fill="none" stroke="#5ce8c8" stroke-width="2.2" stroke-linecap="round" />
           <path
             d="M126 80 a25 25 0 0 1 48 0"
@@ -67,10 +67,10 @@
             stroke-width="5"
             stroke-linecap="round"
           />
-          <!-- шея -->
+          <!-- neck -->
           <path d="M143 113 v12" stroke="#5ce8c8" stroke-width="2.2" stroke-linecap="round" />
           <path d="M157 113 v12" stroke="#5ce8c8" stroke-width="2.2" stroke-linecap="round" />
-          <!-- плечи и торс (поло) -->
+          <!-- shoulders and torso (polo) -->
           <path
             d="M136 128 L164 128 L182 140 Q196 152 194 262 L106 262 Q104 152 118 140 Z"
             fill="none"
@@ -79,10 +79,10 @@
             stroke-width="2.2"
             stroke-linecap="round"
           />
-          <!-- воротник поло -->
+          <!-- polo collar -->
           <path d="M150 130 L132 148" stroke="#5ce8c8" stroke-width="2.4" stroke-linecap="round" />
           <path d="M150 130 L168 148" stroke="#5ce8c8" stroke-width="2.4" stroke-linecap="round" />
-          <!-- частицы на торсе -->
+          <!-- particles on the torso -->
           <circle cx="128" cy="180" r="2.4" fill="#5ce8c8" fill-opacity="0.6" />
           <circle cx="168" cy="200" r="1.8" fill="#5ce8c8" fill-opacity="0.5" />
           <circle cx="150" cy="225" r="2.6" fill="#5ce8c8" fill-opacity="0.55" />
@@ -117,7 +117,7 @@
       </div>
     </div>
 
-    <!-- Переписка: пузыри (пользователь — accent справа, Axel — #1B1B1D слева) -->
+    <!-- Conversation: bubbles (user — accent on the right, Axel — #1B1B1D on the left) -->
     <div v-else ref="chatEl" style="flex: 1; overflow-y: auto; padding: 6px 14px; display: flex; flex-direction: column; gap: 8px">
       <div v-for="(m, i) in messages" :key="i" class="bubble" :class="m.role === 'user' ? 'user' : 'coach'">
         {{ m.text }}
@@ -127,7 +127,7 @@
 
     <div v-if="error" style="padding: 0 16px 6px; color: var(--stop-red); font-size: 12px">{{ error }}</div>
 
-    <!-- Нижняя панель: Record/Upload · input · Speak/Send -->
+    <!-- Bottom bar: Record/Upload · input · Speak/Send -->
     <div class="row" style="background: var(--bar); padding: 8px 10px; gap: 8px; align-items: flex-end">
       <LabeledCircle :label="tt('record')" icon="videocam" @click="router.push('/record')" />
       <LabeledCircle :label="tt('upload')" icon="upload" @click="router.push('/record')" />
@@ -151,7 +151,7 @@
       <LabeledCircle :label="tt('send')" icon="send" filled @click="send()" />
     </div>
 
-    <!-- Тост (аналог Toast в клоне) -->
+    <!-- Toast (analogous to Toast in the clone) -->
     <div
       v-if="toast"
       style="
@@ -190,7 +190,7 @@ const app = useAppStore();
 
 const tt = (key: string) => t(app.lang, key);
 
-// CLONE_SPEC §2.2 — карточки-подсказки оригинала (тексты из REA; обрезанные на скриншотах дополнены)
+// CLONE_SPEC §2.2 — the original's suggestion cards (texts from REA; the ones cropped in the screenshots were completed)
 const SUGGESTIONS = ['s1_title', 's2_title', 's3_title', 's4_title'] as const;
 const suggestionRows: string[][] = [SUGGESTIONS.slice(0, 2), SUGGESTIONS.slice(2)];
 
@@ -232,7 +232,7 @@ watch(
   },
 );
 
-/** Красный stop: отменяет текущий запрос и заглушает речь (как job?.cancel() в клоне). */
+/** Red stop: cancels the current request and silences speech (like job?.cancel() in the clone). */
 function stop(): void {
   stopSpeaking();
   if (busy.value) {
@@ -250,7 +250,7 @@ function toggleTts(): void {
   if (!app.ttsOn) stopSpeaking();
 }
 
-/** Навигация Axel: destination из navigate() → роут мини-аппа. */
+/** Axel navigation: destination from navigate() → mini app route. */
 const DESTINATION_ROUTES: Record<string, string> = {
   home: '/',
   record: '/record',
@@ -275,7 +275,7 @@ function applyActions(actions: ClientAction[]): void {
       }
       case 'analyze_video':
       case 'start_live': {
-        // mode: camera | gallery обрабатывается на RecordView; strokeType прокидываем query-параметром.
+        // mode: camera | gallery is handled on RecordView; strokeType is passed as a query parameter.
         const stroke = typeof a.args.strokeType === 'string' ? (a.args.strokeType as StrokeType) : '';
         void router.push(stroke ? `/record?stroke=${stroke}` : '/record');
         break;
@@ -316,7 +316,7 @@ async function send(text = draft.value): Promise<void> {
       },
     );
     messages.value.push({ role: 'coach', text: res.reply });
-    // Озвучка ответа нативным TTS (speaker on — как голос Axel в оригинале).
+    // Voice the reply with native TTS (speaker on — like Axel's voice in the original).
     if (app.ttsOn) speak(res.reply, app.lang);
     applyActions(res.actions ?? []);
   } catch (e) {
@@ -329,7 +329,7 @@ async function send(text = draft.value): Promise<void> {
   }
 }
 
-/** Круглая кнопка с подписью (AxelScreen.LabeledCircle). */
+/** Round button with a label (AxelScreen.LabeledCircle). */
 const LabeledCircle = defineComponent({
   name: 'LabeledCircle',
   props: {

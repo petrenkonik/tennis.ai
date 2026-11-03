@@ -5,7 +5,7 @@
     </TopBar>
 
     <div style="padding: 16px; display: flex; flex-direction: column; gap: 14px">
-      <!-- Ambassador Program (cardAccent, €0 справа) -->
+      <!-- Ambassador Program (cardAccent, €0 on the right) -->
       <AppCard accent :radius="20">
         <div class="row" style="padding: 16px; gap: 14px">
           <div
@@ -31,7 +31,7 @@
         </div>
       </AppCard>
 
-      <!-- 2×2 инфо-чипы (значения из профиля — как в оригинале) -->
+      <!-- 2×2 info chips (values from the profile — as in the original) -->
       <div class="row" style="gap: 14px; align-items: stretch">
         <InfoChip icon="bars" :label="`${tt('level')}: ${skillLabel(app.skill, app.lang)}`" class="grow" />
         <InfoChip icon="clock" :label="expShort(app.experience, app.lang)" class="grow" />
@@ -41,8 +41,8 @@
         <InfoChip icon="trend" :label="`${tt('progress')}: ${app.progress}%`" class="grow" />
       </div>
 
-      <!-- Free Plan; в TMA карточка ведёт на Stars-пейволл (осознанное отклонение от клона:
-           у Mini App есть реальные платежи, CLONE_SPEC §2.6 → /paywall) -->
+      <!-- Free Plan; in the TMA the card leads to the Stars paywall (a deliberate deviation from the clone:
+           the Mini App has real payments, CLONE_SPEC §2.6 → /paywall) -->
       <AppCard clickable :radius="20" @click="router.push('/paywall')">
         <div style="padding: 16px">
           <div class="row">
@@ -92,7 +92,7 @@
       </AppCard>
     </div>
 
-    <!-- Диалог выбора языка: RU (по умолчанию) / EN -->
+    <!-- Language selection dialog: RU (default) / EN -->
     <div
       v-if="showLang"
       style="
@@ -160,7 +160,7 @@ const tt = (key: string) => t(app.lang, key);
 const showLang = ref(false);
 const quotaPro = computed(() => auth.quota?.plan === 'pro');
 
-/** Мини-чип профиля (ProfileScreens.InfoChip): accent-иконка + текст 14px. */
+/** Profile mini-chip (ProfileScreens.InfoChip): accent icon + 14px text. */
 const InfoChip = defineComponent({
   name: 'InfoChip',
   props: { icon: { type: String, required: true }, label: { type: String, required: true } },

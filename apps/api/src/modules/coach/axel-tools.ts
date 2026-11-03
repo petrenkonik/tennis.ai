@@ -1,10 +1,10 @@
 /**
- * Axel-коуч: function-calling инструментарий, восстановленный из Dart AOT
- * оригинала дословно (reference/dart-aot-recovery/AXEL_RECOVERY.md — offset'ы
- * указаны там же). Формат — OpenAI/GLM tools: { type: 'function', function }.
+ * Axel coach: function-calling toolset recovered verbatim from the original
+ * Dart AOT (reference/dart-aot-recovery/AXEL_RECOVERY.md — the offsets are
+ * listed there too). Format — OpenAI/GLM tools: { type: 'function', function }.
  *
- * execution: 'server' — исполняется в CoachService; 'client' — возвращается
- * мини-аппу как действие (navigate/analyze/voice/…).
+ * execution: 'server' — executed in CoachService; 'client' — returned to the
+ * mini app as an action (navigate/analyze/voice/…).
  */
 export type AxelToolExecution = 'server' | 'client';
 
@@ -17,7 +17,7 @@ export interface AxelTool {
   };
 }
 
-/** Дословные описания из снапшота — сокращения помечены «…». */
+/** Verbatim descriptions from the snapshot — omissions are marked with “…” */
 export const AXEL_TOOLS: AxelTool[] = [
   {
     execution: 'client',
@@ -294,6 +294,6 @@ export const AXEL_TOOLS: AxelTool[] = [
   },
 ];
 
-/** Системная вставка, если модель выдала вызов текстом вместо tool_call (из снапшота). */
+/** System nudge for when the model emitted a call as text instead of a tool_call (from the snapshot). */
 export const TOOL_CALL_NUDGE =
   '[SYSTEM: you just WROTE a tool call as text instead of emitting it. Nothing ran, and nothing opened. Emit the real function call now. Do not describe it, do not tell the player it is done.]';

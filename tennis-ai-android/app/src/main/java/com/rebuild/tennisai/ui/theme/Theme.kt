@@ -10,7 +10,7 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 
-// Палитра клона — снята со скриншотов оригинала (docs/CLONE_SPEC.md §1.1)
+// Clone palette — sampled from the original's screenshots (docs/CLONE_SPEC.md §1.1)
 val Bg = Color(0xFF050505)
 val Bar = Color(0xFF0A0A0A)
 val Hairline = Color(0xFF1F1F22)
@@ -31,7 +31,7 @@ val CoachOrange = Color(0xFFF0793D)
 val StopRed = Color(0xFFEB4B3B)
 val HoloTeal = Color(0xFF5CE8C8)
 
-// Алиасы для экранов анализа (Results/Live/Analyze)
+// Aliases for the analysis screens (Results/Live/Analyze)
 val RedFault = StopRed
 val GreenGood = Color(0xFF3FD97F)
 
@@ -58,7 +58,7 @@ val AppTypography = Typography(
     labelLarge = TextStyle(fontWeight = FontWeight.SemiBold, fontSize = 14.sp),
 )
 
-// Три регистра типографики оригинала (CLONE_SPEC §1.2)
+// The original's three typography registers (CLONE_SPEC §1.2)
 val SerifDisplay = TextStyle(
     fontFamily = FontFamily.Serif,
     fontWeight = FontWeight.Bold,

@@ -1,6 +1,6 @@
 import { createHmac, timingSafeEqual } from 'node:crypto';
 
-// Верификация initData Telegram Mini App по официальной схеме:
+// Verification of the Telegram Mini App initData per the official scheme:
 // secret_key = HMAC_SHA256(key="WebAppData", data=bot_token)
 // hash       = HMAC_SHA256(key=secret_key, data=data_check_string)
 // https://core.telegram.org/bots/webapps#validating-data-received-via-the-mini-app
@@ -29,7 +29,7 @@ export function validateInitData(initData: string, botToken: string, maxAgeSec =
   const hash = params.get('hash');
   if (!hash) return { ok: false, reason: 'hash missing' };
   params.delete('hash');
-  // signature ( Bot API 7.10+, для валидации третьими сторонами ) не участвует в data_check_string
+  // signature ( Bot API 7.10+, for third-party validation ) does not participate in data_check_string
   params.delete('signature');
 
   const dataCheckString = [...params.entries()]

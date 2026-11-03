@@ -2,15 +2,15 @@ import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { HydratedDocument } from 'mongoose';
 
 /**
- * Порт коллекции `metric_definitions` оригинала: пороги/описания/тексты поправок,
- * редактируемые без выкладки клиента. Источник по умолчанию — packages/shared metrics.json.
+ * Port of the original `metric_definitions` collection: thresholds/descriptions/correction
+ * texts, editable without shipping a client release. Default source — packages/shared metrics.json.
  */
 @Schema({ collection: 'metric_definitions', timestamps: true })
 export class MetricDefinitionDoc {
   @Prop({ required: true, unique: true, index: true })
   code!: string;
 
-  /** Полное определение метрики из @tennis-ai/shared (MetricDefinition). */
+  /** Full metric definition from @tennis-ai/shared (MetricDefinition). */
   @Prop({ type: Object, required: true })
   definition!: Record<string, unknown>;
 }

@@ -30,7 +30,7 @@ export class User {
   @Prop({ default: 0 })
   currentStreak!: number;
 
-  /** Счётчики квот (порт quota_service: 9 видеоанализов lifetime / 20 real-time сессий для free). */
+  /** Quota counters (port of quota_service: 9 lifetime video analyses / 20 real-time sessions for free). */
   @Prop({ type: Object, default: {} })
   quotaCounters!: { lifetimeAnalyses?: number; realTimeSessions?: number };
 }

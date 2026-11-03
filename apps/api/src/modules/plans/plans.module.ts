@@ -28,7 +28,7 @@ export class PlansController {
     return this.plans.activeForUser(u.sub);
   }
 
-  /** POST /api/plans — собрать план по weaknesses анализа (порт trainingPlanAgent, серверная v0-логика). */
+  /** POST /api/plans — build a plan from analysis weaknesses (port of trainingPlanAgent, server-side v0 logic). */
   @Post()
   create(@CurrentUser() u: JwtPayload, @Body() dto: CreatePlanDto) {
     return this.plans.createFromAnalysis(u.sub, dto.analysisId);
@@ -58,7 +58,7 @@ export class PlansService {
 
     const weaknesses: string[] = analysis.topWeaknesses ?? [];
     const pool = await this.drills.recommended(userId, analysisId);
-    // v0: одна неделя на каждое слабое место (максимум 4), drills матчатся по targetMetrics.
+    // v0: one week per weakness (max 4), drills are matched by targetMetrics.
     const weeks = weaknesses.slice(0, 4).map((metric) => ({
       focus: metric,
       drillSlugs: pool.filter((d) => d.targetMetrics.includes(metric)).map((d) => d.slug).slice(0, 3),

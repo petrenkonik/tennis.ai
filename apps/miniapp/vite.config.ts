@@ -6,7 +6,7 @@ export default defineConfig({
   server: { port: 5173, host: true },
   build: {
     target: 'es2022',
-    // MediaPipe/YOLO-модели и воркер грузятся отдельно, чанками
+    // MediaPipe/YOLO models and the worker are loaded separately, as chunks
     rollupOptions: {
       output: {
         manualChunks: {

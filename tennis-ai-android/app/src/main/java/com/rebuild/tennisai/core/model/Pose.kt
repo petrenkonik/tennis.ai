@@ -1,8 +1,8 @@
 package com.rebuild.tennisai.core.model
 
 /**
- * BlazePose (MediaPipe Pose Landmarker) — 33 точки.
- * Координаты нормализованы [0..1], y направлен вниз (как в изображении).
+ * BlazePose (MediaPipe Pose Landmarker) — 33 landmarks.
+ * Coordinates are normalized to [0..1]; y points down (as in image space).
  */
 data class Vec3(val x: Float, val y: Float, val z: Float = 0f) {
     operator fun minus(o: Vec3) = Vec3(x - o.x, y - o.y, z - o.z)
@@ -36,7 +36,7 @@ enum class Lm(val idx: Int) {
     LEFT_FOOT_INDEX(31), RIGHT_FOOT_INDEX(32);
 }
 
-/** Один кадр позы. tMillis — время от начала клипа. visibility 0..1. */
+/** A single pose frame. tMillis is the time from the start of the clip. visibility 0..1. */
 data class PoseFrame(
     val tMillis: Long,
     val points: Array<Vec3>,   // size == 33
@@ -49,7 +49,7 @@ data class PoseFrame(
     val shoulderMid: Vec3 get() = (p(Lm.LEFT_SHOULDER) + p(Lm.RIGHT_SHOULDER)) * 0.5f
     val hipMid: Vec3 get() = (p(Lm.LEFT_HIP) + p(Lm.RIGHT_HIP)) * 0.5f
 
-    /** Ширина плеч в нормализованных координатах — базовая единица масштаба. */
+    /** Shoulder width in normalized coordinates — the base scale unit. */
     val shoulderWidth: Float get() = p(Lm.LEFT_SHOULDER).distTo(p(Lm.RIGHT_SHOULDER))
 
     override fun equals(other: Any?): Boolean =
@@ -64,7 +64,7 @@ data class BBox(val minX: Float, val minY: Float, val maxX: Float, val maxY: Flo
     val centerY get() = (minY + maxY) / 2f
 }
 
-/** Доминантная рука игрока. */
+/** The player's dominant hand. */
 enum class Handedness { RIGHT, LEFT;
 
     fun dom(side: Side): Side = if (this == RIGHT) side else side.flip()
@@ -75,7 +75,7 @@ enum class Side { LEFT, RIGHT;
     fun flip() = if (this == LEFT) RIGHT else LEFT
 }
 
-/** Доступ к точкам с учётом доминантной руки: player.dom(Side.RIGHT).lm(frame) */
+/** Landmark access accounting for the dominant hand: player.dom(Side.RIGHT).lm(frame) */
 data class SideRef(val side: Side) {
     fun shoulder() = if (side == Side.LEFT) Lm.LEFT_SHOULDER else Lm.RIGHT_SHOULDER
     fun elbow() = if (side == Side.LEFT) Lm.LEFT_ELBOW else Lm.RIGHT_ELBOW

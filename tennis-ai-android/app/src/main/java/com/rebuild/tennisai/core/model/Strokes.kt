@@ -1,6 +1,6 @@
 package com.rebuild.tennisai.core.model
 
-/** Тип движения, которое анализируем. */
+/** The type of stroke being analyzed. */
 enum class StrokeType(val id: String) {
     SERVE("serve"),
     FOREHAND("forehand"),
@@ -12,9 +12,9 @@ enum class StrokeType(val id: String) {
 }
 
 /**
- * Фазы удара M0..M6 (как в оригинале).
- * Для подачи: Ready, Stance, Toss&Backswing, Loading/Trophy, Extension, Contact, Recovery.
- * Для ударных: Ready, Split Step, Footwork/Unit Turn, Drive/Load, Contact, Follow-Through, Recovery.
+ * Stroke phases M0..M6 (as in the original).
+ * Serve: Ready, Stance, Toss&Backswing, Loading/Trophy, Extension, Contact, Recovery.
+ * Groundstrokes: Ready, Split Step, Footwork/Unit Turn, Drive/Load, Contact, Follow-Through, Recovery.
  */
 enum class Moment(val key: String) {
     M0("M0"), M1("M1"), M2("M2"), M3("M3"), M4("M4"), M5("M5"), M6("M6");

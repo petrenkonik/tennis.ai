@@ -16,7 +16,7 @@ export class UploadsController {
 
   /**
    * POST /api/uploads/presign — presigned PUT (DECISIONS §7.3).
-   * Клиент льёт файл напрямую в S3-совместимое хранилище; API только выдаёт ключи.
+   * The client uploads the file directly to S3-compatible storage; the API only issues keys.
    */
   @Post('presign')
   async presign(@Body() dto: PresignDto, @CurrentUser() u: JwtPayload) {

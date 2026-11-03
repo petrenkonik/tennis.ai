@@ -6,7 +6,7 @@ import { User, UserSchema } from '../../common/schemas/user.schema';
 import { AuthController } from './auth.controller';
 import { AuthService } from './auth.service';
 
-// global: true — JwtService нужен guard'у и WS-шлюзу по всему приложению.
+// global: true — JwtService is needed by the guard and the WS gateway throughout the app.
 @Global()
 @Module({
   imports: [

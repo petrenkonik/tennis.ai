@@ -15,7 +15,7 @@ export class AuthService {
     @InjectModel(User.name) private readonly users: Model<UserDocument>,
   ) {}
 
-  /** initData → верификация HMAC токеном бота → upsert пользователя → JWT. */
+  /** initData → HMAC verification with the bot token → user upsert → JWT. */
   async login(dto: TelegramAuthDto): Promise<{ accessToken: string; user: UserDocument }> {
     const validation = validateInitData(dto.initData, Env.botToken());
     if (!validation.ok || !validation.user) {

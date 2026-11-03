@@ -12,12 +12,12 @@ import com.rebuild.tennisai.core.model.Lang
 import com.rebuild.tennisai.core.model.StrokeType
 import org.json.JSONObject
 
-/** Уровень игрока (чипы SKILL LEVEL в Edit Profile). */
+/** Player level (SKILL LEVEL chips in Edit Profile). */
 enum class SkillLevel(val label: String) {
     BEGINNER("Beginner"), INTERMEDIATE("Intermediate"), ADVANCED("Advanced"), PROFESSIONAL("Professional");
 }
 
-/** Опыт игры (YEARS OF EXPERIENCE). */
+/** Playing experience (YEARS OF EXPERIENCE). */
 enum class Experience(val label: String, val short: String) {
     UNDER_1("< 1 year", "New player"),
     Y1_3("1-3 years", "1-3 years"),
@@ -26,14 +26,14 @@ enum class Experience(val label: String, val short: String) {
     Y10_PLUS("10+ years", "10+ years");
 }
 
-/** Основная цель (MAIN GOAL). */
+/** Main goal (MAIN GOAL). */
 enum class MainGoal(val label: String) {
     IMPROVE("Improve"), COMPETE("Compete"), FITNESS("Fitness"), FUN("Fun"), PROFESSIONAL("Professional");
 }
 
 /**
- * Общее состояние приложения: выбранный удар, рука, язык, последний результат анализа,
- * профиль игрока и настройки — всё, что видно на экранах оригинала (CLONE_SPEC §4).
+ * Global app state: selected stroke, handedness, language, the latest analysis result,
+ * player profile and settings — everything visible on the original screens (CLONE_SPEC §4).
  */
 class AppState(app: Application) : AndroidViewModel(app) {
 
@@ -45,7 +45,7 @@ class AppState(app: Application) : AndroidViewModel(app) {
 
     var videoUri by mutableStateOf<android.net.Uri?>(null)
 
-    // --- Профиль (Edit Profile / My Profile) ---
+    // --- Profile (Edit Profile / My Profile) ---
     var name by mutableStateOf("")
     var heightCm by mutableStateOf("")
     var age by mutableStateOf("")
@@ -56,13 +56,13 @@ class AppState(app: Application) : AndroidViewModel(app) {
     var goal by mutableStateOf(MainGoal.IMPROVE)
     var progress by mutableStateOf(78)
 
-    // --- Настройки (My Profile / Settings) ---
+    // --- Settings (My Profile / Settings) ---
     var pushOn by mutableStateOf(true)
     var aiTipsOn by mutableStateOf(true)
     var emailOn by mutableStateOf(true)
-    var voiceModeAuto by mutableStateOf(false) // чип Auto/Manual в Axel
+    var voiceModeAuto by mutableStateOf(false) // Auto/Manual chip in Axel
 
-    // --- Счётчики дашборда ---
+    // --- Dashboard counters ---
     var sessions by mutableStateOf(0)
     var plans by mutableStateOf(0)
     var messages by mutableStateOf(0)
@@ -72,7 +72,7 @@ class AppState(app: Application) : AndroidViewModel(app) {
 
     init {
         val p = prefs
-        lang = if (p.getString("lang", "RU") == "EN") Lang.EN else Lang.RU // русский — по умолчанию
+        lang = if (p.getString("lang", "RU") == "EN") Lang.EN else Lang.RU // Russian is the default
         name = p.getString("name", "") ?: ""
         heightCm = p.getString("heightCm", "") ?: ""
         age = p.getString("age", "") ?: ""
@@ -92,11 +92,11 @@ class AppState(app: Application) : AndroidViewModel(app) {
         students = p.getInt("students", 0)
     }
 
-    /** Пересчёт «Progress: N%» — заполненность 9 полей профиля (CLONE_SPEC §2.6). */
+    /** Recomputes "Progress: N%" — based on how many of the 9 profile fields are filled (CLONE_SPEC §2.6). */
     fun recomputeProgress() {
         val fields = listOf(
             name.isNotBlank(), heightCm.isNotBlank(), age.isNotBlank(), weightKg.isNotBlank(),
-            true, true, true, true, true, // skill/experience/hand/goal + предустановка
+            true, true, true, true, true, // skill/experience/hand/goal + preset values
         )
         progress = (fields.count { it } * 100 / 9).coerceIn(0, 100)
     }
@@ -131,7 +131,7 @@ class AppState(app: Application) : AndroidViewModel(app) {
         prefs.edit().putInt("sessions", sessions).apply()
     }
 
-    /** Профиль для системного промпта Axel (axel_profile в SharedPreferences AxelBrain). */
+    /** Profile for the Axel system prompt (axel_profile in AxelBrain's SharedPreferences). */
     fun toAxelProfileJson(): JSONObject = JSONObject()
         .put("firstName", name)
         .put("level", skill.name.lowercase())

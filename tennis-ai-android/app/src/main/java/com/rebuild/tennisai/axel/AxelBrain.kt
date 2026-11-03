@@ -7,7 +7,7 @@ import com.rebuild.tennisai.core.model.StrokeType
 import org.json.JSONArray
 import org.json.JSONObject
 
-/** Действие для UI приложения (инструменты стороны клиента из реверса). */
+/** Action for the app UI (client-side tools recovered from the reverse engineering). */
 sealed class AxelAction {
     data class Navigate(val route: String) : AxelAction()
     data class AnalyzeVideo(val stroke: StrokeType?) : AxelAction()
@@ -18,8 +18,8 @@ sealed class AxelAction {
 data class AxelTurn(val reply: String, val actions: List<AxelAction>)
 
 /**
- * «Мозг» Axel на GLM: инструменты восстановлены дословно из Dart AOT оригинала
- * (reference/dart-aot-recovery/AXEL_RECOVERY.md). Локальные данные — SharedPreferences.
+ * Axel's "brain" on GLM: tools restored verbatim from the original's Dart AOT
+ * (reference/dart-aot-recovery/AXEL_RECOVERY.md). Local data lives in SharedPreferences.
  */
 class AxelBrain(
     private val prefs: SharedPreferences,
@@ -174,7 +174,7 @@ Current player profile: $profile
         JSONObject()
     }
 
-    /** Полный диалоговый цикл с вызовом инструментов. history — предыдущие реплики без системного промпта. */
+    /** Full tool-calling dialogue loop. history holds the previous turns, without the system prompt. */
     suspend fun respond(config: GlmConfig, history: List<Pair<String, String>>, userMessage: String): AxelTurn {
         val messages = JSONArray().put(JSONObject().put("role", "system").put("content", systemPrompt()))
         for ((role, content) in history) {
@@ -236,7 +236,7 @@ Current player profile: $profile
 
     private fun execute(args: JSONObject, name: String, actions: MutableList<AxelAction>): JSONObject {
         if (name != "record_correction" && name != "get_player_profile") {
-            // Память коуча: контекст прошлых советов доступен модели через профиль.
+            // Coaching memory: context of past advice is available to the model via the profile.
         }
         return when (name) {
             "analyze_video" -> {
@@ -294,7 +294,7 @@ Current player profile: $profile
                 JSONObject().put("ok", true)
             }
             "fetch_recommended_drills" -> {
-                // Библиотеки drills в офлайн-сборке нет — честный ответ (как в оригинале: "No drills available").
+                // No drill library in the offline build — answer honestly (as in the original: "No drills available").
                 val ctx = lastAnalysis()
                 JSONObject()
                     .put("drills", JSONArray())

@@ -1,7 +1,7 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { HydratedDocument } from 'mongoose';
 
-/** Сессия анализа (порт analyses из оригинала: strokeType, моменты M0–M6, метрики green/red, overall_score). */
+/** Analysis session (port of the original analyses: strokeType, moments M0–M6, green/red metrics, overall_score). */
 @Schema({ collection: 'analyses', timestamps: true })
 export class Analysis {
   @Prop({ required: true, index: true })
@@ -16,7 +16,7 @@ export class Analysis {
   @Prop({ type: Object, default: {} })
   videos!: { original?: string; compressed?: string; annotated?: string };
 
-  /** Окно трима из VIDEO PREVIEW (порт _previewTrim оригинала); null = клип не тримилен. */
+  /** Trim window from VIDEO PREVIEW (port of the original _previewTrim); null = clip not trimmed. */
   @Prop({ type: Number, default: null })
   trimStartSec!: number | null;
 

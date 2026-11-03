@@ -10,8 +10,8 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
 /**
- * Извлечение кадров из видео и перевод их в позы.
- * Для клипов ≤5 c @ 30fps берём каждый кадр до MAX_FRAMES.
+ * Extracts frames from a video and converts them to poses.
+ * For clips ≤5 s @ 30fps, every frame is taken up to MAX_FRAMES.
  */
 class FrameExtractor(private val context: Context) {
 
@@ -33,7 +33,7 @@ class FrameExtractor(private val context: Context) {
             val step = if (totalFrames <= maxFrames) 1f else totalFrames.toFloat() / maxFrames
             val count = (totalFrames / step).toInt().coerceAtMost(maxFrames)
 
-            val engine = PoseEngine.create(context, preferGpu = false) // батч: CPU надёжнее в фоне
+            val engine = PoseEngine.create(context, preferGpu = false) // batch: CPU is more reliable in the background
             val out = ArrayList<PoseFrame>(count)
             try {
                 for (i in 0 until count) {

@@ -7,10 +7,10 @@ import com.rebuild.tennisai.core.model.Handedness
 import com.rebuild.tennisai.core.model.Lang
 
 /**
- * Строки интерфейса клона. EN — дословно из оригинального `reference/extracted_assets/en.json`
- * (реверс APK v2.0.19); RU — перевод (язык по умолчанию).
- * НЕизвестный ключ возвращается как есть — так в оригинале выглядели невыровненные
- * i18n-ключи («track_progression», «no_data», «record_first_video», «manage_students_perf»).
+ * UI strings of the clone. EN is verbatim from the original `reference/extracted_assets/en.json`
+ * (APK v2.0.19 reverse engineering); RU is a translation (the default language).
+ * An unknown key is returned as-is — that is how misaligned i18n keys looked in the original
+ * ("track_progression", "no_data", "record_first_video", "manage_students_perf").
  */
 object T {
     fun t(lang: Lang, key: String): String = when (lang) {

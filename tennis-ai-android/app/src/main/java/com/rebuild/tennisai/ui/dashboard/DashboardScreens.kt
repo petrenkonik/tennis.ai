@@ -60,7 +60,7 @@ import com.rebuild.tennisai.ui.theme.TextDim
 import com.rebuild.tennisai.ui.theme.TextPrimary
 import com.rebuild.tennisai.ui.theme.TextSecondary
 
-/** SELECT DASHBOARD (CLONE_SPEC §2.3) — без bottom nav, серифный заголовок со свечением. */
+/** SELECT DASHBOARD (CLONE_SPEC §2.3) — no bottom nav, glowing serif title. */
 @Composable
 fun SelectDashboardScreen(lang: Lang, onPlayer: () -> Unit, onCoach: () -> Unit, onBack: () -> Unit) {
     Column(
@@ -87,7 +87,7 @@ fun SelectDashboardScreen(lang: Lang, onPlayer: () -> Unit, onCoach: () -> Unit,
         DashboardChoice(
             icon = Icons.Outlined.Person,
             title = T.t(lang, "coach_dashboard"),
-            subtitle = "manage_students_perf", // невыровненный ключ оригинала — дословно
+            subtitle = "manage_students_perf", // the original's misaligned key — verbatim
             onClick = onCoach,
         )
         Spacer(Modifier.weight(1f))
@@ -125,7 +125,7 @@ private fun DashboardChoice(icon: ImageVector, title: String, subtitle: String, 
     }
 }
 
-/** Общий каркас дашбордов (CLONE_SPEC §2.4/§2.5). */
+/** Shared dashboard scaffold (CLONE_SPEC §2.4/§2.5). */
 @Composable
 private fun DashboardScaffold(
     topIcon: ImageVector,
@@ -238,7 +238,7 @@ fun PlayerDashboardScreen(state: AppState, onAxel: () -> Unit) {
         topIcon = Icons.Outlined.Public,
         topTitle = "AXEL AI",
         title = T.t(l, "my_dashboard"),
-        subtitle = "track_progression", // невыровненный ключ оригинала — дословно
+        subtitle = "track_progression", // the original's misaligned key — verbatim
         fab = { AxelFab(onClick = onAxel, modifier = Modifier.align(Alignment.BottomEnd).padding(end = 20.dp, bottom = 104.dp)) },
     ) {
         Row(horizontalArrangement = Arrangement.spacedBy(14.dp)) {

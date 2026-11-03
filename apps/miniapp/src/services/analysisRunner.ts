@@ -2,10 +2,10 @@ import type { AnalysisInput } from '@tennis-ai/engine';
 import type { AnalysisOutcome } from '@tennis-ai/shared';
 
 /**
- * runAnalysis из packages/engine исполняется в Web Worker (DECISIONS §7.2:
- * «анализ целиком on-device»), чтобы математика по 150 кадрам не блокировала UI-поток.
- * MediaPipe (GPU) живёт на main thread — см. docs/PORTING.md, поэтому сюда приходят
- * уже готовые PoseFrame[].
+ * runAnalysis from packages/engine runs in a Web Worker (DECISIONS §7.2:
+ * "analysis fully on-device"), so the math over 150 frames does not block the UI thread.
+ * MediaPipe (GPU) lives on the main thread — see docs/PORTING.md — so ready-made
+ * PoseFrame[] arrive here.
  */
 export function runEngineAnalysis(input: AnalysisInput): Promise<AnalysisOutcome> {
   return new Promise((resolve, reject) => {

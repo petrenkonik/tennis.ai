@@ -7,7 +7,7 @@ import { TelegramAuthDto } from './auth.dto';
 export class AuthController {
   constructor(private readonly auth: AuthService) {}
 
-  /** Единственная точка входа: TMA шлёт initData, API отвечает JWT. */
+  /** The single entry point: the TMA sends initData, the API responds with a JWT. */
   @Public()
   @Post('telegram')
   async telegram(@Body() dto: TelegramAuthDto) {

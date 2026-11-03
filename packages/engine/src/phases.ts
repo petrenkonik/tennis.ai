@@ -1,7 +1,7 @@
 import type { DetectedPhase, ObjectDetection, PhaseCode, PoseFrame, StrokeType } from '@tennis-ai/shared';
 import { boxCenter, dist } from './geometry';
 
-// Названия фаз — дословный порт из реверса (moment_detector.dart / экран результатов).
+// Phase names — verbatim port from the reverse engineering (moment_detector.dart / results screen).
 export const PHASE_NAMES: Record<StrokeType, Record<PhaseCode, string>> = {
   serve: {
     M0: 'Ready',
@@ -33,8 +33,9 @@ export const PHASE_NAMES: Record<StrokeType, Record<PhaseCode, string>> = {
 };
 
 /**
- * Кадр контакта: кадр с минимальной дистанцией центров боксов мяча и ракетки.
- * Порт идеи [YOLO-REPASSE]/racket_x1..y2 из реверса; точная логика оригинала не восстановлена.
+ * Contact frame: the frame with the minimal distance between ball and racket box centers.
+ * Port of the [YOLO-REPASSE]/racket_x1..y2 idea from the reverse engineering;
+ * the exact original logic was not recovered.
  */
 export function detectContactFrame(detections: ObjectDetection[]): number | null {
   const byFrame = new Map<number, { ball?: { x: number; y: number }; racket?: { x: number; y: number } }>();
@@ -53,15 +54,15 @@ export function detectContactFrame(detections: ObjectDetection[]): number | null
 }
 
 /**
- * Heuristic v0: M5 (контакт) — от детекции мяча/ракетки, остальные фазы —
- * интерполяция по относительным долям окна. Заменяется портированной логикой
- * moment_detector_ondevice (см. docs/PORTING.md).
+ * Heuristic v0: M5 (contact) comes from ball/racket detection, the other phases are
+ * interpolated by relative shares of the window. Replaced by the ported
+ * moment_detector_ondevice logic (see docs/PORTING.md).
  */
 export function heuristicPhases(strokeType: StrokeType, frameCount: number, contactFrame: number | null): DetectedPhase[] {
   const n = Math.max(1, frameCount);
   const c = contactFrame === null ? Math.floor(n * 0.6) : Math.min(n - 1, Math.max(1, contactFrame));
-  const pre = c; // длительность замаха
-  const post = n - c; // длительность проводки
+  const pre = c; // backswing duration
+  const post = n - c; // follow-through duration
 
   const cuts: Array<[PhaseCode, number, number]> =
     strokeType === 'serve'
@@ -87,12 +88,12 @@ export function heuristicPhases(strokeType: StrokeType, frameCount: number, cont
     ...(code === 'M4' ? {} : {}),
   }));
 
-  // M5 — контакт, M6 — завершение
+  // M5 — contact, M6 — finish
   const contactEnd = Math.min(n - 1, c + Math.round(post * 0.3));
   phases.push({ code: 'M5', startFrame: Math.max(0, c - 1), endFrame: Math.max(c, contactEnd), contactFrame: c });
   phases.push({ code: 'M6', startFrame: contactEnd + 1 <= n - 1 ? contactEnd + 1 : n - 1, endFrame: n - 1 });
 
-  // Убираем отрицательные/перекрёстные границы
+  // Remove negative/crossing boundaries
   for (const p of phases) {
     p.startFrame = Math.max(0, Math.min(p.startFrame, n - 1));
     p.endFrame = Math.max(p.startFrame + 1 > n - 1 ? p.startFrame : p.startFrame + 1, Math.min(p.endFrame, n - 1));

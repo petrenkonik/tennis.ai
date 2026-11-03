@@ -89,7 +89,7 @@ import com.rebuild.tennisai.ui.theme.TextSecondary
 
 private val OnAccent = Color(0xFF141400)
 
-/** My Profile (CLONE_SPEC §2.6) — таб 5. */
+/** My Profile (CLONE_SPEC §2.6) — tab 5. */
 @Composable
 fun ProfileScreen(state: AppState, onEdit: () -> Unit, onAxel: () -> Unit) {
     val l = state.lang
@@ -98,7 +98,7 @@ fun ProfileScreen(state: AppState, onEdit: () -> Unit, onAxel: () -> Unit) {
 
     Box(Modifier.fillMaxSize().background(Color(0xFF050505)).statusBarsPadding()) {
         Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(bottom = 90.dp)) {
-            // Топ-бар
+            // Top bar
             Box(Modifier.fillMaxWidth().height(54.dp).background(Bar)) {
                 Icon(
                     Icons.AutoMirrored.Outlined.KeyboardArrowLeft,
@@ -146,7 +146,7 @@ fun ProfileScreen(state: AppState, onEdit: () -> Unit, onAxel: () -> Unit) {
                     }
                 }
 
-                // 2×2 инфо-чипы (значения из профиля — как в оригинале)
+                // 2×2 info chips (values from the profile — as in the original)
                 Row(horizontalArrangement = Arrangement.spacedBy(14.dp)) {
                     InfoChip(Icons.Outlined.BarChart, "${T.t(l, "level")}: ${T.skillLabel(state.skill, l)}", Modifier.weight(1f))
                     InfoChip(Icons.Outlined.Schedule, T.expShort(state.experience, l), Modifier.weight(1f))
@@ -195,7 +195,7 @@ fun ProfileScreen(state: AppState, onEdit: () -> Unit, onAxel: () -> Unit) {
                 ToggleRow(Icons.Outlined.Email, T.t(l, "email_notifications"), state.emailOn) {
                     state.emailOn = it; state.saveSettings()
                 }
-                // Язык (ключ "language" из оригинального en.json)
+                // Language (the "language" key from the original's en.json)
                 AppCard(Modifier.fillMaxWidth().padding(horizontal = 16.dp), radius = 16.dp, onClick = { showLang = true }) {
                     Row(
                         Modifier.padding(horizontal = 16.dp).fillMaxWidth().height(56.dp),
@@ -230,7 +230,7 @@ fun ProfileScreen(state: AppState, onEdit: () -> Unit, onAxel: () -> Unit) {
     }
 }
 
-/** Выбор языка: RU (по умолчанию) / EN. */
+/** Language selection: RU (default) / EN. */
 @Composable
 private fun LanguageDialog(current: Lang, onSelect: (Lang) -> Unit, onDismiss: () -> Unit) {
     AlertDialog(
@@ -279,11 +279,11 @@ private fun InfoChip(icon: ImageVector, label: String, modifier: Modifier = Modi
     }
 }
 
-/** Edit Profile (CLONE_SPEC §2.7): сегмент General|Additional, чипы, Save. */
+/** Edit Profile (CLONE_SPEC §2.7): General|Additional segment, chips, Save. */
 @Composable
 fun EditProfileScreen(state: AppState, onBack: () -> Unit) {
     val l = state.lang
-    var tab by remember { mutableStateOf(1) } // 0 = General, 1 = Additional (как на скриншоте)
+    var tab by remember { mutableStateOf(1) } // 0 = General, 1 = Additional (as on the screenshot)
 
     Column(
         Modifier
@@ -293,7 +293,7 @@ fun EditProfileScreen(state: AppState, onBack: () -> Unit) {
             .verticalScroll(rememberScrollState())
             .padding(bottom = 32.dp),
     ) {
-        // Шапка: back · Edit Profile · Save
+        // Header: back · Edit Profile · Save
         Box(Modifier.fillMaxWidth().height(54.dp).padding(horizontal = 8.dp)) {
             Icon(
                 Icons.AutoMirrored.Outlined.KeyboardArrowLeft,
@@ -328,7 +328,7 @@ fun EditProfileScreen(state: AppState, onBack: () -> Unit) {
         }
 
         Spacer(Modifier.height(10.dp))
-        // Сегмент General | Additional
+        // General | Additional segment
         Box(
             Modifier
                 .padding(horizontal = 16.dp)
@@ -347,7 +347,7 @@ fun EditProfileScreen(state: AppState, onBack: () -> Unit) {
         Spacer(Modifier.height(18.dp))
         Column(Modifier.padding(horizontal = 16.dp), verticalArrangement = Arrangement.spacedBy(14.dp)) {
             if (tab == 0) {
-                // General — восстановлен по логике, в скриншотах не показан (CLONE_SPEC §6.3)
+                // General — recovered from logic, not shown in the screenshots (CLONE_SPEC §6.3)
                 FieldRow {
                     BasicTextField(
                         value = state.name,
@@ -368,7 +368,7 @@ fun EditProfileScreen(state: AppState, onBack: () -> Unit) {
                     NumberField(value = state.age, placeholder = T.t(l, "age"), onChange = { state.age = it })
                 }
             } else {
-                // Additional — 1:1 по скриншоту
+                // Additional — 1:1 per the screenshot
                 FieldRow {
                     Row(verticalAlignment = Alignment.CenterVertically) {
                         Icon(Icons.Outlined.Scale, null, tint = Accent, modifier = Modifier.size(20.dp))
@@ -484,7 +484,7 @@ private fun ChipSection(title: String) {
     )
 }
 
-/** Чипы с переносом по рядам, ширина по контенту (как на скриншоте: MAIN GOAL = 2+3). */
+/** Wrapping chips sized to content (as on the screenshot: MAIN GOAL = 2+3). */
 @Composable
 private fun FlowChips(
     labels: List<String>,

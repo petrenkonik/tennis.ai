@@ -87,7 +87,7 @@ private data class ChatLine(val role: String, val text: String)
 
 private data class Suggestion(val titleKey: String, val bodyKey: String)
 
-// CLONE_SPEC §2.2 — карточки-подсказки оригинала (тексты из REA; обрезанные на скриншотах дополнены)
+// CLONE_SPEC §2.2 — the original's suggestion cards (texts from REA; ones cropped in the screenshots were completed)
 private val SUGGESTIONS = listOf(
     Suggestion("s1_title", "s1_body"),
     Suggestion("s2_title", "s2_body"),
@@ -172,7 +172,7 @@ fun AxelScreen(state: AppState, onBack: () -> Unit, onRecord: () -> Unit, onUplo
             .statusBarsPadding()
             .imePadding(),
     ) {
-        // Шапка (CLONE_SPEC §2.2)
+        // Header (CLONE_SPEC §2.2)
         Row(
             Modifier.fillMaxWidth().padding(horizontal = 14.dp, vertical = 10.dp),
             verticalAlignment = Alignment.CenterVertically,
@@ -230,7 +230,7 @@ fun AxelScreen(state: AppState, onBack: () -> Unit, onRecord: () -> Unit, onUplo
         }
 
         if (lines.isEmpty()) {
-            // Idle: голограф + заголовок + подсказки (weight — чтобы панель ввода осталась на экране)
+            // Idle: hologram + title + suggestion cards (weight keeps the input panel on screen)
             Column(
                 Modifier
                     .weight(1f)
@@ -287,7 +287,7 @@ fun AxelScreen(state: AppState, onBack: () -> Unit, onRecord: () -> Unit, onUplo
                 }
             }
         } else {
-            // Переписка
+            // Chat thread
             LazyColumn(
                 Modifier.weight(1f).fillMaxWidth().padding(horizontal = 14.dp),
                 state = listState,
@@ -330,7 +330,7 @@ fun AxelScreen(state: AppState, onBack: () -> Unit, onRecord: () -> Unit, onUplo
             )
         }
 
-        // Нижняя панель: Record/Upload · input · Speak/Send
+        // Bottom bar: Record/Upload · input · Speak/Send
         Row(
             Modifier
                 .fillMaxWidth()
@@ -400,8 +400,8 @@ private fun LabeledCircle(
 }
 
 /**
- * Аппроксимация голограммы Axel (в оригинале — неоновый рендер; CLONE_SPEC §6.1):
- * свечение, голова, воротник поло, торс, частицы — Canvas, дыхание альфой.
+ * Approximation of the Axel hologram (the original uses a neon render; CLONE_SPEC §6.1):
+ * glow, head, polo collar, torso, particles — drawn on a Canvas with an alpha "breathing" animation.
  */
 @Composable
 private fun Hologram(modifier: Modifier = Modifier) {
@@ -433,7 +433,7 @@ private fun Hologram(modifier: Modifier = Modifier) {
         val soft = HoloTeal.copy(alpha = 0.5f * breath)
         val headR = w * 0.085f
         val headC = Offset(cx, h * 0.30f)
-        // голова + волосы
+        // head + hair
         drawCircle(teal, radius = headR, center = headC, style = line)
         drawArc(
             color = soft,
@@ -444,10 +444,10 @@ private fun Hologram(modifier: Modifier = Modifier) {
             useCenter = false,
             style = Stroke(width = 5f, cap = StrokeCap.Round),
         )
-        // шея
+        // neck
         drawLine(teal, Offset(cx - headR * 0.28f, headC.y + headR), Offset(cx - headR * 0.28f, headC.y + headR * 1.5f), strokeWidth = 2.2f, cap = StrokeCap.Round)
         drawLine(teal, Offset(cx + headR * 0.28f, headC.y + headR), Offset(cx + headR * 0.28f, headC.y + headR * 1.5f), strokeWidth = 2.2f, cap = StrokeCap.Round)
-        // плечи и торс (поло)
+        // shoulders and torso (polo)
         val shoulderY = headC.y + headR * 1.7f
         val shoulderW = w * 0.21f
         val torsoBottom = h * 0.88f
@@ -464,10 +464,10 @@ private fun Hologram(modifier: Modifier = Modifier) {
             color = soft,
             style = Stroke(width = 2.2f, cap = StrokeCap.Round),
         )
-        // воротник поло
+        // polo collar
         drawLine(teal, Offset(cx, shoulderY + headR * 0.1f), Offset(cx - headR * 0.42f, shoulderY + headR * 0.75f), strokeWidth = 2.4f, cap = StrokeCap.Round)
         drawLine(teal, Offset(cx, shoulderY + headR * 0.1f), Offset(cx + headR * 0.42f, shoulderY + headR * 0.75f), strokeWidth = 2.4f, cap = StrokeCap.Round)
-        // частицы на торсе
+        // particles on the torso
         particles.forEach { p ->
             drawCircle(
                 HoloTeal.copy(alpha = 0.25f + 0.45f * breath),

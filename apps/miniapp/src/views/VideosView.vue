@@ -3,7 +3,7 @@
     <TopBar :title="tt('my_videos')" icon="videocam" variant="mono-accent" />
 
     <div style="padding: 18px 16px 0; display: flex; flex-direction: column; gap: 14px">
-      <!-- Стат-карточка: TOTAL / Completed / Analyzing (CLONE_SPEC §2.8) -->
+      <!-- Stats card: TOTAL / Completed / Analyzing (CLONE_SPEC §2.8) -->
       <AppCard>
         <div class="row" style="justify-content: space-between; padding: 20px 0">
           <div v-for="s in stats" :key="s.label" class="grow" style="text-align: center">
@@ -17,8 +17,8 @@
         </div>
       </AppCard>
 
-      <!-- Сетка 2×2 карточек с цветной границей (CLONE_SPEC §2.9): внутренняя плитка
-           videocam + счётчик + VIDEOS, ниже — название и «No videos yet» -->
+      <!-- 2×2 grid of bordered cards (CLONE_SPEC §2.9): inner tile
+           videocam + counter + VIDEOS, below — the name and "No videos yet" -->
       <div v-for="(row, ri) in bucketRows" :key="ri" class="row" style="gap: 14px; align-items: stretch">
         <AppCard
           v-for="b in row"
@@ -53,7 +53,7 @@
         </AppCard>
       </div>
 
-      <!-- Раскрытый список сессий бакета (у TMA есть реальные видео из API — функциональное расширение) -->
+      <!-- Expanded session list of a bucket (the TMA has real videos from the API — a functional extension) -->
       <template v-if="opened">
         <div v-if="openedList.length === 0" class="muted" style="text-align: center; padding: 8px">
           {{ tt('no_videos_yet') }}
@@ -75,7 +75,7 @@
               {{ tt('open') }}
             </button>
           </div>
-          <!-- Действия библиотеки оригинала (video_library_screen): RE-ANALYZE / Share / Download / Delete Video -->
+          <!-- Original library actions (video_library_screen): RE-ANALYZE / Share / Download / Delete Video -->
           <div class="row" style="gap: 8px; margin-top: 10px; flex-wrap: wrap">
             <button
               class="btn ghost"
@@ -113,7 +113,7 @@
       </template>
     </div>
 
-    <!-- Delete Video: подтверждение оригинала (delete_video_confirm, CANCEL/DELETE) -->
+    <!-- Delete Video: original confirmation dialog (delete_video_confirm, CANCEL/DELETE) -->
     <div
       v-if="confirmDelete"
       style="
@@ -140,7 +140,7 @@
       </div>
     </div>
 
-    <!-- Тост (аналог Toast в клоне) -->
+    <!-- Toast (equivalent of Toast in the clone) -->
     <div
       v-if="toast"
       style="
@@ -185,7 +185,7 @@ interface Bucket {
   color: string;
 }
 
-// Бакеты и цвета — как в LibraryScreens.kt: serve blue, forehand lime, backhand amber, drills red.
+// Buckets and colors — as in LibraryScreens.kt: serve blue, forehand lime, backhand amber, drills red.
 const buckets: Bucket[] = [
   { key: 'serve', titleKey: 'serve', color: 'var(--serve-blue)' },
   { key: 'forehand', titleKey: 'forehand', color: 'var(--accent)' },
@@ -234,7 +234,7 @@ function openBucket(b: Bucket): void {
   opened.value = opened.value === b ? null : b;
 }
 
-// --- Действия сессии (порт video_library_screen: share_plus, download, RE-ANALYZE, Delete Video) ---
+// --- Session actions (port of video_library_screen: share_plus, download, RE-ANALYZE, Delete Video) ---
 const toast = ref('');
 const busyId = ref<string | null>(null);
 const confirmDelete = ref<AnalysisDto | null>(null);
@@ -246,7 +246,7 @@ function toastNow(text: string): void {
   toastTimer = setTimeout(() => (toast.value = ''), 2200);
 }
 
-/** Скачивание через anchor+blob; в Telegram WebView <a download> обычно работает, иначе — только тост. */
+/** Download via anchor+blob; in the Telegram WebView <a download> usually works, otherwise — toast only. */
 function saveBlob(file: File): void {
   const url = URL.createObjectURL(file);
   const link = document.createElement('a');
@@ -271,7 +271,7 @@ async function downloadVideo(a: AnalysisDto): Promise<void> {
 
 type ShareDataWithFiles = { files?: File[]; title?: string; text?: string; url?: string };
 
-/** Порт share_plus: системный share-лист с файлом; без navigator.share — скачивание как фолбэк. */
+/** Port of share_plus: system share sheet with the file; without navigator.share — download as a fallback. */
 async function shareVideo(a: AnalysisDto): Promise<void> {
   if (busyId.value) return;
   busyId.value = a.id;
@@ -294,7 +294,7 @@ async function shareVideo(a: AnalysisDto): Promise<void> {
   }
 }
 
-/** RE-ANALYZE: оригинал сессии заново проходит /preview → анализ (квота списывается при создании сессии, как в оригинале). */
+/** RE-ANALYZE: the original session goes through /preview → analysis again (the quota is charged at session creation, as in the original). */
 async function reanalyze(a: AnalysisDto): Promise<void> {
   if (busyId.value) return;
   busyId.value = a.id;

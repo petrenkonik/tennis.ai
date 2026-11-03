@@ -2,11 +2,11 @@ import type { LandmarkPoint, PoseFrame } from '@tennis-ai/shared';
 import type { PoseLandmarker, PoseLandmarkerResult } from '@mediapipe/tasks-vision';
 
 /**
- * MediaPipe Pose Landmarker (порт pose_service.dart: ML Kit Pose, 33 landmark со сглаживанием).
- * Режим VIDEO даёт встроенный темпоральный трекинг между кадрами — аналог ML Kit streaming.
- * Пакет @mediapipe/tasks-vision импортируется динамически (отдельный чанк, не в основном бандле);
- * WASM-рантайм и модель по умолчанию с CDN, для прода самохостинг через VITE_MEDIAPIPE_WASM_URL
- * и VITE_POSE_MODEL_URL (см. docs/PORTING.md).
+ * MediaPipe Pose Landmarker (port of pose_service.dart: ML Kit Pose, 33 landmarks with smoothing).
+ * VIDEO mode provides built-in temporal tracking between frames — an analogue of ML Kit streaming.
+ * The @mediapipe/tasks-vision package is imported dynamically (a separate chunk, not in the main bundle);
+ * the WASM runtime and model come from a CDN by default; for production, self-host via
+ * VITE_MEDIAPIPE_WASM_URL and VITE_POSE_MODEL_URL (see docs/PORTING.md).
  */
 
 const WASM_BASE_URL =
@@ -15,7 +15,7 @@ const POSE_MODEL_URL =
   import.meta.env.VITE_POSE_MODEL_URL ??
   'https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_lite/float16/latest/pose_landmarker_lite.task';
 
-/** Порядок landmark'ов MediaPipe Pose совпадает с константами LM в packages/engine/src/landmarks.ts. */
+/** The MediaPipe Pose landmark order matches the LM constants in packages/engine/src/landmarks.ts. */
 export const LANDMARK_COUNT = 33;
 
 let landmarkerPromise: Promise<PoseLandmarker> | null = null;
@@ -35,15 +35,15 @@ async function createLandmarker(): Promise<PoseLandmarker> {
   try {
     return await vision.PoseLandmarker.createFromOptions(fileset, options('GPU'));
   } catch {
-    // WebView без GPU-делегата — CPU-инференс на WASM SIMD
+    // WebView without a GPU delegate — CPU inference on WASM SIMD
     return await vision.PoseLandmarker.createFromOptions(fileset, options('CPU'));
   }
 }
 
-/** Ленивый синглтон: один landmarker на сессию (VIDEO-режим требует монотонные таймстампы). */
+/** Lazy singleton: one landmarker per session (VIDEO mode requires monotonic timestamps). */
 export function loadPoseLandmarker(): Promise<PoseLandmarker> {
   landmarkerPromise ??= createLandmarker().catch((err: unknown) => {
-    landmarkerPromise = null; // разрешить повторную попытку при следующем вызове
+    landmarkerPromise = null; // allow a retry on the next call
     throw err;
   });
   return landmarkerPromise;
@@ -56,7 +56,7 @@ export async function disposePoseLandmarker(): Promise<void> {
   landmarkerPromise = null;
 }
 
-/** MediaPipe-результат кадра → PoseFrame из shared; кадр без позы = 33 landmark с visibility 0. */
+/** MediaPipe frame result → PoseFrame from shared; a frame without a pose = 33 landmarks with visibility 0. */
 export function toPoseFrame(
   frameIndex: number,
   timestampMs: number,
@@ -73,7 +73,7 @@ export function toPoseFrame(
   return { frameIndex, timestampMs, width, height, landmarks };
 }
 
-/** Кадр годен для анализа, если видимо «ядро» тела (плечи + бёдра) — калькуляторы engine от них зависят. */
+/** A frame is fit for analysis if the body "core" (shoulders + hips) is visible — engine calculators depend on them. */
 export function hasDetectablePose(frame: PoseFrame): boolean {
   return [11, 12, 23, 24].every((i) => (frame.landmarks[i]?.visibility ?? 0) >= 0.5);
 }
