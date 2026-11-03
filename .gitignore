@@ -24,3 +24,7 @@ local.properties
 .idea/
 captures/
 *.hprof
+
+# REA raw string dumps (contain third-party API keys) — keep local only, never commit
+reference/extracted_assets/libapp_strings.txt
+reference/dart-aot-recovery/strings_ascii_ordered.txt
